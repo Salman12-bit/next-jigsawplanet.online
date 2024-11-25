@@ -1,0 +1,32 @@
+.card2 {
+    padding-top: 100%;
+    position: relative;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.1s;
+}
+
+.card2.matched {
+    background-color: #4caf50;
+    cursor: default;
+}
+
+.card2.flipped {
+    background-color: #894b4b;
+    color: #000;
+    cursor: default;
+    transform: rotateY(180deg);
+}
+
+.card2>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

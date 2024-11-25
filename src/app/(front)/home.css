@@ -1,0 +1,163 @@
+.home-container {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f2f5;
+  background-image: url("/jigsaw planet.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: 80px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+/* Left side: Image container */
+.imgContainer {
+  flex: 0 0 120px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img {
+  height: 120px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.postTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  text-align: justify;
+}
+
+.postContentContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.postContent {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.postScore {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.delete {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #d9534f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.delete:hover {
+  background-color: #c9302c;
+}
+
+.error {
+  color: #d9534f;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .post {
+    width: calc(33.33% - 20px);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .post {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Extra small screens (small phones) */
+@media (max-width: 480px) {
+  .post {
+    width: 100%;
+    padding: 10px;
+    flex-direction: row;
+    /* Keeps left and right layout on small screens */
+    align-items: center;
+  }
+
+  .imgContainer {
+    flex: 0 0 100px;
+    /* Adjusted width for small screens */
+    margin-right: 15px;
+  }
+
+  .img {
+    height: 120px;
+    /* Smaller image size on small screens */
+    width: 150px;
+  }
+
+  .postTitle {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  .postContent {
+    font-size: 0.9rem;
+  }
+
+  .postScore {
+    font-size: 0.9rem;
+  }
+
+  .delete {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
