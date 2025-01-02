@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgba(190, 184, 184, 0.2);
+    
     background-size: cover;
     background-position: center;
     margin-top: 80px;
@@ -14,7 +14,7 @@
 }
 
 .register-box {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(73, 67, 67, 0.2);
     padding: 20px;
     border-radius: 10px;
     max-width: 450px;
@@ -26,7 +26,7 @@
 .title {
     font-size: 2rem;
     font-weight: bold;
-    color: #fff;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -48,7 +48,7 @@
     border-radius: 5px;
     font-size: 1rem;
     background-color: #333;
-    color: #fff;
+    color: #000000;
     transition: background-color 0.3s ease;
 }
 
@@ -82,12 +82,12 @@
 }
 
 .text-center {
-    color: #ddd;
+    color: #161515;
     margin-top: 20px;
 }
 
 .or {
-    color: #ddd;
+    color: #413b3b;
     margin: 20px 0;
 }
 
@@ -107,7 +107,7 @@
 
 
 .text-white {
-    color: white;
+    color: rgb(70, 65, 65);
     margin-top: 10px;
     font-style: italic;
 

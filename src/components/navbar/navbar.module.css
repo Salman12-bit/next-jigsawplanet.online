@@ -21,7 +21,7 @@
 }
 
 .navLogo {
-  color: rgb(121, 108, 108);
+  color: rgb(0, 0, 0);
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -51,7 +51,7 @@
 
 
 .navItem {
-  color: rgb(195, 186, 186);
+  color: rgb(8, 8, 8);
   text-decoration: none;
   font-size: 1.1rem;
 }
@@ -61,20 +61,15 @@
 }
 
 .button {
-
   padding: 10px 18px;
   background: transparent;
   border: 2px solid white;
   border-radius: 9px;
-  color: white;
+  color: rgb(14, 13, 13);
   font-size: 15px;
+  background-color: black;
+  color: white;
 
-}
-
-.button:hover {
-  background-color: white;
-  color: black;
-  cursor: pointer;
 }
 
 /* Responsive for mobile screens */

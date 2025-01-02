@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(190, 184, 184, 0.2);
   background-size: cover;
   background-position: center;
   margin-top: 80px;
@@ -14,7 +13,7 @@
 }
 
 .register-box {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(133, 127, 127, 0.2);
   padding: 20px;
   border-radius: 10px;
   max-width: 450px;
@@ -26,7 +25,7 @@
 .title {
   font-size: 2rem;
   font-weight: bold;
-  color: #fff;
+  color: #080808;
   margin-bottom: 10px;
 }
 
@@ -37,7 +36,7 @@
 }
 
 .form-label {
-  color: #ddd;
+  color: #020202;
   text-align: left;
 }
 
@@ -115,7 +114,7 @@
 
 
 .text-white {
-  color: white; 
+  color: rgb(7, 7, 7); 
   margin-top: 10px;
   font-style: italic;
   

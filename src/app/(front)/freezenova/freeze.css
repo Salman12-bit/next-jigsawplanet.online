@@ -2,28 +2,28 @@
     max-width: 500px;
     margin: auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(75, 72, 72, 0.2);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(75, 72, 72, 0.2);
 }
 
 h1 {
     font-size: 36px;
     margin-bottom: 5px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .level {
     font-size: 20px;
     margin: 5px 0;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .word {
     font-size: 24px;
     margin: 10px 0;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 input[type="text"] {
@@ -45,11 +45,11 @@ input[type="text"] {
 }
 
 .congrat-color {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .current-color {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .text-conainer {
@@ -69,7 +69,7 @@ input[type="text"] {
 }
 
 .btn {
-    color: white;
+    color: rgb(90, 85, 85);
     border-radius: 5px;
     margin-left: 70px;
 
@@ -92,7 +92,7 @@ input[type="text"] {
     align-items: flex-start;
     width: 100%;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(75, 72, 72, 0.2);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -124,7 +124,7 @@ input[type="text"] {
     align-items: flex-start;
     width: 100%;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(75, 72, 72, 0.2);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
