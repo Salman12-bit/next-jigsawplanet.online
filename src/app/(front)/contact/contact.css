@@ -1,8 +1,7 @@
 .imgformat {
-  background-image: url('/jigsaw planet.png');
   background-size: cover;
   background-position: center;
-  margin-top: 80px;
+  margin-top: 70px;
   width: 100%;
   padding: 20px 0px;
   margin-bottom: 17px;
@@ -13,7 +12,6 @@
   font-size: 60px;
   margin-bottom: 100px;
   text-align: center;
-  color: black;
 }
 
 .content {
@@ -58,11 +56,12 @@
   background-color: transparent;
   border: none;
   outline: none;
-  color: #bbb;
-  border: 3px solid #000000;
+  color: #000000;
+  border: 1px solid #000000;
   font-size: 20px;
   font-weight: bold;
   width: 100%;
+  border-radius: 10px;
 }
 
 .textarea {
@@ -70,9 +69,10 @@
   background-color: transparent;
   border: none;
   outline: none;
-  color: #bbb;
-  border: 3px solid #000000;
+  color: #000000;
+  border: 1px solid #000000;
   font-size: 20px;
   font-weight: bold;
   width: 100%;
+  border-radius: 10px;
 }

@@ -4,17 +4,16 @@
 }
 
 
-.text-conainer{
+.text-conainer {
     margin-top: 80px;
     width: 100%;
     padding: 20px 0px;
     margin-bottom: 17px;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
 }
 
 .level-color {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .planet-container {
@@ -85,6 +84,18 @@
     margin-left: 10px;
 }
 
+.button:hover {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #374151;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0px;
+    margin-left: 10px;
+}
+
 .welcome-container {
     display: flex;
     flex-direction: column;
@@ -92,7 +103,7 @@
     align-items: flex-start;
     width: 100%;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(151, 147, 147, 0.2);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -123,7 +134,7 @@
     align-items: flex-start;
     width: 100%;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(151, 147, 147, 0.2);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -173,8 +184,6 @@
 
 .game-image {
     border-radius: 8px;
-    height: 192px;
-    width: 240px;
     margin: 10px;
     object-fit: cover;
 }

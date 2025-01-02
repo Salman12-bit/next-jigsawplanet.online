@@ -39,9 +39,6 @@ const Game = () => {
 
   return (
     <div className='text-conainer' style={{
-      backgroundImage: 'url("/jigsaw planet.png")',
-      backgroundSize: "cover",
-      backgroundPosition: "center",
       padding: "20px"
     }}>
       <div className="Puzzle my-3">

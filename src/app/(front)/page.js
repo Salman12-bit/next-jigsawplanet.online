@@ -62,10 +62,11 @@ export default function Home() {
                 <Link href={`/${post._id}`} key={post._id}>
                   <img className="img" src={post.file} alt={post.title} />
                 </Link>
-                <h2 className="postTitle">{post.title}</h2>
-              </div>
 
+              </div>
+              <Link href="/jigsaw-planet" className="button1"> Play Game</Link>
               <div className="postContentContainer">
+                <h1 className="postTitle">{post.title}</h1>
                 <p className="postContent">{post.content.slice(0, 12)}...</p>
                 <h3 className="postScore">Score: {post.score}</h3>
                 {session && session.user?.role === "admin" && (

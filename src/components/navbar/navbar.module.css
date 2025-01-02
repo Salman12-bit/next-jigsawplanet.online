@@ -1,6 +1,6 @@
 .navbar {
   width: 100%;
-  background-image: url('/jigsaw planet.png');
+  background-color: rgba(190, 184, 184, 0.2);
   background-size: cover;
   background-position: center;
   padding: 1rem 0;
@@ -84,7 +84,7 @@
     position: absolute;
     top: 70px;
     left: -100%;
-    background-image: url('/jigsaw planet.png');
+    background-color: rgba(190, 184, 184, 0.2);
     width: 100%;
     text-align: center;
     transition: 0.5s ease-in-out;
