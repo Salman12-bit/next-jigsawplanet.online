@@ -17,7 +17,7 @@ const containerStyle1 = {
 
 const Board1 = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(3, 90px);
   grid-gap: 10px;
 `;
 

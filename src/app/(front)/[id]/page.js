@@ -26,10 +26,10 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: post.title,
       description: post.desc,
-      url: "https://jigsawplanet.us" + params.id,
+      url: "https://jigsawplanet.online" + params.id,
       images: [
         {
-          url: "https://jigsawplanet.us",
+          url: "https://jigsawplanet.online",
           width: 1200,
           height: 630,
           alt: "Explore and play puzzles on jigsaw planet",

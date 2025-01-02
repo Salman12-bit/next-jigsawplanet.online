@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        
+      <meta name="google-site-verification" content="QY_TMPPlZuR_oQAF0JPwngL9VzO3wwLFykte--_fgfM" />
       </head>
       <body className={inter.className}>
         <AuthProvider>
