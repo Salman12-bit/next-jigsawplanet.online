@@ -12,11 +12,11 @@ const Footer = () => {
         </ul>
         <div className={styles.footerSection}>
           <p>Contact Us: contact@jigsawplanet.online</p>
-          <p>Phone: +92 336 3891016</p>
+          <p>Phone: +92 340 6297732</p>
         </div>
       </div>
       <div className={styles.footerBottom}>
-        &copy; 2024 Jigsawplanet.us All Rights Reserved.
+        &copy; 2024 Jigsawplanet.online All Rights Reserved.
       </div>
     </footer>
   );
