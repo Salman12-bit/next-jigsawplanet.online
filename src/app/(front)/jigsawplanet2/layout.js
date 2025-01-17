@@ -4,10 +4,10 @@ export const metadata = {
     openGraph: {
         title: "Play jigsawplanet Game - Free Online Puzzles",
         description: "Join Jigsaw Planet for an immersive puzzle experience. Choose from a wide range of free puzzles and sharpen your skills with exciting challenges.",
-        url: "https://example.com/jigsaw-planet-game",
+        url: "https://jigsawplanet.online/jigsawplanet2",
         images: [
             {
-                url: "https://example.com/images/jigsaw-planet-game.jpg",
+                url: "https://jigsawplanet.online/images/Puzzlle.jpeg",
                 width: 1200,
                 height: 630,
                 alt: "Play free online jigsaw puzzles on jigsawplanet",

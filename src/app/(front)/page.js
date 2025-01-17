@@ -11,6 +11,18 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const { data: session } = useSession();
 
+  const puzzleGames = [
+    {
+      "image": "/download.jpeg"
+    },
+    {
+      "image": "/images/Linkedin.png"
+    },
+    {
+      "image": "/images/Puzzlle.jpeg"
+    },
+  ]
+
   const getData = async () => {
     setIsLoading(true);
     try {
@@ -48,7 +60,38 @@ export default function Home() {
 
   return (
     <div className="home-container">
+      <div style={{
+        display: "flex",
+        alignItems: "center",
+        flexWrap: "wrap",
+        width: "100%",
+        gap: "7px",
+        marginBottom: "20px"
+      }}>
+
+        {
+          puzzleGames.map((item, index) => (
+            <div key={index} className="puzzle-game-card">
+              <img
+                src={item.image}
+                alt={`Puzzle ${index + 1}`}
+                className="puzzle-game-image"
+              />
+
+              <h3 className="puzzle-game-title">Puzzle Game</h3>
+              <p>
+                Click on the button below to start playing game
+              </p>
+              <Link href={`/puzzle?image=${encodeURIComponent(item.image)}`}>
+                <button className="puzzle-game-button">Play Now</button>
+              </Link>
+            </div>
+          )
+          )
+        }
+      </div>
       <div className="posts">
+
         {isLoading ? (
           <div className="loader">
             <div className="spinner"></div>
@@ -60,14 +103,14 @@ export default function Home() {
             <div className="post" key={post._id}>
               <div className="imgContainer">
                 <Link href={`/${post._id}`} key={post._id}>
-                  <img className="img" src={post.file} alt={post.title} />
+                  <img className="img" src={post.file} alt={post.title}
+                    loading="lazy" />
                 </Link>
-
               </div>
-              <Link href="/jigsaw-planet" className="button1"> Play Game</Link>
+              <Link href="/jigsaw-planet" className="button1">Play Game</Link>
               <div className="postContentContainer">
                 <h1 className="postTitle">{post.title}</h1>
-                <p className="postContent">{post.content.slice(0, 12)}...</p>
+                <p className="postContent">{post.desc}</p>
                 <h3 className="postScore">Score: {post.score}</h3>
                 {session && session.user?.role === "admin" && (
                   <>

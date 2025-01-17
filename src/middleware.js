@@ -7,7 +7,7 @@ export default async function middleware(req, event) {
     const userRole = token?.role || null;
 
     const protectedRoutes = [
-        "/gametheme",
+        "/contact",
     ];
 
 

@@ -2,7 +2,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-top: 80px;
+  margin-top: 10px;
   padding: 30px;
   margin-bottom: 10px;
 }
@@ -43,15 +43,16 @@
 }
 
 /* Avatar Image Styling */
-.avatar {
+/* .avatar {
   width: 100%;
   max-width: 1200px;
-}
+} */
 
 /* Content Section Styling */
 .content {
   font-size: 25px;
   font-weight: 300;
+  margin-top: 10px;
   color: #000000;
   text-align: justify;
 }
@@ -70,6 +71,7 @@
   .avatar {
     width: 100%;
     height: auto;
+    border-radius: 10px;
     max-width: 100%;
     /* Full width on mobile */
   }

@@ -2,51 +2,58 @@
 
 import React, { useState } from "react";
 import "./dashboard.css";
+import "react-quill/dist/quill.snow.css";
 import { useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
+
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const Dashboard = () => {
+  const [title, setTitle] = useState("");
+  const [desc, setDesc] = useState("");
+  const [score, setScore] = useState("");
+  const [file, setFile] = useState(null);
+  const [content, setContent] = useState("");
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+
   const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); 
-    setError(null); 
+    setLoading(true);
+    setError(null);
 
-    const title = e.target[0].value;
-    const desc = e.target[1].value;
-    const score = e.target[2].value;
-    const content = e.target[3].value;
-    const file = e.target[4].files[0];
+    if (!file) {
+      setError("Please upload a valid file.");
+      setLoading(false);
+      return;
+    }
 
     let imageUrl;
-    if (file) {
+    try {
       const formData = new FormData();
       formData.append("file", file);
       formData.append("upload_preset", "bagname");
 
-      try {
-        const cloudinaryResponse = await fetch(
-          `https://api.cloudinary.com/v1_1/dz7m8luug/image/upload`,
-          {
-            method: "POST",
-            body: formData,
-          }
-        );
-
-        if (!cloudinaryResponse.ok) {
-          throw new Error("Failed to upload image.");
+      const cloudinaryResponse = await fetch(
+        `https://api.cloudinary.com/v1_1/dz7m8luug/image/upload`,
+        {
+          method: "POST",
+          body: formData,
         }
+      );
 
-        const cloudinaryData = await cloudinaryResponse.json();
-        imageUrl = cloudinaryData.secure_url;
-      } catch (error) {
-        setError("Failed to upload image. Please try again.");
-        setLoading(false);
-        return;
+      if (!cloudinaryResponse.ok) {
+        throw new Error("Failed to upload image.");
       }
 
+      const cloudinaryData = await cloudinaryResponse.json();
+      imageUrl = cloudinaryData.secure_url;
+    } catch (error) {
+      setError("Failed to upload image. Please try again.");
+      setLoading(false);
+      return;
     }
 
     const payload = {
@@ -76,7 +83,7 @@ const Dashboard = () => {
       setError("An error occurred while submitting the form");
       console.error(err);
     } finally {
-      setLoading(false); // Stop loader
+      setLoading(false);
     }
   };
 
@@ -87,13 +94,14 @@ const Dashboard = () => {
           <h3>Welcome to Your Blogging Journey!</h3>
           <p>Hey there, future storyteller! 🌟</p>
           <p>
-           Whether it's your first post or your hundredth, every time you write, you have 
-           the power to inspire, inform, and connect with people each over the world. This 
-           space is yours to partake your voice, heartstrings, and unique perspective
+            Whether it's your first post or your hundredth, every time you
+            write, you have the power to inspire, inform, and connect with
+            people all over the world. This space is yours to share your voice,
+            passions, and unique perspective.
           </p>
           <ul>
-            <li>✍️ One post is the foundation of any great blog.</li>
-            <li>🌱  Your growth is a trip. Each composition you write is a step toward getting a stronger pen.</li>
+            <li>✍️ Every great blog starts with a single post.</li>
+            <li>🌱 Your growth is a journey. Each article you write is a step toward becoming a stronger writer.</li>
             <li>🚀 Consistency is your superpower. Stay committed and watch your impact grow.</li>
           </ul>
           <p className="highlight">Let’s get blogging! 🎉</p>
@@ -104,23 +112,57 @@ const Dashboard = () => {
             {error && <p className="error-message">{error}</p>}
             <div className="input-container">
               <label htmlFor="title">Title</label>
-              <input type="text" name="title" placeholder="title" required className="input" />
+              <input
+                type="text"
+                name="title"
+                placeholder="Title"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                required
+                className="input"
+              />
             </div>
             <div className="input-container">
               <label htmlFor="desc">Description</label>
-              <input type="text" name="desc" placeholder="desc" required className="input" />
+              <input
+                type="text"
+                name="desc"
+                placeholder="Description"
+                value={desc}
+                onChange={(e) => setDesc(e.target.value)}
+                required
+                className="input"
+              />
             </div>
             <div className="input-container">
               <label htmlFor="score">Score</label>
-              <input type="number" name="score" placeholder="score" required className="input" />
-            </div>
-            <div className="input-container">
-              <label htmlFor="content">Content</label>
-              <textarea type="text" name="content" placeholder="content" required className="input" />
+              <input
+                type="number"
+                name="score"
+                placeholder="Score"
+                value={score}
+                onChange={(e) => setScore(e.target.value)}
+                required
+                className="input"
+              />
             </div>
             <div className="input-container">
               <label htmlFor="file">Upload File</label>
-              <input type="file" name="file" className="input" required />
+              <input
+                type="file"
+                name="file"
+                onChange={(e) => setFile(e.target.files[0])}
+                className="input"
+                required
+              />
+            </div>
+            <div className="input-container">
+              <label htmlFor="content">Content</label>
+              <ReactQuill
+                value={content}
+                onChange={(value) => setContent(value)}
+                className="bg-[#262626] placeholder:text-sm min-h-52 dark:placeholder:text-black"
+              />
             </div>
 
             <button type="submit" className="submit-button" disabled={loading}>

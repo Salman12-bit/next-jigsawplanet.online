@@ -4,16 +4,20 @@ export const metadata = {
     openGraph: {
         title: "Jigsaw Planet Login",
         description: "Log in to access jigsaw planet and start your puzzle journey.",
-        url: "https://example.com/login",
+        url: "https://jigsawplanet.online/login",
         images: [
             {
-                url: "https://example.com/images/jigsaw-planet-login.jpg",
+                url: "https://jigsawplanet.online/images/Puzzlle.jpeg",
                 width: 1200,
                 height: 630,
                 alt: "Login to jigsaw planet and start your puzzle journey",
             },
         ],
     },
+
+    alternates: {
+        canonical: "https://jigsawplanet.online/login",
+      },
 };
 
 export default function Layout({ children }) {

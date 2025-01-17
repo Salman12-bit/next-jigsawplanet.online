@@ -5,7 +5,6 @@
 
 
 .text-conainer {
-    margin-top: 80px;
     width: 100%;
     padding: 20px 0px;
     margin-bottom: 17px;
@@ -29,10 +28,6 @@
     align-items: center;
     margin: 0 auto;
     padding: 20px;
-}
-
-.container {
-    margin-top: 80px;
 }
 
 .card2 {

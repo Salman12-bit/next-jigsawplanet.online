@@ -4,16 +4,19 @@ export const metadata = {
     openGraph: {
         title: "Contact Us - Jigsaw Planet",
         description: "Have questions or need assistance? Contact the jigsaw planet team for support, inquiries, and feedback.",
-        url: "https://example.com/contact",
+        url: "https://jigsawplanet.online/contact",
         images: [
             {
-                url: "https://example.com/images/jigsaw-planet-contact.jpg",
+                url: "https://jigsawplanet.online/images/Puzzlle.jpeg",
                 width: 1200,
                 height: 630,
                 alt: "Contact Jigsaw Planet for support and inquiries",
             },
         ],
     },
+    alternates: {
+        canonical: "https://jigsawplanet.online/contact",
+      },
 };
 
 export default function Layout({ children }) {

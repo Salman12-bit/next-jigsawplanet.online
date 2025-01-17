@@ -1,23 +1,24 @@
 "use client";
+
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./navbar.module.css";
-import { useRouter } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter(); // Initialize router for navigation
-  const { data: session, status } = useSession();
-  console.log("🚀 ~ Navbar ~ session:", session);
+  const { data: session } = useSession();
 
+  // Logout function
   const logout = async () => {
-    localStorage.removeItem("key"); 
-    await signOut();
-    router.push("/login"); 
+    localStorage.removeItem("key"); // Clear specific item from local storage
+    await signOut({
+      callbackUrl: "https://jigsawplanet.online/login", // Redirect to production login page
+    });
+    window.location.href = "https://jigsawplanet.online/login"; // Hard refresh to production login page
   };
 
-
+  // Toggle mobile menu
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -45,7 +46,7 @@ const Navbar = () => {
             Puzzle | Game
           </Link>
           <Link href="/freezenova" className={styles.navItem}>
-            Word | Puzzle
+            Freeze | Nova
           </Link>
           <Link href="/gametheme" className={styles.navItem}>
             Gaming Theme
@@ -77,6 +78,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
+      
     </nav>
   );
 };

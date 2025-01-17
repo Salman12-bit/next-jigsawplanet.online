@@ -4,18 +4,23 @@ export const metadata = {
     openGraph: {
         title: "Game Theme  - jigsaw planet",
         description: "Discover and select game theme  to personalize your jigsawplanet experience. From classic styles to modern designs, find the perfect look for your game.",
-        url: "https://example.com/game-theme",
+        url: "https://jigsawplanet.online/gametheme",
         images: [
             {
-                url: "https://example.com/images/theme-thumbnail.jpg",
+                url: "https://jigsawplanet.online/images/Puzzlle.jpeg",
                 width: 1200,
                 height: 630,
                 alt: "Explore game theme on jigsaw planet to personalize your game",
             },
         ],
     },
+    alternates: {
+        canonical: "https://jigsawplanet.online/gametheme",  
+    },
 };
 
 export default function Layout({ children }) {
     return <>{children}</>;
 }
+
+
