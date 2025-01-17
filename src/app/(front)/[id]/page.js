@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: post.title,
         description: post.desc,
-        url: `https://jigsawplanet.online/${params.id}`,
+        url: `https://jigsawplanet.online/post/${params.id}`,
         images: [
           {
             url: post.file,
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
         ],
       },
       alternates: {
-        canonical: `https://jigsawplanet.online/${params.id}`,
+        canonical: `https://jigsawplanet.online/post/${params.id}`,
       },
       additionalMetadata: {
         datePublished: post.datePublished,
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }) {
       title: "Post Not Found",
       description: "This post could not be found.",
       alternates: {
-        canonical: `https://jigsawplanet.us/404`,
+        canonical: `https://jigsawplanet.online/404`,
       },
     };
   }
@@ -74,12 +74,12 @@ const BlogPost = async ({ params }) => {
       "name": "Jigsaw Planet",
       "logo": {
         "@type": "ImageObject",
-        "url": `https://jigsawplanet.us/${post.file}`,
+        "url": `https://jigsawplanet.online/${post.file}`,
       },
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://jigsawplanet.us/${params.id}`,
+      "@id": `https://jigsawplanet.online/post/${params.id}`,
     },
     "image": {
       "@type": "ImageObject",
