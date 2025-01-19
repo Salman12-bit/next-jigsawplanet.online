@@ -45,7 +45,7 @@ export default async function middleware(req, event) {
 }
 
 export const config = {
-    matcher: ["/dashboard/:path*", "/login", "/register","/gametheme"],
+    matcher: ["/dashboard/:path*", "/login", "/register","/contact"],
 };
 
 

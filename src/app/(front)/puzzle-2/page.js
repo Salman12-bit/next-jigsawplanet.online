@@ -1,8 +1,7 @@
-"use client"; 
+"use client";
 import React, { useRef, useEffect, useState } from "react";
 import { Stage, Layer, Path, Rect, Group } from "react-konva";
 import styles from "./Puzzle.module.css";
-
 
 function flipEdge(edge) {
     if (edge === "in") return "out";
@@ -10,7 +9,7 @@ function flipEdge(edge) {
     return "flat";
 }
 
-
+// Drawing functions
 function drawTop(path, width, tabSize, topType) {
     if (topType === "out") {
         path += `
@@ -110,56 +109,76 @@ function generatePath({ width, height, top, right, bottom, left }) {
     path = drawRight(path, height, tabSize, right, width);
     path = drawBottom(path, width, tabSize, bottom, height);
     path = drawLeft(path, height, tabSize, left);
+    path += " Z";
     return path;
 }
 
-export default function Puzzle({ searchParams }) {
-    const params = searchParams;
-    const { image: newImage } = params;
+function loadImage(src) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.crossOrigin = "anonymous";
+        img.src = src;
+        img.onload = () => resolve(img);
+        img.onerror = (err) => reject(err);
+    });
+}
+
+function resizeImage(img, targetWidth, targetHeight) {
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = targetWidth;
+    canvas.height = targetHeight;
+    ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
+    return canvas;
+}
+
+export default function Puzzle() {
+    const puzzleImage = "/download.jpeg"; // Adjust path as needed
 
     const [image, setImage] = useState(null);
     const [pieces, setPieces] = useState([]);
     const [slots, setSlots] = useState([]);
     const [isStarted, setIsStarted] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     const [isFinished, setIsFinished] = useState(false);
     const [time, setTime] = useState(0);
     const [showFinishModal, setShowFinishModal] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
-    const [puzzleRows, setPuzzleRows] = useState(0);
-    const [puzzleCols, setPuzzleCols] = useState(0);
+    const [showNotFinishModal, setShowNotFinishModal] = useState(false);
+    const globalHeight = isMobile ? 320 : 350
+    const globalWidth = isMobile ? 320 : 350
+    const [containerSize, setContainerSize] = useState({ width: globalHeight, height: globalWidth });
+
 
     const puzzleContainerRef = useRef(null);
-    const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
 
-    const stageWidth = 800;
-    const stageHeight = 600;
+    useEffect(() => {
+        async function processImage() {
+            try {
+                const img = await loadImage(puzzleImage);
+                const resizedCanvas = resizeImage(img, globalHeight, globalWidth);
+                const resizedImg = new Image();
+                resizedImg.src = resizedCanvas.toDataURL();
+                resizedImg.onload = () => {
+                    setImage(resizedImg);
+                    const { piecesArr, slotsArr } = createPuzzleData(resizedImg);
+                    setPieces(piecesArr);
+                    setSlots(slotsArr);
+                };
+            } catch (error) {
+                console.error("Error loading or resizing image:", error);
+            }
+        }
+        processImage();
+    }, []);
 
     useEffect(() => {
         function handleResize() {
-            setIsMobile(window.innerWidth < 768);
-            if (puzzleContainerRef.current) {
-                const { clientWidth, clientHeight } = puzzleContainerRef.current;
-                setContainerSize({ width: clientWidth, height: clientHeight });
-            }
+            setIsMobile(window.innerWidth < 410);
         }
         window.addEventListener("resize", handleResize);
         handleResize();
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-
-    useEffect(() => {
-        const img = new window.Image();
-        img.src = newImage;
-        img.onload = () => {
-            setImage(img);
-            const { piecesArr, slotsArr, rows, cols } = createPuzzleData(img, 100, 100);
-            setPieces(piecesArr);
-            setSlots(slotsArr);
-            setPuzzleRows(rows);
-            setPuzzleCols(cols);
-        };
-    }, [newImage]);
-
     useEffect(() => {
         let timerId;
         if (isStarted && !isFinished) {
@@ -168,72 +187,32 @@ export default function Puzzle({ searchParams }) {
         return () => clearInterval(timerId);
     }, [isStarted, isFinished]);
 
-    function checkIfPuzzleSolved() {
-        console.log(pieces);
-        return pieces.every((piece) => piece.id === piece.currentSlotId);
-    }
+    function createPuzzleData(img) {
+        const rows = 4;
+        const cols = 4;
+        const pieceWidth = globalWidth / cols;
+        const pieceHeight = globalHeight / rows;
 
-    function createPuzzleData(img, pieceWidth, pieceHeight) {
-        const rows = Math.ceil(img.height / pieceHeight);
-        const cols = Math.ceil(img.width / pieceWidth);
-
-        // Define the puzzle grid
-        const puzzleGrid = Array.from({ length: rows }, () =>
-            Array.from({ length: cols }, () => ({
-                right: "flat",
-                bottom: "flat",
-                top: "flat",
-                left: "flat",
-            }))
-        );
-
-        // Randomly define right & bottom edges
-        for (let r = 0; r < rows; r++) {
-            for (let c = 0; c < cols; c++) {
-                if (c < cols - 1) {
-                    puzzleGrid[r][c].right = Math.random() < 0.5 ? "in" : "out";
-                }
-                if (r < rows - 1) {
-                    puzzleGrid[r][c].bottom = Math.random() < 0.5 ? "in" : "out";
-                }
-            }
-        }
-
-        // Flip top & left edges from neighbors
-        for (let r = 0; r < rows; r++) {
-            for (let c = 0; c < cols; c++) {
-                if (r > 0) {
-                    puzzleGrid[r][c].top = flipEdge(puzzleGrid[r - 1][c].bottom);
-                }
-                if (c > 0) {
-                    puzzleGrid[r][c].left = flipEdge(puzzleGrid[r][c - 1].right);
-                }
-            }
-        }
-
-        // Build pieces
         const piecesArr = [];
         for (let row = 0; row < rows; row++) {
             for (let col = 0; col < cols; col++) {
                 const pieceId = `${row}-${col}`;
                 piecesArr.push({
                     id: pieceId,
-                    x: Math.random() * (stageWidth - pieceWidth),
-                    y: Math.random() * (stageHeight - pieceHeight),
+                    x: Math.random() * (containerSize.width - pieceWidth),
+                    y: Math.random() * (containerSize.height - pieceHeight),
                     width: pieceWidth,
                     height: pieceHeight,
                     originalX: col * pieceWidth,
                     originalY: row * pieceHeight,
-                    currentSlotId: null,
-                    top: puzzleGrid[row][col].top,
-                    right: puzzleGrid[row][col].right,
-                    bottom: puzzleGrid[row][col].bottom,
-                    left: puzzleGrid[row][col].left,
+                    top: row === 0 ? "flat" : flipEdge(piecesArr[(row - 1) * cols + col].bottom),
+                    left: col === 0 ? "flat" : flipEdge(piecesArr[row * cols + col - 1].right),
+                    bottom: row === rows - 1 ? "flat" : Math.random() < 0.5 ? "in" : "out",
+                    right: col === cols - 1 ? "flat" : Math.random() < 0.5 ? "in" : "out",
                 });
             }
         }
 
-        // Build slots so each slot's .id, .x, .y match the piece's final (original) position
         const slotsArr = piecesArr.map((p) => ({
             id: p.id,
             x: p.originalX,
@@ -242,48 +221,20 @@ export default function Puzzle({ searchParams }) {
             height: pieceHeight,
         }));
 
-        return { piecesArr, slotsArr, rows, cols };
+        return { piecesArr, slotsArr };
     }
 
+    function checkIfPuzzleSolved() {
+        console.log(pieces);
+        return pieces.every((piece) => piece.id === piece.currentSlotId);
+    }
     function randomizePositions(oldPieces) {
-        const maxX = containerSize.width / 2;
-        const maxY = containerSize.height / 2;
-
         return oldPieces.map((p) => ({
             ...p,
-            x: Math.random() * maxX,
-            y: Math.random() * maxY,
-            currentSlotId: null,
+            x: Math.random() * (containerSize.width - p.width),
+            y: Math.random() * (containerSize.height - p.height),
         }));
     }
-
-    const handleDragEnd = (index, e) => {
-        const piece = pieces[index];
-        const correctSlot = slots.find((slot) => slot.id === piece.id);
-
-        if (!correctSlot) {
-            return;
-        }
-
-        const { x, y } = e.target.getAbsolutePosition();
-        const { x: slotX, y: slotY } = correctSlot;
-
-        const distance = Math.hypot(x - slotX, y - slotY);
-        const isCloseEnough = distance < 20;
-
-        setPieces((prev) =>
-            prev.map((p, idx) =>
-                idx === index
-                    ? {
-                        ...p,
-                        currentSlotId: isCloseEnough ? correctSlot.id : null,
-                        x: isCloseEnough ? slotX : p.x,
-                        y: isCloseEnough ? slotY : p.y,
-                    }
-                    : p
-            )
-        );
-    };
 
     const handleStart = () => {
         setPieces((prev) => randomizePositions(prev));
@@ -298,25 +249,13 @@ export default function Puzzle({ searchParams }) {
             setShowFinishModal(true);
             setIsFinished(true);
         } else {
-            // Automatically place all pieces in their correct slots.
-            setPieces((prev) =>
-                prev.map((p) => {
-                    const correctSlot = slots.find((slot) => slot.id === p.id);
-                    return {
-                        ...p,
-                        currentSlotId: correctSlot.id,
-                        x: correctSlot.x,
-                        y: correctSlot.y,
-                    };
-                })
-            );
-            setShowFinishModal(true);
-            setIsFinished(true);
+            setShowNotFinishModal(true);
         }
     };
 
     const handleCloseModal = () => {
         setShowFinishModal(false);
+        setShowNotFinishModal(false);
     };
 
     const formatTime = (timeInSeconds) => {
@@ -325,6 +264,38 @@ export default function Puzzle({ searchParams }) {
         const secondsStr = seconds < 10 ? `0${seconds}` : `${seconds}`;
         return minutes > 0 ? `${minutes}m ${secondsStr}s` : `${secondsStr}s`;
     };
+    const handleDragEnd = (index, e) => {
+        const piece = pieces[index];
+        const correctSlot = slots.find((slot) => slot.id === piece.id);
+        if (!correctSlot) return;
+
+        // Get the absolute position of the dragged piece
+        const pieceAbsolutePos = e.target.getAbsolutePosition();
+        const pieceCenterX = pieceAbsolutePos.x + piece.width / 2;
+        const pieceCenterY = pieceAbsolutePos.y + piece.height / 2;
+
+        // Compute the center of the correct slot
+        const slotCenterX = correctSlot.x + correctSlot.width / 2;
+        const slotCenterY = correctSlot.y + correctSlot.height / 2;
+
+        // Calculate the distance between the piece's center and the slot's center
+        const distance = Math.hypot(pieceCenterX - slotCenterX, pieceCenterY - slotCenterY);
+        const isCloseEnough = distance < 20; // adjust threshold as needed
+
+        // If the piece is close to the slot, snap it into place
+        setPieces((prev) =>
+            prev.map((p, idx) =>
+                idx === index
+                    ? {
+                        ...p,
+                        x: isCloseEnough ? correctSlot.x : p.x,
+                        y: isCloseEnough ? correctSlot.y : p.y,
+                        currentSlotId: isCloseEnough ? correctSlot.id : null,
+                    }
+                    : p
+            )
+        );
+    };
 
     return (
         <div className={styles.container}>
@@ -332,7 +303,7 @@ export default function Puzzle({ searchParams }) {
                 <h2 className={styles.centerText}>Puzzle Game</h2>
                 <div className={styles.imageContainer}>
                     <img
-                        src={newImage}
+                        src={puzzleImage}
                         alt="Puzzle preview"
                         style={{
                             height: "200px",
@@ -342,19 +313,16 @@ export default function Puzzle({ searchParams }) {
                     />
                 </div>
                 <h3 className={styles.centerText}>Time: {formatTime(time)}</h3>
-
                 <p style={{ textAlign: "center" }}>
                     {isFinished
                         ? "Congratulations! You solved the puzzle!"
                         : "Drag each piece onto its matching slot. Good luck!"}
                 </p>
-
                 {(!isStarted || isFinished) && (
                     <button onClick={handleStart} className={styles.btn}>
                         {isFinished ? "Restart" : "Start"}
                     </button>
                 )}
-
                 {isStarted && !isFinished && (
                     <button onClick={handleFinish} className={styles.btn}>
                         Finish
@@ -369,11 +337,9 @@ export default function Puzzle({ searchParams }) {
                         <p>Click “Start” to begin.</p>
                     </div>
                 )}
-
                 {image && (
                     <div
                         style={{
-                            margin:"20px",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
@@ -381,15 +347,13 @@ export default function Puzzle({ searchParams }) {
                         }}
                     >
                         <Stage
-                            width={stageWidth}
-                            height={stageHeight}
-                            style={{ background: "#f0f0f0" }}
-                            margin={20}
-                            
+                            width={containerSize.width}
+                            height={containerSize.height}
+                            style={{ backgroundColor: "#f0f0f0" }}
                         >
+
                             <Layer>
                                 {(() => {
-                                    
                                     const xValues = slots.map((slot) => slot.x);
                                     const yValues = slots.map((slot) => slot.y);
                                     const maxX = Math.max(...xValues) + slots[0].width;
@@ -400,11 +364,12 @@ export default function Puzzle({ searchParams }) {
                                     const contentWidth = maxX - minX;
                                     const contentHeight = maxY - minY;
 
-                                    const offsetX = (stageWidth - contentWidth) / 2 - minX;
-                                    const offsetY = (stageHeight - contentHeight) / 2 - minY;
+                                    const offsetX = (globalWidth - contentWidth) / 2 - minX;
+                                    const offsetY = (globalHeight - contentHeight) / 2 - minY;
 
                                     return (
                                         <Group x={offsetX} y={offsetY}>
+
                                             {slots.map((slot) => (
                                                 <Rect
                                                     key={slot.id}
@@ -414,7 +379,6 @@ export default function Puzzle({ searchParams }) {
                                                     height={slot.height}
                                                     fill="#ddd"
                                                     stroke="black"
-                                                    strokeWidth={2}
                                                 />
                                             ))}
                                         </Group>
@@ -422,38 +386,46 @@ export default function Puzzle({ searchParams }) {
                                 })()}
                             </Layer>
                             <Layer>
-                                {pieces.map((piece, idx) => {
-                                    const pathData = generatePath(piece);
+                                {(() => {
+                                    const xValues = slots.map((slot) => slot.x);
+                                    const yValues = slots.map((slot) => slot.y);
+                                    const maxX = Math.max(...xValues) + slots[0].width;
+                                    const maxY = Math.max(...yValues) + slots[0].height;
+                                    const minX = Math.min(...xValues);
+                                    const minY = Math.min(...yValues);
+
+                                    const contentWidth = maxX - minX;
+                                    const contentHeight = maxY - minY;
+
+                                    const offsetX = (globalWidth - contentWidth) / 2 - minX;
+                                    const offsetY = (globalHeight - contentHeight) / 2 - minY;
+
                                     return (
-                                        <Path
-                                            key={piece.id}
-                                            x={piece.x}
-                                            y={piece.y}
-                                            data={pathData}
-                                            draggable={isStarted && !isFinished}
-                                            onDragEnd={(e) => handleDragEnd(idx, e)}
-                                            dragBoundFunc={(pos) => {
-                                                const newX = Math.max(
-                                                    0,
-                                                    Math.min(pos.x, stageWidth - piece.width)
-                                                );
-                                                const newY = Math.max(
-                                                    0,
-                                                    Math.min(pos.y, stageHeight - piece.height)
-                                                );
-                                                return { x: newX, y: newY };
-                                            }}
-                                            fillPatternImage={image}
-                                            fillPatternOffset={{
-                                                x: piece.originalX,
-                                                y: piece.originalY,
-                                            }}
-                                            fillPatternRepeat="no-repeat"
-                                            stroke="#4A4A4A"
-                                            strokeWidth={1}
-                                        />
+                                        <Group x={offsetX} y={offsetY}>
+                                            {pieces.map((piece, idx) => (
+                                                <Path
+                                                    key={piece.id}
+                                                    x={piece.x}
+                                                    y={piece.y}
+                                                    draggable={isStarted && !isFinished}
+                                                    data={generatePath(piece)}
+                                                    fillPatternImage={image}
+                                                    fillPatternOffset={{
+                                                        x: piece.originalX,
+                                                        y: piece.originalY,
+                                                    }}
+                                                    onDragEnd={(e) => handleDragEnd(idx, e)}
+                                                    dragBoundFunc={(pos) => {
+                                                        const newX = Math.max(0, Math.min(pos.x, containerSize.width - piece.width));
+                                                        const newY = Math.max(0, Math.min(pos.y, containerSize.height - piece.height));
+                                                        return { x: newX, y: newY };
+                                                    }}
+                                                    stroke="black"
+                                                />
+                                            ))}
+                                        </Group>
                                     );
-                                })}
+                                })()}
                             </Layer>
                         </Stage>
                     </div>
@@ -465,6 +437,15 @@ export default function Puzzle({ searchParams }) {
                     <div className={styles.modalContent}>
                         <h2>Congratulations!</h2>
                         <p>You solved the puzzle in {formatTime(time)}. Great job!</p>
+                        <button onClick={handleCloseModal}>Close</button>
+                    </div>
+                </div>
+            )}
+            {showNotFinishModal && (
+                <div className={styles.modalOverlay}>
+                    <div className={styles.modalContent2}>
+                        <h2>Not Completed!</h2>
+                        <p>Please complete the puzzle before finishing.</p>
                         <button onClick={handleCloseModal}>Close</button>
                     </div>
                 </div>

@@ -13,14 +13,15 @@ export default function Home() {
 
   const puzzleGames = [
     {
-      "image": "/download.jpeg"
+      "image": "/images/Puzzle1.jpeg",
+      link: '/puzzle-1'
     },
     {
-      "image": "/images/Linkedin.png"
+      "image": "/download.jpeg",
+      link: '/puzzle-2'
+
     },
-    {
-      "image": "/images/Puzzlle.jpeg"
-    },
+
   ]
 
   const getData = async () => {
@@ -82,7 +83,7 @@ export default function Home() {
               <p>
                 Click on the button below to start playing game
               </p>
-              <Link href={`/puzzle?image=${encodeURIComponent(item.image)}`}>
+              <Link href={item.link}>
                 <button className="puzzle-game-button">Play Now</button>
               </Link>
             </div>

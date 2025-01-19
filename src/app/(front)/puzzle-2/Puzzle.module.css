@@ -4,11 +4,13 @@
     background-color: #d1c0a8;
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        height: 100%;
     }
 }
 
@@ -36,7 +38,30 @@
     animation: fadeIn 0.3s ease-in-out;
 }
 
+.modalContent2 {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
 .modalContent h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modalContent2 h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.NotFinish h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     color: #333;
@@ -48,11 +73,29 @@
     margin-bottom: 20px;
 }
 
+.NotFinish p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
 .modalContent button {
     background-color: #4caf50;
     color: #fff;
     border: none;
     padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modalContent2 button {
+    background-color: #e1212b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 30px;
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
