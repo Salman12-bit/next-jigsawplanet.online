@@ -3,13 +3,13 @@ import "./home.css";
 import { notFound } from "next/navigation";
 
 
-async function getData(id) {
+const getData = async (id) => {
   const res = await fetch(`${process.env.LIVE_LINK}/api/posts/${id}`, {
-    cache: "no-store",  
+    cache: "no-store",
   });
 
   if (!res.ok) {
-    return notFound();
+    return null;  // Return null if the post is not found
   }
 
   return res.json();
@@ -19,9 +19,20 @@ export async function generateMetadata({ params }) {
   try {
     const post = await getData(params.id);
 
+    if (!post) {
+      // If the post does not exist, return fallback metadata
+      return {
+        title: "Post Not Found",
+        description: "This post could not be found.",
+        alternates: {
+          canonical: `https://jigsawplanet.online/404`,
+        },
+      };
+    }
+
     return {
-      title: post.title,
-      description: post.desc,
+      title: post.title || "Untitled Post",
+      description: post.desc || "No description available",
       openGraph: {
         title: post.title,
         description: post.desc,
@@ -54,6 +65,7 @@ export async function generateMetadata({ params }) {
     };
   }
 }
+
 
 const BlogPost = async ({ params }) => {
   const post = await getData(params.id);
