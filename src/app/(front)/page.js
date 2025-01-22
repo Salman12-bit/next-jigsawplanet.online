@@ -13,12 +13,17 @@ export default function Home() {
 
   const puzzleGames = [
     {
-      "image": "/images/Puzzle1.jpeg",
+      "image": "/images/Puzzle3.webp",
       link: '/puzzle-1'
     },
     {
-      "image": "/download.jpeg",
+      "image": "/download.webp",
       link: '/puzzle-2'
+
+    },
+    {
+      "image": "/flower.webp",
+      link: '/puzzle-3'
 
     },
 

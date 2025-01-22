@@ -10,7 +10,7 @@ let Blogsdb = [
         description:
             "Jigsaw planet games come in many varieties, each with unique mechanics and objectives.",
         category: "Jigsaw Game . Fun and Entertainment",
-        image: "./images/Puzzle1.jpeg",
+        image: "./images/Puzzle1.webp",
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ let Blogsdb = [
             "Free Jigsaw planet come in many varieties, each with unique mechanics and objectives.",
         category: "Puzzle Game . Fun and Entertainment",
         image:
-            "./images/Puzzle2.jpeg",
+            "./images/Puzzle2.webp",
     },
     {
         id: 3,
@@ -38,7 +38,7 @@ let Blogsdb = [
             "jigsaw planet free come in many varieties, each with unique mechanics and objectives.",
         category: "Puzzle Game . Fun and Entertainment",
         image:
-            "./images/Puzzle3.jpeg",
+            "./images/Puzzle3.webp",
     },
     {
         id: 4,

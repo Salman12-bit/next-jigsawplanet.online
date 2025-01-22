@@ -144,10 +144,9 @@ export default function Puzzle() {
     const [time, setTime] = useState(0);
     const [showFinishModal, setShowFinishModal] = useState(false);
     const [showNotFinishModal, setShowNotFinishModal] = useState(false);
-    const globalHeight = isMobile ? 320 : 350
-    const globalWidth = isMobile ? 320 : 350
+    const globalHeight = 350
+    const globalWidth = 350
     const [containerSize, setContainerSize] = useState({ width: globalHeight, height: globalWidth });
-
 
     const puzzleContainerRef = useRef(null);
 
@@ -171,14 +170,16 @@ export default function Puzzle() {
         processImage();
     }, []);
 
-    useEffect(() => {
-        function handleResize() {
-            setIsMobile(window.innerWidth < 410);
-        }
-        window.addEventListener("resize", handleResize);
-        handleResize();
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         const size = window.innerWidth < 410 ? window.innerWidth - 10 : 350;
+    //         setContainerSize({ width: size, height: size });
+    //     };
+
+    //     handleResize(); // Initial call to set size
+    //     window.addEventListener("resize", handleResize);
+    //     return () => window.removeEventListener("resize", handleResize);
+    // }, [isMobile]);
     useEffect(() => {
         let timerId;
         if (isStarted && !isFinished) {

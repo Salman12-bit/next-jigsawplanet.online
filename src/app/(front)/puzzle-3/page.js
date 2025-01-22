@@ -133,7 +133,7 @@ function resizeImage(img, targetWidth, targetHeight) {
 }
 
 export default function Puzzle() {
-    const puzzleImage = "/images/Puzzle3.webp"; // Adjust path as needed
+    const puzzleImage = "/flower.webp"; // Adjust path as needed
 
     const [image, setImage] = useState(null);
     const [pieces, setPieces] = useState([]);
@@ -454,9 +454,3 @@ export default function Puzzle() {
         </div>
     );
 }
-
-
-
-
-
-

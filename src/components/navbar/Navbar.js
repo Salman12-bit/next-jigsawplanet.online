@@ -43,10 +43,10 @@ const Navbar = () => {
             Contact
           </Link>
           <Link href="/jigsaw-planet" className={styles.navItem}>
-            Puzzle | Game
+            Puzzle Game
           </Link>
           <Link href="/freezenova" className={styles.navItem}>
-            Freeze | Nova
+            Word Puzzle
           </Link>
           <Link href="/gametheme" className={styles.navItem}>
             Gaming Theme

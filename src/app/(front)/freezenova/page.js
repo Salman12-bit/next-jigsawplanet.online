@@ -141,13 +141,13 @@ const Game = () => {
               <img className='game-image' src='./images/Freezenova8.jpeg' alt='Jigsaw planet puzzle - Freezenova' />
             </Link>
             <Link href="/jigsaw-planet">
-              <img className='game-image' src='./images/Puzzle1.jpeg' alt='Jigsaw planet adventure' />
+              <img className='game-image' src='./images/Puzzle1.webp' alt='Jigsaw planet adventure' />
             </Link>
             <Link href="/jigsaw-planet1">
-              <img className='game-image' src='./images/Puzzle2.jpeg' alt='Play puzzles on jigsaw planet' />
+              <img className='game-image' src='./images/Puzzle2.webp' alt='Play puzzles on jigsaw planet' />
             </Link>
             <Link href="/puzzle3">
-              <img className='game-image' src='./images/Puzzle3.jpeg' alt='Explore jigsaw planet puzzles' />
+              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore jigsaw planet puzzles' />
             </Link>
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle5.jpeg' alt='Online jigsaw planet game' />

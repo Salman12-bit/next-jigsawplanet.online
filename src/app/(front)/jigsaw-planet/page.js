@@ -181,13 +181,13 @@ const Puzzle1 = () => {
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
-              <img className='game-image' src='./images/Puzzle1.jpeg' alt='free online jigsaw planet puzzle game' />
+              <img className='game-image' src='./images/Puzzle1.webp' alt='free online jigsaw planet puzzle game' />
             </Link>
             <Link href="/jigsawplanet1">
-              <img className='game-image' src='./images/Puzzle2.jpeg' alt='jigsawplanet interactive puzzle' />
+              <img className='game-image' src='./images/Puzzle2.webp' alt='jigsawplanet interactive puzzle' />
             </Link>
             <Link href="/jigsawplanet2">
-              <img className='game-image' src='./images/Puzzle3.jpeg' alt='free jigsaw planet game' />
+              <img className='game-image' src='./images/Puzzle3.webp' alt='free jigsaw planet game' />
             </Link>
             <Link href="/jigsawplanet13.">
               <img className='game-image' src='./images/Puzzle5.jpeg' alt='play jigsaw planet puzzle online' />
