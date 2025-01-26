@@ -2,25 +2,23 @@ import React from "react";
 import "./home.css";
 import { notFound } from "next/navigation";
 
-
 const getData = async (id) => {
   const res = await fetch(`${process.env.LIVE_LINK}/api/posts/${id}`, {
     cache: "no-store",
   });
 
   if (!res.ok) {
-    return null;  // Return null if the post is not found
+    return null; // Return null if the post is not found
   }
 
   return res.json();
-}
+};
 
 export async function generateMetadata({ params }) {
   try {
     const post = await getData(params.id);
 
     if (!post) {
-      // If the post does not exist, return fallback metadata
       return {
         title: "Post Not Found",
         description: "This post could not be found.",
@@ -66,17 +64,21 @@ export async function generateMetadata({ params }) {
   }
 }
 
-
 const BlogPost = async ({ params }) => {
   const post = await getData(params.id);
 
+  if (!post) {
+    notFound(); // Handle case where post does not exist
+  }
+
+  // Structured Data for BlogPosting Schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": post.title,
-    "description": post.desc,
-    "datePublished": post.datePublished, 
-    "dateModified": post.dateModified, 
+    "headline": post.title || "Untitled Post",
+    "description": post.desc || "No description available",
+    "datePublished": post.datePublished || new Date().toISOString(),
+    "dateModified": post.dateModified || post.datePublished || new Date().toISOString(),
     "author": {
       "@type": "Person",
       "name": post.author || "Jigsaw Planet",
@@ -86,7 +88,7 @@ const BlogPost = async ({ params }) => {
       "name": "Jigsaw Planet",
       "logo": {
         "@type": "ImageObject",
-        "url": `https://jigsawplanet.online/${post.file}`,
+        "url": "https://jigsawplanet.online/images/Puzzle.webp", // Add a proper logo URL
       },
     },
     "mainEntityOfPage": {
@@ -95,7 +97,7 @@ const BlogPost = async ({ params }) => {
     },
     "image": {
       "@type": "ImageObject",
-      "url": post.file,
+      "url": post.file || "https://jigsawplanet.online/images/Puzzle.webp", // Fallback image
       "width": 1200,
       "height": 630,
     },
@@ -116,10 +118,19 @@ const BlogPost = async ({ params }) => {
               className="avatar"
             />
           </div>
-          <div className="content" dangerouslySetInnerHTML={{ __html: post.content }}></div>
-
+          <div
+            className="content"
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          ></div>
         </div>
       </div>
+      {/* JSON-LD Script for Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
     </div>
   );
 };

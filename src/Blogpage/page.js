@@ -52,7 +52,7 @@ let Blogsdb = [
             "jigawplanet puzzles come in many varieties, each with unique mechanics and objectives.",
         category: "Puzzle Game . Fun and Entertainment",
         image:
-            "./images/Puzzle5.jpeg",
+            "./images/Puzzle5.webp",
     },
     {
         id: 5,
@@ -66,7 +66,7 @@ let Blogsdb = [
             "Freezenova free come in many varieties, each with unique mechanics and objectives.",
         category: "Freezenova Game . Fun and Entertainment",
         image:
-            "./images/Freezenova1.jpeg",
+            "./images/Freezenova1.webp",
     },
     {
         id: 6,
@@ -80,7 +80,7 @@ let Blogsdb = [
             "Jigsawplanet free games come in many varieties, each with unique mechanics and objectives.",
         category: "Jigsaw free Game . Fun and Entertainment",
         image:
-            "./images/Freezenova2.jpeg",
+            "./images/Freezenova2.webp",
     },
     {
         id: 7,
@@ -94,7 +94,7 @@ let Blogsdb = [
             "jigsaw planet games come in many varieties, each with unique mechanics and objectives.",
         category: "Free jigsaw Game . Fun and Entertainment",
         image:
-            "./images/Freezenova3.jpeg",
+            "./images/Freezenova3.webp",
     },
     {
         id: 8,
@@ -108,7 +108,7 @@ let Blogsdb = [
             "Jigsawplanet free games come in many varieties, each with unique mechanics and objectives.",
         category: "Jigsawplanet Game . Fun and Entertainment",
         image:
-            "./images/Freezenova4.jpeg",
+            "./images/Freezenova4.webp",
     },
     {
         id: 9,
@@ -122,7 +122,7 @@ let Blogsdb = [
             "Freezenova games come in many varieties, each with unique mechanics and objectives.",
         category: "Jigsaw Game . Fun and Entertainment",
         image:
-            "./images/Freezenova5.jpeg",
+            "./images/Freezenova5.webp",
     },
     {
         id: 10,
@@ -136,7 +136,7 @@ let Blogsdb = [
             "Freezenova games come in many varieties, each with unique mechanics and objectives.",
         category: "Free jigsawplanet Game . Fun and Entertainment",
         image:
-            "./images/Freezenova6.jpeg",
+            "./images/Freezenova6.webp",
     },
     {
         id: 11,
@@ -150,7 +150,7 @@ let Blogsdb = [
             "Jigsaw free games come in many varieties, each with unique mechanics and objectives.",
         category: "Jigsaw planet Game . Fun and Entertainment",
         image:
-            "./images/Freezenova7.jpeg",
+            "./images/Freezenova7.webp",
     },
     {
         id: 12,
@@ -164,7 +164,7 @@ let Blogsdb = [
             "Jigsawplanet games come in many varieties, each with unique mechanics and objectives.",
         category: "Free jigsawplanet Game . Fun and Entertainment",
         image:
-            "./images/Freezenova8.jpeg",
+            "./images/Freezenova8.webp",
     },
 
 

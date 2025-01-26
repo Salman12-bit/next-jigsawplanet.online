@@ -193,7 +193,7 @@ const Puzzle1 = () => {
               <img className='game-image' src='./images/Puzzle3.webp' alt='free jigsaw planet game' />
             </Link>
             <Link href="/jigsawplanet3">
-              <img className='game-image' src='./images/Puzzle5.jpeg' alt='play jigsaw planet puzzle online' />
+              <img className='game-image' src='./images/Puzzle5.webp' alt='play jigsaw planet puzzle online' />
             </Link>
           </div>
         </div>

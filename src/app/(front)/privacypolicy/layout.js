@@ -7,7 +7,7 @@ export const metadata = {
     url: "https://jigsawplanet.online/privacypolicy",
     images: [
       {
-        url: "https://jigsawplanet.online/images/Puzzlle.jpeg",
+        url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 600,
         height: 400,
         alt: "jigsawplanet puzzle game on Jigsaw Planet",

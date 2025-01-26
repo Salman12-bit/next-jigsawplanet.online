@@ -117,28 +117,28 @@ const Game = () => {
           </div>
           <div className='game-image-container'>
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova1.jpeg' alt='Freezenova game on jigsaw planet' />
+              <img className='game-image' src='./images/Freezenova1.webp' alt='Freezenova game on jigsaw planet' />
             </Link>
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova2.jpeg' alt='Jigsaw planet puzzle - Freezenova' />
+              <img className='game-image' src='./images/Freezenova2.webp' alt='Jigsaw planet puzzle - Freezenova' />
             </Link>
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova3.jpeg' alt='Free jigsaw planet game' />
+              <img className='game-image' src='./images/Freezenova3.webp' alt='Free jigsaw planet game' />
             </Link>
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova4.jpeg' alt='Jigsaw puzzle on jigsaw planet' />
+              <img className='game-image' src='./images/Freezenova4.webp' alt='Jigsaw puzzle on jigsaw planet' />
             </Link>
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova5.jpeg' alt='Free puzzle game on jigsaw planet' />
+              <img className='game-image' src='./images/Freezenova5.webp' alt='Free puzzle game on jigsaw planet' />
             </Link>
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova6.jpeg' alt='Freezenova puzzle on jigsaw planet' />
+              <img className='game-image' src='./images/Freezenova6.webp' alt='Freezenova puzzle on jigsaw planet' />
             </Link>
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova7.jpeg' alt='Play free puzzles on jigsaw planet' />
+              <img className='game-image' src='./images/Freezenova7.webp' alt='Play free puzzles on jigsaw planet' />
             </Link>
             <Link href="/freezenova">
-              <img className='game-image' src='./images/Freezenova8.jpeg' alt='Jigsaw planet puzzle - Freezenova' />
+              <img className='game-image' src='./images/Freezenova8.webp' alt='Jigsaw planet puzzle - Freezenova' />
             </Link>
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle1.webp' alt='Jigsaw planet adventure' />
@@ -150,7 +150,7 @@ const Game = () => {
               <img className='game-image' src='./images/Puzzle3.webp' alt='Explore jigsaw planet puzzles' />
             </Link>
             <Link href="/jigsaw-planet">
-              <img className='game-image' src='./images/Puzzle5.jpeg' alt='Online jigsaw planet game' />
+              <img className='game-image' src='./images/Puzzle5.webp' alt='Online jigsaw planet game' />
             </Link>
           </div>
 

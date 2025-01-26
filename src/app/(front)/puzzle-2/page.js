@@ -133,7 +133,7 @@ function resizeImage(img, targetWidth, targetHeight) {
 }
 
 export default function Puzzle() {
-    const puzzleImage = "/download.jpeg"; // Adjust path as needed
+    const puzzleImage = "/download.webp"; // Adjust path as needed
 
     const [image, setImage] = useState(null);
     const [pieces, setPieces] = useState([]);

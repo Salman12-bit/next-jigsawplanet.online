@@ -16,7 +16,7 @@ const Footer = () => {
           <Link href="https://www.facebook.com/groups/590704540347867/?ref=share&mibextid=NSMWBT" target="_blank">
             <Image
               className={styles.gameImage}
-              src="/images/Facebook.png"
+              src="/images/Facebook.webp"
               alt="Join our Facebook group for advanced jigsaw puzzles"
               width={25}
               height={25}
@@ -26,7 +26,7 @@ const Footer = () => {
           <Link href="https://www.linkedin.com/in/muhammad-salman-998256261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
             <Image
               className={styles.gameImage}
-              src="/images/Linkedin.png"
+              src="/images/Linkedin.webp"
               alt="Join our Facebook group for advanced jigsaw puzzles"
               width={25}
               height={25}
