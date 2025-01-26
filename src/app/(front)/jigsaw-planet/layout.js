@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react';
 
 export const metadata = {
-  title: "Play Jigsaw Planet Game - Free Online Puzzles",
+  title: "jigsawpuzzle Game - Play Online on free jigsaw planet",
   description:
-    "Experience endless fun with free online jigsaw puzzles on Jigsaw Planet. Challenge yourself with a variety of puzzle designs and difficulty levels.",
+    "Dive into the thrilling jigsawpuzzle game on Jigsaw Planet. Enjoy action-packed gameplay, puzzles, and challenges!",
   openGraph: {
-    title: "Play Jigsaw Planet Game - Free Online Puzzles",
+    title: "jigsawpuzzle Game - Play Online",
     description:
-      "Join Jigsaw Planet for an immersive puzzle experience. Choose from a wide range of free puzzles and sharpen your skills with exciting challenges.",
+      "Join the adventure with Freezenova on Jigsaw Planet. Experience engaging gameplay and exciting challenges.",
     url: "https://jigsawplanet.online/jigsaw-planet",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Play free online jigsaw puzzles on Jigsaw Planet",
+        alt: "Play jigsawplanet Game online on Jigsaw Planet",
       },
     ],
   },
@@ -28,35 +28,36 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Play Jigsaw Planet Game - Free Online Puzzles",
+    "name": "Word puzzle - Play Online on word puzzle",
     "description":
-      "Experience endless fun with free online jigsaw puzzles on Jigsaw Planet. Challenge yourself with a variety of puzzle designs and difficulty levels.",
+      "Dive into the thrilling Word puzzle on Jigsaw Planet. Enjoy action-packed gameplay, puzzles, and challenges!",
     "url": "https://jigsawplanet.online/jigsaw-planet",
     "mainEntity": {
-      "@type": "CollectionPage",
-      "name": "Jigsaw Puzzle Collection",
+      "@type": "Online Game",
+      "name": "Word puzzle",
       "description":
-        "Choose from a wide range of free puzzles and sharpen your skills with exciting challenges on Jigsaw Planet.",
-      "hasPart": [
-        {
-          "@type": "CreativeWork",
-          "name": "Nature Puzzle",
-          "description": "Solve puzzles featuring stunning nature landscapes.",
-          "url": "https://jigsawplanet.online/jigsaw-planet/nature",
+        "Join the adventure with Word puzzle on Jigsaw Planet. Experience engaging gameplay and exciting challenges.",
+      "genre": "Action, Puzzle",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Jigsaw Planet",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+          "width": 500,
+          "height": 500,
         },
-        {
-          "@type": "CreativeWork",
-          "name": "Animal Puzzle",
-          "description": "Challenge yourself with puzzles featuring adorable animals.",
-          "url": "https://jigsawplanet.online/jigsaw-planet/animals",
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "Custom Puzzle",
-          "description": "Create and solve your own custom puzzles.",
-          "url": "https://jigsawplanet.online/jigsaw-planet/custom",
-        },
-      ],
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+        "width": 1200,
+        "height": 630,
+      },
+      "url": "https://jigsawplanet.online/jigsaw-planet",
+      "playMode": "Double Player",
+      "operatingSystem": "Web Browser",
+      "applicationCategory": "Game",
     },
     "publisher": {
       "@type": "Organization",
