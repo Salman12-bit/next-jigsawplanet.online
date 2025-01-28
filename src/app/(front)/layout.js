@@ -1,9 +1,10 @@
 export const metadata = {
-    title: "Free online jigsaw puzzles for you",
-    description: "Welcome to jigsaw planet - the ultimate platform for puzzle lovers! Explore, play, and enjoy our vast selection of online jigsaw puzzles",
+    title: "Jigsaw Planet: Discover the Best Free Game Platform",
+    keywords:"jigsaw,jigsaw puzzles,puzzle,jigsaw planet ",
+    description: "Visit the ultimate destination for the jigsaw planet puzzle! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages",
     openGraph: {
-        title: "Free online jigsaw puzzles for all",
-        description: "Discover a world of puzzles on jigsawplanet! Start solving and sharing puzzles today, and join a community of puzzle enthusiasts",
+        title: "Free jigsaw planet for all",
+        description: "Visit the ultimate destination for jigsaw planet puzzle! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages",
         url: "https://jigsawplanet.online/",
         images: [
             {

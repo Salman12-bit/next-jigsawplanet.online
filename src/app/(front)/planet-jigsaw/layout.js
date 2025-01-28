@@ -1,25 +1,26 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Freezenova Game - Play Online on free jigsaw planet",
+  title: "Planet jigsaw: Endless Fun with Free Online",
+  keywords :"puzzle men,planet puzzle online,jigsaw planet puzzles",
   description:
-    "Dive into the thrilling Freezenova game on Jigsaw Planet. Enjoy action-packed gameplay, puzzles, and challenges!",
+    "Explore planet jigsaw and enjoy solving, sharing, and creating puzzle men online. Perfect for puzzle lovers of all ages to challenge their minds",
   openGraph: {
-    title: "Freezenova Game - Play Online",
+    title: "Free puzzle men - Play Online",
     description:
-      "Join the adventure with Freezenova on Jigsaw Planet. Experience engaging gameplay and exciting challenges.",
-    url: "https://jigsawplanet.online/freezenova",
+      "Explore puzzle men and enjoy solving, sharing, and creating planet jigsaw online. Perfect for puzzle lovers of all ages to challenge their minds",
+    url: "https://jigsawplanet.online/planet-jigsaw",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Play Freezenova Game online on Jigsaw Planet",
+        alt: "Play planet men Game online on jigsaw planet puzzles",
       },
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/freezenova",
+    canonical: "https://jigsawplanet.online/planet-jigsaw",
   },
 };
 
@@ -28,19 +29,17 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Word puzzle - Play Online on word puzzle",
+    "name": "puzzle men - Play Online on word puzzle",
     "description":
-      "Dive into the thrilling Word puzzle on Jigsaw Planet. Enjoy action-packed gameplay, puzzles, and challenges!",
-    "url": "https://jigsawplanet.online/freezenova",
+      "Dive into the thrilling puzzle men on Jigsaw Planet. Enjoy action-packed gameplay, puzzles, and challenges!",
+    "url": "https://jigsawplanet.online/planet-jigsaw",
     "mainEntity": {
       "@type": "Online Game",
-      "name": "Word puzzle",
-      "description":
-        "Join the adventure with Word puzzle on Jigsaw Planet. Experience engaging gameplay and exciting challenges.",
+      "name": "puzzle men",
       "genre": "Action, Puzzle",
       "publisher": {
         "@type": "Organization",
-        "name": "Jigsaw Planet",
+        "name": "puzzle men",
         "logo": {
           "@type": "ImageObject",
           "url": "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -54,7 +53,7 @@ export default function Layout({ children }) {
         "width": 1200,
         "height": 630,
       },
-      "url": "https://jigsawplanet.online/freezenova",
+      "url": "https://jigsawplanet.online/planet-jigsaw",
       "playMode": "Double Player",
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",

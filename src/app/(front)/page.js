@@ -14,16 +14,16 @@ export default function Home() {
   const puzzleGames = [
     {
       "image": "/images/Puzzle3.webp",
-      link: '/puzzle-1'
+      link: '/jig-saw-planet'
     },
     {
       "image": "/download.webp",
-      link: '/puzzle-2'
+      link: '/planet-jigsaw'
 
     },
     {
       "image": "/flower.webp",
-      link: '/puzzle-3'
+      link: '/jigsaw-puzzle-planet'
 
     },
 

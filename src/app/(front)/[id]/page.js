@@ -81,7 +81,7 @@ const BlogPost = async ({ params }) => {
     "dateModified": post.dateModified || post.datePublished || new Date().toISOString(),
     "author": {
       "@type": "Person",
-      "name": post.author || "Jigsaw Planet",
+      "name": "Muhammad Salman",
     },
     "publisher": {
       "@type": "Organization",

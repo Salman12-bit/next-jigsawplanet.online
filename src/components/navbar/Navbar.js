@@ -45,7 +45,7 @@ const Navbar = () => {
           <Link href="/jigsaw-planet" className={styles.navItem}>
             Puzzle Game
           </Link>
-          <Link href="/freezenova" className={styles.navItem}>
+          <Link href="/printable-word-puzzles" className={styles.navItem}>
             Word Puzzle
           </Link>
           <Link href="/gametheme" className={styles.navItem}>

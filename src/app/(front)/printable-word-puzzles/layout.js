@@ -1,25 +1,26 @@
 import React from 'react';
 
 export const metadata = {
-  title: "jigsawplanet - Play Online on free jigsaw planet",
+  title: "Hard Word Search Puzzles: Challenge Your Mind Today",
+  keywords: "printable word puzzles, free printable word puzzles",
   description:
-    "Dive into the thrilling Freezenova game on Jigsaw Planet. Enjoy action-packed gameplay, puzzles, and challenges!",
+    "Test your skills with hard word search puzzles! Enjoy challenging puzzles that will keep your mind sharp and entertained for hours.",
   openGraph: {
-    title: "Freezenova Game - Play Online",
+    title: "Hard Word Search Puzzles: Challenge Your Mind Today",
     description:
-      "Join the adventure with Freezenova on Jigsaw Planet. Experience engaging gameplay and exciting challenges.",
-    url: "https://jigsawplanet.online/puzzle-1",
+      "Test your skills with hard word search puzzles! Enjoy challenging puzzles that will keep your mind sharp and entertained for hours.",
+    url: "https://jigsawplanet.online/freezenova",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Play Freezenova Game online on Jigsaw Planet",
+        alt: "Play printable word puzzles",
       },
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/puzzle-1",
+    canonical: "https://jigsawplanet.online/freezenova",
   },
 };
 
@@ -28,19 +29,19 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Word puzzle - Play Online on word puzzle",
+    "name": "Hard Word Search Puzzles: Challenge Your Mind Today",
     "description":
-      "Dive into the thrilling Word puzzle on Jigsaw Planet. Enjoy action-packed gameplay, puzzles, and challenges!",
-    "url": "https://jigsawplanet.online/puzzle-1",
+      "Test your skills with hard word search puzzles! Enjoy challenging puzzles that will keep your mind sharp and entertained for hours.",
+    "url": "https://jigsawplanet.online/freezenova",
     "mainEntity": {
       "@type": "Online Game",
-      "name": "Word puzzle",
+      "name": "Hard Word Search",
       "description":
-        "Join the adventure with Word puzzle on Jigsaw Planet. Experience engaging gameplay and exciting challenges.",
-      "genre": "Action, Puzzle",
+        "Test your skills with hard word search puzzles! Enjoy challenging puzzles that will keep your mind sharp and entertained for hours.",
+      "genre": "Action, ",
       "publisher": {
         "@type": "Organization",
-        "name": "Jigsaw Planet",
+        "name": "Jigsawplanet",
         "logo": {
           "@type": "ImageObject",
           "url": "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -54,14 +55,14 @@ export default function Layout({ children }) {
         "width": 1200,
         "height": 630,
       },
-      "url": "https://jigsawplanet.online/puzzle-1",
-      "playMode": "Double Player",
+      "url": "https://jigsawplanet.online/freezenova",
+      "playMode": "Single Player",
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Jigsaw Planet",
+      "name": "Jigsawplanet",
       "logo": {
         "@type": "ImageObject",
         "url": "https://jigsawplanet.online/images/Puzzlle.webp",

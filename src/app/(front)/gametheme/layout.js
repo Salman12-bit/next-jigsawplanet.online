@@ -1,20 +1,21 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Game Theme - Customize Your Look on Jigsaw Planet",
+  title: "Jigsaw Theme: Explore Creative & Engaging Theme",
+  keywords:"jigsaw gallery, planet theme, puzzle theme,",
   description:
-    "Explore a variety of game themes on Jigsaw Planet. Choose from unique themes to enhance your gameplay experience with personalized visuals.",
+    "Dive into the world of jigsaw themes! Solve beautifully designed puzzles with unique styles and enjoy hours of relaxing fun online.",
   openGraph: {
-    title: "Game Theme - Jigsaw Planet",
+    title: "Jigsaw Theme: Explore Creative & Engaging Theme",
     description:
-      "Discover and select game themes to personalize your Jigsaw Planet experience. From classic styles to modern designs, find the perfect look for your game.",
+      "Dive into the world of jigsaw themes! Solve beautifully designed puzzles with unique styles and enjoy hours of relaxing fun online.",
     url: "https://jigsawplanet.online/gametheme",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Explore game themes on Jigsaw Planet to personalize your game",
+        alt: "Explore jigsaw themes on Jigsaw Planet to personalize your game",
       },
     ],
   },
@@ -28,33 +29,31 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Game Theme - Customize Your Look on Jigsaw Planet",
+    "name": "Jigsaw Theme: Explore Creative & Engaging Theme",
     "description":
-      "Explore a variety of game themes on Jigsaw Planet. Choose from unique themes to enhance your gameplay experience with personalized visuals.",
+      "Dive into the world of jigsaw themes! Solve beautifully designed puzzles with unique styles and enjoy hours of relaxing fun online.",
     "url": "https://jigsawplanet.online/gametheme",
     "mainEntity": {
       "@type": "CollectionPage",
       "name": "Game Themes Collection",
-      "description":
-        "Discover and select game themes to personalize your Jigsaw Planet experience. From classic styles to modern designs, find the perfect look for your game.",
       "hasPart": [
         {
           "@type": "CreativeWork",
           "name": "Classic Game Theme",
           "description": "A timeless and elegant look for your gameplay.",
-          "url": "https://jigsawplanet.online/gametheme/classic",
+          "url": "https://jigsawplanet.online/images/Puzzle1.webp",
         },
         {
           "@type": "CreativeWork",
           "name": "Modern Game Theme",
           "description": "A sleek and contemporary design for a fresh gaming experience.",
-          "url": "https://jigsawplanet.online/gametheme/modern",
+          "url": "https://jigsawplanet.online/images/Freezenova6.webp",
         },
         {
           "@type": "CreativeWork",
           "name": "Customizable Game Theme",
           "description": "Create a personalized theme that matches your style.",
-          "url": "https://jigsawplanet.online/gametheme/custom",
+          "url": "https://jigsawplanet.online/images/Freezenova5.webp",
         },
       ],
     },

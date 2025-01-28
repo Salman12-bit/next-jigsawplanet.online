@@ -9,13 +9,13 @@ const Contact = () => {
     "@type": "ContactPage",
     "name": "Contact Us",
     "description": "Get in touch with us to solve your queries through this contact form.",
-    "url": "https://jigsawplanet.online/contact", // Replace with the actual URL of your contact page
+    "url": "https://jigsawplanet.online/contact", 
     "publisher": {
       "@type": "Organization",
-      "name": "Jigsaw Planet",
+      "name": "Muhammad Salman",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp", // Replace with the logo URL
+        "url": "https://jigsawplanet.online/images/Puzzlle.webp", 
       },
     },
     "mainEntityOfPage": {
@@ -25,9 +25,9 @@ const Contact = () => {
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Support",
-      "email": "msalman39707@gmail.com", // Add your actual support email
-      "telephone": "340-6297732", // Add your actual support phone number
-      "url": "https://jigsawplanet.online/contact", // Replace with the actual URL
+      "email": "msalman39707@gmail.com", 
+      "telephone": "340-6297732", 
+      "url": "https://jigsawplanet.online/contact", 
     },
   };
 
