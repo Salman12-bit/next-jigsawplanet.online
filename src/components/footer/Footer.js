@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.footerContainer}>
         <ul className={styles.footerSection}>
           <li><Link href="about">About Us</Link></li>
-          <li><Link href="/privacypolicy">Privacy Policy</Link></li>
+          <li><Link href="/gameprivacypolicy">Privacy Policy</Link></li>
         </ul>
         <div className={styles.footerSection}>
           <Link href="https://www.facebook.com/groups/590704540347867/?ref=share&mibextid=NSMWBT" target="_blank">
@@ -34,7 +34,7 @@ const Footer = () => {
             />
           </Link>
           <br/>
-          <Link href="/termofservices">Term Of Service</Link>
+          <Link href="/termservices">Term Of Service</Link>
         </div>
       </div>
       <div className={styles.footerBottom}>

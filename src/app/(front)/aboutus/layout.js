@@ -4,7 +4,7 @@ export const metadata = {
   openGraph: {
     title: "jigsawplanet  | About Us",
     description: "Dive into the Freezenova adventure with Jigsaw Planet. Play free puzzles, sharpen your mind, and conquer exciting challenges today!",
-    url: "https://jigsawplanet.online/about",
+    url: "https://jigsawplanet.online/aboutus",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -15,7 +15,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/about",
+    canonical: "https://jigsawplanet.online/aboutus",
   },
 };
 

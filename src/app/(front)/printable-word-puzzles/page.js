@@ -55,19 +55,19 @@ const Game = () => {
               placeholder="Your Guess"
             />
             <div>
-              <button className="button1" onClick={checkAnswer}>Submit</button>
+              <button className="button2" onClick={checkAnswer}>Submit</button>
               {correctGuess && (
-                <button className="button1" onClick={nextLevel}>Next Level</button>
+                <button className="button2" onClick={nextLevel}>Next Level</button>
               )}
             </div>
           </>
         ) : (
           <div>
             <h2 className="congrat-color">Congratulations! You've completed all levels.</h2>
-            <button className="button1" onClick={() => window.location.reload()}>
+            <button className="button2" onClick={() => window.location.reload()}>
               Restart
             </button>
-            <Link href="/" className="button1  mx-2">
+            <Link href="/" className="button2y  mx-2">
               Next Level
             </Link>
           </div>

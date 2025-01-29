@@ -84,15 +84,15 @@ const Login = () => {
             </button>
           </div>
 
-          <button className="button">Login</button>
+          <button className="button">Sign In</button>
           {error && <p className="error">{error}</p>}
         </form>
         <div className="text-center">
           <p className="text-white">
             Don't have an account?
             <br />
-            <Link href="/register" className="text-white">Sign Up</Link> /
-            <Link href="/forgetpass" className="text-white">Forget Password</Link>
+            <Link href="/sign-up" className="text-white">Sign Up</Link> /
+            <Link href="/forgetpassword" className="text-white">Forget Password</Link>
           </p>
         </div>
       </div>
@@ -102,7 +102,7 @@ const Login = () => {
 
 const LoginWithSuspense = () => (
   <Suspense fallback={<div>Loading...</div>}>
-    <Login />
+    <sing-in />
   </Suspense>
 );
 

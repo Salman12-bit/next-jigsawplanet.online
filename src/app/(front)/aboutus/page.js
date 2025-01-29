@@ -8,7 +8,7 @@ const About = () => {
     "@type": "AboutPage",
     "name": "About Jigsaw Planet",
     "description": "Learn more about Jigsaw Planet, a platform offering exciting jigsaw puzzles for all ages. Designed and developed to deliver a seamless experience.",
-    "url": "https://jigsawplanet.online/about", 
+    "url": "https://jigsawplanet.online/aboutus", 
     "publisher": {
       "@type": "Organization",
       "name": "Muhammad Salman",
@@ -21,14 +21,14 @@ const About = () => {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://jigsawplanet.online/about"
+      "@id": "https://jigsawplanet.online/aboutus"
     },
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "About Us",
       "email": "msalman39707@gmail.com", 
       "telephone": "340-6297732", 
-      "url": "https://jigsawplanet.online/about", 
+      "url": "https://jigsawplanet.online/aboutus", 
     },
   };
 

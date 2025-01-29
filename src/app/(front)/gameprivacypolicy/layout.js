@@ -9,7 +9,7 @@ export const metadata = {
     title: "Jigsawplanet | Privacy Policy",
     description:
       "Understand the data privacy measures on Jigsawplanet. Explore Jigsawplanet games, solve puzzles, and know your privacy is protected.",
-    url: "https://jigsawplanet.online/privacypolicy",
+    url: "https://jigsawplanet.online/gameprivacypolicy",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -20,7 +20,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/privacypolicy",
+    canonical: "https://jigsawplanet.online/gameprivacypolicy",
   },
 };
 
@@ -32,7 +32,7 @@ export default function Layout({ children }) {
     "name": "Jigsawplanet Privacy Policy",
     "description":
       "Read the Privacy Policy for Jigsawplanet. Learn how your data is handled while you enjoy Freezenova's interactive puzzles.",
-    "url": "https://jigsawplanet.online/privacypolicy",
+    "url": "https://jigsawplanet.online/gameprivacypolicy",
     "mainEntity": {
       "@type": "FAQPage",
       "mainEntity": [
@@ -91,7 +91,7 @@ export default function Layout({ children }) {
           "@type": "ListItem",
           "position": 2,
           "name": "Privacy Policy",
-          "item": "https://jigsawplanet.online/privacypolicy"
+          "item": "https://jigsawplanet.online/gameprivacypolicy"
         }
       ]
     }

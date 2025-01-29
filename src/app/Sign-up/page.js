@@ -28,7 +28,7 @@ const Register = () => {
         body: JSON.stringify({ firstname, lastname, email, password }),
       });
       if (res.status === 201) {
-        router.push("/login");
+        router.push("/sign-in");
       }
     } catch (err) {
       setError(err);
@@ -76,7 +76,7 @@ const Register = () => {
         </form>
         <div className="text-center mt-4">
           <p className="text-white">Already have an account?
-            <Link href="/login" className="text-white"> Sign In</Link>
+            <Link href="/sign-in" className="text-white"> Sign In</Link>
           </p>
         </div>
       </div>

@@ -21,7 +21,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jigsawplanet.online/freezenova</loc>
+    <loc>https://jigsawplanet.online/printable-word-puzzles</loc>
     <lastmod>2025-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -32,6 +32,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+   <url>
+    <loc>https://jigsawplanet.online/termservices</loc>
+    <lastmod>2025-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jigsawplanet.online/jig-saw-planet</loc>
+    <lastmod>2025-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
   
 
 </urlset>

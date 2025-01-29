@@ -1,23 +1,25 @@
 import React from 'react';
 
 export const metadata = {
-  title: "JigsawPlanet account Information",
-  description: "This is the register page for JigsawPlanet.",
+  title: "JigsawPlanet post-article",
+  description:
+    "Access your personal post-article on JigsawPlanet. Manage puzzles, track progress, and customize your profile.",
   openGraph: {
-    title: "JigsawPlanet account",
-    description: "Register to access JigsawPlanet and start your puzzle journey.",
-    url: "https://jigsawplanet.online/register",
+    title: "JigsawPlanet post-article",
+    description:
+      "Explore your JigsawPlanet post-article to manage puzzles, view progress, and customize your experience.",
+    url: "https://jigsawplanet.online/poast-article",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Register to JigsawPlanet and start your puzzle journey",
+        alt: "View your personalized post-article on JigsawPlanet to track and manage puzzles",
       },
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/register",
+    canonical: "https://jigsawplanet.online/poast-article",
   },
 };
 
@@ -26,24 +28,22 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "JigsawPlanet account",
+    "name": "JigsawPlanet post-article",
     "description":
-      "Register to access JigsawPlanet and start your puzzle journey. Create an account to manage puzzles, track progress, and customize your profile.",
-    "url": "https://jigsawplanet.online/register",
+      "Access your personal post-article on JigsawPlanet. Manage puzzles, track progress, and customize your profile.",
+    "url": "https://jigsawplanet.online/poast-article",
     "mainEntity": {
-      "@type": "WebApplication",
-      "name": "JigsawPlanet Registration",
-      "description":
-        "The registration portal for creating your JigsawPlanet account to manage puzzles and track progress.",
-      "applicationCategory": "Game",
-      "operatingSystem": "All",
-      "offers": {
-        "@type": "Offer",
-        "price": "0.00",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock",
-        "url": "https://jigsawplanet.online/register",
-      },
+      "@type": "CollectionPage",
+      "name": "User post-article",
+      "about": "A personalized area for managing puzzles, tracking achievements, and customizing the JigsawPlanet experience.",
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "Profile Customization",
+          "description": "Customize your user profile for a tailored experience.",
+          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+        },
+      ],
     },
     "publisher": {
       "@type": "Organization",
@@ -73,8 +73,8 @@ export default function Layout({ children }) {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Register",
-          "item": "https://jigsawplanet.online/register",
+          "name": "post-article",
+          "item": "https://jigsawplanet.online/poast-article",
         },
       ],
     },

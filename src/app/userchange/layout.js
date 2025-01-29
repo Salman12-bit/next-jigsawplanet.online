@@ -1,14 +1,14 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Change Role - jigsawPlanet",
+  title: "User Change - jigsawPlanet",
   description:
     "Welcome to jigsawPlanet - the ultimate platform for puzzle lovers! Explore, play, and enjoy our vast selection of online jigsaw puzzles.",
   openGraph: {
-    title: "Change Role - jigsawPlanet",
+    title: "User Change - jigsawPlanet",
     description:
       "Discover a world of puzzles on JigsawPlanet! Start solving and sharing puzzles today, and join a community of puzzle enthusiasts.",
-    url: "https://jigsawplanet.online/userprofile",
+    url: "https://jigsawplanet.online/userchange",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -19,7 +19,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/login",
+    canonical: "https://jigsawplanet.online/userchange",
   },
 };
 
@@ -28,13 +28,13 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Change Role - jigsawPlanet",
+    "name": "User Change - jigsawPlanet",
     "description":
       "Change your role on JigsawPlanet to enjoy different features and manage your puzzle preferences.",
-    "url": "https://jigsawplanet.online/userprofile",
+    "url": "https://jigsawplanet.online/userchange",
     "mainEntity": {
       "@type": "WebApplication",
-      "name": "jigsawPlanet Change Role",
+      "name": "jigsawPlanet User Change",
       "description":
         "A page where you can change your role to access different features on JigsawPlanet.",
       "applicationCategory": "Game",
@@ -44,7 +44,7 @@ export default function Layout({ children }) {
         "price": "0.00",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
-        "url": "https://jigsawplanet.online/userprofile",
+        "url": "https://jigsawplanet.online/userchange",
       },
     },
     "publisher": {
@@ -75,8 +75,8 @@ export default function Layout({ children }) {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Change Role",
-          "item": "https://jigsawplanet.online/userprofile",
+          "name": "User Change",
+          "item": "https://jigsawplanet.online/userchange",
         },
       ],
     },

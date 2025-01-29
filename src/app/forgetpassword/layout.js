@@ -1,25 +1,25 @@
 import React from 'react';
 
 export const metadata = {
-  title: "JigsawPlanet Dashboard",
+  title: "JigsawPlanet Forget Password",
   description:
-    "Access your personal dashboard on JigsawPlanet. Manage puzzles, track progress, and customize your profile.",
+    "Recover access to your JigsawPlanet account. Reset your password and regain access to manage puzzles and track progress.",
   openGraph: {
-    title: "JigsawPlanet Dashboard",
+    title: "JigsawPlanet Forget Password",
     description:
-      "Explore your JigsawPlanet dashboard to manage puzzles, view progress, and customize your experience.",
-    url: "https://jigsawplanet.online/dashboard",
+      "Recover your JigsawPlanet account by resetting your password. Secure and easy password recovery process.",
+    url: "https://jigsawplanet.online/forgetpassword",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "View your personalized dashboard on JigsawPlanet to track and manage puzzles",
+        alt: "Reset your password on JigsawPlanet to regain access to your account.",
       },
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/dashboard",
+    canonical: "https://jigsawplanet.online/forgetpassword",
   },
 };
 
@@ -28,20 +28,28 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "JigsawPlanet Dashboard",
+    "name": "JigsawPlanet Forget Password",
     "description":
-      "Access your personal dashboard on JigsawPlanet. Manage puzzles, track progress, and customize your profile.",
-    "url": "https://jigsawplanet.online/dashboard",
+      "Recover access to your JigsawPlanet account. Reset your password and regain access to manage puzzles and track progress.",
+    "url": "https://jigsawplanet.online/forgetpassword",
     "mainEntity": {
-      "@type": "CollectionPage",
-      "name": "User Dashboard",
-      "about": "A personalized area for managing puzzles, tracking achievements, and customizing the JigsawPlanet experience.",
-      "hasPart": [
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "CreativeWork",
-          "name": "Profile Customization",
-          "description": "Customize your user profile for a tailored experience.",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+          "@type": "Question",
+          "name": "How can I reset my JigsawPlanet password?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To reset your password, visit the forget password page, enter your registered email, and follow the instructions sent to your email.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Can I change my password after logging in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, after logging in, you can go to your account settings to change your password for enhanced security.",
+          },
         },
       ],
     },
@@ -73,8 +81,8 @@ export default function Layout({ children }) {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Dashboard",
-          "item": "https://jigsawplanet.online/dashboard",
+          "name": "Forget Password",
+          "item": "https://jigsawplanet.online/forgetpassword",
         },
       ],
     },

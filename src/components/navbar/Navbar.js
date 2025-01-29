@@ -13,9 +13,9 @@ const Navbar = () => {
   const logout = async () => {
     localStorage.removeItem("key"); // Clear specific item from local storage
     await signOut({
-      callbackUrl: "https://jigsawplanet.online/login", // Redirect to production login page
+      callbackUrl: "https://jigsawplanet.online/sign-in", // Redirect to production login page
     });
-    window.location.href = "https://jigsawplanet.online/login"; // Hard refresh to production login page
+    window.location.href = "https://jigsawplanet.online/sign-in"; // Hard refresh to production login page
   };
 
   // Toggle mobile menu
@@ -39,9 +39,6 @@ const Navbar = () => {
           <Link href="/" className={styles.navItem}>
             Home
           </Link>
-          <Link href="/contact" className={styles.navItem}>
-            Contact
-          </Link>
           <Link href="/jigsaw-planet" className={styles.navItem}>
             Puzzle Game
           </Link>
@@ -51,12 +48,15 @@ const Navbar = () => {
           <Link href="/gametheme" className={styles.navItem}>
             Gaming Theme
           </Link>
+          <Link href="/contact" className={styles.navItem}>
+            Contact
+          </Link>
           {session?.user?.role === "admin" && (
             <>
-              <Link href="/userprofile" className={styles.navItem}>
+              <Link href="/userchange" className={styles.navItem}>
                 Change Role
               </Link>
-              <Link href="/dashboard" className={styles.navItem}>
+              <Link href="/poast-article" className={styles.navItem}>
                 Dashboard
               </Link>
             </>
@@ -68,11 +68,11 @@ const Navbar = () => {
             </button>
           ) : (
             <>
-              <Link href="/login" className={styles.navItem}>
-                Login
+              <Link href="/sign-in" className={styles.navItem}>
+                Sing In
               </Link>
-              <Link href="/register" className={styles.navItem}>
-                Register
+              <Link href="/sign-up" className={styles.navItem}>
+                Sign Up
               </Link>
             </>
           )}

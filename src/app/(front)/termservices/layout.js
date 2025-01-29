@@ -8,7 +8,7 @@ export const metadata = {
     title: "Jigsawplanet | Terms of Service",
     description:
       "Understand the terms and policies for using Jigsawplanet. Solve puzzles, enjoy Freezenova games, and abide by our service rules.",
-    url: "https://jigsawplanet.online/termofservices",
+    url: "https://jigsawplanet.online/termservices",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -19,7 +19,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/termofservices",
+    canonical: "https://jigsawplanet.online/termservices",
   },
 };
 
@@ -31,7 +31,7 @@ export default function Layout({ children }) {
     "name": "Jigsawplanet Terms of Service",
     "description":
       "Review the Terms of Service for Jigsawplanet. Learn the rules and guidelines for using Jigsawplanet interactive puzzles and services.",
-    "url": "https://jigsawplanet.online/termofservices",
+    "url": "https://jigsawplanet.online/termservices",
     "mainEntity": {
       "@type": "FAQPage",
       "mainEntity": [
@@ -90,7 +90,7 @@ export default function Layout({ children }) {
           "@type": "ListItem",
           "position": 2,
           "name": "Terms of Service",
-          "item": "https://jigsawplanet.online/termofservices"
+          "item": "https://jigsawplanet.online/termservices"
         }
       ]
     }
