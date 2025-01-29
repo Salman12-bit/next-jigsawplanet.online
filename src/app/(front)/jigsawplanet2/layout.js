@@ -1,21 +1,95 @@
+import React from 'react';
+
 export const metadata = {
-    title: "Play jigsaw planet Game - Free Online Puzzles level 3",
-    description: "Experience endless fun with free online jigsaw puzzles on jigsaw planet. Challenge yourself with a variety of puzzle designs and difficulty levels.",
-    openGraph: {
-        title: "Play jigsawplanet Game - Free Online Puzzles",
-        description: "Join Jigsaw Planet for an immersive puzzle experience. Choose from a wide range of free puzzles and sharpen your skills with exciting challenges.",
-        url: "https://jigsawplanet.online/jigsawplanet2",
-        images: [
-            {
-                url: "https://jigsawplanet.online/images/Puzzlle.webp",
-                width: 1200,
-                height: 630,
-                alt: "Play free online jigsaw puzzles on jigsawplanet",
-            },
-        ],
-    },
+  title: "ABC Puzzles: Fun and Educational Games for Kids",
+  keywords :"a b c puzzle,abc puzzle online",
+  description:
+    "Discover ABC puzzles that make learning letters exciting! Perfect for kids to improve spelling, memory, and problem-solving skills in a fun way.",
+  openGraph: {
+    title: "ABC Puzzles: Fun and Educational Games for Kids",
+    description:
+      "Discover ABC puzzles that make learning letters exciting! Perfect for kids to improve spelling, memory, and problem-solving skills in a fun way.",
+    url: "https://jigsawplanet.online/jigsawplanet2",
+    images: [
+      {
+        url: "https://jigsawplanet.online/images/Puzzlle.webp",
+        width: 1200,
+        height: 630,
+        alt: "Play abc puzzle online on jigsawplanet",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://jigsawplanet.online/jigsawplanet2",
+  },
 };
 
 export default function Layout({ children }) {
-    return <>{children}</>;
+  // Define the structured data schema
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "a b c puzzle - Play Online on jigsawplanet",
+    "description":
+      "Discover ABC puzzles that make learning letters exciting! Perfect for kids to improve spelling, memory, and problem-solving skills in a fun way.",
+    "url": "https://jigsawplanet.online/jigsawplanet2",
+    "mainEntity": {
+      "@type": "Online Game",
+      "name": "a b c puzzle",
+      "description":
+        "Discover ABC puzzles that make learning letters exciting! Perfect for kids to improve spelling, memory, and problem-solving skills in a fun way.",
+      "genre": "Action, Puzzle",
+      "publisher": {
+        "@type": "Organization",
+        "name": "a b c puzzle",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+          "width": 500,
+          "height": 500,
+        },
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+        "width": 1200,
+        "height": 630,
+      },
+      "url": "https://jigsawplanet.online/jigsawplanet2",
+      "playMode": "Single Player",
+      "operatingSystem": "Web Browser",
+      "applicationCategory": "Game",
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": " abc puzzle online",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+        "width": 500,
+        "height": 500,
+      },
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+      "width": 1200,
+      "height": 630,
+    },
+  };
+
+  return (
+    <>
+      {/* Render the children */}
+      {children}
+
+      {/* JSON-LD Script for Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+    </>
+  );
 }

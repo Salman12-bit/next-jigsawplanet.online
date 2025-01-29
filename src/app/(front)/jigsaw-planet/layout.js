@@ -1,20 +1,21 @@
 import React from 'react';
 
 export const metadata = {
-  title: "jigsawpuzzle Game - Play Online on free jigsaw planet",
+  title: "ABC Puzzle: Fun and Educational Games for All Ages",
+  keywords :"abc games puzzle,alphabet",
   description:
-    "Dive into the thrilling jigsawpuzzle game on Jigsaw Planet. Enjoy action-packed gameplay, puzzles, and challenges!",
+    "Explore ABC puzzles that make learning fun! Perfect for kids and adults to boost memory, spelling, and problem-solving skills in an engaging way.",
   openGraph: {
-    title: "jigsawpuzzle Game - Play Online",
+    title: "ABC Puzzle: Fun and Educational Games for All Ages",
     description:
-      "Join the adventure with Freezenova on Jigsaw Planet. Experience engaging gameplay and exciting challenges.",
+      "Explore ABC puzzles that make learning fun! Perfect for kids and adults to boost memory, spelling, and problem-solving skills in an engaging way.",
     url: "https://jigsawplanet.online/jigsaw-planet",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Play jigsawplanet Game online on Jigsaw Planet",
+        alt: "Play abc games puzzle on jigsawplanet",
       },
     ],
   },
@@ -28,19 +29,19 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Word puzzle - Play Online on word puzzle",
+    "name": "abc games puzzle - Play Online on jigsawplanet",
     "description":
-      "Dive into the thrilling Word puzzle on Jigsaw Planet. Enjoy action-packed gameplay, puzzles, and challenges!",
+      "Explore ABC puzzles that make learning fun! Perfect for kids and adults to boost memory, spelling, and problem-solving skills in an engaging way.",
     "url": "https://jigsawplanet.online/jigsaw-planet",
     "mainEntity": {
       "@type": "Online Game",
-      "name": "Word puzzle",
+      "name": "abc games puzzle",
       "description":
-        "Join the adventure with Word puzzle on Jigsaw Planet. Experience engaging gameplay and exciting challenges.",
+        "Explore ABC puzzles that make learning fun! Perfect for kids and adults to boost memory, spelling, and problem-solving skills in an engaging way.",
       "genre": "Action, Puzzle",
       "publisher": {
         "@type": "Organization",
-        "name": "Jigsaw Planet",
+        "name": "abc games puzzle",
         "logo": {
           "@type": "ImageObject",
           "url": "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -55,13 +56,13 @@ export default function Layout({ children }) {
         "height": 630,
       },
       "url": "https://jigsawplanet.online/jigsaw-planet",
-      "playMode": "Double Player",
+      "playMode": "Single Player",
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Jigsaw Planet",
+      "name": "abc games puzzle",
       "logo": {
         "@type": "ImageObject",
         "url": "https://jigsawplanet.online/images/Puzzlle.webp",
