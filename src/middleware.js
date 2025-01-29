@@ -21,19 +21,19 @@ export default async function middleware(req, event) {
 
     const url = req.nextUrl.clone();
 
-    if ((url.pathname === "/sign-in" || url.pathname === "/sign-up") && isAuthenticated) {
+    if ((url.pathname === "/login" || url.pathname === "/register") && isAuthenticated) {
         url.pathname = "/";
         return NextResponse.redirect(url);
     }
 
     if (protectedRoutes.includes(url.pathname) && !isAuthenticated) {
-        url.pathname = "/sign-in";
+        url.pathname = "/login";
         return NextResponse.redirect(url);
     }
 
-    if (url.pathname.startsWith("/post-article")) {
+    if (url.pathname.startsWith("/dashboard")) {
         if (!isAuthenticated) {
-            url.pathname = "/sign-in";
+            url.pathname = "/login";
             return NextResponse.redirect(url);
         } else if (userRole !== "admin") {
             url.pathname = "/";
@@ -45,7 +45,7 @@ export default async function middleware(req, event) {
 }
 
 export const config = {
-    matcher: ["/post-article/:path*", "/sign-in", "/sign-up","/contact"],
+    matcher: ["/dashboard/:path*", "/login", "/register","/contact"],
 };
 
 

@@ -13,9 +13,9 @@ const Navbar = () => {
   const logout = async () => {
     localStorage.removeItem("key"); // Clear specific item from local storage
     await signOut({
-      callbackUrl: "https://jigsawplanet.online/sign-in", // Redirect to production login page
+      callbackUrl: "https://jigsawplanet.online/login", // Redirect to production login page
     });
-    window.location.href = "https://jigsawplanet.online/sign-in"; // Hard refresh to production login page
+    window.location.href = "https://jigsawplanet.online/login"; // Hard refresh to production login page
   };
 
   // Toggle mobile menu
@@ -53,10 +53,10 @@ const Navbar = () => {
           </Link>
           {session?.user?.role === "admin" && (
             <>
-              <Link href="/userchange" className={styles.navItem}>
+              <Link href="/userprofile" className={styles.navItem}>
                 Change Role
               </Link>
-              <Link href="/poast-article" className={styles.navItem}>
+              <Link href="/dashboard" className={styles.navItem}>
                 Dashboard
               </Link>
             </>
@@ -68,17 +68,17 @@ const Navbar = () => {
             </button>
           ) : (
             <>
-              <Link href="/sign-in" className={styles.navItem}>
+              <Link href="/login" className={styles.navItem}>
                 Sing In
               </Link>
-              <Link href="/sign-up" className={styles.navItem}>
+              <Link href="/register" className={styles.navItem}>
                 Sign Up
               </Link>
             </>
           )}
         </div>
       </div>
-      
+
     </nav>
   );
 };
