@@ -12,6 +12,12 @@
   gap: 20px;
 }
 
+.puzzle-games{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .puzzle-game-card {
   display: flex;
   width: 300px;
@@ -20,6 +26,8 @@
   border: 1px solid #ccc;
   padding: 16px;
   border-radius: 8px;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
 .puzzle-game-image {
@@ -245,4 +253,34 @@
     margin-left: 10px;
     text-align: center;
   }
+}
+
+.countdown {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background: #222;
+  color: #fff;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: fit-content;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.marquee{
+  animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
 }
