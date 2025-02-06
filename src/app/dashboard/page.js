@@ -119,7 +119,7 @@ const Dashboard = () => {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 required
-                className="input"
+                className="input-dashboard"
               />
             </div>
             <div className="input-container">
@@ -131,7 +131,7 @@ const Dashboard = () => {
                 value={desc}
                 onChange={(e) => setDesc(e.target.value)}
                 required
-                className="input"
+                className="input-dashboard"
               />
             </div>
             <div className="input-container">
@@ -143,7 +143,7 @@ const Dashboard = () => {
                 value={score}
                 onChange={(e) => setScore(e.target.value)}
                 required
-                className="input"
+                className="input-dashboard"
               />
             </div>
             <div className="input-container">
@@ -152,7 +152,7 @@ const Dashboard = () => {
                 type="file"
                 name="file"
                 onChange={(e) => setFile(e.target.files[0])}
-                className="input"
+                className="input-dashboard"
                 required
               />
             </div>

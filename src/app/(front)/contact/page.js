@@ -33,11 +33,11 @@ const Contact = () => {
 
   return (
     <div className="imgformat">
-      <h1 className="title">Let Solve Your Quries</h1>
-      <div className="content">
+      <h1 className="title-text">Let Solve Your Quries</h1>
+      <div className="content-text">
         <form className="form">
-          <input type="text" placeholder="name" className="input" />
-          <input type="text" placeholder="email" className="input" />
+          <input type="text" placeholder="name" className="input-text" />
+          <input type="text" placeholder="email" className="input-text" />
           <textarea
             className="textarea"
             placeholder="message"

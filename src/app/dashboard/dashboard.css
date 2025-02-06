@@ -13,7 +13,7 @@
 .dashboard-box {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start; 
   gap: 2rem;
   width: 100%;
   max-width: 70rem;
@@ -23,10 +23,9 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Left Section: Motivational Text */
 .left-section {
   flex: 1;
-  /* Takes up half the space */
+  text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,10 +53,8 @@
   color: #3b82f6;
 }
 
-/* Right Section: Form */
 .right-section {
   flex: 1;
-  /* Takes up half the space */
   display: flex;
   flex-direction: column;
 }
@@ -74,7 +71,7 @@
   color: #000000;
 }
 
-.input {
+.input-dashboard{
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #000000;
@@ -92,4 +89,13 @@
 
 .submit-button:hover {
   background-color: #2563eb;
+}
+
+@media (max-width: 480px) {
+  .input-dashboard {
+    width: 100%;
+    padding: 10px;  
+    box-sizing: border-box;  
+    font-size: 16px;  
+  }
 }
