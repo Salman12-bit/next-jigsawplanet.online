@@ -8,7 +8,7 @@ const getData = async (id) => {
   });
 
   if (!res.ok) {
-    return null; // Return null if the post is not found
+    return null; 
   }
 
   return res.json();
