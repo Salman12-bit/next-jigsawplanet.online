@@ -22,10 +22,10 @@ const Board1 = styled.div`
 `;
 
 const initialCards = [
-  { id: 1, value: 'C' }, { id: 2, value: 'C' },
+  { id: 1, value: 'E' }, { id: 2, value: 'E' },
   { id: 3, value: 'F' }, { id: 4, value: 'D' },
-  { id: 5, value: 'E' }, { id: 6, value: 'E' },
-  { id: 7, value: 'C' }, { id: 8, value: 'C' },
+  { id: 5, value: 'C' }, { id: 6, value: 'C' },
+  { id: 7, value: 'E' }, { id: 8, value: 'E' },
   { id: 9, value: 'B' },
 ];
 
@@ -35,7 +35,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(4);
+  const [level, setLevel] = useState(5);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {

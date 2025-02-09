@@ -140,21 +140,6 @@ const Puzzle1 = () => {
           </div>
         </div>
       </div>
-      <div className="welcome-container">
-        <h2 className="welcome-title">🧩 Welcome to the Ultimate Puzzle Challenge! 🧩</h2>
-        <p className="welcome-text">
-          Hey there, puzzle solver! 🌟 Every puzzle is a new adventure, and every piece is a chance to unlock your potential.
-          This is more than just a game—it's your journey to sharpen your mind, test your skills, and celebrate every small victory.
-        </p>
-        <ul className="welcome-list">
-          <li>🔍 Every piece counts: Take your time, explore the possibilities, and watch how everything falls into place.</li>
-          <li>🧠 Sharpen your mind: Solve puzzles to grow stronger, one piece at a time.</li>
-          <li>🎯 Embrace the challenge: Don’t give up! The best moments are when everything clicks, and you can say, "I did it!"</li>
-        </ul>
-        <p className="welcome-text">
-          Keep pushing forward, trust your instincts, and most of all—enjoy the journey. You’ve got the mind of a champion, and every puzzle you conquer is a victory worth celebrating! Get ready to piece it all together! 🎉
-        </p>
-      </div>
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">

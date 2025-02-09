@@ -9,7 +9,7 @@ export const metadata = {
     title: "Hard Word Search Puzzles: Challenge Your Mind Today",
     description:
       "Test your skills with hard word search puzzles! Enjoy challenging puzzles that will keep your mind sharp and entertained for hours.",
-    url: "https://jigsawplanet.online/freezenova",
+    url: "https://jigsawplanet.online/printable-word-puzzles",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -20,24 +20,21 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/freezenova",
+    canonical: "https://jigsawplanet.online/printable-word-puzzles",
   },
 };
 
 export default function Layout({ children }) {
-  // Define the structured data schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Hard Word Search Puzzles: Challenge Your Mind Today",
     "description":
       "Test your skills with hard word search puzzles! Enjoy challenging puzzles that will keep your mind sharp and entertained for hours.",
-    "url": "https://jigsawplanet.online/freezenova",
+    "url": "https://jigsawplanet.online/printable-word-puzzles",
     "mainEntity": {
       "@type": "Online Game",
       "name": "Hard Word Search",
-      "description":
-        "Test your skills with hard word search puzzles! Enjoy challenging puzzles that will keep your mind sharp and entertained for hours.",
       "genre": "Action, ",
       "publisher": {
         "@type": "Organization",
@@ -55,7 +52,7 @@ export default function Layout({ children }) {
         "width": 1200,
         "height": 630,
       },
-      "url": "https://jigsawplanet.online/freezenova",
+      "url": "https://jigsawplanet.online/printable-word-puzzles",
       "playMode": "Single Player",
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",
@@ -80,10 +77,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-      {/* Render the children */}
       {children}
-
-      {/* JSON-LD Script for Schema Markup */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

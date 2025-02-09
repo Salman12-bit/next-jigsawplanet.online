@@ -54,17 +54,6 @@ export default function Layout({ children }) {
       "width": 1200,
       "height": 630,
     },
-    "breadcrumb": {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://jigsawplanet.online",
-        },
-      ],
-    },
   };
 
   return (

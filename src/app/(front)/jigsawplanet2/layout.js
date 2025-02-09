@@ -25,7 +25,6 @@ export const metadata = {
 };
 
 export default function Layout({ children }) {
-  // Define the structured data schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -80,10 +79,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-      {/* Render the children */}
       {children}
-
-      {/* JSON-LD Script for Schema Markup */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

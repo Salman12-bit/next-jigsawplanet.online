@@ -68,10 +68,9 @@ const BlogPost = async ({ params }) => {
   const post = await getData(params.id);
 
   if (!post) {
-    notFound(); // Handle case where post does not exist
+    notFound(); 
   }
 
-  // Structured Data for BlogPosting Schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -88,7 +87,7 @@ const BlogPost = async ({ params }) => {
       "name": "Jigsaw Planet",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzle.webp", // Add a proper logo URL
+        "url": "https://jigsawplanet.online/images/Puzzle.webp",
       },
     },
     "mainEntityOfPage": {
@@ -97,7 +96,7 @@ const BlogPost = async ({ params }) => {
     },
     "image": {
       "@type": "ImageObject",
-      "url": post.file || "https://jigsawplanet.online/images/Puzzle.webp", // Fallback image
+      "url": post.file || "https://jigsawplanet.online/images/Puzzle.webp", 
       "width": 1200,
       "height": 630,
     },
@@ -124,7 +123,6 @@ const BlogPost = async ({ params }) => {
           ></div>
         </div>
       </div>
-      {/* JSON-LD Script for Schema Markup */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

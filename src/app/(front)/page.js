@@ -25,6 +25,10 @@ export default function Home() {
       "image": "/flower.webp",
       link: '/jigsaw-puzzle-planet'
     },
+    {
+      "image": "/images/children.webp",
+      link: '/jigsa-planet'
+    },
   ];
 
   const getData = async () => {
@@ -49,46 +53,11 @@ export default function Home() {
     getData();
   }, []);
 
-  // useEffect(() => {
-  //   const updateCountdown = () => {
-  //     const now = new Date();
-  //     const startOfFriday = new Date(now);
-  //     startOfFriday.setDate(now.getDate() + ((5 - now.getDay() + 7) % 7)); // Set to next Friday
-  //     startOfFriday.setHours(0, 0, 0, 0); // Friday 00:00:00
-
-  //     const endOfFriday = new Date(startOfFriday);
-  //     endOfFriday.setHours(23, 59, 59, 999); // Friday 23:59:59
-
-  //     if (now >= startOfFriday && now <= endOfFriday) {
-  //       // If it's Friday, start countdown from 23:59:59
-  //       setTimeLeft(endOfFriday - now);
-  //     } else {
-  //       // Hide countdown on other days
-  //       setTimeLeft(null);
-  //     }
-  //   };
-
-  //   updateCountdown();
-  //   const interval = setInterval(updateCountdown, 1000); // Update every second
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
-  // const formatTime = (ms) => {
-  //   if (ms <= 0) return "00:00:00"; // Prevent negative values
-  //   const hours = String(Math.floor(ms / 3600000)).padStart(2, '0');
-  //   const minutes = String(Math.floor((ms % 3600000) / 60000)).padStart(2, '0');
-  //   const seconds = String(Math.floor((ms % 60000) / 1000)).padStart(2, '0');
-  //   return `${hours}:${minutes}:${seconds}`;
-  // };
-
   return (
     <div className="home-container">
       <marquee className="marquee">
         🎉 New Puzzle Levels Every Friday! Stay Tuned for More Challenges! 🎉
       </marquee>
-     
-
       <div className="puzzle-games">
         {puzzleGames.map((item, index) => (
           <div key={index} className="puzzle-game-card">

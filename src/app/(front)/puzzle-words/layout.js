@@ -1,46 +1,45 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Alphabet Puzzle: Fun Learning for Kids and Adults",
-  keywords :"alphabet slider,alphabet,abc puzzle game",
+  title: "Unlock Puzzle Words: Challenge Your Brain Today!",
+  keywords: "word maze puzzles,words with friends chear,COLLATE,demure,UNCANNY",
   description:
-    "Enjoy alphabet puzzles that make learning letters fun! Perfect for kids and adults to improve spelling, memory, and problem-solving skills.",
+    "Dive into puzzle words that spark creativity and boost brainpower. Enjoy fun challenges, quick games, and endless word puzzles to keep your mind sharp!",
   openGraph: {
-    title: "Alphabet Puzzle: Fun Learning for Kids and Adults",
+    title: "Unlock Puzzle Words: Challenge Your Brain Today!",
     description:
-      "Enjoy alphabet puzzles that make learning letters fun! Perfect for kids and adults to improve spelling, memory, and problem-solving skills.",
-    url: "https://jigsawplanet.online/jigsawplanet1",
+      "Dive into puzzle words that spark creativity and boost brainpower. Enjoy fun challenges, quick games, and endless word puzzles to keep your mind sharp!",
+    url: "https://jigsawplanet.online/puzzle-words",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Play abc puzzle game on jigsawplanet",
+        alt: "Play printable word puzzles",
       },
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/jigsawplanet1",
+    canonical: "https://jigsawplanet.online/puzzle-words",
   },
 };
 
 export default function Layout({ children }) {
+  // Define the structured data schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "abc puzzle game - Play Online on jigsawplanet",
+    "name": "Unlock Puzzle Words: Challenge Your Brain Today!",
     "description":
-      "Enjoy alphabet puzzles that make learning letters fun! Perfect for kids and adults to improve spelling, memory, and problem-solving skills.",
-    "url": "https://jigsawplanet.online/jigsawplanet1",
+      "Dive into puzzle words that spark creativity and boost brainpower. Enjoy fun challenges, quick games, and endless word puzzles to keep your mind sharp!",
+    "url": "https://jigsawplanet.online/puzzle-words",
     "mainEntity": {
       "@type": "Online Game",
-      "name": "abc puzzle game",
-      "description":
-        "Enjoy alphabet puzzles that make learning letters fun! Perfect for kids and adults to improve spelling, memory, and problem-solving skills.",
-      "genre": "Action, Puzzle",
+      "name": "Hard Word Search",
+      "genre": "Action, ",
       "publisher": {
         "@type": "Organization",
-        "name": "alphabet slider",
+        "name": "Jigsawplanet",
         "logo": {
           "@type": "ImageObject",
           "url": "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -54,14 +53,14 @@ export default function Layout({ children }) {
         "width": 1200,
         "height": 630,
       },
-      "url": "https://jigsawplanet.online/jigsawplanet1",
+      "url": "https://jigsawplanet.online/puzzle-words",
       "playMode": "Single Player",
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",
     },
     "publisher": {
       "@type": "Organization",
-      "name": "alphabet slider",
+      "name": "Jigsawplanet",
       "logo": {
         "@type": "ImageObject",
         "url": "https://jigsawplanet.online/images/Puzzlle.webp",

@@ -6,13 +6,13 @@ export const metadata = {
   description:
     "Dive into Jig saw planet and enjoy solving, creating, and sharing free puzzle online. Perfect for jigsa planet of all ages and skill levels.",
   openGraph: {
-    title: "jigsa planet - Play Online",
+    title: "Jig saw planet: Your Go-To Spot for Free Online game",
     description:
       "Dive into Jig saw planet and enjoy solving, creating, and sharing free puzzle online. Perfect for jigsa planet of all ages and skill levels.",
-    url: "https://jigsawplanet.online/jig-saw-planet",
+    url: "https://jigsawplanet.online/jigsaw-puzzle",
     images: [
       {
-        url: "https://jigsawplanet.online/images/Puzzlle.webp",
+        url: "https://jigsawplanet.online/images/Puzzle3.webp",
         width: 1200,
         height: 630,
         alt: "Play jigsa planet Game online on jigsawplanet",
@@ -20,59 +20,56 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/jig-saw-planet",
+    canonical: "https://jigsawplanet.online/jigsaw-puzzle",
   },
 };
 
 export default function Layout({ children }) {
-  // Define the structured data schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "jigsa planet - Play Online on word puzzle",
+    "name": "free puzzle - Play Online on word puzzle",
     "description":
-      "Dive into the thrilling jigsaw puzzles play on Jigsawplanet. Enjoy action-packed gameplay, puzzles, and challenges!",
-    "url": "https://jigsawplanet.online/jig-saw-planet",
+      "Dive into Jig saw planet and enjoy solving, creating, and sharing free puzzle online. Perfect for jigsa planet of all ages and skill levels.",
+    "url": "https://jigsawplanet.online/jigsaw-puzzle",
     "mainEntity": {
       "@type": "Online Game",
-      "name": "jigsa planet",
-      "description":
-        "Join the adventure with jigsaw puzzles play on Jigsawplanet. Experience engaging gameplay and exciting challenges.",
+      "name": "free puzzle",
       "genre": "Action, Puzzle",
       "publisher": {
         "@type": "Organization",
-        "name": "Jigsaw Planet",
+        "name": "free puzzle",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+          "url": "https://jigsawplanet.online/images/Puzzle3.webp",
           "width": 500,
           "height": 500,
         },
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+        "url": "https://jigsawplanet.online/images/Puzzle3.webp",
         "width": 1200,
         "height": 630,
       },
-      "url": "https://jigsawplanet.online/jig-saw-planet",
+      "url": "https://jigsawplanet.online/jigsaw-puzzle",
       "playMode": "Double Player",
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Jigsaw Planet",
+      "name": "free puzzle",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+        "url": "https://jigsawplanet.online/images/Puzzle3.webp",
         "width": 500,
         "height": 500,
       },
     },
     "primaryImageOfPage": {
       "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+      "url": "https://jigsawplanet.online/images/Puzzle3.webp",
       "width": 1200,
       "height": 630,
     },
@@ -80,10 +77,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-      {/* Render the children */}
       {children}
-
-      {/* JSON-LD Script for Schema Markup */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

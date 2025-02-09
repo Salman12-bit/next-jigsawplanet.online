@@ -6,13 +6,13 @@ export const metadata = {
   description:
     "Explore planet jigsaw and enjoy solving, sharing, and creating puzzle men online. Perfect for puzzle lovers of all ages to challenge their minds",
   openGraph: {
-    title: "Free puzzle men - Play Online",
+    title: "Planet jigsaw: Endless Fun with Free Online",
     description:
       "Explore puzzle men and enjoy solving, sharing, and creating planet jigsaw online. Perfect for puzzle lovers of all ages to challenge their minds",
-    url: "https://jigsawplanet.online/planet-jigsaw",
+    url: "https://jigsawplanet.online/jigsaw-men",
     images: [
       {
-        url: "https://jigsawplanet.online/images/Puzzlle.webp",
+        url: "https://jigsawplanet.online/download.webp",
         width: 1200,
         height: 630,
         alt: "Play planet men Game online on jigsaw planet puzzles",
@@ -20,19 +20,18 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/planet-jigsaw",
+    canonical: "https://jigsawplanet.online/jigsaw-men",
   },
 };
 
 export default function Layout({ children }) {
-  // Define the structured data schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "puzzle men - Play Online on word puzzle",
     "description":
-      "Dive into the thrilling puzzle men on Jigsaw Planet. Enjoy action-packed gameplay, puzzles, and challenges!",
-    "url": "https://jigsawplanet.online/planet-jigsaw",
+      "Explore planet jigsaw and enjoy solving, sharing, and creating puzzle men online. Perfect for puzzle lovers of all ages to challenge their minds",
+    "url": "https://jigsawplanet.online/jigsaw-men",
     "mainEntity": {
       "@type": "Online Game",
       "name": "puzzle men",
@@ -42,18 +41,18 @@ export default function Layout({ children }) {
         "name": "puzzle men",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+          "url": "https://jigsawplanet.online/download.webp",
           "width": 500,
           "height": 500,
         },
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+        "url": "https://jigsawplanet.online/download.webp",
         "width": 1200,
         "height": 630,
       },
-      "url": "https://jigsawplanet.online/planet-jigsaw",
+      "url": "https://jigsawplanet.online/jigsaw-men",
       "playMode": "Double Player",
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",
@@ -63,14 +62,14 @@ export default function Layout({ children }) {
       "name": "Jigsaw Planet",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+        "url": "https://jigsawplanet.online/download.webp",
         "width": 500,
         "height": 500,
       },
     },
     "primaryImageOfPage": {
       "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/Puzzlle.webp",
+      "url": "https://jigsawplanet.online/download.webp",
       "width": 1200,
       "height": 630,
     },
@@ -78,10 +77,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-      {/* Render the children */}
       {children}
-
-      {/* JSON-LD Script for Schema Markup */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
