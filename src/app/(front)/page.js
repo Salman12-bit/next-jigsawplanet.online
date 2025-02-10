@@ -15,19 +15,19 @@ export default function Home() {
   const puzzleGames = [
     {
       "image": "/images/Puzzle3.webp",
-      link: '/jig-saw-planet'
+      link: '/jigsaw-puzzle'
     },
     {
       "image": "/download.webp",
-      link: '/planet-jigsaw'
+      link: '/jigsaw-men'
     },
     {
       "image": "/flower.webp",
-      link: '/jigsaw-puzzle-planet'
+      link: '/jigsaw-flower'
     },
     {
       "image": "/images/children.webp",
-      link: '/jigsa-planet'
+      link: '/jigsaw-children'
     },
   ];
 
