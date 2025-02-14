@@ -1,44 +1,45 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Explore Alphabet Puzzles: Unlock Your Word Skills",
-  keywords :"alphabet slider puzzle,alphabet sliders, puzzles",
+  title: "Play Word Game: Boost Your Brain with Fun Puzzles",
+  keywords: "word hunt online free,spelling words,CHOCOLATE,life",
   description:
-    "Discover the fun of alphabet puzzles that boost vocabulary and challenge your brain. Enjoy creative word games for all ages!",
+    "Challenge your mind with our exciting word game. Solve puzzles, learn new words, and boost your vocabulary in a fun and engaging way!",
   openGraph: {
-    title: "Explore Alphabet Puzzles: Unlock Your Word Skills",
+    title: "Play Word Game: Boost Your Brain with Fun Puzzles",
     description:
-      "Discover the fun of alphabet puzzles that boost vocabulary and challenge your brain. Enjoy creative word games for all ages!",
-    url: "https://jigsawplanet.online/alphabet-puzzles",
+      "Challenge your mind with our exciting word game. Solve puzzles, learn new words, and boost your vocabulary in a fun and engaging way!",
+    url: "https://jigsawplanet.online/word-game",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Play alphabet slider puzzle game on jigsawplanet",
+        alt: "Play word hunt online free",
       },
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/alphabet-puzzles",
+    canonical: "https://jigsawplanet.online/word-game",
   },
 };
 
 export default function Layout({ children }) {
+  // Define the structured data schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Explore Alphabet Puzzles: Unlock Your Word Skills",
+    "name": "Play Word Game: Boost Your Brain with Fun Puzzles",
     "description":
-      "Discover the fun of alphabet puzzles that boost vocabulary and challenge your brain. Enjoy creative word games for all ages!",
-    "url": "https://jigsawplanet.online/alphabet-puzzles",
+      "Challenge your mind with our exciting word game. Solve puzzles, learn new words, and boost your vocabulary in a fun and engaging way!",
+    "url": "https://jigsawplanet.online/word-game",
     "mainEntity": {
       "@type": "Online Game",
-      "name": "Explore Alphabet Puzzles: Unlock Your Word Skills",
-      "genre": "Action, Puzzle",
+      "name": "word hunt online free",
+      "genre": "Action, ",
       "publisher": {
         "@type": "Organization",
-        "name": "alphabet sliders",
+        "name": "Jigsawplanet",
         "logo": {
           "@type": "ImageObject",
           "url": "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -52,7 +53,7 @@ export default function Layout({ children }) {
         "width": 1200,
         "height": 630,
       },
-      "url": "https://jigsawplanet.online/alphabet-puzzles",
+      "url": "https://jigsawplanet.online/word-game",
       "playMode": "Single Player",
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",

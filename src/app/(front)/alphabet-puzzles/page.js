@@ -106,9 +106,6 @@ const Puzzle1 = () => {
 
   return (
     <div className='text-conainer' style={{
-      backgroundImage: 'url("/village.jpg")',
-      backgroundSize: "cover",
-      backgroundPosition: "center",
       padding: "20px"
     }}>
       <div className='planet-container'>
@@ -132,7 +129,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/">
+                <Link href="abc-puzzle">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}

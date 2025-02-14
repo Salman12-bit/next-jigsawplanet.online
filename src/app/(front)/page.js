@@ -29,6 +29,10 @@ export default function Home() {
       "image": "/images/children.webp",
       link: '/jigsaw-children'
     },
+    {
+      "image": "/images/rabbit.webp",
+      link: '/jigsaw-rabbit'
+    },
   ];
 
   const getData = async () => {

@@ -6,7 +6,7 @@ export const metadata = {
   description:
     "Explore Jigsa Planet and dive into a world of fresh ideas. Learn about the latest trends and join a community passionate about innovation.",
   openGraph: {
-    title: "childrens jigsaws - Play Online",
+    title: "Explore Jigsa Planet: Discover the Future",
     description:
       "Explore Jigsa Planet and dive into a world of fresh ideas. Learn about the latest trends and join a community passionate about innovation.",
     url: "https://jigsawplanet.online/jigsaw-children",

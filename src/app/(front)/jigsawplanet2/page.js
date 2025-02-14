@@ -106,9 +106,6 @@ const Puzzle1 = () => {
 
   return (
     <div className='text-conainer' style={{
-      backgroundImage: 'url("/village.jpg")',
-      backgroundSize: "cover",
-      backgroundPosition: "center",
       padding: "20px"
     }}>
       <div className='planet-container'>

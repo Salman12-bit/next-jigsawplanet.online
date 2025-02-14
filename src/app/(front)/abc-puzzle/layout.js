@@ -1,26 +1,26 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Explore Alphabet Puzzles: Unlock Your Word Skills",
-  keywords :"alphabet slider puzzle,alphabet sliders, puzzles",
+  title: "Explore ABCDEFGHIJKLMNOP Game: Brainy Fun for Everyone",
+  keywords :"puzzle abc,abc alphabet puzzle, puzzle",
   description:
-    "Discover the fun of alphabet puzzles that boost vocabulary and challenge your brain. Enjoy creative word games for all ages!",
+    "Dive into the ABCDEFGHIJKLMNOP Game, where letters meet fun challenges! Perfect for brain workouts and playful learning sessions.",
   openGraph: {
-    title: "Explore Alphabet Puzzles: Unlock Your Word Skills",
+    title: "Explore ABCDEFGHIJKLMNOP Game: Brainy Fun for Everyone",
     description:
-      "Discover the fun of alphabet puzzles that boost vocabulary and challenge your brain. Enjoy creative word games for all ages!",
-    url: "https://jigsawplanet.online/alphabet-puzzles",
+      "Dive into the ABCDEFGHIJKLMNOP Game, where letters meet fun challenges! Perfect for brain workouts and playful learning sessions.",
+    url: "https://jigsawplanet.online/abc-puzzle",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Play alphabet slider puzzle game on jigsawplanet",
+        alt: "Play abc alphabet puzzle game on jigsawplanet",
       },
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/alphabet-puzzles",
+    canonical: "https://jigsawplanet.online/abc-puzzle",
   },
 };
 
@@ -28,17 +28,17 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Explore Alphabet Puzzles: Unlock Your Word Skills",
+    "name": "Explore ABCDEFGHIJKLMNOP Game: Brainy Fun for Everyone",
     "description":
       "Discover the fun of alphabet puzzles that boost vocabulary and challenge your brain. Enjoy creative word games for all ages!",
-    "url": "https://jigsawplanet.online/alphabet-puzzles",
+    "url": "https://jigsawplanet.online/abc-puzzle",
     "mainEntity": {
       "@type": "Online Game",
-      "name": "Explore Alphabet Puzzles: Unlock Your Word Skills",
+      "name": "abc alphabet puzzle",
       "genre": "Action, Puzzle",
       "publisher": {
         "@type": "Organization",
-        "name": "alphabet sliders",
+        "name": "puzzle abc",
         "logo": {
           "@type": "ImageObject",
           "url": "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -52,7 +52,7 @@ export default function Layout({ children }) {
         "width": 1200,
         "height": 630,
       },
-      "url": "https://jigsawplanet.online/alphabet-puzzles",
+      "url": "https://jigsawplanet.online/abc-puzzle",
       "playMode": "Single Player",
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",

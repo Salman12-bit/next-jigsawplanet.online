@@ -57,16 +57,6 @@ export default function Layout({ children }) {
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "puzzle planet",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/flower.webp",
-        "width": 500,
-        "height": 500,
-      },
-    },
     "primaryImageOfPage": {
       "@type": "ImageObject",
       "url": "https://jigsawplanet.online/flower.webp",
