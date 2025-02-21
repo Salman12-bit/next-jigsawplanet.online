@@ -1,14 +1,12 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import "./word-game.css"
 import Link from 'next/link';
 
 
 const Game = () => {
-  const initialWords = ["bee", "Spelling", "PUZZLE"];
-  const alternateWords = ["Glass", "pen", "Card"];
-  const [words, setWords] = useState([...initialWords]);
+  const words = ["bee", "Spelling", "PUZZLE"];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
@@ -16,19 +14,6 @@ const Game = () => {
   const [correctGuess, setCorrectGuess] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  useEffect(() => {
-    const lastPlayTimestamp = localStorage.getItem("lastPlayTimestamp");
-    const currentTimestamp = new Date().getTime();
-
-    if (lastPlayTimestamp) {
-      const minutesDifference = (currentTimestamp - parseInt(lastPlayTimestamp)) / (1000 * 60);
-      if (minutesDifference >= 3) {
-        setWords([...alternateWords]);
-      }
-    }
-    localStorage.setItem("lastPlayTimestamp", currentTimestamp.toString());
-    setScrambledWord(scrambleWord(words[0]));
-  }, []);
 
   function scrambleWord(word) {
     return word.split('').sort(() => Math.random() - 0.5).join('');
