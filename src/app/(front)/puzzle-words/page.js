@@ -1,28 +1,47 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./word-puzzle.css"
 import Link from 'next/link';
 
 
 const Game = () => {
-  const words = ["COLLATE", "demure", "UNCANNY"];
+  const initialWords = ["UNCANNY", "demure", "QUESTION"];
+  const alternateWords = ["Wallet", "Charger", "Computer"];
+  const [words, setWords] = useState([...initialWords]);
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
   const [gameOver, setGameOver] = useState(false);
   const [correctGuess, setCorrectGuess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
+
+  useEffect(() => {
+    const lastPlayTimestamp = localStorage.getItem("lastPlayTimestamp");
+    const currentTimestamp = new Date().getTime();
+
+    if (lastPlayTimestamp) {
+      const minutesDifference = (currentTimestamp - parseInt(lastPlayTimestamp)) / (1000 * 60);
+      if (minutesDifference >= 3) {
+        setWords([...alternateWords]);
+      }
+    }
+    localStorage.setItem("lastPlayTimestamp", currentTimestamp.toString());
+    setScrambledWord(scrambleWord(words[0]));
+  }, []);
 
   function scrambleWord(word) {
     return word.split('').sort(() => Math.random() - 0.5).join('');
   }
 
   function checkAnswer() {
-    const currentWord = words[currentLevel].toLowerCase();
-    if (guess.toLowerCase() === currentWord) {
+    const currentWord = words[currentLevel];
+    if (guess === currentWord) {
       setCorrectGuess(true);
+      setErrorMessage('');
     } else {
-
+      setErrorMessage("Try again! Incorrect guess.");
     }
   }
 
@@ -43,7 +62,7 @@ const Game = () => {
     }}>
       <div className="Puzzle">
         <h4 className="current-color">Current Level 2</h4>
-        <h1 className="color">word maze puzzles</h1>
+        <h1 className="color">Word Maze Puzzles</h1>
         {!gameOver ? (
           <>
             <div className="level">Level {currentLevel + 1}</div>
@@ -54,6 +73,7 @@ const Game = () => {
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
             />
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
               <button className="button2" onClick={checkAnswer}>Submit</button>
               {correctGuess && (
@@ -67,7 +87,7 @@ const Game = () => {
             <button className="button2" onClick={() => window.location.reload()}>
               Restart
             </button>
-            <Link href="/" className="button2y  mx-2">
+            <Link href="/word-game" className="button2  mx-2">
               Next Level
             </Link>
           </div>
@@ -101,16 +121,16 @@ const Game = () => {
             <p className="instructions-description">Words with friends chear offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest words with friends chear. So, choose your game, set up your space, and dive into the fascinating world of word maze puzzles!</p>
           </div>
           <div className='game-image-container'>
-            <Link href="/jigsaw-planet">
+            <Link href="/printable-word-puzzles">
               <img className='game-image' src='./images/Puzzle1.webp' alt='Jigsaw planet adventure' />
             </Link>
-            <Link href="/jigsaw-planet1">
+            <Link href="/word-game">
               <img className='game-image' src='./images/Puzzle2.webp' alt='Play puzzles on jigsaw planet' />
             </Link>
-            <Link href="/jigsaw-planet2">
+            <Link href="/word-puzzle">
               <img className='game-image' src='./images/Puzzle3.webp' alt='Explore jigsaw planet puzzles' />
             </Link>
-            <Link href="/jigsaw-planet3">
+            <Link href="/jigsawplanet3">
               <img className='game-image' src='./images/Puzzle5.webp' alt='Online jigsaw planet game' />
             </Link>
           </div>

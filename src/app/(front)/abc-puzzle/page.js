@@ -35,7 +35,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(5);
+  const [level, setLevel] = useState(6);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -129,7 +129,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/">
+                <Link href="/letter-puzzle">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -171,7 +171,7 @@ const Puzzle1 = () => {
             <Link href="/jigsawplanet1">
               <img className='game-image' src='./images/Puzzle2.webp' alt='jigsawplanet interactive puzzle' />
             </Link>
-            <Link href="/jigsawplanet2">
+            <Link href="/letter-puzzle">
               <img className='game-image' src='./images/Puzzle3.webp' alt='free jigsaw planet game' />
             </Link>
             <Link href="/jigsawplanet3">

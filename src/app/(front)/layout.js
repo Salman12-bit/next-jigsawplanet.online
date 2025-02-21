@@ -2,7 +2,7 @@ import React from 'react';
 
 export const metadata = {
   title: "Jigsaw Planet: Discover the Best Free Game Platform",
-  keywords: "jigsaw, jigsaw puzzles, puzzle, jigsaw planet",
+  keywords: "jigsawplanet,jigsaw,jigsaw puzzles,puzzle",
   description:
     "Visit the ultimate destination for the Jigsaw Planet puzzle! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages.",
   openGraph: {

@@ -6,8 +6,8 @@ import Link from 'next/link';
 
 
 const Game = () => {
-  const initialWords = ["bike", "fraud", "CHOCOLATE"];
-  const alternateWords = ["Book", "Pencil", "key"];
+  const initialWords = ["bee", "Spelling", "PUZZLE"];
+  const alternateWords = ["Glass", "pen", "Card"];
   const [words, setWords] = useState([...initialWords]);
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
@@ -60,8 +60,8 @@ const Game = () => {
       padding: "20px"
     }}>
       <div className="Puzzle">
-        <h4 className="current-color">Current Level 3</h4>
-        <h1 className="color">Word Hunt Online Free</h1>
+        <h4 className="current-color">Current Level 4</h4>
+        <h1 className="color">Word Game Puzzles</h1>
         {!gameOver ? (
           <>
             <div className="level">Level {currentLevel + 1}</div>
@@ -86,7 +86,7 @@ const Game = () => {
             <button className="button2" onClick={() => window.location.reload()}>
               Restart
             </button>
-            <Link href="/word-puzzle" className="button2 mx-2">
+            <Link href="/" className="button2 mx-2">
               Next Level
             </Link>
           </div>
@@ -95,9 +95,9 @@ const Game = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play words with friends chear Game</h2>
-            <p className="instructions-description">Words with friends chear are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Word maze puzzles come in various forms, with unique content from traditional word maze puzzles to sophisticated digital games. The cross word puzzle guide will walk you through the basic principles of playing different types of word puzzles games, offering tips and strategies to enhance your experience.</p>
-            <h3 className="instruction-step">1. Different Types of words with friends chear:</h3>
+            <h2 className="instructions-title">How to Play spelling word Game</h2>
+            <p className="instructions-description">Spelling word are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time.Spelling word come in various forms, with unique content from traditionalspelling word to sophisticated digital games. The cross word puzzle guide will walk you through the basic principles of playing different types of word puzzles games, offering tips and strategies to enhance your experience.</p>
+            <h3 className="instruction-step">1. Different Types of spelling word:</h3>
             <p className="instructions-description">Word puzzles games come in many varieties, each with unique mechanics and objectives.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
             <p className="instructions-description">Each words has specific rules and objectives. Read the instructions carefully before starting.</p>
@@ -108,29 +108,29 @@ const Game = () => {
               <li>Otherwise, play again and thinking how to complete this</li>
             </ul>
             <h3 className="instruction-step">3. Set up Your Space:</h3>
-            <p className="instructions-description">For physical word maze puzzles, ensure you have a comfortable and well-lit workspace. For digital words game, adjust your device's brightness and volume settings to suit your environment and mind.</p>
+            <p className="instructions-description">For physicalspelling word, ensure you have a comfortable and well-lit workspace. For digital words game, adjust your device's brightness and volume settings to suit your environment and mind.</p>
             <h2 className="tips-title">Tips for Success</h2>
             <ul className="instructions-list">
-              <li>Stay Calm: Word maze puzzles game should be enjoyable; take breaks if you feel frustrated.</li>
+              <li>Stay Calm: Spelling word game should be enjoyable; take breaks if you feel frustrated.</li>
               <li>Practice Regularly: The more you play, the benefit you get.</li>
               <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
               <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
             </ul>
             <h3 className="instruction-step">Conclusion:</h3>
-            <p className="instructions-description">Words with friends chear offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest words with friends chear. So, choose your game, set up your space, and dive into the fascinating world of word maze puzzles!</p>
+            <p className="instructions-description">spelling word offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest spelling word. So, choose your game, set up your space, and dive into the fascinating world ofspelling word!</p>
           </div>
           <div className='game-image-container'>
             <Link href="/printable-word-puzzles">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='Jigsaw planet adventure' />
+              <img className='game-image' src='./images/Puzzle1.webp' alt='spelling word adventure' />
             </Link>
             <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='Play puzzles on jigsaw planet' />
+              <img className='game-image' src='./images/Puzzle2.webp' alt='Play puzzles on spelling word' />
             </Link>
-            <Link href="/word-puzzle">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore jigsaw planet puzzles' />
+            <Link href="/word-game">
+              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore spelling word puzzles' />
             </Link>
-            <Link href="/jigsawplanet2">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='Online jigsaw planet game' />
+            <Link href="/jigsawplanet1">
+              <img className='game-image' src='./images/Puzzle5.webp' alt='Online spelling word game' />
             </Link>
           </div>
 

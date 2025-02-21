@@ -155,42 +155,42 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Free Jigsaw Planet Game</h2>
-            <p className="instructions-description">Free Jigsaw planet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Jigsawplanet come in various forms, with unique content from traditional paper jigsawplanet to sophisticated digital games. The jigsawplanet guide will walk you through the basic principles of playing different types of jigsawplanet games, offering tips and strategies to enhance your experience.</p>
-            <h3 className="instruction-step">1. Different Types of Jigsaw Planet Free:</h3>
-            <p className="instructions-description">Jigsawplanet games come in many varieties, each with unique mechanics and objectives.</p>
+            <h2 className="instructions-title">How to Play alphabet Game</h2>
+            <p className="instructions-description">Alphabet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Alphabet come in various forms, with unique content from traditional paper alphabet to sophisticated digital games. The alphabet guide will walk you through the basic principles of playing different types of alphabet games, offering tips and strategies to enhance your experience.</p>
+            <h3 className="instruction-step">1. Different Types of alphabet Free:</h3>
+            <p className="instructions-description">alphabet games come in many varieties, each with unique mechanics and objectives.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each jigsaw planet puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
+            <p className="instructions-description">Each alphabet puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
             <ul className="instructions-list">
               <li>In this game players have 3 chances.</li>
-              <li>If 3 jigsaw planet puzzle game cards are matched to each other.</li>
+              <li>If 3 alphabet puzzle game cards are matched to each other.</li>
               <li>Player wins this game.</li>
-              <li>Otherwise, Restart the jigsaw planet game again and try to match again 3 cards.</li>
+              <li>Otherwise, Restart the alphabet game again and try to match again 3 cards.</li>
             </ul>
             <h3 className="instruction-step">3. Set up Your Space:</h3>
-            <p className="instructions-description">For physical jigsaw puzzle, ensure you have a comfortable and well-lit workspace. For digital jigsawplanet, adjust your device's brightness and volume settings to suit your environment and mind.</p>
+            <p className="instructions-description">For physical alphabet puzzle, ensure you have a comfortable and well-lit workspace. For digital alphabet, adjust your device's brightness and volume settings to suit your environment and mind.</p>
             <h2 className="tips-title">Tips for Success</h2>
             <ul className="instructions-list">
-              <li>Stay Calm: Jigsawplanet puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
+              <li>Stay Calm: Alphabet puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
               <li>Practice Regularly: The more you play, the better you get.</li>
               <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
               <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
             </ul>
             <h3 className="instruction-step">Conclusion:</h3>
-            <p className="instructions-description">Jigsaw planet games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your jigsawplanet-solving skills and enjoy the satisfying feeling of cracking even the toughest jigsawplanet. So, choose your game, set up your space, and dive into the fascinating world of jigsawplanet!</p>
+            <p className="instructions-description">Alphabet games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet. So, choose your game, set up your space, and dive into the fascinating world of alphabet!</p>
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='free online jigsaw planet puzzle game' />
+              <img className='game-image' src='./images/Puzzle1.webp' alt='free online alphabet puzzle game' />
             </Link>
             <Link href="/jigsawplanet1">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='jigsawplanet interactive puzzle' />
+              <img className='game-image' src='./images/Puzzle2.webp' alt='alphabet interactive puzzle' />
             </Link>
             <Link href="/jigsawplanet2">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='free jigsaw planet game' />
+              <img className='game-image' src='./images/Puzzle3.webp' alt='free alphabet game' />
             </Link>
-            <Link href="/jigsawplanet13.">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='play jigsaw planet puzzle online' />
+            <Link href="/jigsawplanet3.">
+              <img className='game-image' src='./images/Puzzle5.webp' alt='play alphabet puzzle online' />
             </Link>
           </div>
         </div>

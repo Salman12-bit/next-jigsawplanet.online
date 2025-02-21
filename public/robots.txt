@@ -2,6 +2,8 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /dashboard
+Disallow: /userprofile
 Disallow: /checkout/
 
 Sitemap: https://jigsawplanet.online/sitemap.xml

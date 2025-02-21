@@ -1,28 +1,48 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./freeze.css"
 import Link from 'next/link';
 
 
 const Game = () => {
-  const words = ["NUMERALS", "pearl", "MOBILE"];
+  const initialWords = ["Friend", "pearl", "Mobile"];
+  const alternateWords = ["Problem", "Laptop", "Tablet"];
+  const [words, setWords] = useState([...initialWords]);
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
   const [gameOver, setGameOver] = useState(false);
   const [correctGuess, setCorrectGuess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
+
+  useEffect(() => {
+    const lastPlayTimestamp = localStorage.getItem("lastPlayTimestamp");
+    const currentTimestamp = new Date().getTime();
+
+    if (lastPlayTimestamp) {
+      const minutesDifference = (currentTimestamp - parseInt(lastPlayTimestamp)) / (1000 * 60);
+      if (minutesDifference >= 3) {
+        setWords([...alternateWords]);
+      }
+    }
+    localStorage.setItem("lastPlayTimestamp", currentTimestamp.toString());
+    setScrambledWord(scrambleWord(words[0]));
+  }, []);
 
   function scrambleWord(word) {
     return word.split('').sort(() => Math.random() - 0.5).join('');
   }
 
-  function checkAnswer() {
-    const currentWord = words[currentLevel].toLowerCase();
-    if (guess.toLowerCase() === currentWord) {
-      setCorrectGuess(true);
-    } else {
 
+  function checkAnswer() {
+    const currentWord = words[currentLevel];
+    if (guess.toLowerCase() === currentWord.toLowerCase()) {
+      setCorrectGuess(true);
+      setErrorMessage('');
+    } else {
+      setErrorMessage("Try again! Incorrect guess.");
     }
   }
 
@@ -54,6 +74,8 @@ const Game = () => {
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
             />
+
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
               <button className="button2" onClick={checkAnswer}>Submit</button>
               {correctGuess && (
@@ -116,17 +138,17 @@ const Game = () => {
             <p className="instructions-description">Cross words offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest free printable word puzzles. So, choose your game, set up your space, and dive into the fascinating world of printable word puzzles!</p>
           </div>
           <div className='game-image-container'>
+            <Link href="/puzzle-words">
+              <img className='game-image' src='./images/Puzzle1.webp' alt='printable word puzzles adventure' />
+            </Link>
+            <Link href="/word-game">
+              <img className='game-image' src='./images/Puzzle2.webp' alt='Play puzzles on printable word puzzles' />
+            </Link>
+            <Link href="/word-puzzle">
+              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore printable word puzzles puzzles' />
+            </Link>
             <Link href="/jigsaw-planet">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='Jigsaw planet adventure' />
-            </Link>
-            <Link href="/jigsawplanet1">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='Play puzzles on jigsaw planet' />
-            </Link>
-            <Link href="/jigsawplanet2">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore jigsaw planet puzzles' />
-            </Link>
-            <Link href="/jigsawplanet3">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='Online jigsaw planet game' />
+              <img className='game-image' src='./images/Puzzle5.webp' alt='Online printable word puzzles game' />
             </Link>
           </div>
 

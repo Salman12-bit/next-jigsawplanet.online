@@ -9,16 +9,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { data: session } = useSession();
 
-  // Logout function
   const logout = async () => {
-    localStorage.removeItem("key"); // Clear specific item from local storage
+    localStorage.removeItem("key");
     await signOut({
-      callbackUrl: "https://jigsawplanet.online/login", // Redirect to production login page
+      callbackUrl: "https://jigsawplanet.online/login",
     });
-    window.location.href = "https://jigsawplanet.online/login"; // Hard refresh to production login page
+    window.location.href = "https://jigsawplanet.online/login";
   };
-
-  // Toggle mobile menu
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -40,7 +37,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link href="/jigsaw-planet" className={styles.navItem}>
-            Puzzle Game
+            Alphabet Puzzle
           </Link>
           <Link href="/printable-word-puzzles" className={styles.navItem}>
             Word Puzzle
@@ -69,7 +66,7 @@ const Navbar = () => {
           ) : (
             <>
               <Link href="/login" className={styles.navItem}>
-                Sing In
+                Sign In
               </Link>
               <Link href="/register" className={styles.navItem}>
                 Sign Up

@@ -33,6 +33,32 @@ export default function Home() {
       "image": "/images/rabbit.webp",
       link: '/jigsaw-rabbit'
     },
+    {
+      "image": "/images/eiffel.webp",
+      link: '/jigsaw-eiffel'
+    },
+  ];
+
+
+  const wordgame = [
+    {
+      "image": "/images/word.webp",
+      link: '/printable-word-puzzles'
+    },
+    {
+      "image": "/images/friend.webp",
+      link: '/puzzle-words'
+    },
+    {
+      "image": "/images/wordchildren.webp",
+      link: '/word-game'
+    },
+    {
+      "image": "/images/bee.webp",
+      link: '/word-puzzle'
+    },
+
+
   ];
 
   const getData = async () => {
@@ -66,8 +92,7 @@ export default function Home() {
         {puzzleGames.map((item, index) => (
           <div key={index} className="puzzle-game-card">
             <img src={item.image} alt={`Puzzle ${index + 1}`} className="puzzle-game-image" />
-            <h3 className="puzzle-game-title">Puzzle Game</h3>
-            <p>Click on the button below to start playing</p>
+            <p className="puzzle-game-title">Click on the button to start playing</p>
             <Link href={item.link}><button className="puzzle-game-button">Play Now</button></Link>
           </div>
         ))}
@@ -95,6 +120,14 @@ export default function Home() {
             </div>
           ))
         )}
+      </div>
+      <div className="word-games">
+        {wordgame.map((item, index) => (
+          <div key={index} className="word-game-card">
+            <img src={item.image} alt={`Puzzle ${index + 1}`} className="word-game-image" />
+            <Link href={item.link}><button className="puzzle-game-button">Play Now</button></Link>
+          </div>
+        ))}
       </div>
     </div>
   );

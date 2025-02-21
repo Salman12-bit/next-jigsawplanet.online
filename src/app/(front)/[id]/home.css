@@ -6,34 +6,26 @@
   padding: 30px;
   margin-bottom: 10px;
 }
-
-/* Information Section Styling */
 .info {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 100%;
-  /* Ensure full width */
+  
 }
-
-/* Title Styling */
 .title {
   font-size: 40px;
   text-align: center;
   margin-bottom: 10px;
   text-align: justify;
 }
-
-/* Description Styling */
 .desc {
   font-size: 25px;
   font-weight: 300;
   margin-bottom: 30px;
   text-align: justify;
 }
-
-/* Author Image Styling */
 .author {
   display: flex;
   align-items: center;
@@ -41,14 +33,6 @@
   width: 100%;
   justify-content: center;
 }
-
-/* Avatar Image Styling */
-/* .avatar {
-  width: 100%;
-  max-width: 1200px;
-} */
-
-/* Content Section Styling */
 .content {
   font-size: 25px;
   font-weight: 300;
@@ -56,8 +40,6 @@
   color: #000000;
   text-align: justify;
 }
-
-/* Responsive Styling for Mobile View */
 @media (max-width: 768px) {
   .title {
     font-size: 30px;
@@ -73,10 +55,8 @@
     height: auto;
     border-radius: 10px;
     max-width: 100%;
-    /* Full width on mobile */
   }
 }
-
 @media (max-width: 480px) {
   .title {
     font-size: 24px;
