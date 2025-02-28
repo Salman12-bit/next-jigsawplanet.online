@@ -189,7 +189,7 @@ const Puzzle1 = () => {
             <Link href="/jigsawplanet2">
               <img className='game-image' src='./images/Puzzle3.webp' alt='free alphabet game' />
             </Link>
-            <Link href="/jigsawplanet3.">
+            <Link href="/jigsawplanet3">
               <img className='game-image' src='./images/Puzzle5.webp' alt='play alphabet puzzle online' />
             </Link>
           </div>

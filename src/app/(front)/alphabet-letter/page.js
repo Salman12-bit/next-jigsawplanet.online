@@ -23,9 +23,9 @@ const Board1 = styled.div`
 
 const initialCards = [
   { id: 1, value: 'E' }, { id: 2, value: 'F' },
-  { id: 3, value: 'H' }, { id: 4, value: 'D' },
-  { id: 5, value: 'C' }, { id: 6, value: 'H' },
-  { id: 7, value: 'H' }, { id: 8, value: 'H' },
+  { id: 3, value: 'J' }, { id: 4, value: 'J' },
+  { id: 5, value: 'J' }, { id: 6, value: 'H' },
+  { id: 7, value: 'H' }, { id: 8, value: 'J' },
   { id: 9, value: 'B' },
 ];
 
@@ -129,7 +129,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/alphabet-letter">
+                <Link href="/">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -140,42 +140,42 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play letter puzzles Game</h2>
-            <p className="instructions-description">Letter puzzles games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. letter puzzles come in various forms, with unique content from traditional paper letter puzzles to sophisticated digital games. The letter puzzles guide will walk you through the basic principles of playing different types of letter puzzles games, offering tips and strategies to enhance your experience.</p>
-            <h3 className="instruction-step">1. Different Types of letter puzzles Free:</h3>
-            <p className="instructions-description">Letter puzzles games come in many varieties, each with unique mechanics and objectives.</p>
+            <h2 className="instructions-title">How to Play  pictures of bubble letters Game</h2>
+            <p className="instructions-description">Pictures of bubble letters games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Pictures of bubble letters come in various forms, with unique content from traditional paper  pictures of bubble letters to sophisticated digital games. The  pictures of bubble letters guide will walk you through the basic principles of playing different types of  pictures of bubble letters games, offering tips and strategies to enhance your experience.</p>
+            <h3 className="instruction-step">1. Different Types of  pictures of bubble letters Free:</h3>
+            <p className="instructions-description"> Pictures of bubble letters games come in many varieties, each with unique mechanics and objectives.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each letter puzzles puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
+            <p className="instructions-description">Each  pictures of bubble letters puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
             <ul className="instructions-list">
               <li>In this game players have 3 chances.</li>
-              <li>If 3 letter puzzles puzzle game cards are matched to each other.</li>
+              <li>If 3  pictures of bubble letters puzzle game cards are matched to each other.</li>
               <li>Player wins this game.</li>
-              <li>Otherwise, Restart the letter puzzles game again and try to match again 3 cards.</li>
+              <li>Otherwise, Restart the  pictures of bubble letters game again and try to match again 3 cards.</li>
             </ul>
             <h3 className="instruction-step">3. Set up Your Space:</h3>
-            <p className="instructions-description">For physical letter puzzles, ensure you have a comfortable and well-lit workspace. For digital letter puzzles, adjust your device's brightness and volume settings to suit your environment and mind.</p>
+            <p className="instructions-description">For physical  pictures of bubble letters, ensure you have a comfortable and well-lit workspace. For digital  pictures of bubble letters, adjust your device's brightness and volume settings to suit your environment and mind.</p>
             <h2 className="tips-title">Tips for Success</h2>
             <ul className="instructions-list">
-              <li>Stay Calm: Letter puzzles puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
+              <li>Stay Calm:  pictures of bubble letters puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
               <li>Practice Regularly: The more you play, the better you get.</li>
               <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
               <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
             </ul>
             <h3 className="instruction-step">Conclusion:</h3>
-            <p className="instructions-description">Letter puzzles games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your letter puzzles-solving skills and enjoy the satisfying feeling of cracking even the toughest letter puzzles. So, choose your game, set up your space, and dive into the fascinating world of letter puzzles!</p>
+            <p className="instructions-description"> Pictures of bubble letters games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your  pictures of bubble letters-solving skills and enjoy the satisfying feeling of cracking even the toughest  pictures of bubble letters. So, choose your game, set up your space, and dive into the fascinating world of  pictures of bubble letters!</p>
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='free online letter puzzles puzzle game' />
+              <img className='game-image' src='./images/Puzzle1.webp' alt='free online  pictures of bubble letters puzzle game' />
             </Link>
             <Link href="/alphabet-puzzles">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='letter puzzles interactive puzzle' />
+              <img className='game-image' src='./images/Puzzle2.webp' alt=' pictures of bubble letters interactive puzzle' />
             </Link>
             <Link href="/jigsawplanet2">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='free letter puzzles game' />
+              <img className='game-image' src='./images/Puzzle3.webp' alt='free  pictures of bubble letters game' />
             </Link>
             <Link href="/abc-puzzle">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='play letter puzzles puzzle online' />
+              <img className='game-image' src='./images/Puzzle5.webp' alt='play  pictures of bubble letters puzzle online' />
             </Link>
           </div>
         </div>

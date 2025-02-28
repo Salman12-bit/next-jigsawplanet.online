@@ -47,6 +47,15 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .footerSection {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    text-align: center;
+    font-size: larger;
+  }
+
 }
 
 .gameImage {

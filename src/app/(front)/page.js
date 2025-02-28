@@ -37,6 +37,10 @@ export default function Home() {
       "image": "/images/eiffel.webp",
       link: '/jigsaw-eiffel'
     },
+    {
+      "image": "/images/place.webp",
+      link: '/jigsaw-place'
+    },
   ];
 
 
