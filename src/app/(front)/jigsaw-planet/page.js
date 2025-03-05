@@ -19,7 +19,9 @@ const Board1 = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 90px);
   grid-gap: 8px;
+  justify-content: center; 
 `;
+
 
 const initialCards = [
   { id: 1, value: 'A' }, { id: 2, value: 'B' },
