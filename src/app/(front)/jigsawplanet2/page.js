@@ -19,7 +19,9 @@ const Board1 = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 90px);
   grid-gap: 8px;
+  justify-content: center; 
 `;
+
 
 const initialCards = [
   { id: 1, value: 'D' }, { id: 2, value: 'D' },
@@ -140,9 +142,9 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play abc puzzle online Game</h2>
+            <h1 className="instructions-title">How to Play abc puzzle online Game</h1>
             <p className="instructions-description">Abc puzzle online games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Abc puzzle online come in various forms, with unique content from traditional paper abc puzzle online to sophisticated digital games. The abc puzzle online guide will walk you through the basic principles of playing different types of abc puzzle online games, offering tips and strategies to enhance your experience.</p>
-            <h3 className="instruction-step">1. Different Types of abc puzzle online Free:</h3>
+            <h2 className="instruction-step">1. Different Types of abc puzzle online Free:</h2>
             <p className="instructions-description">Abc puzzle online games come in many varieties, each with unique mechanics and objectives.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
             <p className="instructions-description">Each abc puzzle online puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
@@ -152,16 +154,16 @@ const Puzzle1 = () => {
               <li>Player wins this game.</li>
               <li>Otherwise, Restart the abc puzzle online game again and try to match again 3 cards.</li>
             </ul>
-            <h3 className="instruction-step">3. Set up Your Space:</h3>
+            <h4 className="instruction-step">3. Set up Your Space:</h4>
             <p className="instructions-description">For physical jigsaw puzzle, ensure you have a comfortable and well-lit workspace. For digital abc puzzle online, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h2 className="tips-title">Tips for Success</h2>
+            <h5 className="tips-title">Tips for Success</h5>
             <ul className="instructions-list">
               <li>Stay Calm: Abc puzzle online puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
               <li>Practice Regularly: The more you play, the better you get.</li>
               <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
               <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
             </ul>
-            <h3 className="instruction-step">Conclusion:</h3>
+            <h6 className="instruction-step">Conclusion:</h6>
             <p className="instructions-description">Abc puzzle online games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your abc puzzle online-solving skills and enjoy the satisfying feeling of cracking even the toughest abc puzzle online. So, choose your game, set up your space, and dive into the fascinating world of abc puzzle online!</p>
           </div>
           <div className="game-image-container">

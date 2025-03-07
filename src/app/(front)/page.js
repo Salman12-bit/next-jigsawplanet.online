@@ -41,6 +41,10 @@ export default function Home() {
       "image": "/images/place.webp",
       link: '/jigsaw-place'
     },
+    {
+      "image": "/images/homewater.webp",
+      link: '/jigsaw-water'
+    },
   ];
 
 

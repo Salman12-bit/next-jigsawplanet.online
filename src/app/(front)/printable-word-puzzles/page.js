@@ -96,9 +96,9 @@ const Game = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play free printable word puzzles Game</h2>
+            <h1 className="instructions-title">How to Play free printable word puzzles Game</h1>
             <p className="instructions-description">Free printable word puzzles are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Printable word puzzles come in various forms, with unique content from traditional word puzzle to sophisticated digital games. The cross word puzzle guide will walk you through the basic principles of playing different types of word puzzles games, offering tips and strategies to enhance your experience.</p>
-            <h3 className="instruction-step">1. Different Types of free printable word puzzles:</h3>
+            <h2 className="instruction-step">1. Different Types of free printable word puzzles:</h2>
             <p className="instructions-description">Free printable word puzzles come in many varieties, each with unique mechanics and objectives.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
             <p className="instructions-description">Each words has specific rules and objectives. Read the instructions carefully before starting.</p>
@@ -108,16 +108,16 @@ const Game = () => {
               <li>Player wins this game.</li>
               <li>Otherwise, play again and thinking how to complete this</li>
             </ul>
-            <h3 className="instruction-step">3. Set up Your Space:</h3>
+            <h4 className="instruction-step">3. Set up Your Space:</h4>
             <p className="instructions-description">For physical word puzzle, ensure you have a comfortable and well-lit workspace. For digital words game, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h2 className="tips-title">Tips for Success</h2>
+            <h5 className="tips-title">Tips for Success</h5>
             <ul className="instructions-list">
               <li>Stay Calm: Words puzzles game should be enjoyable; take breaks if you feel frustrated.</li>
               <li>Practice Regularly: The more you play, the benefit you get.</li>
               <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
               <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
             </ul>
-            <h3 className="instruction-step">Conclusion:</h3>
+            <h6 className="instruction-step">Conclusion:</h6>
             <p className="instructions-description">Cross words offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest free printable word puzzles. So, choose your game, set up your space, and dive into the fascinating world of printable word puzzles!</p>
           </div>
           <div className='game-image-container'>

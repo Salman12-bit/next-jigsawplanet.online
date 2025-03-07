@@ -79,9 +79,9 @@ const Game = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play words with friends chear Game</h2>
+            <h1 className="instructions-title">How to Play words with friends chear Game</h1>
             <p className="instructions-description">Words with friends chear are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Word maze puzzles come in various forms, with unique content from traditional word maze puzzles to sophisticated digital games. The cross word puzzle guide will walk you through the basic principles of playing different types of word puzzles games, offering tips and strategies to enhance your experience.</p>
-            <h3 className="instruction-step">1. Different Types of words with friends chear:</h3>
+            <h2 className="instruction-step">1. Different Types of words with friends chear:</h2>
             <p className="instructions-description">Word puzzles games come in many varieties, each with unique mechanics and objectives.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
             <p className="instructions-description">Each words has specific rules and objectives. Read the instructions carefully before starting.</p>
@@ -91,16 +91,16 @@ const Game = () => {
               <li>Player wins this game.</li>
               <li>Otherwise, play again and thinking how to complete this</li>
             </ul>
-            <h3 className="instruction-step">3. Set up Your Space:</h3>
+            <h4 className="instruction-step">3. Set up Your Space:</h4>
             <p className="instructions-description">For physical word maze puzzles, ensure you have a comfortable and well-lit workspace. For digital words game, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h2 className="tips-title">Tips for Success</h2>
+            <h5 className="tips-title">Tips for Success</h5>
             <ul className="instructions-list">
               <li>Stay Calm: Word maze puzzles game should be enjoyable; take breaks if you feel frustrated.</li>
               <li>Practice Regularly: The more you play, the benefit you get.</li>
               <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
               <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
             </ul>
-            <h3 className="instruction-step">Conclusion:</h3>
+            <h6 className="instruction-step">Conclusion:</h6>
             <p className="instructions-description">Words with friends chear offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest words with friends chear. So, choose your game, set up your space, and dive into the fascinating world of word maze puzzles!</p>
           </div>
           <div className='game-image-container'>

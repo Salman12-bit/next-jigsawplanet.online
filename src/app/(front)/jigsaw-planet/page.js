@@ -140,7 +140,7 @@ const Puzzle1 = () => {
         </div>
       </div>
       <div className="welcome-container">
-        <h2 className="welcome-title">🧩 Welcome to the Ultimate Puzzle Challenge! 🧩</h2>
+        <h1 className="welcome-title">🧩 Welcome to the Ultimate Puzzle Challenge! 🧩</h1>
         <p className="welcome-text">
           Hey there, puzzle solver! 🌟 Every puzzle is a new adventure, and every piece is a chance to unlock your potential.
           This is more than just a game sit's your journey to sharpen your mind, test your skills, and celebrate every small victory.
@@ -157,9 +157,9 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play alphabet Game</h2>
+            <h1 className="instructions-title">How to Play alphabet Game</h1>
             <p className="instructions-description">Alphabet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Alphabet come in various forms, with unique content from traditional paper alphabet to sophisticated digital games. The alphabet guide will walk you through the basic principles of playing different types of alphabet games, offering tips and strategies to enhance your experience.</p>
-            <h3 className="instruction-step">1. Different Types of alphabet Free:</h3>
+            <h2 className="instruction-step">1. Different Types of alphabet Free:</h2>
             <p className="instructions-description">alphabet games come in many varieties, each with unique mechanics and objectives.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
             <p className="instructions-description">Each alphabet puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
@@ -169,16 +169,16 @@ const Puzzle1 = () => {
               <li>Player wins this game.</li>
               <li>Otherwise, Restart the alphabet game again and try to match again 3 cards.</li>
             </ul>
-            <h3 className="instruction-step">3. Set up Your Space:</h3>
+            <h4 className="instruction-step">3. Set up Your Space:</h4>
             <p className="instructions-description">For physical alphabet puzzle, ensure you have a comfortable and well-lit workspace. For digital alphabet, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h2 className="tips-title">Tips for Success</h2>
+            <h5 className="tips-title">Tips for Success</h5>
             <ul className="instructions-list">
               <li>Stay Calm: Alphabet puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
               <li>Practice Regularly: The more you play, the better you get.</li>
               <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
               <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
             </ul>
-            <h3 className="instruction-step">Conclusion:</h3>
+            <h6 className="instruction-step">Conclusion:</h6>
             <p className="instructions-description">Alphabet games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet. So, choose your game, set up your space, and dive into the fascinating world of alphabet!</p>
           </div>
           <div className="game-image-container">
