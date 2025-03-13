@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 
 const Game = () => {
-  const words = ["women", "Forums", "HEADER"];
+  const words = ["maker", "Immaculate", "SPACES"];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
@@ -45,8 +45,8 @@ const Game = () => {
       padding: "20px"
     }}>
       <div className="Puzzle">
-        <h4 className="current-color">Current Level 6</h4>
-        <h1 className="color">Word Game Puzzles</h1>
+        <h4 className="current-color">Current Level 7</h4>
+        <h1 className="color">Immaculate Puzzle</h1>
         {!gameOver ? (
           <>
             <div className="level">Level {currentLevel + 1}</div>
@@ -71,7 +71,7 @@ const Game = () => {
             <button className="button2" onClick={() => window.location.reload()}>
               Restart
             </button>
-            <Link href="/word-find" className="button2 mx-2">
+            <Link href="/" className="button2 mx-2">
               Next Level
             </Link>
           </div>
@@ -80,10 +80,10 @@ const Game = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to play word puzzle game</h1>
-            <p className="instructions-description">Word puzzle are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time.Word puzzle come in various forms, with unique content from traditional word puzzle to sophisticated digital games. The cross word puzzle guide will walk you through the basic principles of playing different types of word puzzles games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of word puzzle:</h2>
-            <p className="instructions-description">Word puzzles games come in many varieties, each with unique mechanics and objectives.</p>
+            <h1 className="instructions-title">How to play immaculate puzzle game</h1>
+            <p className="instructions-description">Immaculate puzzle are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time.Immaculate puzzle come in various forms, with unique content from traditional immaculate puzzle to sophisticated digital games. The cross immaculate puzzle guide will walk you through the basic principles of playing different types of immaculate puzzles games, offering tips and strategies to enhance your experience.</p>
+            <h2 className="instruction-step">1. Different Types of immaculate puzzle:</h2>
+            <p className="instructions-description">Immaculate puzzles games come in many varieties, each with unique mechanics and objectives.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
             <p className="instructions-description">Each words has specific rules and objectives. Read the instructions carefully before starting.</p>
             <ul className="instructions-list">
@@ -93,29 +93,29 @@ const Game = () => {
               <li>Otherwise, play again and thinking how to complete this</li>
             </ul>
             <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical word puzzle, ensure you have a comfortable and well-lit workspace. For digital words game, adjust your device's brightness and volume settings to suit your environment and mind.</p>
+            <p className="instructions-description">For physical immaculate puzzle, ensure you have a comfortable and well-lit workspace. For digital words game, adjust your device's brightness and volume settings to suit your environment and mind.</p>
             <h5 className="tips-title">Tips for Success</h5>
             <ul className="instructions-list">
-              <li>Stay Calm: Word puzzle game should be enjoyable; take breaks if you feel frustrated.</li>
+              <li>Stay Calm: Immaculate puzzle game should be enjoyable; take breaks if you feel frustrated.</li>
               <li>Practice Regularly: The more you play, the benefit you get.</li>
               <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
               <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
             </ul>
             <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description"> Word puzzle offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest word puzzle. So, choose your game, set up your space, and dive into the fascinating world of word puzzle!</p>
+            <p className="instructions-description">Immaculate puzzle offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest immaculate puzzle. So, choose your game, set up your space, and dive into the fascinating world of immaculate puzzle!</p>
           </div>
           <div className='game-image-container'>
             <Link href="/hard-spelling">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='word puzzle adventure' />
+              <img className='game-image' src='./images/Freezenova1.webp' alt='immaculate puzzle adventure' />
             </Link>
             <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='Play puzzles on word puzzle' />
+              <img className='game-image' src='./images/Freezenova2.webp' alt='Play puzzles on immaculate puzzle' />
             </Link>
             <Link href="/word-game">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore word puzzle puzzles' />
+              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore immaculate puzzle puzzles' />
             </Link>
             <Link href="/jigsawplanet1">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='Online word puzzle game' />
+              <img className='game-image' src='./images/Freezenova3.webp' alt='Online immaculate puzzle game' />
             </Link>
           </div>
 
