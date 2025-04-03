@@ -11,6 +11,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       <meta name="google-site-verification" content="QY_TMPPlZuR_oQAF0JPwngL9VzO3wwLFykte--_fgfM" />
+      <link rel="icon" type="image/png" href="/favicon.jpg" />
       </head>
       <body className={inter.className}>
         <AuthProvider>

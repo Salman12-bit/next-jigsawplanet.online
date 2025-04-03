@@ -157,16 +157,28 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-   <url>
+  <url>
     <loc>https://jigsawplanet.online/word-puzzle</loc>
     <lastmod>2025-02-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-
-
-
-  
-
-
+  <url>
+    <loc>https://jigsawplanet.online/slider-game</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jigsawplanet.online/word-find</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jigsawplanet.online/puzzle-jigsaw</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

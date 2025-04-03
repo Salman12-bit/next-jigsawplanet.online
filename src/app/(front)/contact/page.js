@@ -3,7 +3,6 @@ import "./contact.css";
 import Button from "@/components/Button/Button";
 
 const Contact = () => {
-  // Define WebPage schema for the contact page
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
@@ -47,8 +46,6 @@ const Contact = () => {
           <Button url="#" text="Send" />
         </form>
       </div>
-
-      {/* JSON-LD Schema Script */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

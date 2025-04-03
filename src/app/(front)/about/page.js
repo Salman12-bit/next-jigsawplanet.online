@@ -2,13 +2,12 @@ import React from 'react';
 import './about.css';
 
 const About = () => {
-  // Define the WebPage schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "About Jigsaw Planet",
     "description": "Learn more about Jigsaw Planet, a platform offering exciting jigsaw puzzles for all ages. Designed and developed to deliver a seamless experience.",
-    "url": "https://jigsawplanet.online/aboutus", 
+    "url": "https://jigsawplanet.online/about", 
     "publisher": {
       "@type": "Organization",
       "name": "Muhammad Salman",
@@ -21,14 +20,14 @@ const About = () => {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://jigsawplanet.online/aboutus"
+      "@id": "https://jigsawplanet.online/about"
     },
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "About Us",
       "email": "msalman39707@gmail.com", 
       "telephone": "340-6297732", 
-      "url": "https://jigsawplanet.online/aboutus", 
+      "url": "https://jigsawplanet.online/about", 
     },
   };
 
@@ -49,8 +48,6 @@ const About = () => {
           designed to meet your needs and exceed your expectations. We sincerely appreciate your support and engagement with our platform!
         </p>
       </div>
-
-      {/* JSON-LD Script for Schema Markup */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
