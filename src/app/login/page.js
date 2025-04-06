@@ -91,7 +91,7 @@ const Login = () => {
           <p className="text-white">
             Don't have an account?
             <br />
-            <Link href="/register" className="text-white">Sign Up</Link> /
+            <Link href="/register" className="text-white">Register</Link> /
             <Link href="/forgetpass" className="text-white">Forget Password</Link>
           </p>
         </div>

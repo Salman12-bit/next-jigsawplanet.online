@@ -49,6 +49,10 @@ export default function Home() {
       "image": "/images/nightstar.webp",
       link: '/puzzle-jigsaw'
     },
+    {
+      "image": "/images/dorapuzzle.webp",
+      link: '/jigswaplanet'
+    },
   ];
 
 
