@@ -53,6 +53,10 @@ export default function Home() {
       "image": "/images/dorapuzzle.webp",
       link: '/jigswaplanet'
     },
+    {
+      "image": "/images/animegame.webp",
+      link: '/animegame'
+    },
   ];
 
 

@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 
 const Game = () => {
-  const words = ["Ladder", "scramble", "INCORRECT"];
+  const words = ["cookies", "Workout", "SHARPEN"];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
@@ -45,8 +45,8 @@ const Game = () => {
       padding: "20px"
     }}>
       <div className="Puzzle">
-        <h4 className="current-color">Current Level 8</h4>
-        <h1 className="color">Word ladder solver</h1>
+        <h4 className="current-color">Current Level 9</h4>
+        <h1 className="color">Large print word search puzzles</h1>
         {!gameOver ? (
           <>
             <div className="level">Level {currentLevel + 1}</div>
@@ -71,7 +71,7 @@ const Game = () => {
             <button className="button2" onClick={() => window.location.reload()}>
               Restart
             </button>
-            <Link href="/word-cookies" className="button2 mx-2">
+            <Link href="/" className="button2 mx-2">
               Next Level
             </Link>
           </div>
@@ -80,38 +80,39 @@ const Game = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Word Ladder Solver Game</h1>
+            <h1 className="instructions-title">How to Play Large Print Word Search Puzzles</h1>
             <p className="instructions-description">
-              Word ladder solver games are a fun and challenging way to boost your brainpower, improve vocabulary, and enjoy your leisure time. Whether you're solving a traditional paper puzzle or using a digital word ladder solver tool, these games help enhance logical thinking and word association skills. This guide will walk you through how to play word ladder solver games, including types, rules, strategies, and tips to maximize your experience.
+              Large print word search puzzles are a relaxing and stimulating way to exercise your brain, expand your vocabulary, and enjoy some screen-free entertainment. Designed with bigger letters for easier reading, these puzzles are ideal for seniors, kids, or anyone who prefers a more comfortable puzzle experience. Whether you’re solving on paper or enjoying a digital version, this guide will show you how to play large print word search puzzles, including types, rules, strategies, and expert tips.
             </p>
-            <h2 className="instruction-step">1. Different Types of Word Ladder Solver Games</h2>
+            <h2 className="instruction-step">1. Different Types of Large Print Word Search Puzzles</h2>
             <p className="instructions-description">
-              Word ladder solver games come in a variety of styles. Some are simple text-based puzzles, while others are interactive games with hints, timers, and challenges. You can play solo or compete with friends to climb the ladder of words!
+              Large print word search puzzles come in a variety of formats—classic themed puzzles, timed challenges, and even interactive online versions. You can play alone or challenge friends to see who finds all the words first. The large font makes it accessible and fun for all ages!
             </p>
             <h3 className="instruction-step">2. Understand the Rules</h3>
             <p className="instructions-description">
-              Each word ladder solver puzzle has a clear goal: transform a start word into an end word by changing one letter at a time, with each intermediate word being valid. Read the instructions carefully to understand how many steps or levels you need to solve.
+              The goal of a large print word search puzzle is simple: find and circle all the listed words hidden in a grid of letters. Words may appear horizontally, vertically, diagonally, and even backward. Follow the instructions provided in each puzzle to know the word list and direction patterns allowed.
             </p>
             <ul className="instructions-list">
-              <li>The game includes 3 sub-levels to complete.</li>
-              <li>If all sub-levels are solved correctly, you win the game.</li>
-              <li>If not, analyze your path and try again with a better strategy.</li>
-              <li>Think critically about how one letter change can move you closer to the final word.</li>
+              <li>Each puzzle contains a word list you need to locate in the grid.</li>
+              <li>Words may be hidden in any direction: up, down, across, or diagonal.</li>
+              <li>Complete all the words in the list to win the puzzle.</li>
+              <li>If stuck, scan the grid slowly and look for familiar letter combinations.</li>
             </ul>
             <h4 className="instruction-step">3. Set Up Your Space</h4>
             <p className="instructions-description">
-              For offline word ladder solver puzzles, choose a quiet and well-lit area to work. If you're using a digital version, make sure your device settings—like brightness and sound—are comfortable for extended play sessions.
+              For printed word search puzzles, choose a quiet and well-lit space. Use a pencil or highlighter to mark the words. If you're playing online, adjust your device’s brightness and zoom to ensure clear visibility for extended puzzle-solving sessions.
             </p>
             <h5 className="tips-title">Tips for Success</h5>
             <ul className="instructions-list">
-              <li><strong>Stay Calm:</strong> Keep it fun. If you're stuck, take a short break and return with a fresh mind.</li>
-              <li><strong>Practice Often:</strong> The more you play word ladder solver games, the faster and sharper your thinking becomes.</li>
-              <li><strong>Learn from Mistakes:</strong> Review where you went off track and try a new path next time.</li>
-              <li><strong>Challenge Yourself:</strong> Gradually attempt harder puzzles to improve your problem-solving and word skills.</li>
+              <li><strong>Stay Focused:</strong> Take your time and scan the puzzle line by line.</li>
+              <li><strong>Highlight as You Go:</strong> Mark off each found word to avoid confusion.</li>
+              <li><strong>Practice Regularly:</strong> The more puzzles you solve, the quicker your word-spotting skills become.</li>
+              <li><strong>Use Word Patterns:</strong> Look for unique letters or common word beginnings to find matches faster.</li>
+              <li><strong>Challenge Yourself:</strong> Try puzzles with larger grids or longer word lists as you improve.</li>
             </ul>
             <h6 className="instruction-step">Conclusion</h6>
             <p className="instructions-description">
-              Word ladder solver games are a powerful tool to train your brain, improve vocabulary, and enjoy a satisfying puzzle-solving experience. With consistent practice and a bit of creativity, you’ll find yourself mastering even the toughest word ladders. So, pick your puzzle, focus your mind, and get ready to climb the word ladder one letter at a time!
+              Large print word search puzzles are a wonderful way to relax, have fun, and give your brain a healthy workout. They’re especially great for older adults or anyone seeking a visually comfortable puzzle format. With a bit of patience and regular practice, you’ll improve your observation and language skills while enjoying each satisfying word you find. So grab your favorite puzzle and get ready to search and discover—one word at a time!
             </p>
           </div>
           <div className='game-image-container'>

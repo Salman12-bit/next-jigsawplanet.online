@@ -23,10 +23,10 @@ const Board1 = styled.div`
 `;
 
 const initialCards = [
-  { id: 1, value: 'J' }, { id: 2, value: 'I' },
-  { id: 3, value: 'K' }, { id: 4, value: 'K' },
-  { id: 5, value: 'L' }, { id: 6, value: 'K' },
-  { id: 7, value: 'K' }, { id: 8, value: 'I' },
+  { id: 1, value: 'J' }, { id: 2, value: 'M' },
+  { id: 3, value: 'M' }, { id: 4, value: 'K' },
+  { id: 5, value: 'L' }, { id: 6, value: 'M' },
+  { id: 7, value: 'M' }, { id: 8, value: 'I' },
   { id: 9, value: 'H' },
 ];
 
@@ -36,7 +36,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(11);
+  const [level, setLevel] = useState(12);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -130,7 +130,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/puzzleslider">
+                <Link href="/">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -141,46 +141,47 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Bingo Slide Cards</h1>
+            <h1 className="instructions-title">How to Play Puzzle Slider Game</h1>
             <p className="instructions-description">
-              Bingo slide cards are a fun and engaging way to challenge your mind, sharpen your thinking, and enjoy some quality leisure time. Whether you’re playing with traditional paper bingo slide cards or a digital version, this game is perfect for boosting your focus and decision-making skills. In this guide, you’ll learn everything you need to know about how to play bingo slide cards, including different types, basic rules, setup tips, and strategies for success.
+              Puzzle slider games are classic brain-teasing activities where players slide tiles around a board to reassemble a scrambled image or sequence. Whether you're playing a number slider, picture tile puzzle, or a digital version on your phone, puzzle slider games are great for sharpening focus, improving logic, and having fun at any age. This guide explains how to play the Puzzle Slider Game, including game types, rules, tips, and strategies to help you win.
             </p>
-            <h2 className="instruction-step">1. Types of Free Bingo Slide Cards</h2>
+            <h2 className="instruction-step">1. Types of Puzzle Slider Games</h2>
             <p className="instructions-description">
-              There are several variations of bingo slide cards available—some are classic and simple, while others are more modern and interactive. You can find printable versions or enjoy digital formats with sound and animation features.
+              Puzzle slider games come in many forms, including:
+              <ul>
+                <li><strong>Classic Number Sliders:</strong> Usually a 3x3 or 4x4 grid where you slide numbered tiles into the correct order.</li>
+                <li><strong>Image Tile Puzzles:</strong> Rearrange scrambled image pieces to complete the full picture.</li>
+                <li><strong>Digital Puzzle Sliders:</strong> Online or app-based versions that may include timers, levels, and animations.</li>
+              </ul>
+              Each version tests your memory, patience, and strategy in unique ways.
             </p>
-
             <h3 className="instruction-step">2. Understand the Rules</h3>
             <p className="instructions-description">
-              Every bingo slide cards game has its own unique rules, but the goal remains the same: match the correct cards to win. Make sure to read the instructions before starting.
+              The goal is to arrange all tiles into the correct order or recreate the full image by sliding pieces one at a time into the empty space. Keep these rules in mind:
             </p>
-
             <ul className="instructions-list">
-              <li>Each player gets 3 chances to win.</li>
-              <li>The goal is to match 3 bingo slide cards that align with each other.</li>
-              <li>If all 3 cards match correctly, the player wins the game.</li>
-              <li>If not, restart the bingo slide cards game and try again.</li>
+              <li>You can only move tiles adjacent to the empty space.</li>
+              <li>The puzzle is solved when all tiles are in the correct sequence or image alignment.</li>
+              <li>Some games are timed, while others allow unlimited moves.</li>
+              <li>Moves are usually counted—fewer moves mean a better score.</li>
             </ul>
-
-            <h4 className="instruction-step">3. Set Up Your Space</h4>
+            <h4 className="instruction-step">3. Set Up Your Game Space</h4>
             <p className="instructions-description">
-              For a better gaming experience, set up your play area properly. If you’re using physical bingo slide cards, play in a bright and comfy space. For digital versions, adjust your device's brightness and volume for clear visibility and audio feedback.
+              For physical slider puzzles, place the board on a flat surface with good lighting. For digital puzzle slider games, use a device with a clear screen and responsive touch or mouse control. Make sure you're comfortable for focused gameplay.
             </p>
-
             <h5 className="tips-title">Tips for Success</h5>
             <ul className="instructions-list">
-              <li><strong>Stay Calm:</strong> Keep the game fun and stress-free. Take breaks if needed.</li>
-              <li><strong>Practice Often:</strong> The more you play bingo slide cards, the better your skills become.</li>
-              <li><strong>Learn from Mistakes:</strong> Don’t be afraid to lose—each round helps you improve.</li>
-              <li><strong>Challenge Yourself:</strong> Try higher difficulty levels to push your abilities further.</li>
+              <li><strong>Start from the Top:</strong> Solve row by row or column by column, starting from the top-left corner.</li>
+              <li><strong>Look Ahead:</strong> Plan a few moves in advance instead of making random slides.</li>
+              <li><strong>Be Patient:</strong> Don't rush. Precision is key in solving slider puzzles.</li>
+              <li><strong>Practice Patterns:</strong> The more you play, the more you'll recognize tile movement strategies.</li>
+              <li><strong>Challenge Yourself:</strong> Try harder levels or larger grids as you improve your solving speed.</li>
             </ul>
-
             <h6 className="instruction-step">Conclusion</h6>
             <p className="instructions-description">
-              Bingo slide cards games are an enjoyable way to train your brain, relax, and have a good time. Whether you're a beginner or a seasoned player, mastering the rules and using smart strategies can help you succeed. So pick your favorite bingo slide cards game, get ready, and enjoy the challenge!
+              Puzzle slider games are a fantastic way to challenge your brain while having fun. Whether you're reordering numbers or piecing together a picture, every move counts. With practice, strategy, and patience, you’ll improve your puzzle-solving skills and enjoy the rewarding feeling of completing the challenge. Get started now and slide your way to victory!
             </p>
           </div>
-
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle1.webp' alt='free online bingo slide cards puzzle game' />
