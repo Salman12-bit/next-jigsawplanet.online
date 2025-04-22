@@ -10,7 +10,6 @@ export default function Home() {
   const [err, setErr] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const { data: session } = useSession();
-  const [timeLeft, setTimeLeft] = useState(null);
 
   const puzzleGames = [
     {
@@ -56,6 +55,10 @@ export default function Home() {
     {
       "image": "/images/animegame.webp",
       link: '/animegame'
+    },
+    {
+      "image": "/images/jigsawsand.webp",
+      link: '/jigsaw-palnet'
     },
   ];
 
