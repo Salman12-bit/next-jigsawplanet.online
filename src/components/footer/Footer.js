@@ -8,10 +8,11 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
-        <ul className={styles.footerSection}>
-          <li><Link href="about">About Us</Link></li>
-          <li><Link href="/gameprivacypolicy">Privacy Policy</Link></li>
-        </ul>
+        <p className={styles.footerSection}>
+          <Link href="/contact">Contact</Link> <br/>
+          <Link href="about">About Us</Link>    <br/>
+          <Link href="/gameprivacypolicy">Privacy Policy</Link>
+        </p>
         <div className={styles.footerSection}>
           <Link href="https://www.facebook.com/groups/590704540347867/?ref=share&mibextid=NSMWBT" target="_blank">
             <Image
@@ -33,7 +34,7 @@ const Footer = () => {
               loading="lazy"
             />
           </Link>
-          <br/>
+          <br />
           <Link href="/termservices">Term Of Service</Link>
         </div>
       </div>

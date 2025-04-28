@@ -60,6 +60,10 @@ export default function Home() {
       "image": "/images/jigsawsand.webp",
       link: '/jigsaw-palnet'
     },
+    {
+      "image": "/images/rompecabezas.webp",
+      link: '/rompecabezas'
+    },
   ];
 
 

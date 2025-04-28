@@ -25,9 +25,9 @@ const Board1 = styled.div`
 const initialCards = [
   { id: 1, value: 'J' }, { id: 2, value: 'L' },
   { id: 3, value: 'L' }, { id: 4, value: 'K' },
-  { id: 5, value: 'L' }, { id: 6, value: 'L' },
-  { id: 7, value: 'H' }, { id: 8, value: 'I' },
-  { id: 9, value: 'H' },
+  { id: 5, value: 'N' }, { id: 6, value: 'N' },
+  { id: 7, value: 'H' }, { id: 8, value: 'N' },
+  { id: 9, value: 'N' },
 ];
 
 const Puzzle1 = () => {
@@ -36,7 +36,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(13);
+  const [level, setLevel] = useState(14);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -130,7 +130,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/alphabet-game">
+                <Link href="/">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -141,60 +141,62 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Color by letter</h1>
+            <h1 className="instructions-title">How to Play Alphabet Games Online</h1>
 
             <p className="instructions-description">
-              Color by letter is a fun and relaxing game where each area of a picture has a letter that matches a color. You fill in the spaces with the right colors to create a full image. It’s a great way to enjoy art, stay focused, and feel proud of your work. This guide will show you how to play color by letter, including the types of games, basic rules, and helpful tips.
+              Alphabet games online are fun and educational activities where you play with letters to complete different challenges. These games help you learn letters, improve spelling, and get better at recognizing words. This guide will show you how to play alphabet games online, including the types of games, basic rules, and tips for success.
             </p>
 
-            <h2 className="instruction-step">1. Types of Color by letter Games</h2>
+            <h2 className="instruction-step">1. Types of Alphabet Games Online</h2>
             <p className="instructions-description">
-              Color by letter games come in different forms:
+              Alphabet games online come in many forms:
               <ul>
-                <li><strong>Paper Coloring:</strong> A printed sheet with letters and a color key to follow.</li>
-                <li><strong>Digital Coloring:</strong> An app or online game where you tap or click to color the spaces.</li>
-                <li><strong>Pixel Coloring:</strong> A picture made of small squares where each letter stands for a color.</li>
+                <li><strong>Letter Matching:</strong> Find and match the same letters.</li>
+                <li><strong>Alphabet Puzzles:</strong> Put the letters in the correct order to complete the alphabet.</li>
+                <li><strong>Word Building:</strong> Use letters to create simple words.</li>
+                <li><strong>Letter Coloring:</strong> Color spaces that match certain letters to create a picture.</li>
               </ul>
-              No matter which type you choose, the goal is the same—match the letter to the color and fill in the picture!
+              All these games make learning letters easy and fun!
             </p>
 
             <h3 className="instruction-step">2. Understand the Rules</h3>
             <p className="instructions-description">
-              The rules are easy to follow:
+              The rules are simple:
             </p>
             <ul className="instructions-list">
-              <li>Each part of the picture has a letter inside it.</li>
-              <li>Use the matching color from the color key for that letter.</li>
-              <li>Color all the letters areas to complete the picture.</li>
-              <li>Don’t guess—always check the letter before you color.</li>
+              <li>Follow the game’s instructions carefully.</li>
+              <li>Match or use the right letter to move forward.</li>
+              <li>Complete the tasks to finish the game.</li>
+              <li>Take your time and have fun learning.</li>
             </ul>
 
             <h4 className="instruction-step">3. Set Up Your Game Space</h4>
             <p className="instructions-description">
-              Make sure you’re comfortable before you begin:
+              Before you start:
               <ul>
-                <li>Find a quiet space with good lighting.</li>
-                <li>Find letters with clear number lines.</li>
-                <li>Have your colored pencils, markers, or device ready.</li>
-                <li>Keep your color chart nearby so you can follow along easily.</li>
+                <li>Find a quiet spot with good lighting.</li>
+                <li>Use a device like a tablet, phone, or computer with a clear screen.</li>
+                <li>Make sure your internet is working well.</li>
+                <li>Be ready to have fun while learning letters!</li>
               </ul>
-              A good setup will help you enjoy the coloring without distractions.
+              A good setup helps you stay focused and enjoy the game more.
             </p>
 
             <h5 className="tips-title">Tips for Success</h5>
             <ul className="instructions-list">
-              <li><strong>Follow the letters:</strong> Always match the letter with the correct color.</li>
-              <li><strong>Take Your Time:</strong> Go slow to stay inside the lines and make your picture look great.</li>
-              <li><strong>Start Small:</strong> Begin with easy pictures, then try more detailed ones.</li>
-              <li><strong>Stay Organized:</strong> Keep your coloring tools or device neat and ready to use.</li>
-              <li><strong>Have Fun:</strong> Enjoy watching the picture appear as you color each space!</li>
+              <li><strong>Pay Attention:</strong> Look carefully at each letter and follow directions.</li>
+              <li><strong>Take Your Time:</strong> Don't rush. It's okay to go slow and get it right.</li>
+              <li><strong>Practice Often:</strong> The more you play, the better you will get at recognizing letters.</li>
+              <li><strong>Stay Positive:</strong> Every time you play, you are getting better!</li>
+              <li><strong>Challenge Yourself:</strong> Try harder levels when you feel ready.</li>
             </ul>
 
             <h6 className="instruction-step">Conclusion</h6>
             <p className="instructions-description">
-              Color by letter is a creative and fun activity that anyone can enjoy. It helps with focus, patience, and attention to detail. Whether on paper or a screen, each picture you finish will feel like an amazing piece of art. So grab your colors and start coloring by letter today!
+              Alphabet games online are a fun way to learn and play at the same time. Whether you are matching letters, building words, or solving puzzles, every game helps you grow your skills. Start playing alphabet games online today and become a letter expert!
             </p>
           </div>
+
 
           <div className="game-image-container">
             <Link href="/jigsaw-planet">

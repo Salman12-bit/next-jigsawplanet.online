@@ -42,11 +42,11 @@ const Navbar = () => {
           <Link href="/printable-word-puzzles" className={styles.navItem}>
             Word Puzzle
           </Link>
+          <Link href="/jigsawblog" className={styles.navItem}>
+            Jigsaw Blogs
+          </Link>
           <Link href="/gametheme" className={styles.navItem}>
             Gaming Theme
-          </Link>
-          <Link href="/contact" className={styles.navItem}>
-            Contact
           </Link>
           {session?.user?.role === "admin" && (
             <>
