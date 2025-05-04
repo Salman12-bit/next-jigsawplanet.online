@@ -10,6 +10,11 @@ const puzzleGames = [
     link: '/play-free-online-jigsaw-puzzles',
     text: "In today’s quick-paced digital world, where happiness is just a click away, traditional hobbies like jigsaw puzzles have found a new life of joy. One of the most astonishing venues for puzzle fans is the jigsaw puzzle, which has been utilized for many years.",
   }, 
+  {
+    image: "/images/whenfinished.webp",
+    link: '/top-10-creative-ideas-when-finished',
+    text: "Completing a jigsaw puzzle shows a satisfying feeling of accomplishment. After spending hours—or sometimes days—fitting together hundreds or even thousands of tiny pieces, you finally see the finished picture in all its glory. But then the question arises: What do you do with a jigsaw puzzle once it’s completed?",
+  }, 
    
 ];
 

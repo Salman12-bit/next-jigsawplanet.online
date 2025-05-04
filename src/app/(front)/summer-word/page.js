@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 
 const Game = () => {
-  const words = ["insert", "Conditional", "FORMATS"];
+  const words = ["sandcastles", "Popsicles", "SCRAMBLEDWORD"];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
@@ -46,7 +46,7 @@ const Game = () => {
     }}>
       <div className="Puzzle">
         <h1 className="color">Printable Word Search Puzzles for Adults</h1>
-        <h2 className="current-color">Current Level 11</h2>
+        <h2 className="current-color">Current Level 12</h2>
         {!gameOver ? (
           <>
             <div className="level">Level {currentLevel + 1}</div>
@@ -71,7 +71,7 @@ const Game = () => {
             <button className="button2" onClick={() => window.location.reload()}>
               Restart
             </button>
-            <Link href="/summer-word" className="button2 mx-2">
+            <Link href="/" className="button2 mx-2">
               Next Level
             </Link>
           </div>
@@ -80,58 +80,59 @@ const Game = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Hard Word Search Puzzles Printable</h1>
+            <h1 className="instructions-title">How to Play Summer Word Search Puzzles</h1>
 
             <p className="instructions-description">
-              <strong>Hard word search puzzles printable</strong> are a challenging and rewarding way to test your focus and vocabulary skills. These tough puzzles often have bigger grids, longer words, and tricky word placements to keep you thinking. Whether you're solving alone or with friends, this guide will help you understand how to play hard printable word searches, master the rules, and sharpen your puzzle-solving strategies.
+              <strong>Summer word search puzzles</strong> are a fun and engaging way to celebrate the sunny season while keeping your brain active. These puzzles are filled with summer-themed words related to vacations, beaches, sunshine, and more. Whether you're enjoying them solo or with family, this guide will show you how to play summer word searches, understand the rules, and make the most of your puzzle-solving time.
             </p>
 
-            <h2 className="instruction-step">1. Explore Different Types of Hard Word Search Puzzles Printable</h2>
+            <h2 className="instruction-step">1. Explore Different Types of Summer Word Search Puzzles</h2>
             <p className="instructions-description">
-              Hard word search puzzles come in many varieties:
+              Summer word searches come in a variety of styles:
               <ul>
-                <li><strong>Themed Grids:</strong> Tough puzzles based on topics like science, history, or literature.</li>
-                <li><strong>Large Printables:</strong> Mega grids with dozens of hidden words for extra challenge.</li>
-                <li><strong>Reverse and Diagonal Puzzles:</strong> Words hidden backwards, diagonally, or wrapped around corners.</li>
+                <li><strong>Beach-Themed Grids:</strong> Words related to oceans, sandcastles, surfboards, and beachwear.</li>
+                <li><strong>Vacation Adventures:</strong> Hidden words from road trips, camping, and summer holidays.</li>
+                <li><strong>Seasonal Surprises:</strong> Terms about sunshine, popsicles, fireworks, and summer activities.</li>
               </ul>
-              You can download and print these puzzles easily to enjoy anytime, anywhere.
+              These puzzles are easy to print and perfect for road trips, poolside relaxation, or summer camp downtime.
             </p>
 
             <h3 className="instruction-step">2. Learn the Rules</h3>
             <p className="instructions-description">
-              The goal is to find and mark all the hidden words from the provided list. In hard puzzles, expect words to be hidden in tricky ways.
+              The goal is simple: find and highlight all the summer-themed words listed. They can be hidden in any direction.
             </p>
             <ul className="instructions-list">
-              <li>Review the full list of words before starting.</li>
-              <li>Words can appear horizontally, vertically, diagonally, or backward.</li>
-              <li>Circle or highlight each word you find.</li>
-              <li>Finish the entire list to complete the puzzle.</li>
+              <li>Look over the full word list before starting.</li>
+              <li>Words may appear horizontally, vertically, diagonally, or even backward.</li>
+              <li>Set or add each word as you find it.</li>
+              <li>Complete the full list to finish the puzzle.</li>
             </ul>
 
             <h4 className="instruction-step">3. Set Up Your Puzzle Space</h4>
             <p className="instructions-description">
-              Create a comfortable space for the best puzzle-solving experience:
+              Create a relaxing summer atmosphere to solve your puzzle:
               <ul>
-                <li>Print your puzzle clearly and have extra copies if needed.</li>
-                <li>Use a bright, quiet space with good lighting.</li>
-                <li>Keep highlighters, pens, or pencils nearby for marking words.</li>
+                <li>Print your puzzle clearly or download it to a tablet.</li>
+                <li>Find a quiet, shady spot or cozy place indoors.</li>
+                <li>Keep highlighters, colored pens, or pencils handy for marking words.</li>
               </ul>
             </p>
 
-            <h5 className="tips-title">Pro Tips for Solving Hard Word Search Puzzles Printable</h5>
+            <h5 className="tips-title">Pro Tips for Solving Summer Word Search Puzzles</h5>
             <ul className="instructions-list">
-              <li><strong>Look for Uncommon Letters:</strong> Spot rare letters like “X,” “Q,” or “Z” first.</li>
-              <li><strong>Scan Systematically:</strong> Search row by row or column by column to stay organized.</li>
-              <li><strong>Use the Word Length:</strong> Longer or unusual words can be easier to find once you spot a few letters.</li>
-              <li><strong>Mark Found Words Quickly:</strong> This avoids confusion and speeds up your search.</li>
-              <li><strong>Challenge Yourself:</strong> Set a timer or race a friend for extra excitement!</li>
+              <li><strong>Spot Unique Words First:</strong> Look for words like “surfboard” or “popsicle” with distinct letters.</li>
+              <li><strong>Scan in Order:</strong> Use a left-to-right or top-to-bottom approach for consistency.</li>
+              <li><strong>Use Seasonal Context:</strong> Think of common summer terms to help you predict word locations.</li>
+              <li><strong>Highlight As You Go:</strong> This keeps track of your progress and avoids rechecking.</li>
+              <li><strong>Make It a Game:</strong> Race a friend or solve within a time limit for extra fun!</li>
             </ul>
 
             <h6 className="instruction-step">Conclusion</h6>
             <p className="instructions-description">
-              <strong>Hard word search puzzles printable</strong> offer a fun and challenging way to boost your brainpower and pass the time. With bigger grids, sneaky word placements, and exciting themes, these puzzles are perfect for anyone who loves a mental workout. Download, print, and dive into a tough word search today—you'll feel proud every time you complete one!
+              <strong>Summer word search puzzles</strong> are the perfect way to mix fun with brain training during the warmer months. From sunny beach terms to vacation vibes, these puzzles are ideal for both kids and adults looking for screen-free entertainment. Download, print, and dive into your summer-themed word search—you’ll stay sharp while enjoying the season!
             </p>
           </div>
+
           <div className='game-image-container'>
             <Link href="/word-difficult">
               <img className='game-image' src='./images/Freezenova1.webp' alt='word ladder solver adventure' />
@@ -139,7 +140,7 @@ const Game = () => {
             <Link href="/puzzle-words">
               <img className='game-image' src='./images/Freezenova2.webp' alt='Play puzzles on word ladder solver' />
             </Link>
-            <Link href="/summer-word">
+            <Link href="/word-game">
               <img className='game-image' src='./images/Puzzle3.webp' alt='Explore word ladder solver puzzles' />
             </Link>
             <Link href="/word-find">

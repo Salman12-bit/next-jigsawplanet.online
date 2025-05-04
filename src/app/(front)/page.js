@@ -64,6 +64,10 @@ export default function Home() {
       "image": "/images/rompecabezas.webp",
       link: '/rompecabezas'
     },
+    {
+      "image": "/images/jigsaw-plaet.webp",
+      link: '/jigsaw-plaet'
+    },
   ];
 
 
