@@ -15,8 +15,15 @@ const puzzleGames = [
     link: '/top-10-creative-ideas-when-finished',
     text: "Completing a jigsaw puzzle shows a satisfying feeling of accomplishment. After spending hours—or sometimes days—fitting together hundreds or even thousands of tiny pieces, you finally see the finished picture in all its glory. But then the question arises: What do you do with a jigsaw puzzle once it’s completed?",
   }, 
-   
+  {
+    image: "/images/multiplayer.webp",
+    link: '/multiplayer-jigsaw-puzzles-connecting-people',
+    text: "Jigsaw puzzles have been a favorite pastime for decades, offering relaxation, cognitive stimulation, and pure enjoyment. But in the modern digital world, puzzles are no longer just a solo hobby. Thanks to multiplayer technology, jigsaw puzzles have evolved into a collaborative, real-time, and often global experience.",
+  }, 
 ];
+
+
+
 
 const Jigsaw1 = () => {
   return (

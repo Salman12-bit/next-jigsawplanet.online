@@ -68,6 +68,10 @@ export default function Home() {
       "image": "/images/jigsaw-plaet.webp",
       link: '/jigsaw-plaet'
     },
+    {
+      "image": "/images/jigsawtruck.webp",
+      link: '/jigsaw-plante'
+    },
   ];
 
 
