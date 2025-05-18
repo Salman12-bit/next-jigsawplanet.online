@@ -72,6 +72,10 @@ export default function Home() {
       "image": "/images/jigsawtruck.webp",
       link: '/jigsaw-plante'
     },
+    {
+      "image": "/images/burjkhalifa.webp",
+      link: '/jisaw-planet'
+    },
   ];
 
 
