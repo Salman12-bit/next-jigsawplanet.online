@@ -17,7 +17,7 @@ const puzzleGames = [
   }, 
   {
     image: "/images/multiplayer.webp",
-    link: '/multiplayer-jigsaw-puzzles-connecting-people',
+    link: '/multiplayer-connecting-people',
     text: "Jigsaw puzzles have been a favorite pastime for decades, offering relaxation, cognitive stimulation, and pure enjoyment. But in the modern digital world, puzzles are no longer just a solo hobby. Thanks to multiplayer technology, jigsaw puzzles have evolved into a collaborative, real-time, and often global experience.",
   }, 
   {
@@ -25,6 +25,11 @@ const puzzleGames = [
     link: '/best-alphabet-puzzle-games',
     text: "In the world of early childhood education, one of the most fundamental lessons every child must learn is the alphabet. While traditional methods like flashcards and alphabet songs have served their purpose for generations, the digital age has opened doors to new and exciting ways to learn.",
   }, 
+  {
+    image: "/images/wordpuzzle.webp",
+    link: '/best-word-puzzle-game-ever',
+    text: "Let’s be honest—who doesn’t love a good word puzzle? Whether it’s solving crosswords over morning coffee or flexing your brain on Wordle during lunch, word puzzle games are an evergreen source of entertainment and mental stimulation. They've been around forever, and they’re only obtaining better.",
+  },
 ];
 
 

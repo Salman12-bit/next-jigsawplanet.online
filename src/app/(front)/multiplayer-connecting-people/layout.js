@@ -9,7 +9,7 @@ export const metadata = {
     title: "Multiplayer Jigsaw Puzzles Solve Together Online",
     description:
       "Play multiplayer jigsaw puzzles online with friends or family! Team up to piece together fun, beautiful images in real-time from anywhere.",
-    url: "https://jigsawplanet.online/multiplayer-jigsaw-puzzles-connecting-people",
+    url: "https://jigsawplanet.online/multiplayer-connecting-people",
     images: [
       {
         url: "https://jigsawplanet.online/images/multiplayer.webp",
@@ -20,7 +20,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/multiplayer-jigsaw-puzzles-connecting-people",
+    canonical: "https://jigsawplanet.online/multiplayer-connecting-people",
   },
 };
 
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://jigsawplanet.online/multiplayer-jigsaw-puzzles-connecting-people"
+      "@id": "https://jigsawplanet.online/multiplayer-connecting-people"
     },
     "headline": "Multiplayer Jigsaw Puzzles Solve Together Online",
     "description":

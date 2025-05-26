@@ -36,7 +36,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(17);
+  const [level, setLevel] = useState(18);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -130,7 +130,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/math-game">
+                <Link href="/">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -141,51 +141,39 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play 123abc Learning Games</h1>
-
+            <h1 className="instructions-title">How to Play Math - Quiz Game</h1>
             <p className="instructions-description">
-              <strong>123abc</strong> games are fun, educational activities designed for young children to explore numbers, letters, and basic problem-solving. These learning games help early learners build foundational skills in a playful and engaging way.
+              A <strong>Math - Quiz Game</strong> is an exciting way for kids to test their math skills through fun challenges. These games feature fast-paced quizzes, interactive puzzles, and score-based rounds to make learning math more engaging and effective.
             </p>
-
-            <h2 className="instruction-step">1. Types of 123abc Games</h2>
+            <h2 className="instruction-step">1. Choose Your Game Mode</h2>
             <ul className="instructions-list">
-              <li><strong>Number Games:</strong> Learn counting, basic math, and number recognition.</li>
-              <li><strong>Alphabet Games:</strong> Practice identifying letters, phonics, and early reading.</li>
-              <li><strong>Matching Games:</strong> Match letters, numbers, or shapes to boost memory and logic.</li>
-              <li><strong>Interactive Play:</strong> Use colors, sounds, and patterns for hands-on learning fun.</li>
+              <li><strong>Basic Math:</strong> Fliping card and number matching quizzes.</li>
+              <li><strong>Timed Challenges:</strong> Solve as many problems as you can before the shuffle the card.</li>
+              <li><strong>Puzzle Rounds:</strong> Use logic and numbers to complete game levels.</li>
             </ul>
-
-            <h3 className="instruction-step">2. Easy and Fun to Play</h3>
+            <h3 className="instruction-step">2. How to Win</h3>
             <ul className="instructions-list">
-              <li>Each 123abc game includes clear, child-friendly instructions.</li>
-              <li>Play using a tablet, smartphone, or printed activity sheet.</li>
-              <li>Earn stars, solve puzzles, and unlock new challenges!</li>
+              <li>Match three cards quickly and accurately to earn points.</li>
+              <li>Use hints when you're stuck to keep progressing.</li>
+              <li>Track your cards and try to beat your best time!</li>
             </ul>
-
-            <h4 className="tips-title">Tips for Learning Success</h4>
-            <ul className="instructions-list">
-              <li>Choose games that fit your child’s learning level and pace.</li>
-              <li>Use short play sessions to keep your child focused and happy.</li>
-              <li>Encourage your child with praise and rewards as they learn.</li>
-            </ul>
-
-            <h5 className="instruction-step">Conclusion</h5>
+            <h4 className="instruction-step">Conclusion</h4>
             <p className="instructions-description">
-              <strong>123abc</strong> games make learning fun and exciting for kids. With a mix of alphabet and number activities, these games support early learning and help young minds grow through play. Get started with 123abc today and watch your child enjoy learning like never before!
+              With a <strong>Math - Quiz Game</strong>, kids can boost their arithmetic skills while having fun. Whether at home or in the classroom, these games are a smart way to mix play with practice!
             </p>
           </div>
           <div className="game-image-container">
             <Link href="/math-magician">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='123abc math magician game - fun number puzzle for kids' />
+              <img className='game-image' src='./images/Puzzle1.webp' alt='math - quiz game for kids with fun magical numbers challenge' />
             </Link>
             <Link href="/slider-game">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='123abc slider puzzle - interactive learning game for children' />
+              <img className='game-image' src='./images/Puzzle2.webp' alt='interactive math - quiz game with sliding number puzzles' />
             </Link>
             <Link href="/math-game">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='123abc letter puzzle - alphabet learning challenge for kids' />
+              <img className='game-image' src='./images/Puzzle3.webp' alt='math - quiz game for children with letter and number mix' />
             </Link>
             <Link href="/alphabet-letter">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='123abc alphabet letter puzzle - early education games online' />
+              <img className='game-image' src='./images/Puzzle5.webp' alt='educational math - quiz game with alphabet and number learning' />
             </Link>
           </div>
         </div>

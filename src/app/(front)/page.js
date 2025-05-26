@@ -76,6 +76,10 @@ export default function Home() {
       "image": "/images/burjkhalifa.webp",
       link: '/jisaw-planet'
     },
+    {
+      "image": "/images/jigsawjungle.webp",
+      link: '/rompecabezas-para'
+    },
   ];
 
 
