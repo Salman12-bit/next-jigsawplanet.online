@@ -38,7 +38,7 @@ export default function Layout({ children }) {
       "genre": "Action, Puzzle",
       "publisher": {
         "@type": "Organization",
-        "name": "jigsawplanet",
+        "name": "puzzle",
         "logo": {
           "@type": "ImageObject",
           "url": "https://jigsawplanet.online/images/jigsaw-plaet.webp",

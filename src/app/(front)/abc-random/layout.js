@@ -34,11 +34,11 @@ export default function Layout({ children }) {
     "url": "https://jigsawplanet.online/abc-random",
     "mainEntity": {
       "@type": "Online Game",
-      "name": "jigsawplanet",
+      "name": "puzzle",
       "genre": "Action, Puzzle",
       "publisher": {
         "@type": "Organization",
-        "name": "jigsawplanet",
+        "name": "puzzle",
         "logo": {
           "@type": "ImageObject",
           "url": "https://jigsawplanet.online/images/Puzzlle.webp",

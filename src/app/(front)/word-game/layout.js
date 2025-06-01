@@ -25,7 +25,6 @@ export const metadata = {
 };
 
 export default function Layout({ children }) {
-  // Define the structured data schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -39,7 +38,7 @@ export default function Layout({ children }) {
       "genre": "Action, ",
       "publisher": {
         "@type": "Organization",
-        "name": "Jigsawplanet",
+        "name": "puzzle",
         "logo": {
           "@type": "ImageObject",
           "url": "https://jigsawplanet.online/images/Puzzlle.webp",

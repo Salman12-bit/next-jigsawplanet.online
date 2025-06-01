@@ -1,26 +1,26 @@
 import React from 'react';
 
 export const metadata = {
-  title: "4 Pics One Word Daily Puzzle – Fresh Brain Teasers!",
-  keywords: "winter word search puzzle,harry potter word puzzles",
+  title: "Free Printable Word Searches Fun Puzzles to Print Now",
+  keywords: "free printable word search,words to free fallin game",
   description:
-    "Solve the 4 Pics One Word daily puzzle to test your logic and guess the word! New challenges every day to keep your brain sharp and engaged.",
+    "Enjoy free printable word searches for all ages! Perfect for learning, relaxing, or passing time with challenging and fun puzzles.",
   openGraph: {
-    title: "4 Pics One Word Daily Puzzle – Fresh Brain Teasers!",
+    title: "Free Printable Word Searches Fun Puzzles to Print Now",
     description:
-      "Solve the 4 Pics One Word daily puzzle to test your logic and guess the word! New challenges every day to keep your brain sharp and engaged.",
-    url: "https://jigsawplanet.online/daily-word",
+      "Enjoy free printable word searches for all ages! Perfect for learning, relaxing, or passing time with challenging and fun puzzles.",
+    url: "https://jigsawplanet.online/free-printable",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Play winter word search puzzle",
+        alt: "Play word puzzle games printable",
       },
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/daily-word",
+    canonical: "https://jigsawplanet.online/free-printable",
   },
 };
 
@@ -28,10 +28,10 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "4 Pics One Word Daily Puzzle – Fresh Brain Teasers!",
+    "name": "Free Printable Word Searches Fun Puzzles to Print Now",
     "description":
-      "Solve the 4 Pics One Word daily puzzle to test your logic and guess the word! New challenges every day to keep your brain sharp and engaged.",
-    "url": "https://jigsawplanet.online/daily-word",
+      "Enjoy free printable word searches for all ages! Perfect for learning, relaxing, or passing time with challenging and fun puzzles.",
+    "url": "https://jigsawplanet.online/free-printable",
     "mainEntity": {
       "@type": "Online Game",
       "name": "puzzle",
@@ -52,7 +52,7 @@ export default function Layout({ children }) {
         "width": 1200,
         "height": 630,
       },
-      "url": "https://jigsawplanet.online/daily-word",
+      "url": "https://jigsawplanet.online/free-printable",
       "playMode": "Single Player",
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",

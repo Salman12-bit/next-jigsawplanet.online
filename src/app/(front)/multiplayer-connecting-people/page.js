@@ -24,10 +24,9 @@ const Jigsaw1 = () => {
         Traditionally, jigsaw puzzles were something you’d spread across a table and work on alone or with a close group of family or friends. But digital transformation has changed that.
       </p>
       <ul>
-        <li>Join live puzzle rooms with others</li>
-        <li>Chat in real time while solving</li>
-        <li>Upload custom images to make new puzzles</li>
-        <li>Track progress and leaderboards</li>
+        <li>Join live puzzle share with others</li>
+        <li>Share in real time while solving</li>
+        <li>Track progress and leaderboards for udating new games</li>
         <li>Compete or collaborate, based on mode</li>
       </ul>
       <p>
@@ -133,8 +132,7 @@ const Jigsaw1 = () => {
       <p>JigsawPlanet.online is designed with both casual and serious puzzle lovers in mind. Here’s why it stands out:</p>
       <ul>
         <li>✅ Thousands of Free Puzzles</li>
-        <li>✅ Custom Puzzle Builder</li>
-        <li>✅ Real-Time Multiplayer Mode</li>
+        <li>✅ Real-Time Best Player Mode</li>
         <li>✅ Responsive on All Devices</li>
         <li>✅ Track Progress and Stats</li>
       </ul>

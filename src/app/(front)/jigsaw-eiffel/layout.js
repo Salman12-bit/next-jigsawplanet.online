@@ -67,12 +67,6 @@ export default function Layout({ children }) {
         "height": 500,
       },
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/eiffel.webp",
-      "width": 1200,
-      "height": 630,
-    },
   };
 
   return (

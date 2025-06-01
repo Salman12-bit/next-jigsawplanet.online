@@ -80,6 +80,10 @@ export default function Home() {
       "image": "/images/jigsawjungle.webp",
       link: '/rompecabezas-para'
     },
+     {
+      "image": "/images/riverboat.webp",
+      link: '/zigsaw-puzzles'
+    },
   ];
 
 

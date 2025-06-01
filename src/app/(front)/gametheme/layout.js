@@ -77,10 +77,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-      {/* Render the children */}
       {children}
-
-      {/* JSON-LD Script for Schema Markup */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

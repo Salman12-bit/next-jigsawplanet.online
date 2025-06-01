@@ -57,12 +57,6 @@ export default function Layout({ children }) {
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/flower.webp",
-      "width": 1200,
-      "height": 630,
-    },
   };
 
   return (

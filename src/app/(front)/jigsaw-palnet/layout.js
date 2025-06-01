@@ -57,16 +57,6 @@ export default function Layout({ children }) {
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "planet puzzle jigsaws",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/jigsawsand.webp",
-        "width": 500,
-        "height": 500,
-      },
-    },
   };
 
   return (

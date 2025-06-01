@@ -24,9 +24,9 @@ const Board1 = styled.div`
 
 const initialCards = [
   { id: 1, value: 'J' }, { id: 2, value: 'L' },
-  { id: 3, value: 'R' }, { id: 4, value: 'O' },
+  { id: 3, value: 'U' }, { id: 4, value: 'O' },
   { id: 5, value: 'Q' }, { id: 6, value: 'N' },
-  { id: 7, value: 'H' }, { id: 8, value: 'O' },
+  { id: 7, value: 'U' }, { id: 8, value: 'U' },
   { id: 9, value: 'O' },
 ];
 
@@ -36,7 +36,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(18);
+  const [level, setLevel] = useState(19);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -130,7 +130,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/unblocked-game">
+                <Link href="/">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -141,41 +141,43 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Math - Quiz Game</h1>
+            <h1 className="instructions-title">How to Play 2048 unblocked games</h1>
             <p className="instructions-description">
-              A <strong>Math - Quiz Game</strong> is an exciting way for kids to test their math skills through fun challenges. These games feature fast-paced quizzes, interactive puzzles, and score-based rounds to make learning math more engaging and effective.
+              <strong>2048 unblocked games</strong> is a sweet twist on the classic 2048 puzzle game—featuring cupcakes instead of numbers! Slide tiles to match identical cupcakes and unlock even more delicious treats as you aim to reach the final cupcake tile. This version is unblocked, so you can play it anytime at school or work!
             </p>
-            <h2 className="instruction-step">1. Choose Your Game Mode</h2>
+            <h2 className="instruction-step">1. How to Start Playing</h2>
             <ul className="instructions-list">
-              <li><strong>Basic Math:</strong> Fliping card and number matching quizzes.</li>
-              <li><strong>Timed Challenges:</strong> Solve as many problems as you can before the shuffle the card.</li>
-              <li><strong>Puzzle Rounds:</strong> Use logic and numbers to complete game levels.</li>
+              <li>Use your arrow keys (or swipe on mobile) to move the tiles.</li>
+              <li>When two identical cupcakes touch, they combine into a new one.</li>
+              <li>The goal is to reach the final cupcake (usually labeled as 2048) without filling the grid.</li>
             </ul>
-            <h3 className="instruction-step">2. How to Win</h3>
+            <h3 className="instruction-step">2. Tips to Win</h3>
             <ul className="instructions-list">
-              <li>Match three cards quickly and accurately to earn points.</li>
-              <li>Use hints when you're stuck to keep progressing.</li>
-              <li>Track your cards and try to beat your best time!</li>
+              <li>Keep your highest-value cupcakes in one corner.</li>
+              <li>Plan ahead and avoid random moves that fill up the board quickly.</li>
+              <li>Try to make matches in one direction (left/right or up/down) for better control.</li>
             </ul>
             <h4 className="instruction-step">Conclusion</h4>
             <p className="instructions-description">
-              With a <strong>Math - Quiz Game</strong>, kids can boost their arithmetic skills while having fun. Whether at home or in the classroom, these games are a smart way to mix play with practice!
+              <strong>2048 unblocked games</strong> is a perfect mix of logic and fun. With adorable designs and addictive gameplay, it’s an enjoyable way to sharpen your mind—whether you’re playing during a break or after school. Start sliding, matching, and stacking cupcakes to hit that sweet 2048 goal!
             </p>
           </div>
+
           <div className="game-image-container">
             <Link href="/math-magician">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='math - quiz game for kids with fun magical numbers challenge' />
+              <img className='game-image' src='./images/Puzzle1.webp' alt='2048 unblocked games - magical number puzzle challenge for kids' />
             </Link>
             <Link href="/slider-game">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='interactive math - quiz game with sliding number puzzles' />
+              <img className='game-image' src='./images/Puzzle2.webp' alt='2048 unblocked games - interactive sliding number tile game' />
             </Link>
             <Link href="/math-game">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='math - quiz game for children with letter and number mix' />
+              <img className='game-image' src='./images/Puzzle3.webp' alt='2048 unblocked games - fun mix of numbers and strategy for children' />
             </Link>
             <Link href="/alphabet-letter">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='educational math - quiz game with alphabet and number learning' />
+              <img className='game-image' src='./images/Puzzle5.webp' alt='2048 unblocked games - learning numbers and letters through puzzles' />
             </Link>
           </div>
+
         </div>
       </div>
     </div>

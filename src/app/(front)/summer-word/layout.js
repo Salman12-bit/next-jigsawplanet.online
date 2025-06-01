@@ -34,11 +34,11 @@ export default function Layout({ children }) {
     "url": "https://jigsawplanet.online/summer-word",
     "mainEntity": {
       "@type": "Online Game",
-      "name": "jigsawplanet",
+      "name": "puzzle",
       "genre": "Action, ",
       "publisher": {
         "@type": "Organization",
-        "name": "Jigsawplanet",
+        "name": "puzzle",
         "logo": {
           "@type": "ImageObject",
           "url": "https://jigsawplanet.online/images/Puzzlle.webp",

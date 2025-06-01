@@ -38,7 +38,7 @@ export default function Layout({ children }) {
       "genre": "Action, ",
       "publisher": {
         "@type": "Organization",
-        "name": "Jigsawplanet",
+        "name": "puzzle",
         "logo": {
           "@type": "ImageObject",
           "url": "https://jigsawplanet.online/images/Puzzlle.webp",
@@ -56,12 +56,6 @@ export default function Layout({ children }) {
       "playMode": "Single Player",
       "operatingSystem": "Web Browser",
       "applicationCategory": "Game",
-    },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-      "width": 1200,
-      "height": 630,
     },
   };
 
