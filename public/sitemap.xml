@@ -355,6 +355,24 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
+   <url>
+    <loc>https://jigsawplanet.online/zigsaw-puzzles</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://jigsawplanet.online/free-printable</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+   <url>
+    <loc>https://jigsawplanet.online/unblocked-game</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
 
 
