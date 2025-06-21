@@ -47,7 +47,7 @@ export default function Layout({ children }) {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "jigsawplanet",
+      "name": "puzzle",
       "logo": {
         "@type": "ImageObject",
         "url": "https://jigsawplanet.online/images/multiplayer.webp",

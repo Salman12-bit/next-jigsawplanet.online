@@ -140,46 +140,45 @@ const Puzzle1 = () => {
         </div>
       </div>
       <div className="welcome-container">
-        <h1 className="welcome-title">🧩 Welcome to the Ultimate Puzzle Challenge! 🧩</h1>
+        <h1 className="welcome-title">🧩 Welcome to the Puzzle Challenge! 🧩</h1>
         <p className="welcome-text">
-          Hey there, puzzle solver! 🌟 Every puzzle is a new adventure, and every piece is a chance to unlock your potential.
-          This is more than just a game sit's your journey to sharpen your mind, test your skills, and celebrate every small victory.
+          Hey there, all puzzle solvers! 🌟 Every puzzle gives us a new opportunities, and every level give us a chance to unlock your strength.
+          This is not just a game, it's your journey that sharpen your mind, unlocks your skills, and enjoy every victory.
         </p>
         <ul className="welcome-list">
-          <li>🔍 Every piece counts: Take your time, explore the possibilities, and watch how everything falls into place.</li>
-          <li>🧠 Sharpen your mind: Solve puzzles to grow stronger, one piece at a time.</li>
-          <li>🎯 Embrace the challenge: Don’t give up! The best moments are when everything clicks, and you can say, "I did it!"</li>
+          <li>🔍 Every move counts: Take your time to complete every level, explore which solution is best, and watch how every piece falls into place.</li>
+          <li>🧠 Sharpen your mind: Solve puzzles to grow your thinking. A puzzle solver can solve piece at a time.</li>
+          <li>🎯 Embrace the challenge: Just cheer up yourself, and you can say, "I did it!"</li>
         </ul>
         <p className="welcome-text">
-          Keep pushing forward, trust your instincts, and most of all—enjoy the journey. You’ve got the mind of a champion, and every puzzle you conquer is a victory worth celebrating! Get ready to piece it all together! 🎉
+          Keep thinking forward, trust on you, and most of all—enjoy the journey. You’ve got the mind of a champion and every champion knows his strength, and every puzzle gives a victory worth enjoying! Get ready to collect all the pieces together in frame! 🎉
         </p>
       </div>
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play alphabet Game</h1>
-            <p className="instructions-description">Alphabet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Alphabet come in various forms, with unique content from traditional paper alphabet to sophisticated digital games. The alphabet guide will walk you through the basic principles of playing different types of alphabet games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of alphabet Free:</h2>
-            <p className="instructions-description">alphabet games come in many varieties, each with unique mechanics and objectives.</p>
-            <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each alphabet puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
+            <h1 className="instructions-title">How to Play Alphabet Game</h1>
+            <p className="instructions-description">Alphabet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Alphabet come in various forms, with helpful content from traditional paper alphabet to sophisticated digital games. This game guide will walk you through the basic rules of playing different types of alphabet games, offering tips and strategies which is helpful.</p>
+            <h2 className="instruction-step">1. Different Types of Alphabet Free:</h2>
+            <p className="instructions-description">Alphabet games comes in many varieties, each with unique mechanics and objectives.</p>
+            <h3 className="instruction-step">2. First Understand the Rules:</h3>
+            <p className="instructions-description">Each game has specific rules and objectives. Read these rules carefully before starting.</p>
             <ul className="instructions-list">
-              <li>In this game players have 3 chances.</li>
+              <li>In this alphabet puzzle game player have 3 chances.</li>
               <li>If 3 alphabet puzzle game cards are matched to each other.</li>
               <li>Player wins this game.</li>
               <li>Otherwise, Restart the alphabet game again and try to match again 3 cards.</li>
             </ul>
             <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical alphabet puzzle, ensure you have a comfortable and well-lit workspace. For digital alphabet, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h5 className="tips-title">Tips for Success</h5>
+            <p className="instructions-description">For a physical alphabet puzzle, ensure you have a comfortable and well-lit workspace. For the digital alphabet, adjust your device's settings to suit your environment and mind.</p>
+            <h5 className="tips-title">Tips to Get Success</h5>
             <ul className="instructions-list">
-              <li>Stay Calm: Alphabet puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
-              <li>Practice Regularly: The more you play, the better you get.</li>
-              <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
-              <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
+              <li>Practice Regularly: If you play this game more and more, the better result you get.</li>
+              <li>Learn from Mistakes: If you make a mistake don't be penic because every person learn from mistakes.</li>
+              <li>Challenge Yourself: If you want to upgrade yous skill gradually increase the difficulty level and the thinking process.</li>
             </ul>
             <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description">Alphabet games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet. So, choose your game, set up your space, and dive into the fascinating world of alphabet!</p>
+            <p className="instructions-description">This give the best opportunities to get your mental and physical strength. By following all the rules of this game,playing this game regularly and using the best method to play this game, you can upgrade your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet puzzle. So, choose your best alphabet puzzle and dive into the fascinating world of alphabet!</p>
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
