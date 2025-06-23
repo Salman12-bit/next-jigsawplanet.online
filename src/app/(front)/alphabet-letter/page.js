@@ -36,7 +36,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(5);
+  const [level, setLevel] = useState(8);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -141,29 +141,24 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play pictures of bubble letters Game</h1>
-            <p className="instructions-description">Pictures of bubble letters games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Pictures of bubble letters come in various forms, with unique content from traditional paper  pictures of bubble letters to sophisticated digital games. The  pictures of bubble letters guide will walk you through the basic principles of playing different types of  pictures of bubble letters games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of  pictures of bubble letters Free:</h2>
-            <p className="instructions-description"> Pictures of bubble letters games come in many varieties, each with unique mechanics and objectives.</p>
+            <h1 className="instructions-title">How to Play pictures of bubble letters</h1>
+            <p className="instructions-description">This game is  a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. letter game come in various forms, with unique content from traditional paper letter to sophisticated digital games.</p>
+            <h2 className="instruction-step">1. Different Types of letter puzzles:</h2>
+            <p className="instructions-description">This game come in many varieties like pieces puzzle, card in one frame and match card in one line, each with unique mechanics and objectives that entertain users.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each  pictures of bubble letters puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
             <ul className="instructions-list">
-              <li>In this game players have 3 chances.</li>
-              <li>If 3 pictures of bubble letters puzzle game cards are matched to each other.</li>
-              <li>Player wins this game.</li>
-              <li>Otherwise, Restart the  pictures of bubble letters game again and try to match again 3 cards.</li>
+              <li>In this game players have three chances.</li>
+              <li>Suppose three game cards are matched to each other. Player wins this game.</li>
+              <li>Otherwise, Restart the game again and try to match again three cards.</li>
             </ul>
             <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical  pictures of bubble letters, ensure you have a comfortable and well-lit workspace. For digital  pictures of bubble letters, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h5 className="tips-title">Tips for Success</h5>
+            <p className="instructions-description">For physical letter puzzles, ensure you have a comfortable and well-lit workspace. For digital letter puzzles, adjust your device's settings that is suitable for your environment and mind.</p>
+            <h5 className="tips-title">Tips to Win this Game</h5>
             <ul className="instructions-list">
-              <li>Stay Calm:  pictures of bubble letters puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
-              <li>Practice Regularly: The more you play, the better you get.</li>
-              <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
-              <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
+              <li>Practice Regularly: If you play this game continuously, the better result you get from this game.</li>
+              <li>Challenge Yourself: If you want to upgrade your skill, gradually increase the difficulty level and the thinking process.</li>
+              <li>Learn from Mistakes: If you make a mistake, don't be penic because every person learn from mistakes and achieves Success.</li>
             </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description"> Pictures of bubble letters games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your  pictures of bubble letters-solving skills and enjoy the satisfying feeling of cracking even the toughest  pictures of bubble letters. So, choose your game, set up your space, and dive into the fascinating world of  pictures of bubble letters!</p>
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">

@@ -143,27 +143,26 @@ const Puzzle1 = () => {
         <div className="game-instructions-content">
           <div className="game-instructions">
             <h1 className="instructions-title">How to Play abc puzzle online game</h1>
-            <p className="instructions-description">Free abc puzzle online game are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Abc puzzle online come in various forms, with unique content from traditional paper abc puzzle to sophisticated digital games. The abc puzzle Game guide will walk you through the basic principles of playing different types of abc puzzle online game, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of Abc Puzzle Online Game:</h2>
-            <p className="instructions-description">This game come in many varieties like pieces puzzle, card in one frame and match card, each with unique mechanics and objectives that entertain users.</p>
+            <p className="instructions-description">Free abc puzzle game are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Puzzle game come in various forms, with unique content from traditional paper abc puzzle to sophisticated digital games. The abc puzzle Game guide will walk you through the basic principles of playing different types of abc puzzle online game, offering tips and strategies to enhance your experience.</p>
+            <h2 className="instruction-step">1. Different Types of this Game:</h2>
+            <p className="instructions-description">This game come in many varieties like pieces puzzle, set card in one frame and match three alphabet cards, each with unique mechanics and objectives that entertain users.</p>
             <h3 className="instruction-step">2. Understand the Game Rules:</h3>
-            <p className="instructions-description">Each abc puzzle online game puzzles has specific rules and objectives. Read the game rules carefully before starting this game.</p>
+            <p className="instructions-description">Each puzzle game has specific rules and objectives. Read the game rules carefully before starting this game.</p>
             <ul className="instructions-list">
               <li>In this game player play three times with different alphabet letter</li>
-              <li>If 3 puzzle game cards are matched to each other.</li>
-              <li>Player wins this game.</li>
+              <li>If 3 puzzle game cards are matched to each other.Player wins this game.</li>
               <li>Otherwise, Restart the game again and try to match again 3 cards.</li>
             </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For play this game physically, ensure you have a comfortable environment and well-lit workspace. For digital abc puzzle online game, adjust your device's settings that is suitable for your environment and mind.</p>
-            <h5 className="tips-title">Tips to Win this Game</h5>
+            <h4 className="tips-title">Tips to Win this Game</h4>
             <ul className="instructions-list">
               <li>Practice Regularly: If you play this game continuously, the better result you get.</li>
-              <li>Learn from Mistakes: If you make a mistake don't be penic because every person learn from mistakes and get Success.</li>
-              <li>Challenge Yourself: If you want to upgrade yous skill gradually increase the difficulty level and the thinking process.</li>
+              <li>Learn from Mistakes: If you make a mistake, don't  penic because every person learn from mistakes and achieves Success.</li>
+              <li>Challenge Yourself: If you want to upgrade your skill, gradually increase the difficulty level and the thinking process.</li>
             </ul>
+            <h5 className="instruction-step">3. Set up Your Space:</h5>
+            <p className="instructions-description">For play this game physically, ensure you have a comfortable environment and well-lit workspace. For digital abc puzzle online game, adjust your device's settings that is suitable for your environment and mind.</p>
             <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description">Free abc puzzle online game give the best opportunities to get your mental and physical strength. By following all the rules of this game,playing this game regularly and using the best method to play free abc puzzle, you can upgrade your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet puzzle. So, choose your best alphabet puzzle and dive into the fascinating world of alphabet!</p>
+            <p className="instructions-description">Each game give the best opportunities to get your mental and physical strength. By following all the rules of this game,playing this game regularly and using the best method to play free abc puzzle, you can upgrade your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet puzzle. So, choose your best alphabet puzzle and dive into the fascinating world of alphabet!</p>
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">

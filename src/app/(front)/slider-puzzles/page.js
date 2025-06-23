@@ -142,28 +142,24 @@ const Puzzle1 = () => {
         <div className="game-instructions-content">
           <div className="game-instructions">
             <h1 className="instructions-title">How to Play slider puzzle Game</h1>
-            <p className="instructions-description">Free slider puzzle games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Slider puzzle come in various forms, with unique content from traditional paper slider puzzle to sophisticated digital games. The slider puzzle guide will walk you through the basic principles of playing different types of slider puzzle games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of slider puzzle Free:</h2>
-            <p className="instructions-description">Slider puzzle games come in many varieties, each with unique mechanics and objectives.</p>
+            <p className="instructions-description">Every game provide a delightful way to challenge your mind, improve your skills, enjoy some leisure time, and improve your picking power. This game come in various forms, with unique logic from traditional paper slider to sophisticated digital games. The slider puzzle guide will walk you through the basic principles of playing different type of games, offering tips and strategies to enhance your experience increase your knowledge.</p>
+            <h2 className="instruction-step">1. Different Types of slider game:</h2>
+            <p className="instructions-description">This game come in many varieties like alphabet puzzle, card in one frame puzzle and match card puzzle, each with unique mechanics and objectives that entertain users.</p>
             <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each slider puzzle puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
+            <p className="instructions-description">Every game has specific rules and objectives. Read the instructions carefully before starting this awesome game.</p>
             <ul className="instructions-list">
-              <li>In this game players have 3 chances.</li>
-              <li>If 3 slider puzzle puzzle game cards are matched to each other.</li>
-              <li>Player wins this game.</li>
-              <li>Otherwise, Restart the slider puzzle game again and try to match again 3 cards.</li>
+              <li>In this game players have three chances.</li>
+              <li>Suppose three game cards are matched to each other.Player wins this game.</li>
+              <li>Otherwise, Restart this game again and try to match again 3 cards.</li>
             </ul>
             <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical slider puzzle, ensure you have a comfortable and well-lit workspace. For digital slider puzzle, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h5 className="tips-title">Tips for Success</h5>
+            <p className="instructions-description">For physical slider puzzle, ensure you have a comfortable and well-lit workspace. For digital slider puzzle, adjust your device's settings which is suitable to your environment and mind.</p>
+            <h5 className="tips-title">Tips to Get Success</h5>
             <ul className="instructions-list">
-              <li>Stay Calm: Slider puzzle puzzle games should be enjoyable; take breaks if you feel frustrated.</li>
-              <li>Practice Regularly: The more you play, the better you get.</li>
-              <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
-              <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
+              <li>Practice Regularly: If you play this game continuously, the better result you get.</li>
+              <li>Challenge Yourself: If you want to upgrade your skill, gradually increase the difficulty level and the thinking process.</li>
+              <li>Learn from Mistakes: If you make a mistake, don't be penic because every person learn from mistakes and achieves Success.</li>
             </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description">Slider puzzle games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your slider puzzle-solving skills and enjoy the satisfying feeling of cracking even the toughest slider puzzle. So, choose your game, set up your space, and dive into the fascinating world of slider puzzle!</p>
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">

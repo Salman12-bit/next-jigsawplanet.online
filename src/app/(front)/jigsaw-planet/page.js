@@ -158,24 +158,23 @@ const Puzzle1 = () => {
         <div className="game-instructions-content">
           <div className="game-instructions">
             <h1 className="instructions-title">How to Play Alphabet Game</h1>
-            <p className="instructions-description">Alphabet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Alphabet come in various forms, with helpful content from traditional paper alphabet to sophisticated digital games. This game guide will walk you through the basic rules of playing different types of alphabet games, offering tips and strategies which is helpful.</p>
+            <p className="instructions-description">This game give a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Alphabet come in various forms, with helpful content from traditional paper alphabet to sophisticated digital games. This game guide will walk you through the basic rules of playing different types of alphabet games, offering tips and strategies which is helpful.</p>
             <h2 className="instruction-step">1. Different Types of Alphabet Free:</h2>
-            <p className="instructions-description">Alphabet games comes in many varieties, each with unique mechanics and objectives.</p>
+            <p className="instructions-description">Each game comes in many varieties, each with unique mechanics and objectives.</p>
             <h3 className="instruction-step">2. First Understand the Rules:</h3>
             <p className="instructions-description">Each game has specific rules and objectives. Read these rules carefully before starting.</p>
             <ul className="instructions-list">
               <li>In this alphabet puzzle game player have 3 chances.</li>
-              <li>If 3 alphabet puzzle game cards are matched to each other.</li>
-              <li>Player wins this game.</li>
-              <li>Otherwise, Restart the alphabet game again and try to match again 3 cards.</li>
+              <li>If three alphabet puzzle game cards are matched to each other. Player wins this game.</li>
+              <li>Otherwise, Restart this game again and try to match again three cards.</li>
             </ul>
             <h4 className="instruction-step">3. Set up Your Space:</h4>
             <p className="instructions-description">For a physical alphabet puzzle, ensure you have a comfortable and well-lit workspace. For the digital alphabet, adjust your device's settings to suit your environment and mind.</p>
             <h5 className="tips-title">Tips to Get Success</h5>
             <ul className="instructions-list">
               <li>Practice Regularly: If you play this game more and more, the better result you get.</li>
-              <li>Learn from Mistakes: If you make a mistake don't be penic because every person learn from mistakes.</li>
-              <li>Challenge Yourself: If you want to upgrade yous skill gradually increase the difficulty level and the thinking process.</li>
+              <li>Learn from Mistakes: If you make a mistake, don't penic because every person learn from mistakes.</li>
+              <li>Challenge Yourself: If you want to upgrade your skill, gradually increase the difficulty level and the thinking process.</li>
             </ul>
             <h6 className="instruction-step">Conclusion:</h6>
             <p className="instructions-description">This give the best opportunities to get your mental and physical strength. By following all the rules of this game,playing this game regularly and using the best method to play this game, you can upgrade your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet puzzle. So, choose your best alphabet puzzle and dive into the fascinating world of alphabet!</p>

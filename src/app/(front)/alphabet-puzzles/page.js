@@ -143,27 +143,24 @@ const Puzzle1 = () => {
         <div className="game-instructions-content">
           <div className="game-instructions">
             <h1 className="instructions-title">How to Play Alphabet Slider Puzzle</h1>
-            <p className="instructions-description">Alphabet slider puzzle are a delightful way to challenge your mind, improve thinking skills, and enjoy some leisure time. Abc puzzle online come in various forms, with unique content from traditional paper abc puzzle to sophisticated digital games. The abc puzzle Game guide will walk you through the basic principles of playing different types of alphabet slider puzzle, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of alphabet slider puzzle:</h2>
-            <p className="instructions-description">Alphabet slider puzzle come in many varieties like pieces puzzle, card in one frame and match card, each with unique mechanics and objectives that entertain users.</p>
-            <h3 className="instruction-step">2. Understand the Game Rules:</h3>
-            <p className="instructions-description">Each alphabet slider puzzle puzzles has specific rules and objectives. Read the game instructions carefully before starting this game.</p>
+            <p className="instructions-description">Thsi game provide a delightful way to challenge your mind, improve thinking skills, and enjoy some leisure time. Abc puzzle online come in various forms, with unique content from traditional paper abc puzzle to sophisticated digital games. The abc puzzle Game guide will walk you through the basic principles of playing different types of alphabet slider, offering tips and strategies to enhance your experience.</p>
+            <h2 className="instruction-step">2. Understand the Game Rules:</h2>
+            <p className="instructions-description">Each games has specific rules and objectives. Read the game instructions carefully before starting this game.</p>
             <ul className="instructions-list">
               <li>In this alphabet puzzle player play three times with different alphabet letter</li>
-              <li>If 3 puzzle game cards are matched to each other.</li>
-              <li>Player wins this game.</li>
-              <li>Otherwise, Restart the game again and try to match again 3 cards.</li>
+              <li>If three puzzle game cards are matched to each other.Player wins this game.</li>
+              <li>Otherwise, Restart the game again and try to match again thee cards.</li>
             </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
+            <h3 className="instruction-step">3. Set up Your Space:</h3>
             <p className="instructions-description">For play alphabet slider physically, ensure you have a comfortable environment and well-lit workspace. For digital alphabet slider puzzle, adjust your device's settings that is suitable for your environment and mind.</p>
-            <h5 className="tips-title">Tips to Win this Game</h5>
+            <h4 className="tips-title">Tips to Win this Game</h4>
             <ul className="instructions-list">
+              <li>Challenge Yourself: If you want to upgrade your skill, gradually increase the difficulty level and the thinking process.</li>
               <li>Practice Regularly: If you play this game continuously, the better result you get.</li>
-              <li>Learn from Mistakes: If you make a mistake don't be penic because every person learn from mistakes and get Success.</li>
-              <li>Challenge Yourself: If you want to upgrade your skill gradually increase the difficulty level and the thinking process.</li>
+              <li>Learn from Mistakes: If you make a mistake, don't be penic because every person learn from mistakes and achieves Success.</li>
             </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description">Alphabet slider puzzle give the best opportunities to increase your mental and physical strength. By following all the rules of this alphabet slider puzzle, playing this game regularly and using the best method to play free abc puzzle, you can upgrade your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet slider puzzle. So, choose your best alphabet slider puzzle game and dive into the fascinating world of alphabet!</p>
+            <h5 className="instruction-step">Conclusion:</h5>
+            <p className="instructions-description">Every game gives the best opportunities to increase your mental and physical strength. By following all the rules of this game, playing this game regularly and using the best method to play free abc puzzle, you can upgrade your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet slider puzzle. So, choose your best game and dive into the fascinating world of alphabet!</p>
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
