@@ -141,7 +141,7 @@ const Puzzle1 = () => {
       </div>
       <div className="game-instructions-container">
         <div className="game-instructions-content">
-          {/* <div className="game-instructions">
+          <div className="game-instructions">
             <h2 className="instructions-title">How to Play Free Jigsaw Planet Game</h2>
             <p className="instructions-description">Free Jigsaw planet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Jigsawplanet come in various forms, with unique content from traditional paper jigsawplanet to sophisticated digital games. The jigsawplanet guide will walk you through the basic principles of playing different types of jigsawplanet games, offering tips and strategies to enhance your experience.</p>
             <h3 className="instruction-step">1. Different Types of Jigsaw Planet Free:</h3>
@@ -163,7 +163,7 @@ const Puzzle1 = () => {
             </ul>
             <h3 className="instruction-step">Conclusion:</h3>
             <p className="instructions-description">Jigsaw planet games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your jigsawplanet-solving skills and enjoy the satisfying feeling of cracking even the toughest jigsawplanet. So, choose your game, set up your space, and dive into the fascinating world of jigsawplanet!</p>
-          </div> */}
+          </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle1.webp' alt='free online alphabet slider puzzle game' />
