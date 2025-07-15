@@ -141,13 +141,13 @@ const Puzzle1 = () => {
       </div>
       <div className="game-instructions-container">
         <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Free alphabet slider Game</h1>
-            <p className="instructions-description">This game provide a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Alphabet slider come in various forms, with unique content from traditional paper alphabet slider to sophisticated digital games. The alphabet slider guide will walk you through the basic principles of playing different types of alphabet slider games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of alphabet slider Free:</h2>
-            <p className="instructions-description">This game come in many varieties like pieces puzzle, card in one frame and match card, each with unique mechanics and objectives that entertain users.</p>
-            <h3 className="instruction-step">2. Understand the Game Rules:</h3>
-            <p className="instructions-description">Each alphabet slider puzzles has specific rules and objectives. Read the game rules carefully before starting this game.</p>
+          {/* <div className="game-instructions">
+            <h2 className="instructions-title">How to Play Free Jigsaw Planet Game</h2>
+            <p className="instructions-description">Free Jigsaw planet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Jigsawplanet come in various forms, with unique content from traditional paper jigsawplanet to sophisticated digital games. The jigsawplanet guide will walk you through the basic principles of playing different types of jigsawplanet games, offering tips and strategies to enhance your experience.</p>
+            <h3 className="instruction-step">1. Different Types of Jigsaw Planet Free:</h3>
+            <p className="instructions-description">Jigsawplanet games come in many varieties, each with unique mechanics and objectives.</p>
+            <h3 className="instruction-step">2. Understand the Rules:</h3>
+            <p className="instructions-description">Each jigsaw planet puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
             <ul className="instructions-list">
               <li>In this game player play three times with different cards</li>
               <li>If 3 alphabet slider puzzle game cards are matched to each other.Player wins this game.</li>
@@ -161,9 +161,9 @@ const Puzzle1 = () => {
               <li>Practice Regularly: If you play free alphabet game more and more, the better result you get.</li>
               <li>Learn from Mistakes: If you make a mistake, don't penic because every person learn from mistakes and achieves Success.</li>
             </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description">Each game give the best opportunities to get your mental and physical strength. By following all the rules of free alphabet slider game,playing this game regularly and using the best method to play free alphabet slider, you can upgrade your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet puzzle. So, choose your best alphabet puzzle and dive into the fascinating world of alphabet!</p>
-          </div>
+            <h3 className="instruction-step">Conclusion:</h3>
+            <p className="instructions-description">Jigsaw planet games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your jigsawplanet-solving skills and enjoy the satisfying feeling of cracking even the toughest jigsawplanet. So, choose your game, set up your space, and dive into the fascinating world of jigsawplanet!</p>
+          </div> */}
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle1.webp' alt='free online alphabet slider puzzle game' />
