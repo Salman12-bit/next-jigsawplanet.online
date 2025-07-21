@@ -30,6 +30,7 @@ export default function Layout({ children }) {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/best-word-puzzle-game-ever"
     },
     "headline": "Easy Crossword Puzzle Quick Fun for Every Day",
     "description":
@@ -46,7 +47,7 @@ export default function Layout({ children }) {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "word puzzle games",
+      "name": "Word Puzzle Games",
       "logo": {
         "@type": "ImageObject",
         "url": "https://jigsawplanet.online/images/wordpuzzle.webp",
@@ -54,8 +55,8 @@ export default function Layout({ children }) {
         "height": 500
       }
     },
-    "datePublished": "2024-05-26", 
-    "dateModified": "2024-05-26" 
+    "datePublished": "2024-05-26",
+    "dateModified": "2024-05-26"
   };
 
   return (

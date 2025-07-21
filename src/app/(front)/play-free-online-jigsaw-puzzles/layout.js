@@ -32,17 +32,13 @@ export default function Layout({ children }) {
       "@type": "WebPage",
       "@id": "https://jigsawplanet.online/play-free-online-jigsaw-puzzles"
     },
-    "headline": "Exploring the World of JigsawPuzzles – History, Benefits, and Tips for Enthusiasts",
+    "headline": "Play Online Multiplayer Jigsaw Puzzles – Customizable Games & Puzzle Challenges",
     "description": "Dive into the fascinating world of jigsawpuzzles! Learn about their history, benefits, and tips to enhance your puzzle-solving experience. Perfect for enthusiasts!",
     "image": {
       "@type": "ImageObject",
       "url": "https://jigsawplanet.online/images/jigsawpuzzles.webp",
       "width": 1200,
       "height": 630
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Game developer" 
     },
     "publisher": {
       "@type": "Organization",
@@ -54,8 +50,10 @@ export default function Layout({ children }) {
         "height": 500
       }
     },
-    "datePublished": "2024-04-029", 
-    "dateModified": "2024-05-04" 
+    "datePublished": "2024-04-29",
+    "dateModified": "2024-07-16",
+    "keywords": "online jigsaw puzzle, 3D jigsaw puzzles, puzzle mobile games, multiplayer puzzles, free online puzzles, customizable jigsaw games, Blue Prince game, digital puzzle games",
+    "articleSection": "Online Games, Puzzle Games, Education, Cognitive Skills",
   };
 
   return (
@@ -70,3 +68,4 @@ export default function Layout({ children }) {
     </>
   );
 }
+

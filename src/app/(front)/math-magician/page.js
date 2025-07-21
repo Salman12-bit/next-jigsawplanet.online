@@ -36,7 +36,7 @@ const Puzzle1 = () => {
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(16);
+  const [level, setLevel] = useState(15);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {

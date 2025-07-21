@@ -7,7 +7,7 @@
 }
 
 .puzzle-article-card {
-    width: 430px;
+    width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
@@ -17,12 +17,12 @@
     box-sizing: border-box;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-height: 500px; 
+    min-height: 300px; 
 }
 
 .puzzle-article-image {
     width: 100%;
-    height: 230px;
+    height: 200px;
     object-fit: cover;
     border-radius: 12px;
 }

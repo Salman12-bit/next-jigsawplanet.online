@@ -43,11 +43,12 @@ export default function Layout({ children }) {
     },
     "author": {
       "@type": "Person",
-      "name": "Game developer"
+      "name": "Game developer",
+      "url": "https://jigsawplanet.online"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "puzzle abc",
+      "name": "Puzzle ABC",
       "logo": {
         "@type": "ImageObject",
         "url": "https://jigsawplanet.online/images/abcpuzzle.webp",
@@ -55,8 +56,20 @@ export default function Layout({ children }) {
         "height": 500
       }
     },
-    "datePublished": "2024-05-18", 
-    "dateModified": "2024-05-18" 
+    "datePublished": "2024-05-18",
+    "dateModified": "2024-05-18",
+    "keywords": [
+      "Endless Alphabet review",
+      "best ABC puzzle game",
+      "alphabet learning game for toddlers",
+      "phonics puzzle app",
+      "educational app for kids"
+    ],
+    "articleSection": [
+      "Educational Gaming",
+      "Phonics & Literacy",
+      "Preschool Learning Tools"
+    ]
   };
 
   return (

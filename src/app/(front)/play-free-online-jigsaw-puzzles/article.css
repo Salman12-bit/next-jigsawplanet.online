@@ -79,3 +79,54 @@ strong {
         font-size: 16px;
     }
 }
+
+.faq-item {
+    margin-bottom: 16px;
+    border-radius: 10px;
+    background-color: #a5a5aa;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #888a91;
+}
+
+.faq-question-alt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-question-alt.active {
+    background-color: #888a91;
+}
+
+.faq-icon {
+    font-size: 20px;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.faq-answer.show {
+    padding: 16px 20px;
+    max-height: 500px;
+    /* Enough for most answers */
+}
