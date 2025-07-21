@@ -130,7 +130,7 @@ const Puzzle1 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/">
+                <Link href="/color-number">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
