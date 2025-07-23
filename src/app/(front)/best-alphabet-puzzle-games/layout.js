@@ -56,8 +56,8 @@ export default function Layout({ children }) {
         "height": 500
       }
     },
-    "datePublished": "2024-05-18",
-    "dateModified": "2024-05-18",
+    "datePublished": "2025-07-05",
+    "dateModified": "2025-07-23",
     "keywords": [
       "Endless Alphabet review",
       "best ABC puzzle game",

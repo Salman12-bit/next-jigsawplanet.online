@@ -55,8 +55,8 @@ export default function Layout({ children }) {
         "height": 500
       }
     },
-    "datePublished": "2024-05-26",
-    "dateModified": "2024-05-26"
+    "datePublished": "2025-07-03",
+    "dateModified": "2024-07-23"
   };
 
   return (
