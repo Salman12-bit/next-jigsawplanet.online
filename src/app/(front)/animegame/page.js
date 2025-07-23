@@ -143,9 +143,9 @@ export default function Puzzle() {
     const [time, setTime] = useState(0);
     const [showFinishModal, setShowFinishModal] = useState(false);
     const [showNotFinishModal, setShowNotFinishModal] = useState(false);
-    const [userName, setUserName] = useState("");
-    const [leaderboard, setLeaderboard] = useState([]);
-    const [showNamePrompt, setShowNamePrompt] = useState(true);
+    // const [userName, setUserName] = useState("");
+    // const [leaderboard, setLeaderboard] = useState([]);
+    // const [showNamePrompt, setShowNamePrompt] = useState(true);
     const globalHeight = 350
     const globalWidth = 350
     const [containerSize, setContainerSize] = useState({ width: globalHeight, height: globalWidth });
@@ -171,10 +171,10 @@ export default function Puzzle() {
         }
         processImage();
     }, []);
-    useEffect(() => {
-        const savedData = JSON.parse(localStorage.getItem("puzzle11")) || [];
-        setLeaderboard(savedData);
-    }, []);
+    // useEffect(() => {
+    //     const savedData = JSON.parse(localStorage.getItem("puzzle11")) || [];
+    //     setLeaderboard(savedData);
+    // }, []);
     useEffect(() => {
         let timerId;
         if (isStarted && !isFinished) {
@@ -219,26 +219,26 @@ export default function Puzzle() {
 
         return { piecesArr, slotsArr };
     }
-    const updateLeaderboard = (name, time) => {
-        const newEntry = { name, time };
+    // const updateLeaderboard = (name, time) => {
+    //     const newEntry = { name, time };
 
-        const current = JSON.parse(localStorage.getItem("puzzle11")) || [];
+    //     const current = JSON.parse(localStorage.getItem("puzzle11")) || [];
 
-        const existingIndex = current.findIndex((entry) => entry.name === name);
+    //     const existingIndex = current.findIndex((entry) => entry.name === name);
 
-        if (existingIndex !== -1) {
-            if (time < current[existingIndex].time) {
-                current[existingIndex].time = time;
-            }
-        } else {
-            current.push(newEntry);
-        }
+    //     if (existingIndex !== -1) {
+    //         if (time < current[existingIndex].time) {
+    //             current[existingIndex].time = time;
+    //         }
+    //     } else {
+    //         current.push(newEntry);
+    //     }
 
-        const sorted = current.sort((a, b) => a.time - b.time).slice(0, 7);
+    //     const sorted = current.sort((a, b) => a.time - b.time).slice(0, 7);
 
-        localStorage.setItem("puzzle11", JSON.stringify(sorted));
-        setLeaderboard(sorted);
-    };
+    //     localStorage.setItem("puzzle11", JSON.stringify(sorted));
+    //     setLeaderboard(sorted);
+    // };
 
     function checkIfPuzzleSolved() {
         console.log(pieces);
@@ -264,7 +264,7 @@ export default function Puzzle() {
         if (checkIfPuzzleSolved()) {
             setIsFinished(true);
             setShowFinishModal(true);
-            updateLeaderboard(userName || "Anonymous", time);
+            // updateLeaderboard(userName || "Anonymous", time);
         } else {
             setShowNotFinishModal(true);
         }
@@ -329,7 +329,7 @@ export default function Puzzle() {
                         }}
                     />
                 </div>
-                {leaderboard.length > 0 && (
+                {/* {leaderboard.length > 0 && (
                     <div className={styles.leaderboard}>
                         <h3>🏆 Leaderboard</h3>
                         <ol>
@@ -340,7 +340,7 @@ export default function Puzzle() {
                             ))}
                         </ol>
                     </div>
-                )}
+                )} */}
                 <h3 className={styles.centerText}>Time: {formatTime(time)}</h3>
                 <p style={{ textAlign: "center" }}>
                     {isFinished
@@ -358,7 +358,7 @@ export default function Puzzle() {
                     </button>
                 )}
             </div>
-            {showNamePrompt && (
+            {/* {showNamePrompt && (
                 <div className={styles.modalOverlay}>
                     <div className={styles.modalContent}>
                         <h2>Enter Your Name</h2>
@@ -379,7 +379,7 @@ export default function Puzzle() {
                         </button>
                     </div>
                 </div>
-            )}
+            )} */}
             <div ref={puzzleContainerRef} className={styles.puzzleBoard}>
                 {!isStarted && (
                     <div className={styles.overlay}>
