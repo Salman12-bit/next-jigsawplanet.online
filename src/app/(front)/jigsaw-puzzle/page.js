@@ -9,7 +9,6 @@ function flipEdge(edge) {
     return "flat";
 }
 
-// Drawing functions
 function drawTop(path, width, tabSize, topType) {
     if (topType === "out") {
         path += `
@@ -133,17 +132,19 @@ function resizeImage(img, targetWidth, targetHeight) {
 }
 
 export default function Puzzle() {
-    const puzzleImage = "/images/Puzzle3.webp"; // Adjust path as needed
+    const puzzleImage = "/images/Puzzle3.webp";
 
     const [image, setImage] = useState(null);
     const [pieces, setPieces] = useState([]);
     const [slots, setSlots] = useState([]);
     const [isStarted, setIsStarted] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
     const [isFinished, setIsFinished] = useState(false);
     const [time, setTime] = useState(0);
     const [showFinishModal, setShowFinishModal] = useState(false);
     const [showNotFinishModal, setShowNotFinishModal] = useState(false);
+    const [userName, setUserName] = useState("");
+    const [leaderboard, setLeaderboard] = useState([]);
+    const [showNamePrompt, setShowNamePrompt] = useState(true);
     const globalHeight = 350
     const globalWidth = 350
     const [containerSize, setContainerSize] = useState({ width: globalHeight, height: globalWidth });
@@ -169,17 +170,6 @@ export default function Puzzle() {
         }
         processImage();
     }, []);
-
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         const size = window.innerWidth < 410 ? window.innerWidth - 10 : 350;
-    //         setContainerSize({ width: size, height: size });
-    //     };
-
-    //     handleResize(); // Initial call to set size
-    //     window.addEventListener("resize", handleResize);
-    //     return () => window.removeEventListener("resize", handleResize);
-    // }, [isMobile]);
     useEffect(() => {
         let timerId;
         if (isStarted && !isFinished) {
@@ -187,6 +177,12 @@ export default function Puzzle() {
         }
         return () => clearInterval(timerId);
     }, [isStarted, isFinished]);
+
+    useEffect(() => {
+        const savedData = JSON.parse(localStorage.getItem("puzzle1")) || [];
+        setLeaderboard(savedData);
+    }, []);
+
 
     function createPuzzleData(img) {
         const rows = 4;
@@ -225,6 +221,29 @@ export default function Puzzle() {
         return { piecesArr, slotsArr };
     }
 
+    const updateLeaderboard = (name, time) => {
+        const newEntry = { name, time };
+
+        const current = JSON.parse(localStorage.getItem("puzzle1")) || [];
+
+        const existingIndex = current.findIndex((entry) => entry.name === name);
+
+        if (existingIndex !== -1) {
+            if (time < current[existingIndex].time) {
+                current[existingIndex].time = time;
+            }
+        } else {
+            current.push(newEntry);
+        }
+
+        const sorted = current.sort((a, b) => a.time - b.time).slice(0, 7);
+
+        localStorage.setItem("puzzle1", JSON.stringify(sorted));
+        setLeaderboard(sorted);
+    };
+
+
+
     function checkIfPuzzleSolved() {
         console.log(pieces);
         return pieces.every((piece) => piece.id === piece.currentSlotId);
@@ -247,12 +266,14 @@ export default function Puzzle() {
 
     const handleFinish = () => {
         if (checkIfPuzzleSolved()) {
-            setShowFinishModal(true);
             setIsFinished(true);
+            setShowFinishModal(true);
+            updateLeaderboard(userName || "Anonymous", time);
         } else {
             setShowNotFinishModal(true);
         }
     };
+
 
     const handleCloseModal = () => {
         setShowFinishModal(false);
@@ -270,20 +291,19 @@ export default function Puzzle() {
         const correctSlot = slots.find((slot) => slot.id === piece.id);
         if (!correctSlot) return;
 
-        // Get the absolute position of the dragged piece
         const pieceAbsolutePos = e.target.getAbsolutePosition();
         const pieceCenterX = pieceAbsolutePos.x + piece.width / 2;
         const pieceCenterY = pieceAbsolutePos.y + piece.height / 2;
 
-        // Compute the center of the correct slot
+
         const slotCenterX = correctSlot.x + correctSlot.width / 2;
         const slotCenterY = correctSlot.y + correctSlot.height / 2;
 
-        // Calculate the distance between the piece's center and the slot's center
-        const distance = Math.hypot(pieceCenterX - slotCenterX, pieceCenterY - slotCenterY);
-        const isCloseEnough = distance < 20; // adjust threshold as needed
 
-        // If the piece is close to the slot, snap it into place
+        const distance = Math.hypot(pieceCenterX - slotCenterX, pieceCenterY - slotCenterY);
+        const isCloseEnough = distance < 20;
+
+
         setPieces((prev) =>
             prev.map((p, idx) =>
                 idx === index
@@ -313,6 +333,18 @@ export default function Puzzle() {
                         }}
                     />
                 </div>
+                {leaderboard.length > 0 && (
+                    <div className={styles.leaderboard}>
+                        <h3>🏆 Leaderboard</h3>
+                        <ol>
+                            {leaderboard.map((entry, idx) => (
+                                <li key={idx}>
+                                    {entry.name} - {formatTime(entry.time)}
+                                </li>
+                            ))}
+                        </ol>
+                    </div>
+                )}
                 <h3 className={styles.centerText}>Time: {formatTime(time)}</h3>
                 <p style={{ textAlign: "center" }}>
                     {isFinished
@@ -330,7 +362,28 @@ export default function Puzzle() {
                     </button>
                 )}
             </div>
-
+            {showNamePrompt && (
+                <div className={styles.modalOverlay}>
+                    <div className={styles.modalContent}>
+                        <h2>Enter Your Name</h2>
+                        <input
+                            type="text"
+                            value={userName}
+                            onChange={(e) => setUserName(e.target.value)}
+                            placeholder="Your name"
+                            style={{ padding: "10px", marginBottom: "10px", width: "100%" }}
+                        />
+                        <button
+                            onClick={() => {
+                                setShowNamePrompt(false);
+                            }}
+                            disabled={!userName.trim()}
+                        >
+                            Continue
+                        </button>
+                    </div>
+                </div>
+            )}
             <div ref={puzzleContainerRef} className={styles.puzzleBoard}>
                 {!isStarted && (
                     <div className={styles.overlay}>
@@ -451,12 +504,8 @@ export default function Puzzle() {
                     </div>
                 </div>
             )}
+
+
         </div>
     );
 }
-
-
-
-
-
-

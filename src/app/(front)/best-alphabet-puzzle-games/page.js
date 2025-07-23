@@ -21,10 +21,6 @@ const EndlessAlphabetArticle = () => {
       question: "Can I play ABC Puzzle Games online for free?",
       answer: "Yes, many apps and websites offer free versions for kids and learners.",
     },
-    {
-      question: "What are the best ABC Puzzle Game apps?",
-      answer: "Top picks include ABCmouse, Starfall ABCs, and Endless Alphabet.",
-    },
   ];
 
   const [openIndex, setOpenIndex] = useState(null);
@@ -71,7 +67,7 @@ const EndlessAlphabetArticle = () => {
 
       <p>Alphabet’s user interface is deliberately crafted for small hands and developing minds. Navigation is straightforward—tap a word, and watch the animation, repeat. There is no congestion, no confusing menus, and no distractions.</p>
 
-      <p>All things are touch-responsive, meaning children as young as two can interact with the screen independently. Interaction with the screen gives more learning benefits. The letters are large and in a beautiful design that attracts young children, making letters easy to drag and drop. There’s no wrong way to play this game; if a letter is placed in the wrong spot, the letter simply wiggles back to its actual location without frustration or punishment.This non-linear, user-friendly structure secure that learning remains fun and never becomes a chore. It helps exploratory cognition and emotional safety, core aspects of a trustworthy digital learning structure.</p>
+      <p>All things are touch-responsive, meaning children as young as two can interact with the screen independently. Interaction with the screen gives more learning benefits. The letters are large and in a beautiful design that attracts young children, making letters easy to drag and drop. There’s no wrong way to play this game; if a letter is placed in the wrong spot, the letter simply wiggles back to its actual location without frustration or punishment. This non-linear, user-friendly structure secure that learning remains fun and never becomes a chore. It helps exploratory cognition and emotional safety, core aspects of a trustworthy digital learning structure.</p>
 
       <h2>No Ads, No In-App Purchases are Needed</h2>
 

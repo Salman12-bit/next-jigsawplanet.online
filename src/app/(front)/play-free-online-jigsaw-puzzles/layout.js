@@ -1,14 +1,14 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Exploring the World of JigsawPuzzles – History, Benefits, and Tips for Enthusiasts",
+  title: "Exploring the World of Online JigsawPuzzles – History, Benefits & Tips",
   keywords: "jigsaw puzzle,jigsaw puzzle jigsaw puzzle",
   description:
-    "Dive into the fascinating world of jigsawpuzzles! Learn about their history, benefits, and tips to enhance your puzzle-solving experience. Perfect for enthusiasts!",
+    "Discover the world of online jigsaw puzzles — explore their history, benefits, and smart tips to level up your puzzle-solving skills. Ideal for hobbyists and new players alike!",
   openGraph: {
-    title: "Exploring the World of JigsawPuzzles – History, Benefits, and Tips for Enthusiasts",
+    title: "Exploring the World of Online Jigsaw Puzzles – History, Benefits & Tips",
     description:
-      "Dive into the fascinating world of jigsawpuzzles! Learn about their history, benefits, and tips to enhance your puzzle-solving experience. Perfect for enthusiasts!",
+      "Discover the world of online jigsaw puzzles — explore their history, benefits, and smart tips to level up your puzzle-solving skills. Ideal for hobbyists and new players alike!",
     url: "https://jigsawplanet.online/play-free-online-jigsaw-puzzles",
     images: [
       {
@@ -32,8 +32,8 @@ export default function Layout({ children }) {
       "@type": "WebPage",
       "@id": "https://jigsawplanet.online/play-free-online-jigsaw-puzzles"
     },
-    "headline": "Play Online Multiplayer Jigsaw Puzzles – Customizable Games & Puzzle Challenges",
-    "description": "Dive into the fascinating world of jigsawpuzzles! Learn about their history, benefits, and tips to enhance your puzzle-solving experience. Perfect for enthusiasts!",
+    "headline": "Exploring the World of Online Jigsaw Puzzles – History, Benefits & Tips",
+    "description": "Discover the world of online jigsaw puzzles — explore their history, benefits, and smart tips to level up your puzzle-solving skills. Ideal for hobbyists and new players alike!",
     "image": {
       "@type": "ImageObject",
       "url": "https://jigsawplanet.online/images/jigsawpuzzles.webp",
@@ -50,8 +50,8 @@ export default function Layout({ children }) {
         "height": 500
       }
     },
-    "datePublished": "2024-04-29",
-    "dateModified": "2024-07-16",
+    "datePublished": "2025-07-05",
+    "dateModified": "2025-07-23",
     "keywords": "online jigsaw puzzle, 3D jigsaw puzzles, puzzle mobile games, multiplayer puzzles, free online puzzles, customizable jigsaw games, Blue Prince game, digital puzzle games",
     "articleSection": "Online Games, Puzzle Games, Education, Cognitive Skills",
   };

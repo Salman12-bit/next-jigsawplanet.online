@@ -58,11 +58,9 @@ export default function Layout({ children }) {
         "height": 500
       }
     },
-    "datePublished": "2024-05-04",
-    "dateModified": "2024-05-04",
+    "datePublished": "2025-07-05",
+    "dateModified": "2025-07-23",
     "articleSection": "Puzzle Tips, Brain Health, Family Activities, Mind Games",
-    "articleBody":
-      "This guide explores the top creative ways to enjoy jigsaw puzzles—from choosing the right puzzle to fun activities after completion. Learn how puzzles help with cognitive development, reduce stress, and foster family bonding. Whether you’re a beginner or puzzle enthusiast, these expert-backed tips will enhance your experience and make puzzling more fun and rewarding."
   };
 
   return (

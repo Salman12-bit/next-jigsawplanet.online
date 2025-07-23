@@ -1,18 +1,18 @@
 import React from 'react';
 
 export const metadata = {
-  title: "The Ultimate Jigsaw Puzzle Guide Tips, Benefits & Fun",
-  keywords: "jigsaw puzzle piece,jigsaw pieces",
+  title: "Interactive Jigsaw Planet – Play Engaging Online Puzzle Games",
+  keywords: "jigsaw piece puzzle,jigsaw frame",
   description:
-    "Discover how jigsaw puzzles boost brainpower, relieve stress, and bring families together. Learn pro tips to pick, set up, and solve puzzles with ease.",
+    "Enjoy the Interactive Jigsaw Planet experience with free, fun, and challenging online jigsaw puzzles. Perfect for all ages and skill levels – start solving now!",
   openGraph: {
-    title: "The Ultimate Jigsaw Puzzle Guide: Tips, Benefits & Fun",
+    title: "Interactive Jigsaw Planet – Play Engaging Online Puzzle Games",
     description:
-      "Discover how jigsaw puzzles boost brainpower, relieve stress, and bring families together. Learn pro tips to pick, set up, and solve puzzles with ease.",
-    url: "https://jigsawplanet.online/top-10-creative-ideas-when-finished",
+      "Enjoy the Interactive Jigsaw Planet experience with free, fun, and challenging online jigsaw puzzles. Perfect for all ages and skill levels – start solving now!",
+    url: "https://jigsawplanet.online/A-digital-haven-for-puzzle-follower",
     images: [
       {
-        url: "https://jigsawplanet.online/images/whenfinished.webp",
+        url: "https://jigsawplanet.online/images/interactivepuzzle.webp",
         width: 1200,
         height: 630,
         alt: "read this article on jigsawplanet",
@@ -20,7 +20,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://jigsawplanet.online/top-10-creative-ideas-when-finished",
+    canonical: "https://jigsawplanet.online/A-digital-haven-for-puzzle-follower",
   },
 };
 
@@ -30,39 +30,32 @@ export default function Layout({ children }) {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://jigsawplanet.online/top-10-creative-ideas-when-finished"
+      "@id": "https://jigsawplanet.online/A-digital-haven-for-puzzle-follower"
     },
-    "headline": "The Ultimate Jigsaw Puzzle Guide: Tips, Benefits & Fun",
+    "headline": "Interactive Jigsaw Planet – Play Engaging Online Puzzle Games",
     "description":
-      "Discover how jigsaw puzzles boost brainpower, relieve stress, and bring families together. Learn pro tips to pick, set up, and solve puzzles with ease.",
+      "Enjoy the Interactive Jigsaw Planet experience with free, fun, and challenging online jigsaw puzzles. Perfect for all ages and skill levels – start solving now!",
     "keywords":
-      "jigsaw puzzle tips, puzzle guide, benefits of puzzles, puzzle ideas, puzzle hacks, stress relief games, family puzzles, puzzle brain exercise",
+      "Interactive jigsaw planet tips, puzzle guide, benefits of interactive puzzles, puzzle ideas, puzzle hacks, stress relief games, family puzzles",
     "image": {
       "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/whenfinished.webp",
+      "url": "https://jigsawplanet.online/images/interactivepuzzle.webp",
       "width": 1200,
       "height": 630
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Game Developer",
-      "url": "https://jigsawplanet.online/about"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Puzzle ABC",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/whenfinished.webp",
+        "url": "https://jigsawplanet.online/images/interactivepuzzle.webp",
         "width": 500,
         "height": 500
       }
     },
-    "datePublished": "2024-05-04",
-    "dateModified": "2024-05-04",
+    "datePublished": "2025-07-05",
+    "dateModified": "2024-07-23",
     "articleSection": "Puzzle Tips, Brain Health, Family Activities, Mind Games",
-    "articleBody":
-      "This guide explores the top creative ways to enjoy jigsaw puzzles—from choosing the right puzzle to fun activities after completion. Learn how puzzles help with cognitive development, reduce stress, and foster family bonding. Whether you’re a beginner or puzzle enthusiast, these expert-backed tips will enhance your experience and make puzzling more fun and rewarding."
   };
 
   return (

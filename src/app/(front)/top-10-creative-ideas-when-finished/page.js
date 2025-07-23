@@ -12,15 +12,15 @@ const Jigsaw1 = () => {
     },
     {
       question: "What should I do if a puzzle piece is gone?",
-      answer: "Check the sides of the puzzle carefully. If it's permanently lost, some puzzle brands offer replacement pieces. If not, the puzzle can still be repurposed for crafts or decoration instead of storage.",
+      answer: "Check the sides of the puzzle carefully. If it's permanently lost, some puzzle brands provide replacement pieces. If not, the puzzle can still be repurposed for crafts or decoration instead of storage.",
     },
     {
       question: "Are old or vintage puzzles worth anything?",
-      answer: "Yes, especially limited-edition or collectible puzzles. If you’re wondering what to do with a finished puzzle that's out-of-print, consider selling it online. This puzzle gives you a good price.",
+      answer: "Yes, especially limited-edition or collectible puzzles. If you’re wondering what to do with a finished puzzle that's out of print, consider selling it online. This puzzle gives you a good price.",
     },
     {
       question: "What to do with the puzzle after finishing?",
-      answer: "Once a puzzle is completed, your choices range from preserving it as a keepsake to upcycling it into DIY crafts or functional decor. Choose the way that is best for you!",
+      answer: "Once a puzzle is completed, your choices range from preserving it as a keepsake to upcycling it into DIY crafts. Select the way that is best for you!",
     },
   ];
 
@@ -59,7 +59,7 @@ const Jigsaw1 = () => {
         </table>
       </div>
 
-      <p>Finishing a jigsaw puzzle gives a satisfying sentiment of achievement. After playing sometimes for days, fitting fixed together hundreds or even thousands of small pieces, you finally see the finished picture in all its glory. But when you finish the picture, then the question arises: What do you do with a jigsaw puzzle once it’s completed?</p>
+      <p>Finishing a jigsaw puzzle gives a satisfying sentiment of success. After playing sometimes for days, fitting fixed together hundreds or even thousands of small pieces, you finally see the finished picture in all its glory. But when you finish the picture, then the question arises: What do you do with a jigsaw puzzle once it’s completed?</p>
       <p>Do you dismantle it and box it away? Display it like a trophy? Give it to others to enjoy? Fortunately, lot of ways to extend the life of your puzzle, whether you're looking for decorative, practical, or philanthropic solutions. Whether you can ask this question by yourself, what to do with completed jigsaw puzzles, or wondering what to do with a puzzle after completed, this guide provides smart and fun options. We’ll explore 10 creative and practical ideas for what to do with your jigsaw puzzle after you've finished it.</p>
 
       <h3>1. Frame It as Wall Art (What to Do with a Finished Puzzle)</h3>
@@ -83,7 +83,7 @@ const Jigsaw1 = () => {
       </ul>
       <p><strong>Bonus Tip:</strong> This is a great way to promote mental wellness and mindful activities among loved ones. If you’re wondering what to do with puzzles once done, giving them as a gift creates lasting value.</p>
 
-      <h3>3. Donate It to Charity or Local Institutions (What to Do with Completed Puzzles)</h3>
+      <h3>3. Donate It to Charity or Local Institutions</h3>
       <p>Donating puzzles is a fantastic way to reduce clutter while doing good. Many organizations gladly accept used puzzles, including:</p>
       <ul>
         <li>Local libraries</li>
