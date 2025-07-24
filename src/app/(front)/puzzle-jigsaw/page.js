@@ -260,20 +260,20 @@ export default function Puzzle() {
         const correctSlot = slots.find((slot) => slot.id === piece.id);
         if (!correctSlot) return;
 
-       
+
         const pieceAbsolutePos = e.target.getAbsolutePosition();
         const pieceCenterX = pieceAbsolutePos.x + piece.width / 2;
         const pieceCenterY = pieceAbsolutePos.y + piece.height / 2;
 
-        
+
         const slotCenterX = correctSlot.x + correctSlot.width / 2;
         const slotCenterY = correctSlot.y + correctSlot.height / 2;
 
-    
-        const distance = Math.hypot(pieceCenterX - slotCenterX, pieceCenterY - slotCenterY);
-        const isCloseEnough = distance < 20; 
 
-       
+        const distance = Math.hypot(pieceCenterX - slotCenterX, pieceCenterY - slotCenterY);
+        const isCloseEnough = distance < 20;
+
+
         setPieces((prev) =>
             prev.map((p, idx) =>
                 idx === index
