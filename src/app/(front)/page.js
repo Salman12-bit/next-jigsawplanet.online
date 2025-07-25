@@ -181,7 +181,7 @@ export default function Home() {
         {isLoading ? (
           <div className="loader"><div className="spinner"></div></div>
         ) : err ? (
-          <p className="error">Error loading posts.</p>
+          <p className="error">Loading....</p>
         ) : (
           data?.map((post) => (
             <div className="post" key={post._id}>
@@ -209,7 +209,7 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <article class="article-content">
+      <article className="article-content">
         <h1>Online Jigsawplanet A Digital Pause for Curious Minds</h1>
 
         <p>Each day, our focus is pulled in dozens of directions. Between work, messages, and constant updates, the mind barely gets a moment to reset. That’s where our platform offers something different — not just a puzzle activity, but a deliberate moment to disconnect from pressure and reconnect with thought.</p>
@@ -246,22 +246,19 @@ export default function Home() {
 
         <p>If you’d like to learn more about puzzle games, feel free to explore the articles below.</p>
       </article>
-      <div>
-        <div className="puzzle-article">
-          {puzzleGame.map((item, index) => (
-            <div key={index} className="puzzle-article-card fade-in">
-              <Link href={item.link} className="puzzle-image-wrapper">
-                <img src={item.image} alt={`Puzzle ${index + 1}`} className="puzzle-article-image" />
-              </Link>
-              <p className="puzzle-article-title">{item.text}</p>
-              <Link href={item.link}>
-                <button className="read-more-button">Read More</button>
-              </Link>
-            </div>
-          ))}
-        </div>
+      <div className="puzzle-article">
+        {puzzleGame.map((item, index) => (
+          <div key={index} className="puzzle-article-card fade-in">
+            <Link href={item.link} className="puzzle-image-wrapper">
+              <img src={item.image} alt={`Puzzle ${index + 1}`} className="puzzle-article-image" />
+            </Link>
+            <p className="puzzle-article-title">{item.text}</p>
+            <Link href={item.link}>
+              <button className="read-more-button">Read More</button>
+            </Link>
+          </div>
+        ))}
       </div>
-
     </div>
   );
 }

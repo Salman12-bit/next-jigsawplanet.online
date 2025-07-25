@@ -36,8 +36,8 @@ const Jigsaw1 = () => {
       <h1>What to Do with a Jigsaw Puzzle When Finished?</h1>
       <h2>10 Creative and Practical Ideas For New Users</h2>
 
-      <div class="toc-container">
-        <table class="toc-table-enhanced">
+      <div className="toc-container">
+        <table className="toc-table-enhanced">
           <thead>
             <tr>
               <th>#</th>

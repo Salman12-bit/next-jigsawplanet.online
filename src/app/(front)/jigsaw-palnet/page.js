@@ -144,6 +144,9 @@ export default function Puzzle() {
     const [time, setTime] = useState(0);
     const [showFinishModal, setShowFinishModal] = useState(false);
     const [showNotFinishModal, setShowNotFinishModal] = useState(false);
+    const [userName, setUserName] = useState("");
+    const [leaderboard, setLeaderboard] = useState([]);
+    const [showNamePrompt, setShowNamePrompt] = useState(true);
     const globalHeight = 350
     const globalWidth = 350
     const [containerSize, setContainerSize] = useState({ width: globalHeight, height: globalWidth });
@@ -169,7 +172,10 @@ export default function Puzzle() {
         }
         processImage();
     }, []);
-
+    useEffect(() => {
+        const savedData = JSON.parse(localStorage.getItem("puzzle12")) || [];
+        setLeaderboard(savedData);
+    }, []);
     useEffect(() => {
         let timerId;
         if (isStarted && !isFinished) {
@@ -214,7 +220,30 @@ export default function Puzzle() {
 
         return { piecesArr, slotsArr };
     }
+    const updateLeaderboard = (name, time) => {
+        const newEntry = { name, time };
 
+        const currentLeaderboard = JSON.parse(localStorage.getItem("puzzle12")) || [];
+
+        const existingIndex = currentLeaderboard.findIndex((entry) => entry.name === name);
+
+        if (existingIndex !== -1) {
+
+            if (time < currentLeaderboard[existingIndex].time) {
+                currentLeaderboard[existingIndex].time = time;
+            }
+        } else {
+
+            currentLeaderboard.push(newEntry);
+        }
+
+        const sorted = currentLeaderboard.sort((a, b) => a.time - b.time);
+
+        const top7 = sorted.slice(0, 7);
+
+        localStorage.setItem("puzzle12", JSON.stringify(top7));
+        setLeaderboard(top7);
+    };
     function checkIfPuzzleSolved() {
         console.log(pieces);
         return pieces.every((piece) => piece.id === piece.currentSlotId);
@@ -237,8 +266,9 @@ export default function Puzzle() {
 
     const handleFinish = () => {
         if (checkIfPuzzleSolved()) {
-            setShowFinishModal(true);
             setIsFinished(true);
+            setShowFinishModal(true);
+            updateLeaderboard(userName || "Anonymous", time);
         } else {
             setShowNotFinishModal(true);
         }
@@ -303,6 +333,18 @@ export default function Puzzle() {
                         }}
                     />
                 </div>
+                {leaderboard.length > 0 && (
+                    <div className={styles.leaderboard}>
+                        <h3>🏆 Leaderboard</h3>
+                        <ol>
+                            {leaderboard.map((entry, idx) => (
+                                <li key={idx}>
+                                    {entry.name} - {formatTime(entry.time)}
+                                </li>
+                            ))}
+                        </ol>
+                    </div>
+                )}
                 <h3 className={styles.centerText}>Time: {formatTime(time)}</h3>
                 <p style={{ textAlign: "center" }}>
                     {isFinished
@@ -320,7 +362,28 @@ export default function Puzzle() {
                     </button>
                 )}
             </div>
-
+            {showNamePrompt && (
+                <div className={styles.modalOverlay}>
+                    <div className={styles.modalContent}>
+                        <h2>Enter Your Name</h2>
+                        <input
+                            type="text"
+                            value={userName}
+                            onChange={(e) => setUserName(e.target.value)}
+                            placeholder="Your name"
+                            style={{ padding: "10px", marginBottom: "10px", width: "100%" }}
+                        />
+                        <button
+                            onClick={() => {
+                                setShowNamePrompt(false);
+                            }}
+                            disabled={!userName.trim()}
+                        >
+                            Continue
+                        </button>
+                    </div>
+                </div>
+            )}
             <div ref={puzzleContainerRef} className={styles.puzzleBoard}>
                 {!isStarted && (
                     <div className={styles.overlay}>
