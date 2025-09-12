@@ -5,7 +5,7 @@ import "./freeze.css"
 import Link from 'next/link';
 
 
-const Game = () => {
+const WordGame1 = () => {
   const words = ["Friend", "pearl", "UNCANNY"];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
@@ -141,6 +141,6 @@ const Game = () => {
   );
 };
 
-export default Game;
+export default WordGame1;
 
 

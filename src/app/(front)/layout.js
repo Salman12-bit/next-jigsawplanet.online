@@ -1,14 +1,14 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Jigsaw Planet: Discover the Best Free Game Platform",
-  keywords: "jigsawplanet,jigsaw,jigsaw puzzles,puzzle",
+  title: "Jigsaw puzzles - Discover the Best Free Game Platform",
+  keywords: "jigsaw puzzle,jigsaw",
   description:
-    "Visit the ultimate destination for the Jigsaw Planet puzzle! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages.",
+    "Visit the ultimate destination for the Jigsaw puzzles! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages.",
   openGraph: {
-    title: "Jigsaw Planet: Discover the Best Free Game Platform",
+    title: "Jigsaw puzzles - Discover the Best Free Game Platform",
     description:
-      "Visit the ultimate destination for Jigsaw Planet puzzle! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages.",
+      "Visit the ultimate destination for Jigsaw Planet puzzles! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages.",
     url: "https://jigsawplanet.online/",
     images: [
       {
@@ -31,7 +31,7 @@ export default function Layout({ children }) {
     "name": "Jigsaw Planet",
     "url": "https://jigsawplanet.online",
     "description":
-      "Visit the ultimate destination for the Jigsaw Planet puzzle! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages.",
+      "Visit the ultimate destination for the Jigsaw puzzles! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://jigsawplanet.online/search?q={search_term_string}",

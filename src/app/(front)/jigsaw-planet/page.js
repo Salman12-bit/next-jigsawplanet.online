@@ -31,7 +31,7 @@ const initialCards = [
   { id: 9, value: 'B' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle1 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -114,7 +114,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -142,64 +142,86 @@ const Puzzle1 = () => {
       <div className="welcome-container">
         <h1 className="welcome-title">🧩 Welcome to the Puzzle Challenge! 🧩</h1>
         <p className="welcome-text">
-          Hey there, all puzzle solvers! 🌟 Every puzzle gives us a new opportunities, and every level give us a chance to unlock your strength.
-          This is not just a game, it's your journey that sharpen your mind, unlocks your skills, and enjoy every victory.
+          Hey there, all puzzle solvers! Each puzzle provides a new opportunity, and each
+          level gives us a chance to improve our skills. This is not just amusement; it's a
+          journey that sharpens your mind, opens your abilities, and lets you enjoy every
+          victory.
         </p>
-        <ul className="welcome-list">
-          <li>🔍 Every move counts: Take your time to complete every level, explore which solution is best, and watch how every piece falls into place.</li>
-          <li>🧠 Sharpen your mind: Solve puzzles to grow your thinking. A puzzle solver can solve piece at a time.</li>
-          <li>🎯 Embrace the challenge: Just cheer up yourself, and you can say, "I did it!"</li>
-        </ul>
         <p className="welcome-text">
-          Keep thinking forward, trust on you, and most of all—enjoy the journey. You’ve got the mind of a champion and every champion knows his strength, and every puzzle gives a victory worth enjoying! Get ready to collect all the pieces together in frame! 🎉
+          Keep thinking forward, trust in yourself, and most of all, enjoy the journey.
+          You’ve got the mind of a champion, and every champion knows their strength. Every
+          puzzle is a victory worth celebrating! Get ready to collect all the pieces together
+          into one frame! 🎉
         </p>
       </div>
+
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Alphabet Game</h1>
-            <p className="instructions-description">This game give a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Alphabet come in various forms, with helpful content from traditional paper alphabet to sophisticated digital games. This game guide will walk you through the basic rules of playing different types of alphabet games, offering tips and strategies which is helpful.</p>
-            <h2 className="instruction-step">1. Different Types of Alphabet Free:</h2>
-            <p className="instructions-description">Each game comes in many varieties, each with unique mechanics and objectives.</p>
-            <h3 className="instruction-step">2. First Understand the Rules:</h3>
-            <p className="instructions-description">Each game has specific rules and objectives. Read these rules carefully before starting.</p>
+            <h2 className="instructions-title">How to Play the Alphabet Game</h2>
+            <p className="instructions-description">
+              This game gives a delightful way to challenge your mind, improve cognitive
+              skills, strengthen focus, and enjoy some leisure time. Alphabet puzzles come in
+              many forms, from traditional paper games to advanced digital versions. This
+              guide walks you through the rules, tips, and strategies to help you get started.
+            </p>
+
+            <h3 className="instruction-step">1. Alphabet Matching Game Rules</h3>
+            <p className="instructions-description">
+              Each game has specific rules and objectives. Read these carefully before you
+              start playing.
+            </p>
             <ul className="instructions-list">
-              <li>In this alphabet puzzle game player have 3 chances.</li>
-              <li>If three alphabet puzzle game cards are matched to each other. Player wins this game.</li>
-              <li>Otherwise, Restart this game again and try to match again three cards.</li>
+              <li>Players have 3 chances per game.</li>
+              <li>If three alphabet cards match, the player wins.</li>
+              <li>If not, restart the game and try again.</li>
             </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For a physical alphabet puzzle, ensure you have a comfortable and well-lit workspace. For the digital alphabet, adjust your device's settings to suit your environment and mind.</p>
-            <h5 className="tips-title">Tips to Get Success</h5>
+
+            <h3 className="instruction-step">2. Set Up Your Space</h3>
+            <p className="instructions-description">
+              For physical puzzles, use a comfortable and well-lit space. For digital games,
+              adjust your device settings so you can stay focused and relaxed.
+            </p>
+
+            <h3 className="tips-title">Alphabet Puzzle Tips</h3>
             <ul className="instructions-list">
-              <li>Practice Regularly: If you play this game more and more, the better result you get.</li>
-              <li>Learn from Mistakes: If you make a mistake, don't penic because every person learn from mistakes.</li>
-              <li>Challenge Yourself: If you want to upgrade your skill, gradually increase the difficulty level and the thinking process.</li>
+              <li><strong>Practice Regularly:</strong> The more you play, the better you get.</li>
+              <li><strong>Learn from Mistakes:</strong> Don’t panic—mistakes help you improve.</li>
+              <li><strong>Challenge Yourself:</strong> Increase difficulty gradually to boost your skills.</li>
             </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description">This give the best opportunities to get your mental and physical strength. By following all the rules of this game,playing this game regularly and using the best method to play this game, you can upgrade your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet puzzle. So, choose your best alphabet puzzle and dive into the fascinating world of alphabet!</p>
+
+            <h3 className="instruction-step">Conclusion</h3>
+            <p className="instructions-description">
+              Alphabet puzzles are a great way to boost mental sharpness and focus. By
+              following the rules, practicing often, and applying the best strategies, you’ll
+              improve your skills and enjoy the satisfying feeling of solving even the
+              toughest puzzles. Choose your favorite alphabet challenge and dive into the
+              world of letters today!
+            </p>
           </div>
+
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='free online alphabet puzzle game' />
+              <img className="game-image" src="./images/Puzzle1.webp" alt="free online alphabet puzzle game" />
             </Link>
             <Link href="/jigsawplanet1">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='alphabet interactive puzzle' />
+              <img className="game-image" src="./images/Puzzle2.webp" alt="alphabet interactive puzzle" />
             </Link>
             <Link href="/jigsawplanet2">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='free alphabet game' />
+              <img className="game-image" src="./images/Puzzle3.webp" alt="free alphabet game" />
             </Link>
             <Link href="/jigsawplanet3">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='play alphabet puzzle online' />
+              <img className="game-image" src="./images/Puzzle5.webp" alt="play alphabet puzzle online" />
             </Link>
           </div>
         </div>
       </div>
+
     </div>
   );
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle1;
 
 

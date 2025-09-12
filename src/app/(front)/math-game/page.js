@@ -30,7 +30,7 @@ const initialCards = [
   { id: 9, value: 'O' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle17 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -113,7 +113,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -141,27 +141,32 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Math - Quiz Game</h1>
+            <h1 className="instructions-title">Math - Quiz Games</h1>
             <p className="instructions-description">
-              A <strong>Math - Quiz Game</strong> is an exciting way for kids to test their math skills through fun challenges. These games feature fast-paced quizzes, interactive puzzles, and score-based rounds to make learning math more engaging and effective.
+              Math - Quiz Games blend logical thinking with the thrill of fast-paced questioning, making numerical challenges both stimulating and rewarding. These experiences aren't built for memorization alone — they activate problem-solving skills and mental agility, encouraging learners to engage with math in a format that’s immediate, responsive, and rewarding. By transforming equations into questions and solutions into achievements, this format has become a favorite in educational circles and beyond.
             </p>
-            <h2 className="instruction-step">1. Choose Your Game Mode</h2>
-            <ul className="instructions-list">
-              <li><strong>Basic Math:</strong> Fliping card and number matching quizzes.</li>
-              <li><strong>Timed Challenges:</strong> Solve as many problems as you can before the shuffle the card.</li>
-              <li><strong>Puzzle Rounds:</strong> Use logic and numbers to complete game levels.</li>
-            </ul>
-            <h3 className="instruction-step">2. How to Win</h3>
-            <ul className="instructions-list">
-              <li>Match three cards quickly and accurately to earn points.</li>
-              <li>Use hints when you're stuck to keep progressing.</li>
-              <li>Track your cards and try to beat your best time!</li>
-            </ul>
-            <h4 className="instruction-step">Conclusion</h4>
+
+            <h2 className="instruction-step">Reframing Math as an Active Process</h2>
             <p className="instructions-description">
-              With a <strong>Math - Quiz Game</strong>, kids can boost their arithmetic skills while having fun. Whether at home or in the classroom, these games are a smart way to mix play with practice!
+              Traditional math instruction often focuses on drills and static problem sets. In contrast, math quiz games introduce energy into the equation. Players are invited to apply knowledge in rapid succession, making calculations under pressure, and refining logic on the spot. This real-time application turns abstract principles into practical tasks, helping learners grasp mathematical concepts with speed and confidence. The quiz format doesn’t just teach — it challenges, and in doing so, sharpens the mind.
+            </p>
+
+            <h3 className="instruction-step">Adapting to Different Cognitive Styles</h3>
+            <p className="instructions-description">
+              Not all students learn math the same way. Quiz-based formats cater to a range of thinking styles — from those who excel with quick recall to those who thrive under structured pressure. Visual learners benefit from formatted layouts and visual clues. Auditory learners respond well to spoken prompts or timed announcements. Kinesthetic learners engage more deeply when there's interaction tied to every question. This adaptability is part of what makes quiz games so widely effective.
+            </p>
+
+            <h4 className="instruction-step">Encouraging Growth Through Feedback Loops</h4>
+            <p className="instructions-description">
+              Immediate feedback is a defining feature of math quiz games. Rather than waiting for correction, learners receive real-time validation of their thinking. When an answer is correct, it builds momentum. When it's incorrect, the game offers instant redirection or hints. This loop reinforces knowledge while correcting misconceptions on the spot, making the experience both educational and responsive. It's a system that naturally supports improvement through active participation and repetition.
+            </p>
+
+            <h5 className="instruction-step">Motivation Through Competitive Structure</h5>
+            <p className="instructions-description">
+              The quiz format introduces elements of scoring, timing, and progression — each one adding a layer of excitement and motivation. Whether playing solo or in a group, the competitive element encourages users to push their limits, aim for higher accuracy, and build confidence through performance. For many learners, math transforms from a subject of pressure into one of progress, thanks to the structured yet playful nature of quiz-style games.
             </p>
           </div>
+
           <div className="game-image-container">
             <Link href="/math-magician">
               <img className='game-image' src='./images/Puzzle1.webp' alt='math - quiz game for kids with fun magical numbers challenge' />
@@ -183,6 +188,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle17;
 
 

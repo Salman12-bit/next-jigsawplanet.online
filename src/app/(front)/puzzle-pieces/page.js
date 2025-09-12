@@ -133,7 +133,7 @@ function resizeImage(img, targetWidth, targetHeight) {
 }
 
 export default function Puzzle() {
-    const puzzleImage = "/images/riverboat.webp";
+    const puzzleImage = "/images/large-puzzle.webp";
 
     const [image, setImage] = useState(null);
     const [pieces, setPieces] = useState([]);
@@ -173,7 +173,7 @@ export default function Puzzle() {
         processImage();
     }, []);
     useEffect(() => {
-        const savedData = JSON.parse(localStorage.getItem("puzzle18")) || [];
+        const savedData = JSON.parse(localStorage.getItem("puzzle19")) || [];
         setLeaderboard(savedData);
     }, []);
     useEffect(() => {
@@ -223,7 +223,7 @@ export default function Puzzle() {
     const updateLeaderboard = (name, time) => {
         const newEntry = { name, time };
 
-        const currentLeaderboard = JSON.parse(localStorage.getItem("puzzle18")) || [];
+        const currentLeaderboard = JSON.parse(localStorage.getItem("puzzle19")) || [];
 
         const existingIndex = currentLeaderboard.findIndex((entry) => entry.name === name);
 
@@ -241,7 +241,7 @@ export default function Puzzle() {
 
         const top7 = sorted.slice(0, 7);
 
-        localStorage.setItem("puzzle18", JSON.stringify(top7));
+        localStorage.setItem("puzzle19", JSON.stringify(top7));
         setLeaderboard(top7);
     };
     function checkIfPuzzleSolved() {

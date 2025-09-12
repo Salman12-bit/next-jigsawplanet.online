@@ -30,7 +30,7 @@ const initialCards = [
   { id: 9, value: 'R' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle15 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -113,7 +113,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -141,39 +141,32 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play 1st Grade Games</h1>
-
+            <h1 className="instructions-title">1 Grade Games</h1>
             <p className="instructions-description">
-              1st grade games are fun, educational activities that help young learners practice reading, math, problem-solving, and more. These games are designed to match the skills of first graders while keeping them engaged and excited to learn.
+              1 grade games serve as a bridge between early learning and independent thinking, offering young learners a playful yet purposeful environment to practice essential skills. These games are designed with age-appropriate challenges that align with first-grade learning goals, from literacy and math to memory, logic, and emotional awareness. More than entertainment, they function as development tools that support curiosity, confidence, and critical thinking.
             </p>
 
-            <h2 className="instruction-step">1. Types of 1st Grade Games</h2>
-            <ul className="instructions-list">
-              <li><strong>Math Games:</strong> Practice addition, subtraction, and counting.</li>
-              <li><strong>Reading Games:</strong> Build vocabulary, spelling, and phonics skills.</li>
-              <li><strong>Puzzle Games:</strong> Solve simple logic puzzles and matching games.</li>
-              <li><strong>Interactive Games:</strong> Use colors, shapes, and patterns to learn new things.</li>
-            </ul>
-
-            <h3 className="instruction-step">2. Easy to Play</h3>
-            <ul className="instructions-list">
-              <li>Follow simple instructions provided in each game.</li>
-              <li>Use a tablet, computer, or printable sheet to play.</li>
-              <li>Earn points, complete levels, or solve challenges!</li>
-            </ul>
-
-            <h4 className="tips-title">Tips for Success</h4>
-            <ul className="instructions-list">
-              <li>Play games that match your child’s current skill level.</li>
-              <li>Use short sessions to keep focus and make learning fun.</li>
-              <li>Celebrate small wins to build confidence and joy in learning.</li>
-            </ul>
-
-            <h5 className="instruction-step">Conclusion</h5>
+            <h2 className="instruction-step">Encouraging Growth Through Active Exploration</h2>
             <p className="instructions-description">
-              1st grade games are a great way to learn while having fun. With a mix of reading, math, and creative play, kids build important skills in an exciting and interactive way.
+              At the heart of effective 1 grade games is a balance between guidance and discovery. They give children the space to explore new concepts through interactive formats that don’t feel like formal lessons. Whether recognizing patterns, making choices, or sequencing steps, each moment of gameplay is packed with learning potential. This hands-on interaction makes abstract ideas more accessible, helping children understand through doing — a method that fosters deeper retention and enthusiasm for learning.
+            </p>
+
+            <h3 className="instruction-step">Strengthening Foundational Literacy and Numeracy</h3>
+            <p className="instructions-description">
+              First grade is a critical period for mastering the basics of reading, writing, and arithmetic. Games targeted at this level often feature structured content that reinforces phonics, sight words, counting, and simple equations in a more engaging way than worksheets or repetition drills. These structured formats provide opportunities for reinforcement through visual, auditory, and tactile cues. The result is an immersive experience that helps turn core academic subjects into something learners actively enjoy and internalize.
+            </p>
+
+            <h4 className="instruction-step">Building Emotional Intelligence Through Play</h4>
+            <p className="instructions-description">
+              Emotional and social learning also plays a key role in 1st grade development. Many games designed for this age group incorporate decision-making, turn-taking, empathy, and resilience as part of their structure. These soft skills are often learned indirectly — through character interactions, feedback systems, or even how mistakes are handled during gameplay. Such subtle layers help shape a child’s emotional maturity, giving them tools to manage their feelings, communicate clearly, and navigate social spaces with confidence.
+            </p>
+
+            <h5 className="instruction-step">Creating Positive Learning Habits Early On</h5>
+            <p className="instructions-description">
+              The experiences children have with learning in the first grade often shape their attitude toward education for years to come. Games that make learning feel rewarding — not pressured — contribute to a growth mindset. They encourage persistence, self-direction, and the willingness to try again after failure. This mindset goes far beyond a single subject or skill. It helps children become lifelong learners, equipped to face future academic challenges with curiosity and resilience rather than anxiety or avoidance.
             </p>
           </div>
+
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle1.webp' alt='1st grade games - fun jigsaw puzzle activity for kids' />
@@ -196,6 +189,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle15;
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const metadata = {
-  title: " Difficult Word Search Puzzles for Brainiacs!",
+  title: "Difficult Word Search Puzzles for Brainiacs!",
   keywords: "android word puzzle games,adult word search puzzles",
   description:
     "Challenge your mind with difficult word search puzzles! Perfect for puzzle lovers who want a serious brain workout and hours of fun.",

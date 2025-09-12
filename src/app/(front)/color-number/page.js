@@ -30,7 +30,7 @@ const initialCards = [
   { id: 9, value: 'H' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle13 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -113,7 +113,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -141,61 +141,31 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Color by letter</h1>
-
+            <h1 className="instructions-title">Color by Letter</h1>
             <p className="instructions-description">
-              Color by letter is a fun and relaxing game where each area of a picture has a letter that matches a color. You fill in the spaces with the right colors to create a full image. It’s a great way to enjoy art, stay focused, and feel proud of your work. This guide will show you how to play color by letter, including the types of games, basic rules, and helpful tips.
+              Color by letter is a creative and educational method of engaging with both art and literacy. By assigning specific colors to different letters, participants bring a hidden image to life one section at a time. Each completed area represents both a visual and cognitive achievement — blending recognition, coordination, and patience. This form of activity has gained popularity not only in early learning environments but also in therapeutic and recreational contexts due to its calming and purposeful structure.
             </p>
 
-            <h2 className="instruction-step">1. Types of Color by letter Games</h2>
+            <h2 className="instruction-step">Where Art Meets Alphabet Awareness</h2>
             <p className="instructions-description">
-              Color by letter games come in different forms:
-              <ul>
-                <li><strong>Paper Coloring:</strong> A printed sheet with letters and a color key to follow.</li>
-                <li><strong>Digital Coloring:</strong> An app or online game where you tap or click to color the spaces.</li>
-                <li><strong>Pixel Coloring:</strong> A picture made of small squares where each letter stands for a color.</li>
-              </ul>
-              No matter which type you choose, the goal is the same—match the letter to the color and fill in the picture!
+              At its core, color by letter promotes early alphabet familiarity in an enjoyable way. Unlike memorization drills or rote recitation, this approach introduces letters through a sensory experience. When a learner associates a color with a letter and fills in spaces accordingly, they form connections that are both visual and tactile. The result isn’t just a completed picture — it’s a deeper, more natural understanding of letter forms and patterns, built through focused interaction with a task that feels more like play than study.
             </p>
 
-            <h3 className="instruction-step">2. Understand the Rules</h3>
+            <h3 className="instruction-step">A Rhythm of Relaxation and Learning</h3>
             <p className="instructions-description">
-              The rules are easy to follow:
-            </p>
-            <ul className="instructions-list">
-              <li>Each part of the picture has a letter inside it.</li>
-              <li>Use the matching color from the color key for that letter.</li>
-              <li>Color all the letters areas to complete the picture.</li>
-              <li>Don’t guess—always check the letter before you color.</li>
-            </ul>
-
-            <h4 className="instruction-step">3. Set Up Your Game Space</h4>
-            <p className="instructions-description">
-              Make sure you’re comfortable before you begin:
-              <ul>
-                <li>Find a quiet space with good lighting.</li>
-                <li>Find letters with clear number lines.</li>
-                <li>Have your colored pencils, markers, or device ready.</li>
-                <li>Keep your color chart nearby so you can follow along easily.</li>
-              </ul>
-              A good setup will help you enjoy the coloring without distractions.
+              The repetitive yet purposeful motion of coloring provides a sense of calm and control, which makes color by letter ideal for stress relief and emotional regulation. As each section is completed, the image slowly reveals itself, offering a satisfying sense of progress and achievement. For many participants — children and adults alike — this balance of quiet concentration and visual reward becomes a grounding activity, especially beneficial in educational and therapeutic settings where structure and focus are needed.
             </p>
 
-            <h5 className="tips-title">Tips for Success</h5>
-            <ul className="instructions-list">
-              <li><strong>Follow the letters:</strong> Always match the letter with the correct color.</li>
-              <li><strong>Take Your Time:</strong> Go slow to stay inside the lines and make your picture look great.</li>
-              <li><strong>Start Small:</strong> Begin with easy pictures, then try more detailed ones.</li>
-              <li><strong>Stay Organized:</strong> Keep your coloring tools or device neat and ready to use.</li>
-              <li><strong>Have Fun:</strong> Enjoy watching the picture appear as you color each space!</li>
-            </ul>
-
-            <h6 className="instruction-step">Conclusion</h6>
+            <h4 className="instruction-step">Visual Development Through Structured Coloring</h4>
             <p className="instructions-description">
-              Color by letter is a creative and fun activity that anyone can enjoy. It helps with focus, patience, and attention to detail. Whether on paper or a screen, each picture you finish will feel like an amazing piece of art. So grab your colors and start coloring by letter today!
+              Precision and attention to detail are central to the color by letter format. Participants must scan the page carefully, recognize matching symbols, and stay within boundaries. This deliberate process helps develop fine motor control, spatial reasoning, and visual scanning — all of which are foundational skills in both academics and everyday life. While the act of coloring may seem simple, the layered benefits in perception and control offer real developmental value.
+            </p>
+
+            <h5 className="instruction-step">Custom Expression Within Guided Frameworks</h5>
+            <p className="instructions-description">
+              One of the most appealing aspects of color by letter is the blend of direction and creativity. While the structure of the activity provides clear rules through letter-to-color assignments, there’s still room for artistic interpretation. Some users might layer shades, use patterns, or apply textures to their coloring style. This freedom within a framework encourages personal expression while maintaining the educational or therapeutic goals of the activity — making it a unique crossover of structure and creativity.
             </p>
           </div>
-
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle1.webp' alt='free online bingo slide cards puzzle game' />
@@ -217,6 +187,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle13;
 
 

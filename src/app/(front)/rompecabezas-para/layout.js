@@ -2,7 +2,7 @@ import React from 'react';
 
 export const metadata = {
   title: "Rompecabezas para Niños Aprende Jugando",
-  keywords :"rompecabezas para niñas,juego de rompecabezas para niños,jigsawjungle",
+  keywords :"rompecabezas para niñas,juego de rompecabezas para niños",
   description:
     "Descubre rompecabezas para niños que enseñan colores, letras y números. ¡Diviértete mientras aprenden con piezas seguras y coloridas!",
   openGraph: {

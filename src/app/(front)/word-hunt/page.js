@@ -67,7 +67,7 @@ const Game = () => {
             <button className="button2" onClick={() => window.location.reload()}>
               Restart
             </button>
-            <Link href="/word-fallin" className="button2 mx-2">
+            <Link href="/free-printable" className="button2 mx-2">
               Next Level
             </Link>
           </div>

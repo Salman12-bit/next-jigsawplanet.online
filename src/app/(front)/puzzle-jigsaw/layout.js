@@ -2,7 +2,7 @@ import React from 'react';
 
 export const metadata = {
   title: "Enjoy Puzzles Jigsaw: Fun Challenges for All Ages",
-  keywords :"jiggsaw planet,disney puzzles online,game",
+  keywords :"jiggsaw planet,disney puzzles online,online game",
   description:
     " Discover exciting jigsaw puzzles that test your skills and creativity. Solve beautiful, engaging puzzles for endless fun and relaxation!",
   openGraph: {

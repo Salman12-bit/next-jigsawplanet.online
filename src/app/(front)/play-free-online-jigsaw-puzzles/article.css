@@ -128,5 +128,4 @@ strong {
 .faq-answer.show {
     padding: 16px 20px;
     max-height: 500px;
-    /* Enough for most answers */
 }

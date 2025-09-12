@@ -30,7 +30,7 @@ const initialCards = [
   { id: 9, value: 'H' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle12 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -113,7 +113,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -141,47 +141,32 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Puzzle Slider Game</h1>
+            <h1 className="instructions-title">Slide Puzzle Solver</h1>
             <p className="instructions-description">
-              Puzzle slider games are classic brain-teasing activities where players slide tiles around a board to reassemble a scrambled image or sequence. Whether you're playing a number slider, picture tile puzzle, or a digital version on your phone, puzzle slider games are great for sharpening focus, improving logic, and having fun at any age. This guide explains how to play the Puzzle Slider Game, including game types, rules, tips, and strategies to help you win.
+              A slide puzzle solver represents the intersection of logic and automation — a digital or algorithmic system created to find solutions for tile-based rearrangement challenges. Rather than manually shifting pieces one by one, these solvers calculate optimized sequences, revealing the most efficient route from jumbled confusion to a perfectly ordered grid. Often powered by advanced computation, heuristics, and pattern recognition, they are used for both educational insights and complex problem-solving research.
             </p>
-            <h2 className="instruction-step">1. Types of Puzzle Slider Games</h2>
+
+            <h2 className="instruction-step">How Algorithms Redefine Puzzle Complexity</h2>
             <p className="instructions-description">
-              Puzzle slider games come in many forms, including:
-              <ul>
-                <li><strong>Classic Number Sliders:</strong> Usually a 3x3 or 4x4 grid where you slide numbered tiles into the correct order.</li>
-                <li><strong>Image Tile Puzzles:</strong> Rearrange scrambled image pieces to complete the full picture.</li>
-                <li><strong>Digital Puzzle Sliders:</strong> Online or app-based versions that may include timers, levels, and animations.</li>
-              </ul>
-              Each version tests your memory, patience, and strategy in unique ways.
+              Slide puzzles, while simple in concept, carry immense depth when analyzed through the lens of computation. Solvers often rely on algorithms like A*, Dijkstra’s, or iterative deepening to parse possible moves and predict outcomes. These systems measure distances, count misplaced tiles, and assess configuration efficiency — all in milliseconds. By doing so, they remove the trial-and-error aspect of solving and instead deliver streamlined, provably optimal paths. The result is a clearer understanding of complexity and structure hidden beneath the surface.
             </p>
-            <h3 className="instruction-step">2. Understand the Rules</h3>
+
+            <h3 className="instruction-step">Applications in Cognitive Research and Learning</h3>
             <p className="instructions-description">
-              The goal is to arrange all tiles into the correct order or recreate the full image by sliding pieces one at a time into the empty space. Keep these rules in mind:
+              Slide puzzle solvers go beyond casual interest; they are used in research settings to study decision-making, memory modeling, and strategic behavior. Educational platforms use solvers to break down the logic behind puzzle design, giving learners a way to visualize paths and patterns. This clarity transforms problem-solving into a teachable skill. Rather than presenting just the end result, many solvers include step-by-step breakdowns — making them valuable tools in exploring sequential thinking and understanding logical constraints.
             </p>
-            <ul className="instructions-list">
-              <li>You can only move tiles adjacent to the empty space.</li>
-              <li>The puzzle is solved when all tiles are in the correct sequence or image alignment.</li>
-              <li>Some games are timed, while others allow unlimited moves.</li>
-              <li>Moves are usually counted—fewer moves mean a better score.</li>
-            </ul>
-            <h4 className="instruction-step">3. Set Up Your Game Space</h4>
+
+            <h4 className="instruction-step">Technological Innovation in Classic Formats</h4>
             <p className="instructions-description">
-              For physical slider puzzles, place the board on a flat surface with good lighting. For digital puzzle slider games, use a device with a clear screen and responsive touch or mouse control. Make sure you're comfortable for focused gameplay.
+              The rise of artificial intelligence and machine learning has reshaped the way we approach puzzle-solving. A modern slide puzzle solver is no longer just a calculator of moves — it may use predictive modeling, adaptive feedback, and even image recognition. These solvers are integrated into mobile apps, educational tools, and AI labs, reflecting a broader trend of enhancing classic challenges with smart, evolving systems. They showcase how technology can enrich our interaction with even the most analog of formats.
             </p>
-            <h5 className="tips-title">Tips for Success</h5>
-            <ul className="instructions-list">
-              <li><strong>Start from the Top:</strong> Solve row by row or column by column, starting from the top-left corner.</li>
-              <li><strong>Look Ahead:</strong> Plan a few moves in advance instead of making random slides.</li>
-              <li><strong>Be Patient:</strong> Don't rush. Precision is key in solving slider puzzles.</li>
-              <li><strong>Practice Patterns:</strong> The more you play, the more you'll recognize tile movement strategies.</li>
-              <li><strong>Challenge Yourself:</strong> Try harder levels or larger grids as you improve your solving speed.</li>
-            </ul>
-            <h6 className="instruction-step">Conclusion</h6>
+
+            <h5 className="instruction-step">Efficiency Meets Elegance in Problem Resolution</h5>
             <p className="instructions-description">
-              Puzzle slider games are a fantastic way to challenge your brain while having fun. Whether you're reordering numbers or piecing together a picture, every move counts. With practice, strategy, and patience, you’ll improve your puzzle-solving skills and enjoy the rewarding feeling of completing the challenge. Get started now and slide your way to victory!
+              One of the most remarkable traits of a well-designed slide puzzle solver is its ability to find beauty in order. Each move calculated is not just about function but about elegance — reducing clutter, minimizing waste, and presenting a clean, clear path forward. This harmony between logic and structure has inspired designers, engineers, and educators alike. It demonstrates how a systematic approach to problem-solving can be not only effective but also aesthetically satisfying in its simplicity and precision.
             </p>
           </div>
+
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle1.webp' alt='free online bingo slide cards puzzle game' />
@@ -203,6 +188,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle12;
 
 

@@ -79,32 +79,7 @@
     margin: 10px 0px;
     margin-left: 10px;
 }
-.welcome-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(151, 147, 147, 0.2);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-.welcome-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
-.welcome-text {
-    font-size: 1.125rem;
-    margin-bottom: 16px;
-}
-.welcome-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 16px;
-}
+
 .game-instructions-container {
     display: flex;
     flex-direction: column;
@@ -116,6 +91,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    text-align: justify;
 }
 .game-instructions-content {
     display: flex;
@@ -130,22 +106,13 @@
 .instructions-description {
     font-size: 1rem;
     margin-bottom: 16px;
-
 }
 .instruction-step {
     margin-top: 16px;
     font-size: 20px;
 
 }
-.instructions-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 16px;
-}
-.tips-title {
-    margin-top: 16px;
-    font-size: 1.1rem;
-}
+
 .game-image-container {
     display: flex;
     flex-wrap: wrap;

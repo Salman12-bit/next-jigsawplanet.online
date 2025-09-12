@@ -30,7 +30,7 @@ const initialCards = [
   { id: 9, value: 'M' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle9 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -113,7 +113,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -141,26 +141,32 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play slider puzzle Game</h1>
-            <p className="instructions-description">Every game provide a delightful way to challenge your mind, improve your skills, enjoy some leisure time, and improve your picking power. This game come in various forms, with unique logic from traditional paper slider to sophisticated digital games. The slider puzzle guide will walk you through the basic principles of playing different type of games, offering tips and strategies to enhance your experience increase your knowledge.</p>
-            <h2 className="instruction-step">1. Different Types of slider game:</h2>
-            <p className="instructions-description">This game come in many varieties like alphabet puzzle, card in one frame puzzle and match card puzzle, each with unique mechanics and objectives that entertain users.</p>
-            <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Every game has specific rules and objectives. Read the instructions carefully before starting this awesome game.</p>
-            <ul className="instructions-list">
-              <li>In this game players have three chances.</li>
-              <li>Suppose three game cards are matched to each other.Player wins this game.</li>
-              <li>Otherwise, Restart this game again and try to match again 3 cards.</li>
-            </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical slider puzzle, ensure you have a comfortable and well-lit workspace. For digital slider puzzle, adjust your device's settings which is suitable to your environment and mind.</p>
-            <h5 className="tips-title">Tips to Get Success</h5>
-            <ul className="instructions-list">
-              <li>Practice Regularly: If you play this game continuously, the better result you get.</li>
-              <li>Challenge Yourself: If you want to upgrade your skill, gradually increase the difficulty level and the thinking process.</li>
-              <li>Learn from Mistakes: If you make a mistake, don't be penic because every person learn from mistakes and achieves Success.</li>
-            </ul>
+            <h1 className="instructions-title">Slider Puzzle</h1>
+            <p className="instructions-description">
+              The slider puzzle is a minimalist masterpiece of design and challenge, where simplicity meets strategy. Built around a grid with movable tiles and a single blank space, it pushes users to think ahead, test patterns, and refine their sense of logic. Far from being a forgotten classic, the slider puzzle has maintained its popularity due to its satisfying complexity and the mental focus it demands. As puzzles go, few manage to offer so much from so little.
+            </p>
+
+            <h2 className="instruction-step">Visual Logic and Pattern Thinking</h2>
+            <p className="instructions-description">
+              At first glance, the mechanics of a slider puzzle might appear mechanical. But behind those sliding squares lies a complex system of logic and visual mapping. To align each piece correctly, the solver must interpret the layout, anticipate how tiles interact, and often take multiple steps backward to move forward. This form of visual logic is powerful — engaging memory, patience, and foresight all at once. The puzzle encourages the brain to work spatially, fostering a mental environment rich in cognitive development and creative problem-solving.
+            </p>
+
+            <h3 className="instruction-step">A Puzzle That Rewards Precision</h3>
+            <p className="instructions-description">
+              Unlike other casual puzzles where guessing might occasionally work, the slider puzzle is unforgiving when approached with randomness. Success comes only through deliberate, careful planning. Each slide must be intentional, and small missteps can unravel progress made over several minutes. That’s what gives the slider puzzle its enduring charm: it refuses shortcuts. Every solution is earned, and every final move is the result of focused thought. It's not about speed — it's about accuracy and method.
+            </p>
+
+            <h4 className="instruction-step">Minimal Design, Maximum Challenge</h4>
+            <p className="instructions-description">
+              The slider puzzle's beauty lies in its visual simplicity. Often made with numbers, letters, or images broken into blocks, the structure is clean and easy to understand. Yet beneath this minimal design is a complex series of interconnected problems. This contrast is what hooks players — the idea that such a basic format can deliver such an intense mental workout. It’s a brilliant reminder that challenge doesn’t require chaos. In fact, the most enduring puzzles are often the ones that strip everything away but the problem itself.
+            </p>
+
+            <h5 className="instruction-step">Enduring Appeal Across Generations</h5>
+            <p className="instructions-description">
+              While trends in entertainment come and go, the slider puzzle remains timeless. It's found in classrooms, puzzle books, mobile apps, and even coffee tables — always ready to test a new generation of thinkers. It appeals to those who enjoy structure, logic, and the quiet satisfaction of solving something piece by piece. That cross-generational appeal makes it more than just a nostalgic object; it’s a living, evolving form of brain training that adapts without needing to change its core design.
+            </p>
           </div>
+
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle1.webp' alt='free online slider puzzle puzzle game' />
@@ -182,6 +188,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle9;
 
 

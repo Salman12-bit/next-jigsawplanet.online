@@ -31,7 +31,7 @@ const initialCards = [
   { id: 9, value: 'B' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle4 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -108,7 +108,6 @@ const Puzzle1 = () => {
 
   return (
     <div className='text-conainer' style={{
-      backgroundImage: 'url("/village.jpg")',
       backgroundSize: "cover",
       backgroundPosition: "center",
       padding: "20px"
@@ -117,7 +116,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -144,28 +143,38 @@ const Puzzle1 = () => {
       </div>
       <div className="game-instructions-container">
         <div className="game-instructions-content">
-           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Abc Game</h1>
-            <p className="instructions-description">Free abc game is a delightful way to challenge your mind, improve thinking skills, and enjoy some leisure time. Abc puzzle online come in various forms, with unique content from traditional paper abc puzzle to sophisticated digital games. The abc puzzle Game guide will walk you through the basic principles of playing different types of games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of abc game:</h2>
-            <p className="instructions-description">This game come in many varieties like pieces puzzle, card in one frame and match card, each with unique mechanics and objectives that entertain users.</p>
-            <h3 className="instruction-step">2. Understand the Game Rules:</h3>
+          <div className="game-instructions">
+            <h1 className="instructions-title">Play ABC Game – Fun Alphabet Learning</h1>
+
+            <h2 className="instruction-step">What is the ABC Game?</h2>
+            <p className="instructions-description">
+              The ABC Game is an engaging way for children to discover the alphabet while building early literacy skills. Instead of seeing letters as static symbols, kids interact with them in playful and meaningful ways. Whether practiced at home, in the classroom, or online, this game turns learning into an exciting adventure that helps children connect language with fun.
+            </p>
+
+            <h2 className="instruction-step">Boosting Confidence Through Play</h2>
+            <p className="instructions-description">
+              As kids complete small challenges — such as matching letters, sliding tiles, or recognizing sounds — they enjoy moments of achievement. These successes build confidence and create a positive relationship with language learning. Over time, children develop stronger self-assurance, which makes future reading and writing activities less intimidating and more enjoyable.
+            </p>
+
+            <h2 className="instruction-step">Adapting to Every Child’s Learning Journey</h2>
+            <p className="instructions-description">
+              Every child learns differently, and the ABC Game adapts to that reality. Beginners may focus on simple letter recognition, while more advanced players explore phonics, spelling, or vocabulary. This flexibility ensures that the game grows with the child, offering both early exposure to the alphabet and reinforcement of existing knowledge in a fun, interactive way.
+            </p>
+
+            <h2 className="instruction-step">How to Play the ABC Game</h2>
             <ul className="instructions-list">
-              <li>In this game player play three times with different alphabet letter</li>
-              <li>If three puzzle game cards are matched to each other.Player wins this game.</li>
-              <li>If not, Restart the game again and try to match again three cards.</li>
+              <li>Start with a board or grid of shuffled alphabet tiles.</li>
+              <li>Move or match the tiles to place them in the correct order from A to Z.</li>
+              <li>Follow the prompts to complete levels step by step.</li>
+              <li>Try to finish the puzzle with fewer moves for an extra challenge.</li>
             </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For play game physically, ensure you have a comfortable environment and well-lit workspace. For digital abc game, adjust your device's settings that is suitable for your environment and mind.</p>
-            <h5 className="tips-title">Tips to Win this Game</h5>
-            <ul className="instructions-list">
-              <li>Practice Regularly: If you play this game continuously, the better result you get.</li>
-              <li>Challenge Yourself: If you want to upgrade your skill gradually increase the difficulty level and the thinking process.</li>
-              <li>Learn from Mistakes: If you make a mistake don't be penic because every person learn from mistakes and achieves Success.</li>
-            </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description">This give the best opportunities to increase your mental and physical strength. By following all the rules of this game,playing this game regularly and using the best method to play free abc puzzle, you can upgrade your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet puzzle. So, choose your best alphabet puzzle and dive into the fascinating world of alphabet!</p>
+
+            <h2 className="instruction-step">Start Playing the ABC Game Today</h2>
+            <p className="instructions-description">
+              The ABC Game is more than a puzzle — it’s a fun way to build language skills, boost confidence, and keep the brain active. Kids love it as a playful learning tool, while parents and teachers value its educational benefits. Ready to give it a try? Play the ABC Game online now and enjoy the perfect mix of fun and learning!
+            </p>
           </div>
+
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle1.webp' alt='free online abc game puzzle game' />
@@ -187,6 +196,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle4;
 
 

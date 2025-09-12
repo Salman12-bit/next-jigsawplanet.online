@@ -30,7 +30,7 @@ const initialCards = [
   { id: 9, value: 'O' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle18 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -113,7 +113,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -141,28 +141,31 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play 2048 unblocked games</h1>
+            <h1 className="instructions-title">2048 Unblocked Games</h1>
             <p className="instructions-description">
-              <strong>2048 unblocked games</strong> is a sweet twist on the classic 2048 puzzle game—featuring cupcakes instead of numbers! Slide tiles to match identical cupcakes and unlock even more delicious treats as you aim to reach the final cupcake tile. This version is unblocked, so you can play it anytime at school or work!
+              2048 unblocked games represent a distinct blend of numerical logic, movement-based strategy, and minimalist design. Unlike many flashy or fast-paced digital distractions, this puzzle format draws players in with calm yet mentally engaging gameplay. It’s a rare example of a casual experience that offers depth without overwhelming the user — a clean interface hiding a surprisingly complex challenge behind its simplicity.
             </p>
-            <h2 className="instruction-step">1. How to Start Playing</h2>
-            <ul className="instructions-list">
-              <li>Use your arrow keys (or swipe on mobile) to move the tiles.</li>
-              <li>When two identical cupcakes touch, they combine into a new one.</li>
-              <li>The goal is to reach the final cupcake (usually labeled as 2048) without filling the grid.</li>
-            </ul>
-            <h3 className="instruction-step">2. Tips to Win</h3>
-            <ul className="instructions-list">
-              <li>Keep your highest-value cupcakes in one corner.</li>
-              <li>Plan ahead and avoid random moves that fill up the board quickly.</li>
-              <li>Try to make matches in one direction (left/right or up/down) for better control.</li>
-            </ul>
-            <h4 className="instruction-step">Conclusion</h4>
+
+            <h2 className="instruction-step">Tactile Thinking in a Digital Format</h2>
             <p className="instructions-description">
-              <strong>2048 unblocked games</strong> is a perfect mix of logic and fun. With adorable designs and addictive gameplay, it’s an enjoyable way to sharpen your mind—whether you’re playing during a break or after school. Start sliding, matching, and stacking cupcakes to hit that sweet 2048 goal!
+              What makes 2048 stand out is its physical-like movement experience. Although it exists in digital space, the way tiles shift across the grid feels almost tangible. Players must anticipate motion, consider direction, and calculate potential combinations several moves ahead. This type of mental mapping mimics spatial thinking, giving the brain a workout that resembles both problem-solving and pattern recognition exercises. It’s logic in motion, constantly shifting, and endlessly replayable.
+            </p>
+
+            <h3 className="instruction-step">The Zen of Numeric Merging</h3>
+            <p className="instructions-description">
+              While the mechanics rely on math, 2048 unblocked games aren’t about solving equations. They’re about synthesis — the act of combining equal values to reach higher ones. This merging process is meditative in its rhythm. Each swipe either creates opportunity or complexity. The game doesn’t punish wrong moves aggressively but instead nudges players to refine their approach, making the experience one of quiet strategy rather than frantic reaction. It rewards planning, pacing, and intuition.
+            </p>
+
+            <h4 className="instruction-step">Minimalism With Unexpected Depth</h4>
+            <p className="instructions-description">
+              With a basic 4x4 grid and only numbered tiles, the aesthetic of 2048 might appear barebones at first. But that simplicity is its greatest strength. Without distractions or unnecessary mechanics, the entire experience is centered on decision-making. Each move impacts the next. There’s no luck, no randomness in outcome — only layers of consequences unfolding from previous choices. This minimalist foundation makes the game elegant and intellectually satisfying for players who prefer depth over distraction.
+            </p>
+
+            <h5 className="instruction-step">Why Accessibility Enhances Its Appeal</h5>
+            <p className="instructions-description">
+              The term “unblocked” isn’t just about technical availability — it also reflects how intuitive and unrestricted the gameplay feels. Anyone can jump in, regardless of age or skill level, and immediately understand the goal. There are no instructions needed, no setup, no learning curve. That ease of access is part of what gives 2048 unblocked games their universal appeal. They strip away barriers, letting players engage with pure, unfiltered logic in its most distilled form.
             </p>
           </div>
-
           <div className="game-image-container">
             <Link href="/math-magician">
               <img className='game-image' src='./images/Puzzle1.webp' alt='2048 unblocked games - magical number puzzle challenge for kids' />
@@ -185,6 +188,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle18;
 
 

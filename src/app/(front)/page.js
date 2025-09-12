@@ -84,6 +84,10 @@ export default function Home() {
       "image": "/images/riverboat.webp",
       link: '/zigsaw-puzzles'
     },
+    {
+      "image": "/images/large-puzzle.webp",
+      link: '/puzzle-pieces'
+    },
   ];
 
 
@@ -176,6 +180,7 @@ export default function Home() {
             <Link href={item.link}><button className="puzzle-game-button">Play Now</button></Link>
           </div>
         ))}
+        
       </div>
       <div className="posts">
         {isLoading ? (

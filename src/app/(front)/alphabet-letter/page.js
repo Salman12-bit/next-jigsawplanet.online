@@ -30,7 +30,7 @@ const initialCards = [
   { id: 9, value: 'B' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle8 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -113,7 +113,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -141,24 +141,30 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play pictures of bubble letters</h1>
-            <p className="instructions-description">This game is  a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. letter game come in various forms, with unique content from traditional paper letter to sophisticated digital games.</p>
-            <h2 className="instruction-step">1. Different Types of letter puzzles:</h2>
-            <p className="instructions-description">This game come in many varieties like pieces puzzle, card in one frame and match card in one line, each with unique mechanics and objectives that entertain users.</p>
-            <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <ul className="instructions-list">
-              <li>In this game players have three chances.</li>
-              <li>Suppose three game cards are matched to each other. Player wins this game.</li>
-              <li>Otherwise, Restart the game again and try to match again three cards.</li>
-            </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical letter puzzles, ensure you have a comfortable and well-lit workspace. For digital letter puzzles, adjust your device's settings that is suitable for your environment and mind.</p>
-            <h5 className="tips-title">Tips to Win this Game</h5>
-            <ul className="instructions-list">
-              <li>Practice Regularly: If you play this game continuously, the better result you get from this game.</li>
-              <li>Challenge Yourself: If you want to upgrade your skill, gradually increase the difficulty level and the thinking process.</li>
-              <li>Learn from Mistakes: If you make a mistake, don't be penic because every person learn from mistakes and achieves Success.</li>
-            </ul>
+            <h1 className="instructions-title">Pictures of Bubble Letters</h1>
+            <p className="instructions-description">
+              Pictures of bubble letters have become a popular and expressive form of visual art, blending playful design with creative communication. These bold, rounded letters, often outlined or filled with vibrant colors, offer more than just decorative appeal — they carry energy, emotion, and a unique identity. Whether seen in sketchbooks, digital graphics, posters, or school notebooks, bubble letters continue to capture attention with their whimsical and dynamic style.
+            </p>
+
+            <h2 className="instruction-step">The Timeless Allure of Bubble Typography</h2>
+            <p className="instructions-description">
+              Bubble letters emerged as a cultural icon long before the rise of digital design. Originally hand-drawn by students, artists, and graffiti creators, this style has roots in self-expression and street art. The exaggerated curves and puffy shapes of bubble letters stand out in any visual space, making them a go-to choice for creative lettering. Over the years, they’ve evolved from doodles to design staples, used in branding, signage, fashion, and social content. The aesthetic offers a sense of fun without sacrificing clarity — a rare combination in visual design.
+            </p>
+
+            <h3 className="instruction-step">Exploring Styles Through Bubble Letter Images</h3>
+            <p className="instructions-description">
+              Looking at pictures of bubble letters reveals a wide range of artistic interpretation. Some styles feature sharp highlights and shadows, adding three-dimensional depth. Others lean into soft pastel gradients, making the letters feel airy and sweet. There are monochrome styles for minimalist projects and wild neon designs perfect for youth-oriented content. Each variation reflects the creator’s personality or brand tone. Observing different bubble letter pictures can inspire lettering artists, hobbyists, or content creators to experiment and evolve their own styles.
+            </p>
+
+            <h4 className="instruction-step">Bubble Letters as Creative Tools for Education</h4>
+            <p className="instructions-description">
+              Beyond art and aesthetics, pictures of bubble letters also serve practical purposes in education. Teachers and students alike use them in posters, classroom displays, and handwriting practice. Their large, round forms are especially useful for younger learners developing letter recognition. They make alphabet activities feel playful rather than repetitive. Coloring pages featuring bubble letters have also become a favorite among children, blending creativity with early literacy skills. In this way, bubble letter pictures support both visual engagement and educational goals.
+            </p>
+
+            <h5 className="instruction-step">A Popular Choice for Personalized Design</h5>
+            <p className="instructions-description">
+              One reason bubble letters remain widely used is their adaptability in personal projects. From birthday banners and greeting cards to customized notebooks and digital avatars, bubble letter images bring a custom flair to any design. Their exaggerated forms allow space for patterns, textures, and color layering — letting individuals personalize names, initials, or full messages with ease. As more people turn to DIY aesthetics, the demand for printable, editable, and downloadable pictures of bubble letters continues to grow.
+            </p>
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
@@ -181,6 +187,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle8;
 
 

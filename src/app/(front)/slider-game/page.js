@@ -30,7 +30,7 @@ const initialCards = [
   { id: 9, value: 'G' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle10 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -113,7 +113,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -141,30 +141,32 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to play puzzlee game</h1>
-            <p className="instructions-description">Free puzzlee games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Puzzlee come in various forms, with unique content from traditional paper puzzlee to sophisticated digital games. The puzzlee guide will walk you through the basic principles of playing different types of puzzlee games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of puzzlee Free:</h2>
-            <p className="instructions-description">Puzzlee games come in many varieties, each with unique mechanics and objectives.</p>
-            <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each puzzlee puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
-            <ul className="instructions-list">
-              <li>In this game players have 3 chances.</li>
-              <li>If 3 puzzlee game cards are matched to each other.</li>
-              <li>Player wins this game.</li>
-              <li>Otherwise, Restart the puzzlee game again and try to match again 3 cards.</li>
-            </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical puzzlee, ensure you have a comfortable and well-lit workspace. For digital puzzlee, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h5 className="tips-title">Tips for Success</h5>
-            <ul className="instructions-list">
-              <li>Stay Calm: Puzzlee games should be enjoyable; take breaks if you feel frustrated.</li>
-              <li>Practice Regularly: The more you play, the better you get.</li>
-              <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
-              <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
-            </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description">Puzzlee games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your puzzle-solving skills and enjoy the satisfying feeling of cracking even the toughest puzzlee. So, choose your game, set up your space, and dive into the fascinating world of puzzlee!</p>
+            <h1 className="instructions-title">Picture to Puzzle</h1>
+            <p className="instructions-description">
+              Transforming a picture into a puzzle is more than a design choice — it’s a fusion of memory, meaning, and challenge. This concept allows personal or familiar images to be reimagined as interactive experiences, giving new life to everyday visuals. Whether it’s a family photo, a scenic landscape, or a favorite artwork, turning a picture into a puzzle changes how we engage with the image — inviting focus, attention, and reflection piece by piece.
+            </p>
+
+            <h2 className="instruction-step">The Emotional Value of Personal Imagery</h2>
+            <p className="instructions-description">
+              What makes a puzzle truly special isn’t just its shape or difficulty — it’s the story behind the image. When people turn their own photos into puzzles, the result becomes more than just a brain exercise. It transforms into a personal artifact. Every piece carries emotional weight: a remembered face, a familiar setting, a captured moment in time. This emotional connection elevates the puzzle experience, blending nostalgia with the satisfaction of completion.
+            </p>
+
+            <h3 className="instruction-step">Visual Complexity in Fragmented Form</h3>
+            <p className="instructions-description">
+              A photograph may seem straightforward when viewed as a whole, but once divided into small, irregular sections, it becomes a test of perception. Shifting shadows, subtle color gradients, or recurring patterns introduce new challenges when no longer viewed in context. The conversion of a picture to puzzle format amplifies the complexity, turning ordinary details into clues. Each fragment forces the mind to slow down and see what it might have otherwise overlooked in the full image.
+            </p>
+
+            <h4 className="instruction-step">Creativity Meets Functionality</h4>
+            <p className="instructions-description">
+              There’s a quiet artistry in breaking down an image into components that must be reassembled. Designers, artists, and photographers are increasingly embracing this process to add depth to their work. From personalized gifts to branding visuals, picture-to-puzzle transformations allow static images to take on a kinetic form. This approach combines aesthetics with interaction — not only do we see the picture, we rebuild it, piece by piece, with our own hands or through digital tools.
+            </p>
+
+            <h5 className="instruction-step">A Unique Intersection of Art and Problem-Solving</h5>
+            <p className="instructions-description">
+              Converting a picture into a puzzle sits at the crossroads of creativity and logic. It requires thoughtful composition and a strategic breakdown of elements to maintain both artistic integrity and puzzle solvability. The process celebrates both sides of the brain — visual appreciation and methodical planning. As a result, the finished product becomes more than a passive image or a clever challenge. It becomes a balanced experience that satisfies both imagination and intellect.
+            </p>
           </div>
+
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
               <img className='game-image' src='./images/Puzzle1.webp' alt='free online puzzlee puzzle game' />
@@ -186,6 +188,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle10;
 
 

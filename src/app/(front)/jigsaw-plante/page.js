@@ -291,20 +291,20 @@ export default function Puzzle() {
         const correctSlot = slots.find((slot) => slot.id === piece.id);
         if (!correctSlot) return;
 
-       
+
         const pieceAbsolutePos = e.target.getAbsolutePosition();
         const pieceCenterX = pieceAbsolutePos.x + piece.width / 2;
         const pieceCenterY = pieceAbsolutePos.y + piece.height / 2;
 
-        
+
         const slotCenterX = correctSlot.x + correctSlot.width / 2;
         const slotCenterY = correctSlot.y + correctSlot.height / 2;
 
-    
-        const distance = Math.hypot(pieceCenterX - slotCenterX, pieceCenterY - slotCenterY);
-        const isCloseEnough = distance < 20; 
 
-       
+        const distance = Math.hypot(pieceCenterX - slotCenterX, pieceCenterY - slotCenterY);
+        const isCloseEnough = distance < 20;
+
+
         setPieces((prev) =>
             prev.map((p, idx) =>
                 idx === index
@@ -322,7 +322,7 @@ export default function Puzzle() {
     return (
         <div className={styles.container}>
             <div className={styles.sidebar}>
-                <h2 className={styles.centerText}>Puzzle Game</h2>
+                <h1 className={styles.centerText}>Puzzle Game</h1>
                 <div className={styles.imageContainer}>
                     <img
                         src={puzzleImage}
@@ -336,17 +336,20 @@ export default function Puzzle() {
                 </div>
                 {leaderboard.length > 0 && (
                     <div className={styles.leaderboard}>
-                        <h3>🏆 Leaderboard</h3>
+                        <h2>🏆 Leaderboard</h2>
                         <ol>
                             {leaderboard.map((entry, idx) => (
                                 <li key={idx}>
-                                    {entry.name} - {formatTime(entry.time)}
+                                    <h3>
+                                        {entry.name} - {formatTime(entry.time)}
+                                    </h3>
+
                                 </li>
                             ))}
                         </ol>
                     </div>
                 )}
-                <h3 className={styles.centerText}>Time: {formatTime(time)}</h3>
+                <h2 className={styles.centerText}>Time: {formatTime(time)}</h2>
                 <p style={{ textAlign: "center" }}>
                     {isFinished
                         ? "Congratulations! You solved the puzzle!"
@@ -388,7 +391,7 @@ export default function Puzzle() {
             <div ref={puzzleContainerRef} className={styles.puzzleBoard}>
                 {!isStarted && (
                     <div className={styles.overlay}>
-                        <h1>Welcome to the Jigsaw Puzzle Game!</h1>
+                        <h2>Welcome to the Jigsaw Puzzle Game!</h2>
                         <p>Click “Start” to begin.</p>
                     </div>
                 )}

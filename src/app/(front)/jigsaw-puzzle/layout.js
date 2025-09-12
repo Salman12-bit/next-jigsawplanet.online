@@ -1,21 +1,20 @@
-import React from 'react';
+import React from "react";
 
 export const metadata = {
-  title: "Jig saw planet: Your Go-To Spot for Free Online game",
-  keywords :"online puzzles, jigsaw puzzles play, free puzzle",
+  title: "Play Free Jigsaw Puzzle Online – Fun & Relaxing Game Anytime",
   description:
-    "Dive into Jig saw planet and enjoy solving, creating, and sharing free puzzle online. Perfect for jigsa planet of all ages and skill levels.",
+    "Play free jigsaw puzzle online! Relax, solve stunning images, and enjoy fun brain-boosting puzzles for all ages – no download needed.",
   openGraph: {
-    title: "Jig saw planet: Your Go-To Spot for Free Online game",
+    title: "Play Free Jigsaw Puzzle Online – Fun & Relaxing Game Anytime",
     description:
-      "Dive into Jig saw planet and enjoy solving, creating, and sharing free puzzle online. Perfect for jigsa planet of all ages and skill levels.",
+      "Play free jigsaw puzzle online! Relax, solve stunning images, and enjoy fun brain-boosting puzzles for all ages – no download needed.",
     url: "https://jigsawplanet.online/jigsaw-puzzle",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzle3.webp",
         width: 1200,
         height: 630,
-        alt: "Play jigsa planet Game online on jigsawplanet",
+        alt: "ABC puzzle game with colorful letters for kids learning online",
       },
     ],
   },
@@ -27,42 +26,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "free puzzle - Play Online on word puzzle",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Play Free Jigsaw Puzzle Online – Fun & Relaxing Game Anytime",
     "description":
-      "Dive into Jig saw planet and enjoy solving, creating, and sharing free puzzle online. Perfect for jigsa planet of all ages and skill levels.",
+      "Play free jigsaw puzzle online! Relax, solve stunning images, and enjoy fun brain-boosting puzzles for all ages – no download needed.",
     "url": "https://jigsawplanet.online/jigsaw-puzzle",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "free puzzle",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "free puzzle",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzle3.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzle3.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/jigsaw-puzzle",
-      "playMode": "Double Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/Puzzle3.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/Puzzle3.webp",
-      "width": 1200,
-      "height": 630,
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/jigsaw-puzzle"
+    }
   };
 
   return (

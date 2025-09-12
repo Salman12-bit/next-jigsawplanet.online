@@ -30,7 +30,7 @@ const initialCards = [
   { id: 9, value: 'O' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle16 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -113,7 +113,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -141,37 +141,29 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play 123abc Learning Games</h1>
-
+            <h1 className="instructions-title">123ABC Learning Games</h1>
             <p className="instructions-description">
-              <strong>123abc</strong> games are fun, educational activities designed for young children to explore numbers, letters, and basic problem-solving. These learning games help early learners build foundational skills in a playful and engaging way.
+              123ABC Learning Games offer a dynamic combination of early math and literacy development in a format tailored for young learners. These interactive experiences are thoughtfully designed to foster curiosity, reinforce key concepts, and support early skill acquisition through repetition, structure, and play. By focusing on numbers and letters in tandem, these games align with the developmental stages of preschool and early elementary students who are beginning to build foundational academic knowledge.
             </p>
 
-            <h2 className="instruction-step">1. Types of 123abc Games</h2>
-            <ul className="instructions-list">
-              <li><strong>Number Games:</strong> Learn counting, basic math, and number recognition.</li>
-              <li><strong>Alphabet Games:</strong> Practice identifying letters, phonics, and early reading.</li>
-              <li><strong>Matching Games:</strong> Match letters, numbers, or shapes to boost memory and logic.</li>
-              <li><strong>Interactive Play:</strong> Use colors, sounds, and patterns for hands-on learning fun.</li>
-            </ul>
-
-            <h3 className="instruction-step">2. Easy and Fun to Play</h3>
-            <ul className="instructions-list">
-              <li>Each 123abc game includes clear, child-friendly instructions.</li>
-              <li>Play using a tablet, smartphone, or printed activity sheet.</li>
-              <li>Earn stars, solve puzzles, and unlock new challenges!</li>
-            </ul>
-
-            <h4 className="tips-title">Tips for Learning Success</h4>
-            <ul className="instructions-list">
-              <li>Choose games that fit your child’s learning level and pace.</li>
-              <li>Use short play sessions to keep your child focused and happy.</li>
-              <li>Encourage your child with praise and rewards as they learn.</li>
-            </ul>
-
-            <h5 className="instruction-step">Conclusion</h5>
+            <h2 className="instruction-step">Bridging Numerical Awareness and Alphabet Recognition</h2>
             <p className="instructions-description">
-              <strong>123abc</strong> games make learning fun and exciting for kids. With a mix of alphabet and number activities, these games support early learning and help young minds grow through play. Get started with 123abc today and watch your child enjoy learning like never before!
+              In early education, numbers and letters are often introduced side-by-side — and for good reason. Combining these elements in a unified learning format helps children form cognitive connections across domains. 123ABC Learning Games capitalize on this by integrating basic counting tasks with letter identification, encouraging children to shift seamlessly between numerical and verbal processing. This holistic design allows for a smoother learning curve and a broader understanding of how symbolic systems work.
+            </p>
+
+            <h3 className="instruction-step">Engaging the Senses Through Structured Interaction</h3>
+            <p className="instructions-description">
+              Young learners absorb information best when they can see it, hear it, and engage with it directly. These games provide multisensory experiences that include visual cues, audio reinforcement, and tactile activities. Whether identifying letters by shape or matching numbers with quantity, children are encouraged to learn through active exploration. This sensory layering increases retention, boosts motivation, and ensures that learning remains both impactful and enjoyable.
+            </p>
+
+            <h4 className="instruction-step">Supporting Early Confidence in Independent Learning</h4>
+            <p className="instructions-description">
+              Confidence is essential in early learning. When children feel capable, they become more eager to take on new challenges. 123ABC Learning Games are built with gentle progression and instant feedback to reinforce effort over perfection. This structure nurtures independent engagement by letting learners practice at their own pace, make choices, and experience success through manageable steps. The result is a stronger sense of ownership in their learning journey.
+            </p>
+
+            <h5 className="instruction-step">Flexible Application Across Developmental Stages</h5>
+            <p className="instructions-description">
+              The simplicity of combining numbers and letters makes 123ABC Learning Games adaptable to various learning levels and styles. From early learners just beginning to differentiate symbols to more advanced students practicing fluency, the content can be scaled in difficulty and depth. This versatility allows educators and caregivers to use the same format across different contexts — from home environments to group learning spaces — while still delivering meaningful educational experiences.
             </p>
           </div>
           <div className="game-image-container">
@@ -195,6 +187,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle16;
 
 

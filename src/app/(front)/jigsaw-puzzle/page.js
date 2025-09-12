@@ -320,7 +320,7 @@ export default function Puzzle() {
     return (
         <div className={styles.container}>
             <div className={styles.sidebar}>
-                <h2 className={styles.centerText}>Puzzle Game</h2>
+                <h1 className={styles.centerText}>Puzzle Game</h1>
                 <div className={styles.imageContainer}>
                     <img
                         src={puzzleImage}
@@ -334,18 +334,20 @@ export default function Puzzle() {
                 </div>
                 {leaderboard.length > 0 && (
                     <div className={styles.leaderboard}>
-                        <h3>🏆 Leaderboard</h3>
+                        <h2>🏆 Leaderboard</h2>
                         <ol>
                             {leaderboard.map((entry, idx) => (
                                 <li key={idx}>
-                                    {entry.name} - {formatTime(entry.time)}
+                                    <h3>
+                                        {entry.name} - {formatTime(entry.time)}
+                                    </h3>
                                 </li>
                             ))}
                         </ol>
                     </div>
                 )}
 
-                <h3 className={styles.centerText}>Time: {formatTime(time)}</h3>
+                <h2 className={styles.centerText}>Time: {formatTime(time)}</h2>
                 <p style={{ textAlign: "center" }}>
                     {isFinished
                         ? "Congratulations! You solved the puzzle!"
@@ -387,7 +389,7 @@ export default function Puzzle() {
             <div ref={puzzleContainerRef} className={styles.puzzleBoard}>
                 {!isStarted && (
                     <div className={styles.overlay}>
-                        <h1>Welcome to the Puzzle Game!</h1>
+                        <h2>Welcome to the Puzzle Game!</h2>
                         <p>Click “Start” to begin.</p>
                     </div>
                 )}

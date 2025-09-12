@@ -31,7 +31,7 @@ const initialCards = [
   { id: 9, value: 'B' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle5 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -142,25 +142,35 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Alphabet Slider Puzzle</h1>
-            <p className="instructions-description">Thsi game provide a delightful way to challenge your mind, improve thinking skills, and enjoy some leisure time. Abc puzzle online come in various forms, with unique content from traditional paper abc puzzle to sophisticated digital games. The abc puzzle Game guide will walk you through the basic principles of playing different types of alphabet slider, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">2. Understand the Game Rules:</h2>
-            <p className="instructions-description">Each games has specific rules and objectives. Read the game instructions carefully before starting this game.</p>
-            <ul className="instructions-list">
-              <li>In this alphabet puzzle player play three times with different alphabet letter</li>
-              <li>If three puzzle game cards are matched to each other.Player wins this game.</li>
-              <li>Otherwise, Restart the game again and try to match again thee cards.</li>
-            </ul>
-            <h3 className="instruction-step">3. Set up Your Space:</h3>
-            <p className="instructions-description">For play alphabet slider physically, ensure you have a comfortable environment and well-lit workspace. For digital alphabet slider puzzle, adjust your device's settings that is suitable for your environment and mind.</p>
-            <h4 className="tips-title">Tips to Win this Game</h4>
-            <ul className="instructions-list">
-              <li>Challenge Yourself: If you want to upgrade your skill, gradually increase the difficulty level and the thinking process.</li>
-              <li>Practice Regularly: If you play this game continuously, the better result you get.</li>
-              <li>Learn from Mistakes: If you make a mistake, don't be penic because every person learn from mistakes and achieves Success.</li>
-            </ul>
-            <h5 className="instruction-step">Conclusion:</h5>
-            <p className="instructions-description">Every game gives the best opportunities to increase your mental and physical strength. By following all the rules of this game, playing this game regularly and using the best method to play free abc puzzle, you can upgrade your alphabet-solving skills and enjoy the satisfying feeling of cracking even the toughest alphabet slider puzzle. So, choose your best game and dive into the fascinating world of alphabet!</p>
+            <h1 className="instructions-title">Alphabet Slider Puzzle</h1>
+            <p className="instructions-description">
+              Alphabet Slider Puzzle represents a modern blend of problem-solving and letter recognition, bringing a fresh perspective to early childhood development. This concept takes the structure of classic sliding challenges and introduces alphabet elements, making it both intellectually stimulating and educationally valuable. The experience of working through these puzzles is not just about reaching a solution — it’s about engaging the brain, improving visual coordination, and building a stronger relationship with language through movement.
+            </p>
+
+            <h2 className="instruction-step">A Puzzle Designed to Activate the Mind</h2>
+            <p className="instructions-description">
+              There’s something satisfying about watching a disordered puzzle gradually fall into place. Alphabet Slider Puzzles are especially rewarding because they challenge users to recognize sequences, make predictions, and plan. Each move feels intentional, and every letter placement builds upon the last. It’s an immersive task that requires attention, patience, and logical thought — all while reinforcing familiarity with letters in a non-repetitive, interactive format.
+            </p>
+
+            <h2 className="instruction-step">An Innovative Way to Reinforce Letter Order</h2>
+            <p className="instructions-description">
+              Letter order is one of the earliest skills children learn on their journey to reading. Alphabet Slider Puzzles unexpectedly strengthen this understanding. Rather than simply reciting or copying letters, children physically or visually manipulate them to form a logical sequence. This physical interaction with language deepens retention, helping learners form long-lasting connections to alphabetical patterns while enjoying the satisfying nature of puzzle-solving.
+            </p>
+
+            <h2 className="instruction-step">A Stimulating Break from Traditional Activities</h2>
+            <p className="instructions-description">
+              In an age where educational tools often look and feel the same, Alphabet Slider Puzzles offer something different. They break away from worksheets and flashcards, inviting learners to approach the alphabet as a challenge to solve, not a list to memorize. This shift in approach creates an experience that is less about repetition and more about discovery, giving the brain a fresh type of workout that combines critical thinking with literacy practice.
+            </p>
+
+            <h2 className="instruction-step">Crossing Over Into Cognitive Development</h2>
+            <p className="instructions-description">
+              Beyond their connection to letters, these puzzles serve a broader purpose in overall brain development. They improve spatial awareness, planning skills, and focus. By analyzing the current state of the puzzle and making decisions about the next best move, users learn how to evaluate, adapt, and commit to strategies. These are skills that benefit not just early learners but also older children and even adults who enjoy intellectually stimulating games.
+            </p>
+
+            <h2 className="instruction-step">Conclusion</h2>
+            <p className="instructions-description">
+              Alphabet Slider Puzzle stands out as a meaningful way to combine mental strategy with language exposure. It brings letters to life through logic and movement, inviting users to engage more deeply with sequencing and problem-solving. Whether used occasionally or as a regular part of a learning routine, it offers a refreshing alternative to conventional methods — one that challenges the mind and supports development without ever feeling like a chore.
+            </p>
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
@@ -183,6 +193,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle5;
 
 

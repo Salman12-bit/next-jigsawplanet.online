@@ -31,7 +31,7 @@ const initialCards = [
   { id: 9, value: 'B' },
 ];
 
-const Puzzle1 = () => {
+const Alphabetpuzzle2 = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
@@ -114,7 +114,7 @@ const Puzzle1 = () => {
         <div className='row'>
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className='level-color'>Match The Pairs Level {level}</h3>
+              <p className='level-color'>Match The Pairs Level {level}</p>
               <div>
                 <Board1 className='game-board'>
                   {cards.map(card => (
@@ -142,27 +142,33 @@ const Puzzle1 = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play Free Jigsaw Planet Game</h2>
-            <p className="instructions-description">Free Jigsaw planet games are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Jigsawplanet come in various forms, with unique content from traditional paper jigsawplanet to sophisticated digital games. The jigsawplanet guide will walk you through the basic principles of playing different types of jigsawplanet games, offering tips and strategies to enhance your experience.</p>
-            <h3 className="instruction-step">1. Different Types of Jigsaw Planet Free:</h3>
-            <p className="instructions-description">Jigsawplanet games come in many varieties, each with unique mechanics and objectives.</p>
-            <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each jigsaw planet puzzles has specific rules and objectives. Read the instructions carefully before starting.</p>
+            <h1 className="instructions-title">Play Alphabet Slider Online – Free ABC Alphabet Game</h1>
+            <h2 className="instruction-step">What is Alphabet Slider?</h2>
+            <p className="instructions-description">
+              Alphabet Slider is a classic letter puzzle where scrambled alphabet tiles must be rearranged into the correct order from A to Z. At first, the concept feels simple, but solving it requires focus, patience, and logical moves. This mix of easy rules and challenging gameplay makes it perfect for kids, parents, and adults who enjoy fun brain-training games.
+            </p>
+
+            <h2 className="instruction-step">Educational Benefits of Alphabet Slider</h2>
+            <p className="instructions-description">
+              For children, Alphabet Slider is more than just a game — it’s a playful learning tool. By sliding tiles into the right sequence, kids naturally strengthen letter recognition, sequencing, and memory skills. Teachers and parents value it as a safe online activity that blends education with fun, while adults use it as a light brain workout that sharpens problem-solving skills and concentration.
+            </p>
+
+            <h2 className="instruction-step">Why Everyone Loves This Puzzle</h2>
+            <p className="instructions-description">
+              Alphabet Slider is a universal puzzle with wide appeal. Young learners use it to master their ABCs, parents trust it as an educational tool, and seniors enjoy it as a relaxing way to stay mentally active. It’s engaging, accessible on all devices, and gives players a sense of satisfaction when the final letter clicks into place. That’s why this puzzle has remained popular across generations.
+            </p>
+            <h2 className="instruction-step">How to Play Alphabet Slider</h2>
             <ul className="instructions-list">
-              <li>In this game player play three times with different cards</li>
-              <li>If 3 alphabet slider puzzle game cards are matched to each other.Player wins this game.</li>
-              <li>Otherwise, Restart the alphabet slider game again and try to match again 3 cards.</li>
+              <li>Begin with a scrambled grid of alphabet tiles and one empty space.</li>
+              <li>Slide tiles into the empty space to rearrange them step by step.</li>
+              <li>Continue moving the tiles until the letters are in order from A to Z.</li>
+              <li>Try to complete the puzzle in as few moves as possible for an extra challenge.</li>
             </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For play this game physically, ensure you have a comfortable area and well-lit workspace. For digital alphabet slider, adjust your device's settings that is suitable for your environment and mind.</p>
-            <h5 className="tips-title">Tips for Success</h5>
-            <ul className="instructions-list">
-              <li>Challenge Yourself: If you want to upgrade your skill, gradually increase the difficulty level and the thinking process.</li>
-              <li>Practice Regularly: If you play free alphabet game more and more, the better result you get.</li>
-              <li>Learn from Mistakes: If you make a mistake, don't penic because every person learn from mistakes and achieves Success.</li>
-            </ul>
-            <h3 className="instruction-step">Conclusion:</h3>
-            <p className="instructions-description">Jigsaw planet games offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your jigsawplanet-solving skills and enjoy the satisfying feeling of cracking even the toughest jigsawplanet. So, choose your game, set up your space, and dive into the fascinating world of jigsawplanet!</p>
+
+            <h2 className="instruction-step">Start Playing Alphabet Slider Today</h2>
+            <p className="instructions-description">
+              Alphabet Slider is the perfect mix of fun, challenge, and learning. It’s a free online alphabet puzzle that trains your brain while keeping the experience enjoyable. Play now, test your skills, and see how quickly you can arrange all the letters in order. Ready to start? Dive into the Alphabet Slider and enjoy the satisfying feeling of cracking the ABC puzzle!
+            </p>
           </div>
           <div className="game-image-container">
             <Link href="/jigsaw-planet">
@@ -185,6 +191,6 @@ const Puzzle1 = () => {
 };
 
 
-export default Puzzle1;
+export default Alphabetpuzzle2;
 
 
