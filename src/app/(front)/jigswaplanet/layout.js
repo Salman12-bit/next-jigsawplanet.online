@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Explore Jigswaplanet: Puzzles, Fun & Discovery!",
-  keywords :" jigsaw puzzels,dora puzzle",
+  title: "Free Jigsaw Puzzle Pieces Game – Play Instantly Online",
   description:
-    "Step into dora puzzle and enjoy a world of creative puzzles, fun challenges, and endless entertainment for curious minds of all ages.",
+    "Play Jigsaw Puzzle Pieces online for free! Choose from fun designs, test your skills, and enjoy hours of relaxing puzzle-solving – start playing instantly.",
   openGraph: {
-    title: "Explore Jigswaplanet: Puzzles, Fun & Discovery!",
+    title: "Free Jigsaw Puzzle Pieces Game – Play Instantly Online",
     description:
-      "Step into dora puzzle and enjoy a world of creative puzzles, fun challenges, and endless entertainment for curious minds of all ages.",
+      "Play Jigsaw Puzzle Pieces online for free! Choose from fun designs, test your skills, and enjoy hours of relaxing puzzle-solving – start playing instantly.",
     url: "https://jigsawplanet.online/jigswaplanet",
     images: [
       {
         url: "https://jigsawplanet.online/images/dorapuzzle.webp",
         width: 1200,
         height: 630,
-        alt: "Play dora puzzle online on jigsawplanet",
       },
     ],
   },
@@ -27,52 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Explore Jigswaplanet: Puzzles, Fun & Discovery!",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Free Jigsaw Puzzle Pieces Game – Play Instantly Online",
     "description":
-      "Step into dora puzzle and enjoy a world of creative puzzles, fun challenges, and endless entertainment for curious minds of all ages.",
+      "Play Jigsaw Puzzle Pieces online for free! Choose from fun designs, test your skills, and enjoy hours of relaxing puzzle-solving – start playing instantly.",
     "url": "https://jigsawplanet.online/jigswaplanet",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "dora puzzle",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "dora puzzle",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/dorapuzzle.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/dorapuzzle.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/jigswaplanet",
-      "playMode": "Double Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/dorapuzzle.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "dora puzzle",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/dorapuzzle.webp",
-        "width": 500,
-        "height": 500,
-      },
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/dorapuzzle.webp",
-      "width": 1200,
-      "height": 630,
-    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/jigswaplanet"
+    }
   };
 
   return (

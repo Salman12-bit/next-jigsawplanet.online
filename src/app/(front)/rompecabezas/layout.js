@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Rompecabezas Fun and Challenging Puzzles for All ",
-  keywords :"rompecabezas en ingles,rompecabezas gratis",
+  title: "Rompecabezas Gratis – Juega Puzzles Online en 2025",
   description:
-    "Enjoy rompecabezas for fun and learning! Solve colorful, challenging puzzles that boost your brain and offer hours of entertainment.",
+    "Juega rompecabezas gratis online. Relájate con divertidos puzzles para todas las edades y comienza a jugar al instante en tu navegador.",
   openGraph: {
-    title: "Rompecabezas Fun and Challenging Puzzles for All ",
+    title: "Rompecabezas Gratis – Juega Puzzles Online en 2025",
     description:
-      "Enjoy rompecabezas for fun and learning! Solve colorful, challenging puzzles that boost your brain and offer hours of entertainment.",
+      "Juega rompecabezas gratis online. Relájate con divertidos puzzles para todas las edades y comienza a jugar al instante en tu navegador.",
     url: "https://jigsawplanet.online/rompecabezas",
     images: [
       {
         url: "https://jigsawplanet.online/images/rompecabezas.webp",
         width: 1200,
         height: 630,
-        alt: "Play rompecabezas gratis on jigsawplanet",
       },
     ],
   },
@@ -27,46 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Rompecabezas Fun and Challenging Puzzles for All ",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Rompecabezas Gratis – Juega Puzzles Online en 2025",
     "description":
-      "Enjoy rompecabezas for fun and learning! Solve colorful, challenging puzzles that boost your brain and offer hours of entertainment.",
+      "Juega rompecabezas gratis online. Relájate con divertidos puzzles para todas las edades y comienza a jugar al instante en tu navegador.",
     "url": "https://jigsawplanet.online/rompecabezas",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "rompecabezas gratis",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "puzzle",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/rompecabezas.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/rompecabezas.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/rompecabezas",
-      "playMode": "Double Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "es",
+    "genre": ["Rompecabezas", "Educativo", "Niños"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/rompecabezas.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "planet puzzle jigsaws",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/rompecabezas.webp",
-        "width": 500,
-        "height": 500,
-      },
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/rompecabezas"
+    }
   };
 
   return (

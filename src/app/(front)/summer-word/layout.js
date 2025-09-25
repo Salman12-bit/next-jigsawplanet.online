@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Summer Word Search Puzzles to Keep You Entertained",
-  keywords: "summer word puzzles,summer word search puzzle",
+  title: "Summer Word Puzzles | Play Free Online Game",
   description:
-    "Enjoy summer word search puzzles filled with sunny themes! A great way to relax, stay sharp, and celebrate the season with word fun.",
+    "Cool off with summer word puzzles online! Solve scrambled words, unlock sunny levels, and enjoy an exciting seasonal brain challenge today.",
   openGraph: {
-    title: "Summer Word Search Puzzles to Keep You Entertained",
+    title: "Summer Word Puzzles | Play Free Online Game",
     description:
-      "Enjoy summer word search puzzles filled with sunny themes! A great way to relax, stay sharp, and celebrate the season with word fun.",
+      "Cool off with summer word puzzles online! Solve scrambled words, unlock sunny levels, and enjoy an exciting seasonal brain challenge today.",
     url: "https://jigsawplanet.online/summer-word",
     images: [
       {
-        url: "https://jigsawplanet.online/images/Puzzlle.webp",
+        url: "https://jigsawplanet.online/images/wordpuzzle.webp",
         width: 1200,
         height: 630,
-        alt: "Play summer word puzzles",
       },
     ],
   },
@@ -27,36 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Summer Word Search Puzzles to Keep You Entertained",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Summer Word Puzzles | Play Free Online Game",
     "description":
-      "Enjoy summer word search puzzles filled with sunny themes! A great way to relax, stay sharp, and celebrate the season with word fun.",
+      "Cool off with summer word puzzles online! Solve scrambled words, unlock sunny levels, and enjoy an exciting seasonal brain challenge today.",
     "url": "https://jigsawplanet.online/summer-word",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "puzzle",
-      "genre": "Action, ",
-      "publisher": {
-        "@type": "Organization",
-        "name": "puzzle",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/summer-word",
-      "playMode": "Single Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Word"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/wordpuzzle.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/summer-word"
+    }
   };
 
   return (
@@ -71,3 +66,4 @@ export default function Layout({ children }) {
     </>
   );
 }
+

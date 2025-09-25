@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Explore Jigsa Planet: Discover the Future",
-  keywords :"online puzzles, childrens jigsaws, childrens jigsaws online, children",
+  title: "Childrens Jigsaws Online – Play Free Kids Puzzle Games",
   description:
-    "Explore Jigsa Planet and dive into a world of fresh ideas. Learn about the latest trends and join a community passionate about innovation.",
+    "Play childrens jigsaws online for free! Fun and educational puzzles designed for kids. Choose colorful themes, solve easily, and start playing instantly in your browser.",
   openGraph: {
-    title: "Explore Jigsa Planet: Discover the Future",
+    title: "Childrens Jigsaws Online – Play Free Kids Puzzle Games",
     description:
-      "Explore Jigsa Planet and dive into a world of fresh ideas. Learn about the latest trends and join a community passionate about innovation.",
+      "Play childrens jigsaws online for free! Fun and educational puzzles designed for kids. Choose colorful themes, solve easily, and start playing instantly in your browser.",
     url: "https://jigsawplanet.online/jigsaw-children",
     images: [
       {
         url: "https://jigsawplanet.online/images/children.webp",
         width: 1200,
         height: 630,
-        alt: "Play jigsa planet Game online on jigsawplanet",
       },
     ],
   },
@@ -27,46 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Explore Jigsa Planet: Discover the Future",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Childrens Jigsaws Online – Play Free Kids Puzzle Games",
     "description":
-      "Explore Jigsa Planet and dive into a world of fresh ideas. Learn about the latest trends and join a community passionate about innovation.",
+      "Play childrens jigsaws online for free! Fun and educational puzzles designed for kids. Choose colorful themes, solve easily, and start playing instantly in your browser.",
     "url": "https://jigsawplanet.online/jigsaw-children",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "childrens jigsaws online",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "childrens jigsaws online",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/children.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/children.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/jigsaw-children",
-      "playMode": "Double Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/children.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "childrens jigsaws online",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/children.webp",
-        "width": 500,
-        "height": 500,
-      },
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/jigsaw-children"
+    }
   };
 
   return (

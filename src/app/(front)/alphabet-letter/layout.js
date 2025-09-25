@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: " Explore Aalphabet Magnets: Creative Play & Learning!",
-  keywords :"flight alphebet,pictures of bubble letters",
+  title: "Play Alphabet Letter Matching Game Online – Free Fun",
   description:
-    "Discover the magic of flight alphebet for creative play! Build words, spark imagination, and enhance learning with every magnetic letter piece.",
+    "Play the alphabet letter matching game online! Kids can pair letters, solve fun challenges, and build strong ABC recognition while playing.",
   openGraph: {
-    title: " Explore Aalphabet Magnets: Creative Play & Learning!",
+    title: "Play Alphabet Letter Matching Game Online – Free Fun",
     description:
-      "Discover the magic of flight alphebet for creative play! Build words, spark imagination, and enhance learning with every magnetic letter piece.",
+      "Play the alphabet letter matching game online! Kids can pair letters, solve fun challenges, and build strong ABC recognition while playing.",
     url: "https://jigsawplanet.online/alphabet-letter",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Enjoy pictures of bubble letters on jigsawplanet",
       },
     ],
   },
@@ -27,36 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": " Explore Aalphabet Magnets: Creative Play & Learning!",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Play Alphabet Letter Matching Game Online – Free Fun",
     "description":
-      "Discover the magic of flight alphebet for creative play! Build words, spark imagination, and enhance learning with every magnetic letter piece.",
+      "Play the alphabet letter matching game online! Kids can pair letters, solve fun challenges, and build strong ABC recognition while playing.",
     "url": "https://jigsawplanet.online/alphabet-letter",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": " pictures of bubble letters",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": " pictures of bubble letters",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/alphabet-letter",
-      "playMode": "Single Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/Puzzlle.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/alphabet-letter"
+    }
   };
 
   return (

@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Discover Planet Jigsaws: Fun Puzzles Await!",
-  keywords :"jigsaw plane,jigsaw plant,eiffel jigsaws online, eiffel",
+  title: "Eiffel Tower Jigsaw Puzzle – Play Free Online Game",
   description:
-    " Explore planet jigsaws and piece together your puzzle skills! Enjoy a mix of challenging and entertaining jigsaw puzzles for a fun brain workout.",
+    "Play the Eiffel Tower jigsaw puzzle online for free! Solve Paris-themed puzzles, enjoy relaxing challenges, and start playing instantly in your browser today.",
   openGraph: {
-    title: "Discover Planet Jigsaws: Fun Puzzles Await!",
+    title: "Eiffel Tower Jigsaw Puzzle – Play Free Online Game",
     description:
-      " Explore planet jigsaws and piece together your puzzle skills! Enjoy a mix of challenging and entertaining jigsaw puzzles for a fun brain workout.",
+      "Play the Eiffel Tower jigsaw puzzle online for free! Solve Paris-themed puzzles, enjoy relaxing challenges, and start playing instantly in your browser today.",
     url: "https://jigsawplanet.online/jigsaw-eiffel",
     images: [
       {
         url: "https://jigsawplanet.online/images/eiffel.webp",
         width: 1200,
         height: 630,
-        alt: "Play jigsaw plane online on jigsawplanet",
       },
     ],
   },
@@ -27,46 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Discover Planet Jigsaws: Fun Puzzles Await!",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Eiffel Tower Jigsaw Puzzle – Play Free Online Game",
     "description":
-      " Explore planet jigsaws and piece together your puzzle skills! Enjoy a mix of challenging and entertaining jigsaw puzzles for a fun brain workout.",
+      "Play the Eiffel Tower jigsaw puzzle online for free! Solve Paris-themed puzzles, enjoy relaxing challenges, and start playing instantly in your browser today.",
     "url": "https://jigsawplanet.online/jigsaw-eiffel",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "eiffel jigsaws online",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "eiffel jigsaws online",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/eiffel.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/eiffel.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/jigsaw-eiffel",
-      "playMode": "Double Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/eiffel.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "childrens jigsaws online",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/eiffel.webp",
-        "width": 500,
-        "height": 500,
-      },
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/jigsaw-eiffel"
+    }
   };
 
   return (

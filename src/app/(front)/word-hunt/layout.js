@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Word Hunt Puzzle Game Find Words, Boost Your Brain",
-  keywords: "word search puzzles printable hard,word puzzle games printable",
+  title: "Word Hunt Puzzle Game | Play Free Online Now",
   description:
-    "Play the Word Hunt puzzle game to sharpen your mind and expand your vocabulary. A fun and relaxing challenge for all ages!",
+    "Play the ultimate word hunt puzzle game online! Solve scrambled words, unlock levels, and enjoy a fun brain-teasing challenge for kids and adults.",
   openGraph: {
-    title: "Word Hunt Puzzle Game Find Words, Boost Your Brain",
+    title: "Word Hunt Puzzle Game | Play Free Online Now",
     description:
-      "Play the Word Hunt puzzle game to sharpen your mind and expand your vocabulary. A fun and relaxing challenge for all ages!",
+      "Play the ultimate word hunt puzzle game online! Solve scrambled words, unlock levels, and enjoy a fun brain-teasing challenge for kids and adults.",
     url: "https://jigsawplanet.online/word-hunt",
     images: [
       {
-        url: "https://jigsawplanet.online/images/Puzzlle.webp",
+        url: "https://jigsawplanet.online/images/wordpuzzle.webp",
         width: 1200,
         height: 630,
-        alt: "Play word puzzle games printable",
       },
     ],
   },
@@ -27,36 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Word Hunt Puzzle Game Find Words, Boost Your Brain",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Word Hunt Puzzle Game | Play Free Online Now",
     "description":
-      "Play the Word Hunt puzzle game to sharpen your mind and expand your vocabulary. A fun and relaxing challenge for all ages!",
+      "Play the ultimate word hunt puzzle game online! Solve scrambled words, unlock levels, and enjoy a fun brain-teasing challenge for kids and adults.",
     "url": "https://jigsawplanet.online/word-hunt",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "jigsawplanet",
-      "genre": "Action, ",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Jigsawplanet",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/word-hunt",
-      "playMode": "Single Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Word"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/wordpuzzle.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/word-hunt"
+    }
   };
 
   return (

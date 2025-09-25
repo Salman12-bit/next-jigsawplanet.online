@@ -21,7 +21,7 @@
 .puzzle-game-card {
   display: flex;
   width: 300px;
-  height: 330px;
+  height: 280px;
   flex-direction: column;
   border: 1px solid #ccc;
   padding: 16px;
@@ -33,7 +33,7 @@
 .puzzle-game-image {
   width: 100%;
   max-width: 300px;
-  height: 200px;
+  height: 230px;
   border-radius: 8px;
 }
 
@@ -58,26 +58,8 @@
 .word-game-image {
   width: 100%;
   max-width: 300px;
-  height: 200px;
+  height: 230px;
   border-radius: 8px;
-}
-
-.puzzle-game-title {
-  margin: 12px 0;
-}
-
-.puzzle-game-button {
-  padding: 8px 16px;
-  background-color: #0070f3;
-  color: white;
-  margin-top: 5px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.puzzle-game-button:hover {
-  background-color: #005bb5;
 }
 
 .post {
@@ -103,18 +85,6 @@
   height: 220px;
   width: 100%;
   object-fit: cover;
-}
-
-.button1 {
-  height: 30px;
-  width: 100px;
-  padding: 5px;
-  background-color: black;
-  color: white;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  border-radius: 3px;
-  text-align: center;
 }
 
 .postTitle {
@@ -221,19 +191,12 @@
     padding: 8px 15px;
     margin-left: 10px;
   }
-
-  .button1 {
-    margin-left: 10px;
-    text-align: center;
-  }
 }
 
-/* Extra small screens (small phones) */
 @media (max-width: 480px) {
   .post {
     width: 100%;
     flex-direction: column;
-    /* margin-top: 230px; */
   }
 
   .imgContainer {
@@ -268,11 +231,6 @@
     font-size: 0.9rem;
     padding: 8px 15px;
     margin-left: 10px;
-  }
-
-  .button1 {
-    margin-left: 10px;
-    text-align: center;
   }
 }
 
@@ -383,7 +341,6 @@
 }
 
 .read-more-button {
-  /* margin-top: 5px; */
   padding: 10px 10px;
   background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
   color: #fff;

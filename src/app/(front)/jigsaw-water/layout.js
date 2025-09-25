@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Explore Planet Puzzle: Fun Challenges Await!",
-  keywords :"jisaw planet, puzzles jigsaw planet, online, game",
+  title: "24 Piece Jigsaw Puzzle – Play Free Online Puzzle Game",
   description:
-    "Dive into jisaw planet and unlock fun brain-teasers that challenge your logic and creativity. Perfect for puzzle lovers of all ages!",
+    "Play the 24 Piece Jigsaw Puzzle online for free! A fun and relaxing puzzle game with easy pieces, perfect for kids and adults. Start playing instantly today.",
   openGraph: {
-    title: "Explore Planet Puzzle: Fun Challenges Await!",
+    title: "24 Piece Jigsaw Puzzle – Play Free Online Puzzle Game",
     description:
-      "Dive into jisaw planet and unlock fun brain-teasers that challenge your logic and creativity. Perfect for puzzle lovers of all ages!",
+      "Play the 24 Piece Jigsaw Puzzle online for free! A fun and relaxing puzzle game with easy pieces, perfect for kids and adults. Start playing instantly today.",
     url: "https://jigsawplanet.online/jigsaw-water",
     images: [
       {
         url: "https://jigsawplanet.online/images/homewater.webp",
         width: 1200,
         height: 630,
-        alt: "Play puzzles jigsaw planet on jigsawplanet",
       },
     ],
   },
@@ -27,52 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Explore Planet Puzzle: Fun Challenges Await!",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "24 Piece Jigsaw Puzzle – Play Free Online Puzzle Game",
     "description":
-      "Dive into jisaw planet and unlock fun brain-teasers that challenge your logic and creativity. Perfect for puzzle lovers of all ages!",
+      "Play the 24 Piece Jigsaw Puzzle online for free! A fun and relaxing puzzle game with easy pieces, perfect for kids and adults. Start playing instantly today.",
     "url": "https://jigsawplanet.online/jigsaw-water",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "puzzles jigsaw planet",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "puzzles jigsaw planet",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/homewater.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/homewater.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/jigsaw-water",
-      "playMode": "Double Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/homewater.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "puzzles jigsaw planet",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/homewater.webp",
-        "width": 500,
-        "height": 500,
-      },
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/homewater.webp",
-      "width": 1200,
-      "height": 630,
-    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/jigsaw-water"
+    }
   };
 
   return (

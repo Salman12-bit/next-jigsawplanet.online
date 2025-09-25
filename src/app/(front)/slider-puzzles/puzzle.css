@@ -1,22 +1,26 @@
 .game-container {
-    color: white;
+    color: rgb(3, 3, 3);
     text-align: center;
 }
+
 .text-conainer {
     width: 100%;
     padding: 20px 0px;
     margin-bottom: 17px;
 }
+
 .level-color {
     margin-bottom: 20px;
     text-align: center;
     color: black;
 }
+
 .planet-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .puzzlecontainer {
     display: flex;
     flex-direction: column;
@@ -24,10 +28,11 @@
     margin: 0 auto;
     padding: 20px;
 }
+
 .card2 {
     padding-top: 100%;
     position: relative;
-    background-color: #374151;
+    background-color: rgba(20, 20, 20, 0.8);
     color: white;
     display: flex;
     justify-content: center;
@@ -35,32 +40,43 @@
     font-size: 24px;
     cursor: pointer;
     border-radius: 5px;
-    transition: transform 0.1s;
+    transition: background 0.5s ease-in-out, transform 0.2s;
+    opacity: 1;
 }
+
+.card2:hover {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
+    transform: scale(1.05);
+}
+
 .card2.matched {
     background-color: #4caf50;
     cursor: default;
 }
+
 .card2.flipped {
-    background-color: #d6c5c5;
+    background-color: #e9e1e1;
     color: #000;
     cursor: default;
     transform: rotateY(180deg);
 }
+
 .card2>span {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .message {
     margin-top: 20px;
     font-size: 18px;
 }
+
 .button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #040404;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
     color: white;
     border: none;
     border-radius: 5px;
@@ -68,6 +84,7 @@
     margin: 10px 0px;
     margin-left: 10px;
 }
+
 .button:hover {
     padding: 10px 20px;
     font-size: 16px;
@@ -80,6 +97,23 @@
     margin-left: 10px;
 }
 
+.fade-in {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .welcome-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-box {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+
 .game-instructions-container {
     display: flex;
     flex-direction: column;
@@ -87,47 +121,67 @@
     align-items: flex-start;
     width: 100%;
     padding: 20px;
-    background-color: rgba(75, 72, 72, 0.2);
+    background-color: rgb(212, 211, 211);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    text-align: justify;
+    color: black;
 }
+
 .game-instructions-content {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
 }
+
 .instructions-title {
     text-align: center;
     margin: 20px 0;
     font-size: 1.5rem;
 }
+
 .instructions-description {
-    font-size: 1rem;
+    font-size: 1.09rem;
     margin-bottom: 16px;
+    text-align: justify;
+    margin-left: 10px;
+
 }
+
 .instruction-step {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border-left: 4px solid #2980b9;
+    padding-left: 12px;
+}
+
+.instructions-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 16px;
+    font-size: 1.09rem;
+}
+
+.tips-title {
     margin-top: 16px;
     font-size: 20px;
-
 }
 
-.game-image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.design {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.game-image {
-    border-radius: 8px;
-    height: 192px;
-    width: 240px;
-    margin: 10px;
-    object-fit: cover;
-}
+
 .game-board {
     display: grid !important;
     grid-template-columns: repeat(3, 90px) !important;
     gap: 8px !important;
     justify-content: center !important;
+}
+
+.mode-select {
+    text-align: center;
+    margin-top: 10px;
 }

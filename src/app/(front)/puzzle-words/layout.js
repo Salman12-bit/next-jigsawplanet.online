@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Unlock Puzzle Words: Challenge Your Brain Today!",
-  keywords: "word maze puzzles,words with friends chear,COLLATE,demure,UNCANNY",
+  title: "3rd Grade Spelling Words | Play Free Online Game",
   description:
-    "Dive into puzzle words that spark creativity and boost brainpower. Enjoy fun challenges, quick games, and endless word puzzles to keep your mind sharp!",
+    "Practice 3rd grade spelling words with a fun online puzzle game! Rearrange letters, solve levels, and build strong word skills through play.",
   openGraph: {
-    title: "Unlock Puzzle Words: Challenge Your Brain Today!",
+    title: "3rd Grade Spelling Words | Play Free Online Game",
     description:
-      "Dive into puzzle words that spark creativity and boost brainpower. Enjoy fun challenges, quick games, and endless word puzzles to keep your mind sharp!",
+      "Practice 3rd grade spelling words with a fun online puzzle game! Rearrange letters, solve levels, and build strong word skills through play.",
     url: "https://jigsawplanet.online/puzzle-words",
     images: [
       {
-        url: "https://jigsawplanet.online/images/Puzzlle.webp",
+        url: "https://jigsawplanet.online/images/wordpuzzle.webp",
         width: 1200,
         height: 630,
-        alt: "Play printable word puzzles",
       },
     ],
   },
@@ -25,45 +23,35 @@ export const metadata = {
 };
 
 export default function Layout({ children }) {
-  // Define the structured data schema
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Unlock Puzzle Words: Challenge Your Brain Today!",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "3rd Grade Spelling Words | Play Free Online Game",
     "description":
-      "Dive into puzzle words that spark creativity and boost brainpower. Enjoy fun challenges, quick games, and endless word puzzles to keep your mind sharp!",
+      "Practice 3rd grade spelling words with a fun online puzzle game! Rearrange letters, solve levels, and build strong word skills through play.",
     "url": "https://jigsawplanet.online/puzzle-words",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "Hard Word Search",
-      "genre": "Action, ",
-      "publisher": {
-        "@type": "Organization",
-        "name": "puzzle",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/puzzle-words",
-      "playMode": "Single Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Word"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/wordpuzzle.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-      "width": 1200,
-      "height": 630,
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/puzzle-words"
+    }
   };
 
   return (

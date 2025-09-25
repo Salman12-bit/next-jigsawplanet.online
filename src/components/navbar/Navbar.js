@@ -36,10 +36,10 @@ const Navbar = () => {
           <Link href="/" className={styles.navItem}>
             Home
           </Link>
-          <Link href="/jigsaw-planet" className={styles.navItem}>
-            Alphabet Puzzle
+          <Link href="/letter-puzzle" className={styles.navItem}>
+            Letter Puzzle
           </Link>
-          <Link href="/printable-word-puzzles" className={styles.navItem}>
+          <Link href="/children-word-puzzle" className={styles.navItem}>
             Word Puzzle
           </Link>
           <Link href="/jigsawblog" className={styles.navItem}>

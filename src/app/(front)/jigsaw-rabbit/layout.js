@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Discover Jigsaplanet: Where Innovation Meets Fun",
-  keywords :"jigsawplanet puzzles,jigsaw plnet, jigsaw rabbit, rabbit",
+  title: "Rabbit Jigsaw Puzzle – Play Free Online Puzzle Game",
   description:
-    "Step into Jigsaplanet and discover a digital world where creativity, tech, and fun collide. Explore innovative ideas and engaging experiences today!",
+    "Play rabbit jigsaw puzzle online for free! Solve cute bunny puzzles, relax with fun challenges, and enjoy hours of entertainment—start playing instantly in your browser.",
   openGraph: {
-    title: "Discover Jigsaplanet: Where Innovation Meets Fun",
+    title: "Rabbit Jigsaw Puzzle – Play Free Online Puzzle Game",
     description:
-      "Step into Jigsaplanet and discover a digital world where creativity, tech, and fun collide. Explore innovative ideas and engaging experiences today!",
+      "Play rabbit jigsaw puzzle online for free! Solve cute bunny puzzles, relax with fun challenges, and enjoy hours of entertainment—start playing instantly in your browser.",
     url: "https://jigsawplanet.online/jigsaw-rabbit",
     images: [
       {
         url: "https://jigsawplanet.online/images/rabbit.webp",
         width: 1200,
         height: 630,
-        alt: "Play jigsaw plnet Game online on jigsawplanet",
       },
     ],
   },
@@ -27,42 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Discover Jigsaplanet: Where Innovation Meets Fun",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Rabbit Jigsaw Puzzle – Play Free Online Puzzle Game",
     "description":
-      "Step into Jigsaplanet and discover a digital world where creativity, tech, and fun collide. Explore innovative ideas and engaging experiences today!",
+      "Play rabbit jigsaw puzzle online for free! Solve cute bunny puzzles, relax with fun challenges, and enjoy hours of entertainment—start playing instantly in your browser.",
     "url": "https://jigsawplanet.online/jigsaw-rabbit",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "jigsawplanet puzzles",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "jigsawplanet puzzles online",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/rabbit.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/rabbit.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/jigsaw-rabbit",
-      "playMode": "Double Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/rabbit.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/rabbit.webp",
-      "width": 1200,
-      "height": 630,
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/jigsaw-rabbit"
+    }
   };
 
   return (

@@ -132,8 +132,8 @@ function resizeImage(img, targetWidth, targetHeight) {
     return canvas;
 }
 
-export default function Puzzle() {
-    const puzzleImage = "/download.webp";
+export default function jigsawmen() {
+    const menImage = "/download.webp";
 
     const [image, setImage] = useState(null);
     const [pieces, setPieces] = useState([]);
@@ -156,7 +156,7 @@ export default function Puzzle() {
     useEffect(() => {
         async function processImage() {
             try {
-                const img = await loadImage(puzzleImage);
+                const img = await loadImage(menImage);
                 const resizedCanvas = resizeImage(img, globalHeight, globalWidth);
                 const resizedImg = new Image();
                 resizedImg.src = resizedCanvas.toDataURL();
@@ -320,11 +320,11 @@ export default function Puzzle() {
     return (
         <div className={styles.container}>
             <div className={styles.sidebar}>
-                <h1 className={styles.centerText}>Puzzle Game</h1>
+                <h1 className={styles.centerText}>Play Free Jigsaw Men Puzzle Online Fun</h1>
                 <div className={styles.imageContainer}>
                     <img
-                        src={puzzleImage}
-                        alt="Puzzle preview"
+                        src={menImage}
+                        alt="Jigsaw Men puzzle game online free brain-teasing jigsaw challenge"
                         style={{
                             height: "200px",
                             width: "200px",
@@ -332,20 +332,7 @@ export default function Puzzle() {
                         }}
                     />
                 </div>
-                {leaderboard.length > 0 && (
-                    <div className={styles.leaderboard}>
-                        <h2>🏆 Leaderboard</h2>
-                        <ol>
-                            {leaderboard.map((entry, idx) => (
-                                <li key={idx}>
-                                    <h3>
-                                        {entry.name} - {formatTime(entry.time)}
-                                    </h3>
-                                </li>
-                            ))}
-                        </ol>
-                    </div>
-                )}
+
                 <h2 className={styles.centerText}>Time: {formatTime(time)}</h2>
                 <p style={{ textAlign: "center" }}>
                     {isFinished
@@ -503,6 +490,20 @@ export default function Puzzle() {
                         <p>Please complete the puzzle before finishing.</p>
                         <button onClick={handleCloseModal}>Close</button>
                     </div>
+                </div>
+            )}
+            {leaderboard.length > 0 && (
+                <div className={styles.leaderboard}>
+                    <h2>🏆 Leaderboard</h2>
+                    <ol>
+                        {leaderboard.map((entry, idx) => (
+                            <li key={idx}>
+                                <h3>
+                                    {entry.name} - {formatTime(entry.time)}
+                                </h3>
+                            </li>
+                        ))}
+                    </ol>
                 </div>
             )}
         </div>

@@ -1,14 +1,14 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Jigsaw puzzles - Discover the Best Free Game Platform",
+  title: "Jigsawplanet – Play Jigsaw Puzzles & Create Your Own",
   keywords: "jigsaw puzzle,jigsaw",
   description:
-    "Visit the ultimate destination for the Jigsaw puzzles! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages.",
+    "Play jigsaw puzzles online at jigsawplanet! Solve, create, and share thousands of free jigsaw puzzles for kids, teens, and adults. Start your puzzle now!",
   openGraph: {
-    title: "Jigsaw puzzles - Discover the Best Free Game Platform",
+    title: "Jigsawplanet – Play Jigsaw Puzzles & Create Your Own",
     description:
-      "Visit the ultimate destination for Jigsaw Planet puzzles! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages.",
+      "Play jigsaw puzzles online at jigsawplanet! Solve, create, and share thousands of free jigsaw puzzles for kids, teens, and adults. Start your puzzle now!",
     url: "https://jigsawplanet.online/",
     images: [
       {
@@ -28,10 +28,10 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Jigsaw Planet",
+    "name": "Jigsawplanet – Play Jigsaw Puzzles & Create Your Own",
     "url": "https://jigsawplanet.online",
     "description":
-      "Visit the ultimate destination for the Jigsaw puzzles! Solve, create, and share fun jigsaw puzzles online for free. Perfect for all ages.",
+      "Play jigsaw puzzles online at jigsawplanet! Solve, create, and share thousands of free jigsaw puzzles for kids, teens, and adults. Start your puzzle now!",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://jigsawplanet.online/search?q={search_term_string}",

@@ -1,20 +1,19 @@
 import React from "react";
 
 export const metadata = {
-  title: "Play Free Jigsaw Puzzle Online – Fun & Relaxing Game Anytime",
+  title: "Disney Jigsaw Puzzles – Play Free Online Games",
   description:
-    "Play free jigsaw puzzle online! Relax, solve stunning images, and enjoy fun brain-boosting puzzles for all ages – no download needed.",
+    "Play free Disney jigsaw puzzles online. Fun and relaxing puzzle games for kids and adults. Start solving your favorite Disney scenes instantly.",
   openGraph: {
-    title: "Play Free Jigsaw Puzzle Online – Fun & Relaxing Game Anytime",
+    title: "Disney Jigsaw Puzzles – Play Free Online Games",
     description:
-      "Play free jigsaw puzzle online! Relax, solve stunning images, and enjoy fun brain-boosting puzzles for all ages – no download needed.",
+      "Play free Disney jigsaw puzzles online. Fun and relaxing puzzle games for kids and adults. Start solving your favorite Disney scenes instantly.",
     url: "https://jigsawplanet.online/jigsaw-puzzle",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzle3.webp",
         width: 1200,
         height: 630,
-        alt: "ABC puzzle game with colorful letters for kids learning online",
       },
     ],
   },
@@ -27,9 +26,9 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": ["WebApplication", "OnlineGame"],
-    "name": "Play Free Jigsaw Puzzle Online – Fun & Relaxing Game Anytime",
+    "name": "Disney Jigsaw Puzzles – Play Free Online Games",
     "description":
-      "Play free jigsaw puzzle online! Relax, solve stunning images, and enjoy fun brain-boosting puzzles for all ages – no download needed.",
+      "Play free Disney jigsaw puzzles online. Fun and relaxing puzzle games for kids and adults. Start solving your favorite Disney scenes instantly.",
     "url": "https://jigsawplanet.online/jigsaw-puzzle",
     "applicationCategory": "Game",
     "operatingSystem": "Web",

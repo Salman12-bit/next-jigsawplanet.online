@@ -24,19 +24,19 @@ const Board1 = styled.div`
 
 const initialCards = [
   { id: 1, value: 'E' }, { id: 2, value: 'F' },
-  { id: 3, value: 'H' }, { id: 4, value: 'D' },
-  { id: 5, value: 'C' }, { id: 6, value: 'H' },
-  { id: 7, value: 'H' }, { id: 8, value: 'H' },
+  { id: 3, value: 'A' }, { id: 4, value: 'D' },
+  { id: 5, value: 'C' }, { id: 6, value: 'A' },
+  { id: 7, value: 'A' }, { id: 8, value: 'A' },
   { id: 9, value: 'B' },
 ];
 
-const Alphabetpuzzle7 = () => {
+const Letterpuzzle = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(7);
+  const [level, setLevel] = useState(1);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -129,7 +129,7 @@ const Alphabetpuzzle7 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/alphabet-letter">
+                <Link href="/letter-wooden">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -171,16 +171,16 @@ const Alphabetpuzzle7 = () => {
             </p>
           </div>
           <div className="game-image-container">
-            <Link href="/jigsaw-planet">
+            <Link href="/letter-pictures">
               <img className='game-image' src='./images/Puzzle1.webp' alt='free online letter puzzles puzzle game' />
             </Link>
-            <Link href="/alphabet-puzzles">
+            <Link href="/letter-printable">
               <img className='game-image' src='./images/Puzzle2.webp' alt='letter puzzles interactive puzzle' />
             </Link>
-            <Link href="/jigsawplanet2">
+            <Link href="/letter-printable">
               <img className='game-image' src='./images/Puzzle3.webp' alt='free letter puzzles game' />
             </Link>
-            <Link href="/abc-puzzle">
+            <Link href="/color-number">
               <img className='game-image' src='./images/Puzzle5.webp' alt='play letter puzzles puzzle online' />
             </Link>
           </div>
@@ -191,6 +191,6 @@ const Alphabetpuzzle7 = () => {
 };
 
 
-export default Alphabetpuzzle7;
+export default Letterpuzzle;
 
 

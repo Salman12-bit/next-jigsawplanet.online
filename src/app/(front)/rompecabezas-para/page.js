@@ -132,8 +132,8 @@ function resizeImage(img, targetWidth, targetHeight) {
     return canvas;
 }
 
-export default function Puzzle() {
-    const puzzleImage = "/images/jigsawjungle.webp";
+export default function rompecabezasPara() {
+    const paraniños = "/images/jigsawjungle.webp";
 
     const [image, setImage] = useState(null);
     const [pieces, setPieces] = useState([]);
@@ -156,7 +156,7 @@ export default function Puzzle() {
     useEffect(() => {
         async function processImage() {
             try {
-                const img = await loadImage(puzzleImage);
+                const img = await loadImage(paraniños);
                 const resizedCanvas = resizeImage(img, globalHeight, globalWidth);
                 const resizedImg = new Image();
                 resizedImg.src = resizedCanvas.toDataURL();
@@ -322,11 +322,11 @@ export default function Puzzle() {
     return (
         <div className={styles.container}>
             <div className={styles.sidebar}>
-                <h1 className={styles.centerText}>Puzzle Game</h1>
+                <h1 className={styles.centerText}>Juega Rompecabezas Infantiles Online Gratis</h1>
                 <div className={styles.imageContainer}>
                     <img
-                        src={puzzleImage}
-                        alt="Puzzle preview"
+                        src={paraniños}
+                        alt="Niños jugando rompecabezas online gratis con piezas coloridas"
                         style={{
                             height: "200px",
                             width: "200px",
@@ -334,46 +334,33 @@ export default function Puzzle() {
                         }}
                     />
                 </div>
-                {leaderboard.length > 0 && (
-                    <div className={styles.leaderboard}>
-                        <h2>🏆 Leaderboard</h2>
-                        <ol>
-                            {leaderboard.map((entry, idx) => (
-                                <li key={idx}>
-                                    <h3>
-                                        {entry.name} - {formatTime(entry.time)}
-                                    </h3>
-                                </li>
-                            ))}
-                        </ol>
-                    </div>
-                )}
-                <h2 className={styles.centerText}>Time: {formatTime(time)}</h2>
+
+                <h2 className={styles.centerText}>Tiempo: {formatTime(time)}</h2>
                 <p style={{ textAlign: "center" }}>
                     {isFinished
-                        ? "Congratulations! You solved the puzzle!"
-                        : "Drag each piece onto its matching slot. Good luck!"}
+                        ? "¡Felicidades! Has resuelto el rompecabezas."
+                        : "Arrastra cada pieza hasta su lugar correcto. ¡Suerte!"}
                 </p>
                 {(!isStarted || isFinished) && (
                     <button onClick={handleStart} className={styles.btn}>
-                        {isFinished ? "Restart" : "Start"}
+                        {isFinished ? "Reiniciar" : "Comenzar"}
                     </button>
                 )}
                 {isStarted && !isFinished && (
                     <button onClick={handleFinish} className={styles.btn}>
-                        Finish
+                        Terminar
                     </button>
                 )}
             </div>
             {showNamePrompt && (
                 <div className={styles.modalOverlay}>
                     <div className={styles.modalContent}>
-                        <h2>Enter Your Name</h2>
+                        <h2>Ingresa tu nombre</h2>
                         <input
                             type="text"
                             value={userName}
                             onChange={(e) => setUserName(e.target.value)}
-                            placeholder="Your name"
+                            placeholder="Tu nombre"
                             style={{ padding: "10px", marginBottom: "10px", width: "100%" }}
                         />
                         <button
@@ -382,7 +369,7 @@ export default function Puzzle() {
                             }}
                             disabled={!userName.trim()}
                         >
-                            Continue
+                            Continuar
                         </button>
                     </div>
                 </div>
@@ -390,8 +377,8 @@ export default function Puzzle() {
             <div ref={puzzleContainerRef} className={styles.puzzleBoard}>
                 {!isStarted && (
                     <div className={styles.overlay}>
-                        <h2>Welcome to the Jigsaw Puzzle Game!</h2>
-                        <p>Click “Start” to begin.</p>
+                        <h2>¡Bienvenido al Juego de Rompecabezas!</h2>
+                        <p>Haz clic en “Comenzar” para jugar.</p>
                     </div>
                 )}
                 {image && (
@@ -492,19 +479,33 @@ export default function Puzzle() {
             {showFinishModal && (
                 <div className={styles.modalOverlay}>
                     <div className={styles.modalContent}>
-                        <h2>Congratulations!</h2>
-                        <p>You solved the puzzle in {formatTime(time)}. Great job!</p>
-                        <button onClick={handleCloseModal}>Close</button>
+                        <h2>¡Felicidades!</h2>
+                        <p>Has resuelto el rompecabezas en {formatTime(time)}. trabajo!</p>
+                        <button onClick={handleCloseModal}>Cerrar</button>
                     </div>
                 </div>
             )}
             {showNotFinishModal && (
                 <div className={styles.modalOverlay}>
                     <div className={styles.modalContent2}>
-                        <h2>Not Completed!</h2>
-                        <p>Please complete the puzzle before finishing.</p>
-                        <button onClick={handleCloseModal}>Close</button>
+                        <h2>¡Aún no terminado!</h2>
+                        <p>Por favor completa el rompecabezas antes de finalizar.</p>
+                        <button onClick={handleCloseModal}>Cerrar</button>
                     </div>
+                </div>
+            )}
+            {leaderboard.length > 0 && (
+                <div className={styles.leaderboard}>
+                    <h2>🏆 Clasificación</h2>
+                    <ol>
+                        {leaderboard.map((entry, idx) => (
+                            <li key={idx}>
+                                <h3>
+                                    {entry.name} - {formatTime(entry.time)}
+                                </h3>
+                            </li>
+                        ))}
+                    </ol>
                 </div>
             )}
         </div>

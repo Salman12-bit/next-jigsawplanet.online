@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Jigsaw Puzzle Planet: Your Ultimate Puzzle Destination",
-  keywords :"puzzle planet, jigsaw planet puzzle, game",
+  title: "Flower Jigsaw Puzzle – Play Free Online Puzzle Game Now",
   description:
-    "Discover Jigsaw Puzzle Planet, the perfect place to solve, create, and share puzzles online. Fun and engaging for puzzle lovers of all ages!",
+    "Play Flower Jigsaw Puzzle online for free! Choose beautiful floral designs, solve relaxing puzzles, and enjoy hours of fun. Start playing instantly in your browser.",
   openGraph: {
-    title: "Jigsaw Puzzle Planet: Your Ultimate Puzzle Destination",
+    title: "Flower Jigsaw Puzzle – Play Free Online Puzzle Game Now",
     description:
-      "Discover Jigsaw Puzzle Planet, the perfect place to solve, create, and share puzzles online. Fun and engaging for puzzle lovers of all ages!",
+      "Play Flower Jigsaw Puzzle online for free! Choose beautiful floral designs, solve relaxing puzzles, and enjoy hours of fun. Start playing instantly in your browser.",
     url: "https://jigsawplanet.online/jigsaw-flower",
     images: [
       {
         url: "https://jigsawplanet.online/flower.webp",
         width: 1200,
         height: 630,
-        alt: "Play puzzle planet on jigsawplanet",
       },
     ],
   },
@@ -27,36 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Jigsaw Puzzle Planet: Your Ultimate Puzzle Destination",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Flower Jigsaw Puzzle – Play Free Online Puzzle Game Now",
     "description":
-      "Discover Jigsaw Puzzle Planet, the perfect place to solve, create, and share puzzles online. Fun and engaging for puzzle lovers of all ages!",
+      "Play Flower Jigsaw Puzzle online for free! Choose beautiful floral designs, solve relaxing puzzles, and enjoy hours of fun. Start playing instantly in your browser.",
     "url": "https://jigsawplanet.online/jigsaw-flower",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "puzzle planet",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "puzzle planet",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/flower.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/flower.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/jigsaw-flower",
-      "playMode": "Double Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/flower.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/jigsaw-flower"
+    }
   };
 
   return (

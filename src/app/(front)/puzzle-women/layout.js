@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Puzzle Women: Empower Your Brain with Creative Puzzles",
-  keywords: "word puzzle,women of the hour, women",
+  title: "Word Puzzle Solver Game | Play Free Online Now",
   description:
-    "Dive into Puzzle Women where creative puzzles challenge your mind and boost inspiration. Enjoy fun brain teasers that empower and engage you!",
+    "Play the word puzzle solver game online! Test your brain, unscramble words, unlock levels, and enjoy a fun word-solving challenge for all ages.",
   openGraph: {
-    title: "Puzzle Women: Empower Your Brain with Creative Puzzles",
+    title: "Word Puzzle Solver Game | Play Free Online Now",
     description:
-      "Dive into Puzzle Women where creative puzzles challenge your mind and boost inspiration. Enjoy fun brain teasers that empower and engage you!",
+      "Play the word puzzle solver game online! Test your brain, unscramble words, unlock levels, and enjoy a fun word-solving challenge for all ages.",
     url: "https://jigsawplanet.online/puzzle-women",
     images: [
       {
-        url: "https://jigsawplanet.online/images/Puzzlle.webp",
+        url: "https://jigsawplanet.online/images/wordpuzzle.webp",
         width: 1200,
         height: 630,
-        alt: "Play women of the hour game",
       },
     ],
   },
@@ -27,42 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Puzzle Women: Empower Your Brain with Creative Puzzles",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Word Puzzle Solver Game | Play Free Online Now",
     "description":
-      "Dive into Puzzle Women where creative puzzles challenge your mind and boost inspiration. Enjoy fun brain teasers that empower and engage you!",
+      "Play the word puzzle solver game online! Test your brain, unscramble words, unlock levels, and enjoy a fun word-solving challenge for all ages.",
     "url": "https://jigsawplanet.online/puzzle-women",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "women of the hour",
-      "genre": "Action, ",
-      "publisher": {
-        "@type": "Organization",
-        "name": "puzzle",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/puzzle-women",
-      "playMode": "Single Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Word"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/wordpuzzle.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-      "width": 1200,
-      "height": 630,
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/puzzle-women"
+    }
   };
 
   return (

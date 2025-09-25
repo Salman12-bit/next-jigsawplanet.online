@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Fun Letter Puzzle: Boost Your Brain Now!",
-  keywords :"puzzle a b c,letter puzzles, puzzles",
+  title: "Letter Puzzle – Fun & Free Online Puzzle Game",
   description:
-    "Solve exciting letter puzzles and boost your vocabulary! Enjoy a fun challenge that sharpens your mind with every word you solve.",
+    "Enjoy free letter puzzle games online. Test your brain with single-letter challenges, improve your skills, and play instantly for fun and learning.",
   openGraph: {
-    title: "Fun Letter Puzzle: Boost Your Brain Now!",
+    title: "Letter Puzzle – Fun & Free Online Puzzle Game",
     description:
-      "Solve exciting letter puzzles and boost your vocabulary! Enjoy a fun challenge that sharpens your mind with every word you solve.",
+      "Enjoy free letter puzzle games online. Test your brain with single-letter challenges, improve your skills, and play instantly for fun and learning.",
     url: "https://jigsawplanet.online/letter-puzzle",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Play puzzle a b c game on jigsawplanet",
       },
     ],
   },
@@ -27,42 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Fun Letter Puzzle: Boost Your Brain Now!",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Letter Puzzle – Fun & Free Online Puzzle Game",
     "description":
-      "Solve exciting letter puzzles and boost your vocabulary! Enjoy a fun challenge that sharpens your mind with every word you solve.",
+      "Enjoy free letter puzzle games online. Test your brain with single-letter challenges, improve your skills, and play instantly for fun and learning.",
     "url": "https://jigsawplanet.online/letter-puzzle",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "puzzle a b c",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "puzzle a b c",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/letter-puzzle",
-      "playMode": "Single Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/Puzzlle.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-      "width": 1200,
-      "height": 630,
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/letter-puzzle"
+    }
   };
 
   return (

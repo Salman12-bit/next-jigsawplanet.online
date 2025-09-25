@@ -58,7 +58,7 @@ export default function Home() {
     },
     {
       "image": "/images/jigsawsand.webp",
-      link: '/jigsaw-palnet'
+      link: '/jigsaw-art'
     },
     {
       "image": "/images/rompecabezas.webp",
@@ -66,15 +66,15 @@ export default function Home() {
     },
     {
       "image": "/images/jigsaw-plaet.webp",
-      link: '/jigsaw-plaet'
+      link: '/jigsaw-difficult'
     },
     {
       "image": "/images/jigsawtruck.webp",
-      link: '/jigsaw-plante'
+      link: '/jigsaw-cat'
     },
     {
       "image": "/images/burjkhalifa.webp",
-      link: '/jisaw-planet'
+      link: '/jigsaw-table'
     },
     {
       "image": "/images/jigsawjungle.webp",
@@ -175,12 +175,12 @@ export default function Home() {
       <div className="puzzle-games">
         {puzzleGames.map((item, index) => (
           <div key={index} className="puzzle-game-card">
-            <img src={item.image} alt={`Puzzle ${index + 1}`} className="puzzle-game-image" />
-            <p className="puzzle-game-title">Click on the button to start playing</p>
-            <Link href={item.link}><button className="puzzle-game-button">Play Now</button></Link>
+            <Link href={item.link}>
+              <img src={item.image} className="puzzle-game-image" />
+            </Link>
           </div>
         ))}
-        
+
       </div>
       <div className="posts">
         {isLoading ? (
@@ -193,7 +193,6 @@ export default function Home() {
               <div className="imgContainer">
                 <Link href={`/${post._id}`}><img className="img" src={post.file} alt={post.title} loading="lazy" /></Link>
               </div>
-              <Link href="/jigsaw-planet" className="button1">Play Game</Link>
               <div className="postContentContainer">
                 <h1 className="postTitle">{post.title}</h1>
                 <p className="postContent">{post.desc}</p>
@@ -209,8 +208,9 @@ export default function Home() {
       <div className="word-games">
         {wordgame.map((item, index) => (
           <div key={index} className="word-game-card">
+            <Link href={item.link}>
             <img src={item.image} alt={`Puzzle ${index + 1}`} className="word-game-image" />
-            <Link href={item.link}><button className="puzzle-game-button">Play Now</button></Link>
+            </Link>
           </div>
         ))}
       </div>

@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Play Word Game: Boost Your Brain with Fun Puzzles",
-  keywords: "word hunt online free,spelling words,CHOCOLATE,life",
+  title: "Rearrange Letters Game | Play Free Word Puzzle Online",
   description:
-    "Challenge your mind with our exciting word game. Solve puzzles, learn new words, and boost your vocabulary in a fun and engaging way!",
+    "Play the rearrange letters game online! Unscramble tricky words, pass through fun levels, and enjoy a challenging word puzzle adventure today.",
   openGraph: {
-    title: "Play Word Game: Boost Your Brain with Fun Puzzles",
+    title: "Rearrange Letters Game | Play Free Word Puzzle Online",
     description:
-      "Challenge your mind with our exciting word game. Solve puzzles, learn new words, and boost your vocabulary in a fun and engaging way!",
+      "Play the rearrange letters game online! Unscramble tricky words, pass through fun levels, and enjoy a challenging word puzzle adventure today.",
     url: "https://jigsawplanet.online/word-game",
     images: [
       {
-        url: "https://jigsawplanet.online/images/Puzzlle.webp",
+        url: "https://jigsawplanet.online/images/wordpuzzle.webp",
         width: 1200,
         height: 630,
-        alt: "Play word hunt online free",
       },
     ],
   },
@@ -27,42 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Play Word Game: Boost Your Brain with Fun Puzzles",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Rearrange Letters Game | Play Free Word Puzzle Online",
     "description":
-      "Challenge your mind with our exciting word game. Solve puzzles, learn new words, and boost your vocabulary in a fun and engaging way!",
+      "Play the rearrange letters game online! Unscramble tricky words, pass through fun levels, and enjoy a challenging word puzzle adventure today.",
     "url": "https://jigsawplanet.online/word-game",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "word hunt online free",
-      "genre": "Action, ",
-      "publisher": {
-        "@type": "Organization",
-        "name": "puzzle",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/word-game",
-      "playMode": "Single Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Word"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/wordpuzzle.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-      "width": 1200,
-      "height": 630,
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/word-game"
+    }
   };
 
   return (
@@ -77,3 +66,4 @@ export default function Layout({ children }) {
     </>
   );
 }
+

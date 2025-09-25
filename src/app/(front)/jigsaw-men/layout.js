@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Planet jigsaw: Endless Fun with Free Online",
-  keywords :"puzzle men,planet puzzle online,jigsaw planet puzzles",
+  title: "Play Jigsaw Men Puzzle Online – Free & Addictive Brain Game",
   description:
-    "Explore planet jigsaw and enjoy solving, sharing, and creating puzzle men online. Perfect for puzzle lovers of all ages to challenge their minds",
+    "Play Jigsaw Men puzzle online for free! Enjoy relaxing yet challenging jigsaw fun, boost your focus, and start solving instantly on any device.",
   openGraph: {
-    title: "Planet jigsaw: Endless Fun with Free Online",
+    title: "Play Jigsaw Men Puzzle Online – Free & Addictive Brain Game",
     description:
-      "Explore puzzle men and enjoy solving, sharing, and creating planet jigsaw online. Perfect for puzzle lovers of all ages to challenge their minds",
+      "Play Jigsaw Men puzzle online for free! Enjoy relaxing yet challenging jigsaw fun, boost your focus, and start solving instantly on any device.",
     url: "https://jigsawplanet.online/jigsaw-men",
     images: [
       {
         url: "https://jigsawplanet.online/download.webp",
         width: 1200,
         height: 630,
-        alt: "Play planet men Game online on jigsaw planet puzzles",
       },
     ],
   },
@@ -27,36 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "puzzle men - Play Online on word puzzle",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Play Free Jigsaw Puzzle Online – Fun & Relaxing Game Anytime",
     "description":
-      "Explore planet jigsaw and enjoy solving, sharing, and creating puzzle men online. Perfect for puzzle lovers of all ages to challenge their minds",
+      "Play Jigsaw Men puzzle online for free! Enjoy relaxing yet challenging jigsaw fun, boost your focus, and start solving instantly on any device.",
     "url": "https://jigsawplanet.online/jigsaw-men",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "puzzle men",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "puzzle men",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/download.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/download.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/jigsaw-men",
-      "playMode": "Double Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/download.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/jigsaw-men"
+    }
   };
 
   return (

@@ -1,0 +1,144 @@
+.lp-game-area {
+    color: rgb(3, 3, 3);
+    text-align: center;
+}
+
+.lp-wrapper {
+    width: 100%;
+    padding: 20px 0px;
+    margin-bottom: 17px;
+}
+
+.lp-level-title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.lp-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lp-puzzlecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lp-tile {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    border: 2px solid #444;
+    border-radius: 12px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #222;
+    cursor: grab;
+    transition: all 0.2s ease-in-out;
+}
+
+.lp-tile:active {
+    cursor: grabbing;
+    transform: scale(0.95);
+}
+
+.lp-tile:hover {
+    background: #e0e0ff;
+    border-color: #3a3a8c;
+}
+
+.lp-status {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.lp-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(100, 100, 100, 0.6));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0px;
+    margin-left: 10px;
+}
+
+.lp-btn:hover {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #374151;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0px;
+    margin-left: 10px;
+}
+
+.lp-instructions-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(212, 211, 211);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: black;
+}
+
+.lp-instructions {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.lp-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.lp-text {
+    font-size: 1.09rem;
+    margin-bottom: 16px;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.lp-step {
+    margin-top: 16px;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border-left: 4px solid #2980b9;
+    padding-left: 12px;
+}
+
+.lp-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+.lp-tips-title {
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.lp-board {
+    display: grid !important;
+    grid-template-columns: repeat(3, 90px) !important;
+    gap: 8px !important;
+    justify-content: center !important;
+}

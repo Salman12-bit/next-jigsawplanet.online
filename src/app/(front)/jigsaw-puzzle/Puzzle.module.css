@@ -1,7 +1,7 @@
 .container {
     display: flex;
     height: 100vh;
-    background-color: #d1c0a8;
+    background-color: #fdfdfd;
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -139,7 +139,6 @@
     background-color: #eee;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
 }
 
 .overlay {
@@ -177,22 +176,26 @@
     height: 300px;
     border: 1px solid #666;
 }
+
 .centerText {
     text-align: center;
     margin-top: 10px;
 }
 
 .leaderboard {
-    margin-top: 20px;
     padding: 10px;
-    background: #fff;
+    background: #c6d8d3;
     border-radius: 10px;
-    max-width: 300px;
+    max-width: 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; 
 }
+
 .leaderboard ol {
     padding-left: 20px;
 }
+
 .leaderboard li {
     margin: 5px 0;
 }
+

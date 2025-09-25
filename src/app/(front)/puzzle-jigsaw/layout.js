@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Enjoy Puzzles Jigsaw: Fun Challenges for All Ages",
-  keywords :"jiggsaw planet,disney puzzles online,online game",
+  title: "Kids Jigsaw Puzzles – Play Free Online Puzzle Games",
   description:
-    " Discover exciting jigsaw puzzles that test your skills and creativity. Solve beautiful, engaging puzzles for endless fun and relaxation!",
+    "Play Kids Jigsaw Puzzles online for free! Fun, colorful, and easy puzzles designed for children of all ages. Start playing instantly and enjoy hours of learning.",
   openGraph: {
-    title: "Enjoy Puzzles Jigsaw: Fun Challenges for All Ages",
+    title: "Kids Jigsaw Puzzles – Play Free Online Puzzle Games",
     description:
-      " Discover exciting jigsaw puzzles that test your skills and creativity. Solve beautiful, engaging puzzles for endless fun and relaxation!",
+      "Play Kids Jigsaw Puzzles online for free! Fun, colorful, and easy puzzles designed for children of all ages. Start playing instantly and enjoy hours of learning.",
     url: "https://jigsawplanet.online/puzzle-jigsaw",
     images: [
       {
         url: "https://jigsawplanet.online/images/nightstar.webp",
         width: 1200,
         height: 630,
-        alt: "Play disney puzzles online on jigsawplanet",
       },
     ],
   },
@@ -27,52 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Enjoy Puzzles Jigsaw: Fun Challenges for All Ages",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Kids Jigsaw Puzzles – Play Free Online Puzzle Games",
     "description":
-      " Discover exciting jigsaw puzzles that test your skills and creativity. Solve beautiful, engaging puzzles for endless fun and relaxation!",
+      "Play Kids Jigsaw Puzzles online for free! Fun, colorful, and easy puzzles designed for children of all ages. Start playing instantly and enjoy hours of learning.",
     "url": "https://jigsawplanet.online/puzzle-jigsaw",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "disney puzzles online",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "disney puzzles online",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/nightstar.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/nightstar.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/puzzle-jigsaw",
-      "playMode": "Double Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/nightstar.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "disney puzzles online",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/nightstar.webp",
-        "width": 500,
-        "height": 500,
-      },
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/nightstar.webp",
-      "width": 1200,
-      "height": 630,
-    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/puzzle-jigsaw"
+    }
   };
 
   return (

@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import "./word-game.css"
 import Link from 'next/link';
 
@@ -71,7 +71,7 @@ const Game = () => {
             <button className="button2" onClick={() => window.location.reload()}>
               Restart
             </button>
-            <Link href="/puzzle-women" className="button2 mx-2">
+            <Link href="/word-difficult" className="button2 mx-2">
               Next Level
             </Link>
           </div>

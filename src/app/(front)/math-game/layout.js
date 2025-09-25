@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Math Quiz Game Fun Practice for Quick Thinking",
-  keywords :"abc123 game,math quiz",
+  title: "ABC Math Games Online – Learn and Play for Free",
   description:
-    "Try a math quiz game to test your skills with numbers! Great for kids and adults to sharpen mental math in a playful, fast-paced way.",
+    "Play ABC math puzzle games free online. Combine alphabet fun with math challenges designed to improve learning and problem-solving for children.",
   openGraph: {
-    title: "Math Quiz Game Fun Practice for Quick Thinking",
+    title: "ABC Math Games Online – Learn and Play for Free",
     description:
-      "Try a math quiz game to test your skills with numbers! Great for kids and adults to sharpen mental math in a playful, fast-paced way.",
+      "Play ABC math puzzle games free online. Combine alphabet fun with math challenges designed to improve learning and problem-solving for children.",
     url: "https://jigsawplanet.online/math-game",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Play math quiz with alphabet and number learning games",
       },
     ],
   },
@@ -27,36 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Math Quiz Game Fun Practice for Quick Thinking",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "ABC Math Games Online – Learn and Play for Free",
     "description":
-      "Try a math quiz game to test your skills with numbers! Great for kids and adults to sharpen mental math in a playful, fast-paced way.",
+      "Play ABC math puzzle games free online. Combine alphabet fun with math challenges designed to improve learning and problem-solving for children.",
     "url": "https://jigsawplanet.online/math-game",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "jigsawplanet",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "jigsawplanet",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/math-game",
-      "playMode": "Single Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/jigsaw-plaet.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/math-game"
+    }
   };
 
   return (

@@ -132,8 +132,8 @@ function resizeImage(img, targetWidth, targetHeight) {
     return canvas;
 }
 
-export default function Puzzle() {
-    const puzzleImage = "/images/homewater.webp";
+export default function jigsawWater() {
+    const waterImage = "/images/homewater.webp";
 
     const [image, setImage] = useState(null);
     const [pieces, setPieces] = useState([]);
@@ -156,7 +156,7 @@ export default function Puzzle() {
     useEffect(() => {
         async function processImage() {
             try {
-                const img = await loadImage(puzzleImage);
+                const img = await loadImage(waterImage);
                 const resizedCanvas = resizeImage(img, globalHeight, globalWidth);
                 const resizedImg = new Image();
                 resizedImg.src = resizedCanvas.toDataURL();
@@ -185,8 +185,8 @@ export default function Puzzle() {
     }, [isStarted, isFinished]);
 
     function createPuzzleData(img) {
-        const rows = 4;
-        const cols = 4;
+        const rows = 5;
+        const cols = 5;
         const pieceWidth = globalWidth / cols;
         const pieceHeight = globalHeight / rows;
 
@@ -322,11 +322,11 @@ export default function Puzzle() {
     return (
         <div className={styles.container}>
             <div className={styles.sidebar}>
-                <h1 className={styles.centerText}>Puzzle Game</h1>
+                <h1 className={styles.centerText}>Play Free 24 Piece Jigsaw Puzzle</h1>
                 <div className={styles.imageContainer}>
                     <img
-                        src={puzzleImage}
-                        alt="Puzzle preview"
+                        src={waterImage}
+                        alt="24 Piece Jigsaw Puzzle Online Free Easy Puzzle Game"
                         style={{
                             height: "200px",
                             width: "200px",
@@ -334,20 +334,7 @@ export default function Puzzle() {
                         }}
                     />
                 </div>
-                {leaderboard.length > 0 && (
-                    <div className={styles.leaderboard}>
-                        <h2>🏆 Leaderboard</h2>
-                        <ol>
-                            {leaderboard.map((entry, idx) => (
-                                <li key={idx}>
-                                    <h3>
-                                        {entry.name} - {formatTime(entry.time)}
-                                    </h3>
-                                </li>
-                            ))}
-                        </ol>
-                    </div>
-                )}
+
                 <h2 className={styles.centerText}>Time: {formatTime(time)}</h2>
                 <p style={{ textAlign: "center" }}>
                     {isFinished
@@ -505,6 +492,20 @@ export default function Puzzle() {
                         <p>Please complete the puzzle before finishing.</p>
                         <button onClick={handleCloseModal}>Close</button>
                     </div>
+                </div>
+            )}
+            {leaderboard.length > 0 && (
+                <div className={styles.leaderboard}>
+                    <h2>🏆 Leaderboard</h2>
+                    <ol>
+                        {leaderboard.map((entry, idx) => (
+                            <li key={idx}>
+                                <h3>
+                                    {entry.name} - {formatTime(entry.time)}
+                                </h3>
+                            </li>
+                        ))}
+                    </ol>
                 </div>
             )}
         </div>

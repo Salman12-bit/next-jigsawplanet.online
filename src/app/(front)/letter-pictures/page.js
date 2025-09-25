@@ -24,19 +24,19 @@ const Board1 = styled.div`
 
 const initialCards = [
   { id: 1, value: 'J' }, { id: 2, value: 'I' },
-  { id: 3, value: 'K' }, { id: 4, value: 'K' },
-  { id: 5, value: 'L' }, { id: 6, value: 'K' },
-  { id: 7, value: 'K' }, { id: 8, value: 'I' },
+  { id: 3, value: 'I' }, { id: 4, value: 'K' },
+  { id: 5, value: 'L' }, { id: 6, value: 'C' },
+  { id: 7, value: 'I' }, { id: 8, value: 'I' },
   { id: 9, value: 'H' },
 ];
 
-const Alphabetpuzzle11 = () => {
+const letterpicture = () => {
   const [cards, setCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);
   const [attempts, setAttempts] = useState(0);
   const [message, setMessage] = useState('Attempts left: 2');
-  const [level, setLevel] = useState(11);
+  const [level, setLevel] = useState(3);
 
   const shuffle = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -130,7 +130,7 @@ const Alphabetpuzzle11 = () => {
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>Restart Game</button>
               {hasMatchedThree() && (
-                <Link href="/puzzleslider">
+                <Link href="/letter-missing">
                   <button className="button ms-2">Next Level</button>
                 </Link>
               )}
@@ -166,20 +166,6 @@ const Alphabetpuzzle11 = () => {
               Accessibility is a key benefit of Bingo Slide Cards, particularly for users with limited dexterity or vision. The sliding covers are often textured or brightly colored, making them easier to operate and recognize. Unlike traditional bingo materials that may scatter or require fine motor precision, slide cards are stable and easy to manage. This inclusive design broadens participation, ensuring more people can enjoy the game comfortably and independently.
             </p>
           </div>
-          <div className="game-image-container">
-            <Link href="/jigsaw-planet">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='free online bingo slide cards puzzle game' />
-            </Link>
-            <Link href="/slider-game">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='bingo slide cards interactive puzzle' />
-            </Link>
-            <Link href="/letter-puzzle">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='free bingo slide cards game' />
-            </Link>
-            <Link href="/alphabet-letter">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='play bingo slide cards puzzle online' />
-            </Link>
-          </div>
         </div>
       </div>
     </div>
@@ -187,6 +173,6 @@ const Alphabetpuzzle11 = () => {
 };
 
 
-export default Alphabetpuzzle11;
+export default letterpicture;
 
 

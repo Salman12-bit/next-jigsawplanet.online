@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Master Hard Spelling Bee Words: Ace the Challenge",
-  keywords: "word puzzle solver,puzzle love",
+  title: "Play Hard Spelling Words Game | Free Word Challenge",
   description:
-    "Discover a curated list of word puzzle solver to challenge your mind and boost your vocabulary. Ideal for spelling practice and competitions.",
+    "Master hard spelling words with our free online puzzle game. Rearrange tricky letters, test your skills, and unlock exciting levels in a fun word challenge.",
   openGraph: {
-    title: "Master Hard Spelling Bee Words: Ace the Challenge",
+    title: "Play Hard Spelling Words Game | Free Word Challenge",
     description:
-      "Discover a curated list of word puzzle solver to challenge your mind and boost your vocabulary. Ideal for spelling practice and competitions.",
+      "Master hard spelling words with our free online puzzle game. Rearrange tricky letters, test your skills, and unlock exciting levels in a fun word challenge.",
     url: "https://jigsawplanet.online/hard-spelling",
     images: [
       {
-        url: "https://jigsawplanet.online/images/Puzzlle.webp",
+        url: "https://jigsawplanet.online/images/wordpuzzle.webp",
         width: 1200,
         height: 630,
-        alt: "Play word puzzle solver",
       },
     ],
   },
@@ -27,36 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Master Hard Spelling Bee Words: Ace the Challenge",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Play Hard Spelling Words Game | Free Word Challenge",
     "description":
-      "Discover a curated list of word puzzle solver to challenge your mind and boost your vocabulary. Ideal for spelling practice and competitions.",
+      "Master hard spelling words with our free online puzzle game. Rearrange tricky letters, test your skills, and unlock exciting levels in a fun word challenge.",
     "url": "https://jigsawplanet.online/hard-spelling",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "word puzzle solver",
-      "genre": "Action, ",
-      "publisher": {
-        "@type": "Organization",
-        "name": "puzzle",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/hard-spelling",
-      "playMode": "Single Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Word"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/wordpuzzle.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/hard-spelling"
+    }
   };
 
   return (
@@ -71,3 +66,4 @@ export default function Layout({ children }) {
     </>
   );
 }
+

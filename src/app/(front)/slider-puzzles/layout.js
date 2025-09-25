@@ -1,21 +1,19 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Slide Through Slider Puzzles: Fun Brain Teasers",
-  keywords :"slider puzzle,rosetta stone puzzle",
+  title: "Alphabet Puzzle Game Online – Play Free Learning Challenge",
   description:
-    "Challenge your mind with slider puzzle that blend fun and strategy. Enjoy brain-teasing challenges to boost your problem-solving skills!",
+    "Try the alphabet puzzle game online! Solve ABC challenges, arrange letters, and enjoy a fun way for children to boost memory and learning skills.",
   openGraph: {
-    title: "Slide Through Slider Puzzles: Fun Brain Teasers",
+    title: "Alphabet Puzzle Game Online – Play Free Learning Challenge",
     description:
-      "Challenge your mind with slider puzzle that blend fun and strategy. Enjoy brain-teasing challenges to boost your problem-solving skills!",
+      "Try the alphabet puzzle game online! Solve ABC challenges, arrange letters, and enjoy a fun way for children to boost memory and learning skills.",
     url: "https://jigsawplanet.online/slider-puzzles",
     images: [
       {
         url: "https://jigsawplanet.online/images/Puzzlle.webp",
         width: 1200,
         height: 630,
-        alt: "Play rosetta stone puzzle on jigsawplanet",
       },
     ],
   },
@@ -27,42 +25,33 @@ export const metadata = {
 export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Slide Through Slider Puzzles: Fun Brain Teasers",
+    "@type": ["WebApplication", "OnlineGame"],
+    "name": "Alphabet Puzzle Game Online – Play Free Learning Challenge",
     "description":
-      "Challenge your mind with slider puzzle that blend fun and strategy. Enjoy brain-teasing challenges to boost your problem-solving skills!",
+      "Try the alphabet puzzle game online! Solve ABC challenges, arrange letters, and enjoy a fun way for children to boost memory and learning skills.",
     "url": "https://jigsawplanet.online/slider-puzzles",
-    "mainEntity": {
-      "@type": "Online Game",
-      "name": "rosetta stone puzzle",
-      "genre": "Action, Puzzle",
-      "publisher": {
-        "@type": "Organization",
-        "name": "rosetta stone puzzle",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-          "width": 500,
-          "height": 500,
-        },
-      },
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-        "width": 1200,
-        "height": 630,
-      },
-      "url": "https://jigsawplanet.online/slider-puzzles",
-      "playMode": "Single Player",
-      "operatingSystem": "Web Browser",
-      "applicationCategory": "Game",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "browserRequirements": "HTML5",
+    "inLanguage": "en",
+    "genre": ["Puzzle", "Educational", "Kids"],
+    "gamePlatform": "Web browser",
+    "playMode": "SinglePlayer",
+    "image": "https://jigsawplanet.online/images/Puzzlle.webp",
+    "offers": {
+      "@type": "Offer",
+      "price": 0,
+      "priceCurrency": "USD"
     },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://jigsawplanet.online/images/Puzzlle.webp",
-      "width": 1200,
-      "height": 630,
+    "publisher": {
+      "@type": "Organization",
+      "name": "jigsawplanet",
+      "url": "https://jigsawplanet.online"
     },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://jigsawplanet.online/slider-puzzles"
+    }
   };
 
   return (
