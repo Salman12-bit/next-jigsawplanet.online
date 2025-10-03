@@ -144,36 +144,40 @@ const letterblock = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">Play ABC Game – Fun Alphabet Learning</h1>
+            <h1 className="instructions-title">Letter Block Puzzle – Flip, Match, and Learn</h1>
 
-            <h2 className="instruction-step">What is the ABC Game?</h2>
             <p className="instructions-description">
-              The ABC Game is an engaging way for children to discover the alphabet while building early literacy skills. Instead of seeing letters as static symbols, kids interact with them in playful and meaningful ways. Whether practiced at home, in the classroom, or online, this game turns learning into an exciting adventure that helps children connect language with fun.
+              Letter Block Puzzle looks simple at first, but it’s full of little surprises.
+              The blocks sit on your screen, hiding letters underneath.
+              Flip one, see what’s there, and try to remember it for later.
+              The goal is easy: match the letters and finish the puzzle.
             </p>
 
-            <h2 className="instruction-step">Boosting Confidence Through Play</h2>
+            <h2 className="instruction-step">How to Play</h2>
             <p className="instructions-description">
-              As kids complete small challenges — such as matching letters, sliding tiles, or recognizing sounds — they enjoy moments of achievement. These successes build confidence and create a positive relationship with language learning. Over time, children develop stronger self-assurance, which makes future reading and writing activities less intimidating and more enjoyable.
+              Tap or click a block to flip it over.
+              Try to find matching letters or put them in the right order.
+              If you don’t get it, the blocks flip back, so pay attention to what’s under each one.
+              Every turn gives a little clue and helps you get closer to finishing.
             </p>
 
-            <h2 className="instruction-step">Adapting to Every Child’s Learning Journey</h2>
+            <h2 className="instruction-step">Why It’s Fun</h2>
             <p className="instructions-description">
-              Every child learns differently, and the ABC Game adapts to that reality. Beginners may focus on simple letter recognition, while more advanced players explore phonics, spelling, or vocabulary. This flexibility ensures that the game grows with the child, offering both early exposure to the alphabet and reinforcement of existing knowledge in a fun, interactive way.
+              The fun comes from the suspense of each flip.
+              Sometimes you find the letter you were hoping for, sometimes it hides until later.
+              Kids enjoy spotting the letters and the small victories,
+              and adults get hooked on the memory challenge.
+              Every round feels a little different, and every match makes you want to play again.
             </p>
 
-            <h2 className="instruction-step">How to Play the ABC Game</h2>
-            <ul className="instructions-list">
-              <li>Start with a board or grid of shuffled alphabet tiles.</li>
-              <li>Move or match the tiles to place them in the correct order from A to Z.</li>
-              <li>Follow the prompts to complete levels step by step.</li>
-              <li>Try to finish the puzzle with fewer moves for an extra challenge.</li>
-            </ul>
-
-            <h2 className="instruction-step">Start Playing the ABC Game Today</h2>
+            <h2 className="instruction-step">Next Challenge</h2>
             <p className="instructions-description">
-              The ABC Game is more than a puzzle — it’s a fun way to build language skills, boost confidence, and keep the brain active. Kids love it as a playful learning tool, while parents and teachers value its educational benefits. Ready to give it a try? Play the ABC Game online now and enjoy the perfect mix of fun and learning!
+              Once the easy rounds are done, the game adds bigger grids and more blocks to flip.
+              Try to match them faster, or tackle a larger layout to really test your memory.
+              Each new round keeps things exciting and playful.
             </p>
           </div>
+
         </div>
       </div>
     </div>

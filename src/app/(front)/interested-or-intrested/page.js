@@ -16,7 +16,12 @@ const Game = () => {
 
 
   function scrambleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    const arr = word.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
   }
 
   function checkAnswer() {
@@ -56,6 +61,7 @@ const Game = () => {
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
+              aria-label="Guess the scrambled word"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
@@ -77,74 +83,42 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Hard Word Search Puzzles Printable</h1>
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">Interested or Intrested – Spot the Right Word</h1>
 
-            <p className="instructions-description">
-              <strong>Hard word search puzzles printable</strong> are a challenging and rewarding way to test your focus and vocabulary skills. These tough puzzles often have bigger grids, longer words, and tricky word placements to keep you thinking. Whether you're solving alone or with friends, this guide will help you understand how to play hard printable word searches, master the rules, and sharpen your puzzle-solving strategies.
+            <p className="word-description">
+              The game puts you face-to-face with a simple challenge: two spellings, but only one is right.
+              Sometimes the letters land as “interested,” other times they jumble into “intrested.”
+              Your job is to sort the mess and type the version that makes sense.
+              It feels like a quick puzzle and a spelling check rolled into one.
             </p>
 
-            <h2 className="instruction-step">1. Explore Different Types of Hard Word Search Puzzles Printable</h2>
-            <p className="instructions-description">
-              Hard word search puzzles come in many varieties:
-              <ul>
-                <li><strong>Themed Grids:</strong> Tough puzzles based on topics like science, history, or literature.</li>
-                <li><strong>Large Printables:</strong> Mega grids with dozens of hidden words for extra challenge.</li>
-                <li><strong>Reverse and Diagonal Puzzles:</strong> Words hidden backwards, diagonally, or wrapped around corners.</li>
-              </ul>
-              You can download and print these puzzles easily to enjoy anytime, anywhere.
+            <h2 className="word-step">How to Play</h2>
+            <p className="word-description">
+              Look at the scrambled letters on the screen.
+              Type your guess for the correct word.
+              If you spell it right, you move ahead.
+              If not, shuffle again and try once more until the right spelling appears in place.
+              It feels like solving a word puzzle and a spelling quiz at the same time.
             </p>
 
-            <h3 className="instruction-step">2. Learn the Rules</h3>
-            <p className="instructions-description">
-              The goal is to find and mark all the hidden words from the provided list. In hard puzzles, expect words to be hidden in tricky ways.
-            </p>
-            <ul className="instructions-list">
-              <li>Review the full list of words before starting.</li>
-              <li>Words can appear horizontally, vertically, diagonally, or backward.</li>
-              <li>Circle or highlight each word you find.</li>
-              <li>Finish the entire list to complete the puzzle.</li>
-            </ul>
-
-            <h4 className="instruction-step">3. Set Up Your Puzzle Space</h4>
-            <p className="instructions-description">
-              Create a comfortable space for the best puzzle-solving experience:
-              <ul>
-                <li>Print your puzzle clearly and have extra copies if needed.</li>
-                <li>Use a bright, quiet space with good lighting.</li>
-                <li>Keep highlighters, pens, or pencils nearby for marking words.</li>
-              </ul>
+            <h2 className="word-step">Why It’s Fun</h2>
+            <p className="word-description">
+              Some puzzles are solved in seconds, others make you pause.
+              The fun comes when you figure out which version of the word is correct.
+              That small “aha!” moment feels rewarding every time.
+              It’s quick, a little tricky, and makes you want to play another round.
             </p>
 
-            <h5 className="tips-title">Pro Tips for Solving Hard Word Search Puzzles Printable</h5>
-            <ul className="instructions-list">
-              <li><strong>Look for Uncommon Letters:</strong> Spot rare letters like “X,” “Q,” or “Z” first.</li>
-              <li><strong>Scan Systematically:</strong> Search row by row or column by column to stay organized.</li>
-              <li><strong>Use the Word Length:</strong> Longer or unusual words can be easier to find once you spot a few letters.</li>
-              <li><strong>Mark Found Words Quickly:</strong> This avoids confusion and speeds up your search.</li>
-              <li><strong>Challenge Yourself:</strong> Set a timer or race a friend for extra excitement!</li>
-            </ul>
-
-            <h6 className="instruction-step">Conclusion</h6>
-            <p className="instructions-description">
-              <strong>Hard word search puzzles printable</strong> offer a fun and challenging way to boost your brainpower and pass the time. With bigger grids, sneaky word placements, and exciting themes, these puzzles are perfect for anyone who loves a mental workout. Download, print, and dive into a tough word search today—you'll feel proud every time you complete one!
+            <h2 className="word-step">Extra Challenge</h2>
+            <p className="word-description">
+              Try longer scrambled words for extra difficulty.
+              Add a timer to test how fast you can spot the correct version.
+              Play against a friend and see who solves it first.
+              Each round brings a fresh word, so the puzzle never feels the same twice.
             </p>
-          </div>
-          <div className='game-image-container'>
-            <Link href="/word-difficult">
-              <img className='game-image' src='./images/Freezenova1.webp' alt='word ladder solver adventure' />
-            </Link>
-            <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Freezenova2.webp' alt='Play puzzles on word ladder solver' />
-            </Link>
-            <Link href="/summer-word">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore word ladder solver puzzles' />
-            </Link>
-            <Link href="/word-find">
-              <img className='game-image' src='./images/Freezenova3.webp' alt='Online word ladder solver game' />
-            </Link>
           </div>
 
         </div>

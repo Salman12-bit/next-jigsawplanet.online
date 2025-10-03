@@ -140,36 +140,33 @@ const Letterpuzzle = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">Letter Puzzles</h1>
+            <h1 className="instructions-title">Letter Puzzle – A Simple Game with a Clever Twist</h1>
+
             <p className="instructions-description">
-              Letter puzzles are a fascinating blend of logic, literacy, and hands-on discovery. Rather than simply memorizing the alphabet, learners get the chance to physically or visually interact with letters — forming patterns, recognizing shapes, and strengthening language comprehension in a creative way. These puzzles have evolved into one of the most compelling tools in modern learning, used to encourage focus, language development, and problem-solving through active play.
+              A letter puzzle is easy to pick up but tricky enough to stay interesting. You flip a card, see what’s hiding, and try to hold it in your memory. Sometimes you hit the match right away, other times you miss and need to keep track for the next turn. That mix of luck and recall is what keeps the game playful.
             </p>
 
-            <h2 className="instruction-step">A New Era of Alphabet Engagement</h2>
+            <h2 className="instruction-step">How It Works</h2>
             <p className="instructions-description">
-              Gone are the days when alphabet learning relied solely on flashcards or singalongs. Today’s learners thrive on interaction and exploration — and letter puzzles meet that demand with innovation. These puzzles invite users to recognize, compare, and organize letters in various formats, turning passive recognition into an active experience. Each puzzle challenges the user to think critically while still enjoying the process of play, giving a new sense of purpose to familiar characters like A, B, and C.
+              The rules couldn’t be simpler: cards face down, pick two, and see if they line up. When they match, they stay open; when they don’t, back they go. Some rounds shake things up by asking you to match three cards instead of two, or by arranging them in sequence. What starts out easy can quickly turn into a challenge.
             </p>
 
-            <h3 className="instruction-step">Why Hands-on Learning Still Wins</h3>
+            <h2 className="instruction-step">What Makes It Fun</h2>
             <p className="instructions-description">
-              In an increasingly digital world, tactile learning remains one of the most effective ways to build lasting connections. Letter puzzles allow learners to touch, rotate, and reposition — engaging muscles, eyes, and minds all at once. This multi-sensory interaction makes abstract concepts more concrete. It’s not just about knowing what a letter looks like, but understanding where it fits, how it compares to others, and how it can be used to form meaning.
+              The fun lies in the reveal. Every flip feels like a little risk—you never quite know what’s waiting. Kids laugh at the surprises, adults like the mental workout, and families often turn it into a friendly contest. It feels casual, but it sneaks in a lot of brain exercise along the way.
             </p>
 
-            <h4 className="instruction-step">Trending Now: Smart Puzzles That Grow With You</h4>
+            <h2 className="instruction-step">Who Jumps In</h2>
             <p className="instructions-description">
-              One of the most exciting trends in letter-based learning is the shift toward adaptive puzzle design. From customizable board formats to puzzles that evolve with difficulty, smart puzzle systems are becoming more widely used in both classrooms and homes. These intelligent formats allow learners to start with basic letter recognition and progress toward spelling, word building, and even storytelling. They grow as the learner grows — a feature that parents and educators find invaluable.
+              Just about anyone. Kids learn it in minutes, parents use it as a quick group activity, and adults might fit in a round on a break. It doesn’t take hours, but it gives you just enough challenge to keep it satisfying.
             </p>
 
-            <h5 className="instruction-step">Deep Benefits Beyond the Alphabet</h5>
+            <h2 className="instruction-step">What’s Next</h2>
             <p className="instructions-description">
-              Letter puzzles do more than teach letter names. They sharpen essential life skills such as persistence, spatial awareness, and sequencing. Each time a learner makes a decision, repositions a piece, or solves a challenge, they’re practicing patience and cognitive flexibility. These soft skills are critical in daily life, forming the backbone of everything from reading and writing to analytical thinking. The humble puzzle, in this sense, becomes a gateway to intellectual development.
-            </p>
-
-            <h6 className="instruction-step">Conclusion</h6>
-            <p className="instructions-description">
-              Letter puzzles continue to gain popularity — not just for their educational impact, but for their ability to make learning personal, meaningful, and rewarding. As the world moves forward with technology, the tactile, thoughtful nature of puzzles remains deeply relevant. They remind us that the process of learning should be just as fulfilling as the result. In every move, match, and moment of discovery, letter puzzles offer a quiet but powerful opportunity for growth.
+              As you get better, the puzzle grows with you. Larger grids, trickier patterns, and new twists keep things fresh. That’s the charm of this game—it starts off light but can become a real test of memory when you want it to.
             </p>
           </div>
+
           <div className="game-image-container">
             <Link href="/letter-pictures">
               <img className='game-image' src='./images/Puzzle1.webp' alt='free online letter puzzles puzzle game' />

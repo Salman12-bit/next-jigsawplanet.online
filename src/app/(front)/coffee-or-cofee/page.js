@@ -16,7 +16,12 @@ const Game = () => {
 
 
   function scrambleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    const arr = word.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
   }
 
   function checkAnswer() {
@@ -56,6 +61,7 @@ const Game = () => {
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
+              aria-label="Guess the scrambled word"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
@@ -77,54 +83,43 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Harry Potter Word Puzzles</h1>
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">Coffee or Cofee – Spot the Right Spelling</h1>
 
-            <p className="instructions-description">
-              Enter the magical world of <strong>Harry Potter word puzzles</strong>! In this game, each level has 3 sublevels. Solve one word per sublevel to move forward. Complete all sublevels to unlock the next level.
+            <p className="word-description">
+              Two words pop up, but only one holds the right spelling.
+              Sometimes you see “coffee” with two f’s, other times it sneaks in as “cofee.”
+              The letters look close, but not quite the same.
+              Your task is to catch the mistake before it slips by.
             </p>
 
-            <h2 className="instruction-step">1. Game Setup</h2>
-            <ul className="instructions-list">
-              <li>Play in a quiet spot with a pen or pencil.</li>
-              <li>Have your Harry Potter knowledge ready—spells, places, and characters are all part of the fun!</li>
-            </ul>
+            <h2 className="word-step">How to Play</h2>
+            <p className="word-description">
+              A scrambled version of the word shows on screen.
+              Rearrange the letters and type what you believe is correct.
+              If you land on the right spelling, the puzzle clears, and a new round begins.
+              Miss it, and you just try again until the right order clicks.
+            </p>
 
-            <h3 className="instruction-step">2. How It Works</h3>
-            <ul className="instructions-list">
-              <li>Each sublevel gives you one Harry Potter–themed word to solve.</li>
-              <li>Use clues or scrambled letters to guess the word.</li>
-              <li>Finish 3 sublevels to complete the level.</li>
-            </ul>
+            <h2 className="word-step">Who Can Play</h2>
+            <p className="word-description">
+              Kids sharpen their spelling without even noticing.
+              Families can laugh over mix-ups together.
+              Adults jump in for a short brain break or to test how sharp their eyes are.
+              Since it’s easy to start, no one feels left out.
+            </p>
 
-            <h4 className="instruction-step">3. Tips for Success</h4>
-            <ul className="instructions-list">
-              <li>Look for special letters or names from the series.</li>
-              <li>Use hints if you get stuck.</li>
-              <li>Challenge friends or time yourself for extra fun!</li>
-            </ul>
-
-            <h5 className="instruction-step">Conclusion</h5>
-            <p className="instructions-description">
-              <strong>Harry Potter word puzzles</strong> are fun, magical, and a great brain boost. Solve words, level up, and enjoy the journey through the Wizarding World!
+            <h2 className="word-step">Extra Challenge</h2>
+            <p className="word-description">
+              Turn on a timer and see how fast you can solve it.
+              Add more tricky words with double letters and make it tougher.
+              Compete with a friend to see who spots the right spelling first.
+              A simple word can turn into a fast race of focus and fun.
             </p>
           </div>
-          <div className='game-image-container'>
-            <Link href="/word-difficult">
-              <img className='game-image' src='./images/Freezenova1.webp' alt='challenging winter word search puzzle for kids' />
-            </Link>
-            <Link href="/daily-word">
-              <img className='game-image' src='./images/Freezenova2.webp' alt='play winter word search puzzle online' />
-            </Link>
-            <Link href="/summer-word">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='fun and festive winter word search puzzle' />
-            </Link>
-            <Link href="/word-find">
-              <img className='game-image' src='./images/Freezenova3.webp' alt='interactive winter word search puzzle game' />
-            </Link>
-          </div>
+
         </div>
       </div>
     </div>

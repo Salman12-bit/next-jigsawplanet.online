@@ -33,7 +33,7 @@ input[type="text"] {
     margin-bottom: 20px;
 }
 
-.button2{
+.button2 {
     padding: 10px 10px;
     margin: 10px;
     font-size: 18px;
@@ -55,8 +55,7 @@ input[type="text"] {
 .text-conainer {
     width: 100%;
     padding: 20px 0px;
-    margin-bottom: 17px;
-    
+    margin-bottom: 17px
 }
 
 .info {
@@ -84,7 +83,7 @@ input[type="text"] {
     margin: 8px;
 }
 
-.welcome-container {
+.word-instructions-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,73 +95,40 @@ input[type="text"] {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
 
-.welcome-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
-
-.welcome-text {
-    font-size: 1.125rem;
-    margin-bottom: 16px;
-}
-
-.welcome-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 16px;
-}
-
-.game-instructions-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(75, 72, 72, 0.2);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-
-}
-
-.game-instructions-content {
+.word-instructions-content {
     display: flex;
     flex-direction: column;
     margin: 0 20px;
+    margin-top: 20px;
 }
 
-.instructions-title {
+.word-title {
     text-align: center;
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 1.5rem;
 }
 
-.instructions-description {
+.word-description {
     font-size: 1rem;
     margin-bottom: 16px;
 
 }
 
-.instruction-step {
-    margin-top: 16px;
+.word-step {
+    margin-top: 10px;
     font-size: 20px;
+    margin-bottom: 16px;
+    border-left: 4px solid #2980b9;
+    padding-left: 12px;
 
 }
 
-.instructions-list {
+.word-list {
     list-style-type: disc;
     padding-left: 20px;
     margin-bottom: 16px;
-}
-
-.tips-title {
-    margin-top: 16px;
-
 }
 
 .game-image-container {

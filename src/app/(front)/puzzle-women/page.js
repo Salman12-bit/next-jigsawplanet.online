@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import "./word-game.css"
 import Link from 'next/link';
 
@@ -16,7 +16,12 @@ const Game = () => {
 
 
   function scrambleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    const arr = word.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
   }
 
   function checkAnswer() {
@@ -45,8 +50,7 @@ const Game = () => {
       padding: "20px"
     }}>
       <div className="Puzzle">
-        <h4 className="current-color">Current Level 6</h4>
-        <h1 className="color">Word Game Puzzles</h1>
+        <h4 className="current-color">Current Level 3</h4>
         {!gameOver ? (
           <>
             <div className="level">Level {currentLevel + 1}</div>
@@ -56,6 +60,7 @@ const Game = () => {
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
+              aria-label="Guess the scrambled word"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
@@ -77,46 +82,41 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to play word puzzle game</h1>
-            <p className="instructions-description">Word puzzle are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time.Word puzzle come in various forms, with unique content from traditional word puzzle to sophisticated digital games. The cross word puzzle guide will walk you through the basic principles of playing different types of word puzzles games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of word puzzle:</h2>
-            <p className="instructions-description">Word puzzles games come in many varieties, each with unique mechanics and objectives.</p>
-            <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each words has specific rules and objectives. Read the instructions carefully before starting.</p>
-            <ul className="instructions-list">
-              <li>In this game players have 3 sub-levels</li>
-              <li>If all sub-levels are completed.</li>
-              <li>Player wins this game.</li>
-              <li>Otherwise, play again and thinking how to complete this</li>
-            </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical word puzzle, ensure you have a comfortable and well-lit workspace. For digital words game, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h5 className="tips-title">Tips for Success</h5>
-            <ul className="instructions-list">
-              <li>Stay Calm: Word puzzle game should be enjoyable; take breaks if you feel frustrated.</li>
-              <li>Practice Regularly: The more you play, the benefit you get.</li>
-              <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
-              <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
-            </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description"> Word puzzle offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest word puzzle. So, choose your game, set up your space, and dive into the fascinating world of word puzzle!</p>
-          </div>
-          <div className='game-image-container'>
-            <Link href="/hard-spelling">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='word puzzle adventure' />
-            </Link>
-            <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='Play puzzles on word puzzle' />
-            </Link>
-            <Link href="/word-game">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore word puzzle puzzles' />
-            </Link>
-            <Link href="/jigsawplanet1">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='Online word puzzle game' />
-            </Link>
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">Word Puzzle Solver – Think, Guess, Win</h1>
+
+            <p className="word-description">
+              Word Puzzle Solver is a simple game where mixed letters turn into a word.
+              Your job is to spot the answer and type it in.
+              No heavy rules, no long setup.
+              Just a clean and fun way to play with words while training your mind a little.
+            </p>
+
+            <h2 className="word-step">How to Play</h2>
+            <p className="word-description">
+              Look at the scrambled letters on the screen.
+              Guess the word you think is hiding inside.
+              Type it, press submit, and check if it matches.
+              If not, no problem—try again until it clicks.
+              Every round feels short and quick.
+            </p>
+            
+            <h2 className="word-step">Who Can Play</h2>
+            <p className="word-description">
+              Kids use Word Puzzle Solver to learn new words and practice spelling.
+              Families enjoy it together, taking turns on each word.
+              Even adults play it as a quick brain workout between tasks.
+              Because the rules are so short, anyone can join without confusion.
+            </p>
+
+            <h2 className="word-step">More Challenges</h2>
+            <p className="word-description">
+              You can raise the level by adding a timer or switching to harder words.
+              Try racing against a friend, or swap to another version for fresh puzzles.
+              Each round changes, so solving words never feels the same twice.
+            </p>
           </div>
 
         </div>

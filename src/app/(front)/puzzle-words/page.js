@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import "./word-puzzle.css"
 import Link from 'next/link';
 
@@ -15,7 +15,12 @@ const Game = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   function scrambleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    const arr = word.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
   }
 
   function checkAnswer() {
@@ -55,6 +60,7 @@ const Game = () => {
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
+              aria-label="Guess the scrambled word"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
@@ -76,47 +82,41 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to Play words with friends chear Game</h1>
-            <p className="instructions-description">Words with friends chear are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time. Word maze puzzles come in various forms, with unique content from traditional word maze puzzles to sophisticated digital games. The cross word puzzle guide will walk you through the basic principles of playing different types of word puzzles games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of words with friends chear:</h2>
-            <p className="instructions-description">Word puzzles games come in many varieties, each with unique mechanics and objectives.</p>
-            <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each words has specific rules and objectives. Read the instructions carefully before starting.</p>
-            <ul className="instructions-list">
-              <li>In this game players have 3 sub-levels</li>
-              <li>If all sub-levels are completed.</li>
-              <li>Player wins this game.</li>
-              <li>Otherwise, play again and thinking how to complete this</li>
-            </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical word maze puzzles, ensure you have a comfortable and well-lit workspace. For digital words game, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h5 className="tips-title">Tips for Success</h5>
-            <ul className="instructions-list">
-              <li>Stay Calm: Word maze puzzles game should be enjoyable; take breaks if you feel frustrated.</li>
-              <li>Practice Regularly: The more you play, the benefit you get.</li>
-              <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
-              <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
-            </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description">Words with friends chear offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest words with friends chear. So, choose your game, set up your space, and dive into the fascinating world of word maze puzzles!</p>
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">3rd Grade Spelling Words – Quick and Fun Practice</h1>
+
+            <p className="word-description">
+              The 3rd Grade Spelling Words game is made for kids who want to practice without the boring drills.
+              It’s simple to start and easy to follow—pick a word, try the spelling, and see how fast you get it right.
+              No heavy rules, just a light way to build confidence with words.
+            </p>
+
+            <h2 className="word-step">How to Play</h2>
+            <p className="word-description">
+              A word pops up scrambled on the screen.
+              Type the correct spelling and hit submit.
+              Got it right? Great! If not, try again until it clicks.
+              Each round brings a new word, so practice keeps moving.
+            </p>
+
+            <h2 className="word-step">Why Kids Like It</h2>
+            <p className="word-description">
+              Some words feel easy, others take a few extra tries.
+              That mix keeps it exciting.
+              Every win feels good, and each word solved feels like a little victory.
+              Kids keep playing because it feels more like a game than practice.
+            </p>
+
+            <h2 className="word-step">Extra Challenge</h2>
+            <p className="word-description">
+              Want to push further? Add longer spelling lists, play against a timer, or compete with a friend.
+              Each round changes the pace, so it never feels stuck on the same word.
+              That makes every session fresh and keeps learning moving forward.
+            </p>
           </div>
-          <div className='game-image-container'>
-            <Link href="/printable-word-puzzles">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='Jigsaw planet adventure' />
-            </Link>
-            <Link href="/word-game">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='Play puzzles on jigsaw planet' />
-            </Link>
-            <Link href="/word-puzzle">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore jigsaw planet puzzles' />
-            </Link>
-            <Link href="/jigsawplanet3">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='Online jigsaw planet game' />
-            </Link>
-          </div>
+
 
         </div>
       </div>

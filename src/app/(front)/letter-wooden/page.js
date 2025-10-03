@@ -139,81 +139,31 @@ const Letterwooden = () => {
           </div>
         </div>
       </div>
-      <div className="welcome-container">
-        <h1 className="welcome-title">🧩 Welcome to the Puzzle Challenge! 🧩</h1>
-        <p className="welcome-text">
-          Hey there, all puzzle solvers! Each puzzle provides a new opportunity, and each
-          level gives us a chance to improve our skills. This is not just amusement; it's a
-          journey that sharpens your mind, opens your abilities, and lets you enjoy every
-          victory.
-        </p>
-        <p className="welcome-text">
-          Keep thinking forward, trust in yourself, and most of all, enjoy the journey.
-          You’ve got the mind of a champion, and every champion knows their strength. Every
-          puzzle is a victory worth celebrating! Get ready to collect all the pieces together
-          into one frame! 🎉
-        </p>
-      </div>
-
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h2 className="instructions-title">How to Play the Alphabet Game</h2>
+            <h1 className="instructions-title">Wooden Letter Puzzle – Simple, Fun, and a Little Tricky</h1>
+
             <p className="instructions-description">
-              This game gives a delightful way to challenge your mind, improve cognitive
-              skills, strengthen focus, and enjoy some leisure time. Alphabet puzzles come in
-              many forms, from traditional paper games to advanced digital versions. This
-              guide walks you through the rules, tips, and strategies to help you get started.
+              A wooden letter puzzle is in wooden style learning engaging game. You flip pieces, spot the letters, and try to remember where they are. Sometimes you get the match right away, other times you have to think back—but that mix of memory and surprise is what makes it so enjoyable.
             </p>
 
-            <h3 className="instruction-step">1. Alphabet Matching Game Rules</h3>
+            <h2 className="instruction-step">How to Play</h2>
             <p className="instructions-description">
-              Each game has specific rules and objectives. Read these carefully before you
-              start playing.
-            </p>
-            <ul className="instructions-list">
-              <li>Players have 3 chances per game.</li>
-              <li>If three alphabet cards match, the player wins.</li>
-              <li>If not, restart the game and try again.</li>
-            </ul>
-
-            <h3 className="instruction-step">2. Set Up Your Space</h3>
-            <p className="instructions-description">
-              For physical puzzles, use a comfortable and well-lit space. For digital games,
-              adjust your device settings so you can stay focused and relaxed.
+              All the pieces start face down. Flip one, then another, and hope they match. If they do, you keep them open. If not, they flip back, and you’ll need to remember their spots for later. Some versions even ask you to connect three matching letters or line them in order, giving you a fresh twist on the classic style.
             </p>
 
-            <h3 className="tips-title">Alphabet Puzzle Tips</h3>
-            <ul className="instructions-list">
-              <li><strong>Practice Regularly:</strong> The more you play, the better you get.</li>
-              <li><strong>Learn from Mistakes:</strong> Don’t panic—mistakes help you improve.</li>
-              <li><strong>Challenge Yourself:</strong> Increase difficulty gradually to boost your skills.</li>
-            </ul>
-
-            <h3 className="instruction-step">Conclusion</h3>
+            <h2 className="instruction-step">Why It’s Fun</h2>
             <p className="instructions-description">
-              Alphabet puzzles are a great way to boost mental sharpness and focus. By
-              following the rules, practicing often, and applying the best strategies, you’ll
-              improve your skills and enjoy the satisfying feeling of solving even the
-              toughest puzzles. Choose your favorite alphabet challenge and dive into the
-              world of letters today!
+              The real fun is in the reveal. Every flip feels like a little surprise, and even wrong guesses help you remember better next time. Kids love the big “aha” moments, adults enjoy the brain workout, and families have fun turning it into a group challenge. It’s playful, lighthearted, and sneaks in real learning too.
+            </p>
+
+            <h2 className="instruction-step">The Next Challenge</h2>
+            <p className="instructions-description">
+              Once you’ve mastered the first letter puzzle, the wooden letter puzzle keeps things fresh. Larger boards, harder arrangements, and new challenges test your memory in fun ways. It grows with you, turning a simple flip game into a clever workout for the mind.
             </p>
           </div>
 
-          <div className="game-image-container">
-            <Link href="/letter-missing">
-              <img className="game-image" src="./images/Puzzle1.webp" alt="free online alphabet puzzle game" />
-            </Link>
-            <Link href="/letter-block">
-              <img className="game-image" src="./images/Puzzle2.webp" alt="alphabet interactive puzzle" />
-            </Link>
-            <Link href="/color-number">
-              <img className="game-image" src="./images/Puzzle3.webp" alt="free alphabet game" />
-            </Link>
-            <Link href="/puzzleslider">
-              <img className="game-image" src="./images/Puzzle5.webp" alt="play alphabet puzzle online" />
-            </Link>
-          </div>
         </div>
       </div>
 

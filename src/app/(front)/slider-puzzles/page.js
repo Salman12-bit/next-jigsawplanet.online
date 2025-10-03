@@ -160,27 +160,42 @@ const Alphabetpuzzle = () => {
       <article className="game-instructions-container">
         <div className="game-instructions">
           <h1 className="instructions-title">Alphabet Puzzle – Fun Learning Through Play</h1>
+
           <p className="instructions-description">
-            The Alphabet Puzzle isn’t one of those complicated games you need to learn for hours. It’s super simple, but at the same time, it keeps your brain working. Kids use it to explore letters and sounds, and older players sometimes just use it as a quick memory boost. With two modes—Kid Mode and Young Learner Mode—it works for just about anyone, whether you’re playing for fun, learning, or just passing the time.
+            The Alphabet Puzzle is really easy to get into.
+            You don’t have to spend time learning rules or reading long instructions.
+            Kids usually mess around with the letters just to see what fits, and older players sometimes try it as a quick memory game.
+            There’s a simple version for little ones and a trickier one if you want more of a challenge.
+            It feels more like play than anything else.
           </p>
-          <h2 className="instruction-step">How to Play the Alphabet Puzzle</h2>
+
+
+          <h2 className="instruction-step">How to Play</h2>
           <p className="instructions-description">
-            Here’s how it goes: pick your mode and dive in. In Kid Mode, every time you find a match, the game shows the letter with a word, a sound, or even a little emoji (like A for Apple 🍎). It makes it fun without feeling like schoolwork. Young Learner Mode is a bit tougher—it’s more about testing your memory and planning. The cards all start face down, you flip two, and if they match, great—they stay open. If not, you just have to remember where they were for later. It’s easy to pick up, but you’ll quickly notice your brain working harder than you expect.
+            Pick a mode and go.
+            In Kid Mode, matches come with little extras—like A popping up with an apple 🍎 or a short sound.
+            It feels more like a game than a lesson.
+            Young Learner Mode is trickier: all the cards are face down, you flip two, and hope they match.
+            Miss? Just remember the spots for later.
+            It’s easy at first, then you notice your brain working harder the longer you play.
           </p>
-          <h2 className="instruction-step">Benefits of Playing</h2>
+
+          <h2 className="instruction-step">Why It’s Fun</h2>
           <p className="instructions-description">
-            The best part is, it’s not just about fun. Kids learn their letters faster, start recognizing sounds, and build memory skills without even realizing it. Young learners get better at problem-solving and staying focused. Even adults end up using it as a quick brain exercise—something to sharpen focus while giving themselves a short break from work or stress.
+            The fun part is the mix of surprise and memory.
+            Sometimes you nail a match right away, other times you totally blank and flip the wrong one.
+            Kids laugh at the silly reveals, and adults get that “aha” moment when they finally connect two cards.
+            It’s not stressful—just enough of a challenge to keep you going for another round.
           </p>
-          <h2 className="instruction-step">Who Can Enjoy It?</h2>
-          <p className="instructions-description">
-            Pretty much anyone. Kids get excited about flipping the cards and yelling out the matches. Parents like it because it sneaks in learning while still feeling like playtime. Families can play together for a bit of friendly competition, and adults often just enjoy it as a little mental warm-up. Since it mixes phonics, memory, and strategy, the puzzle doesn’t really have an age limit.
-          </p>
+
           <h2 className="instruction-step">Next Challenges Await</h2>
           <p className="instructions-description">
-            Once you get through the first levels, it doesn’t stop there. The game throws in more cards, trickier combinations, and layouts that make you stop and think before flipping. Every round feels a little different, so you don’t just play once and forget about it. Whether you’re just learning your letters or you’re looking for a casual brain workout, there’s always another challenge waiting.
+            Once the first levels feel easy, the game throws in more cards and different layouts.
+            Suddenly it’s not just about spotting a letter—you’ve got to really think before flipping.
+            Some rounds go smoothly, some get messy, but no two games feel the same.
+            That’s what makes it stick—you always want one more try.
           </p>
         </div>
-
       </article>
     </div>
   );

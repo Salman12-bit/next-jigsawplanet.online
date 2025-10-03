@@ -15,8 +15,14 @@ const Game = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   function scrambleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    const arr = word.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
   }
+
   function checkAnswer() {
     const currentWord = words[currentLevel];
     if (guess === currentWord) {
@@ -52,6 +58,7 @@ const Game = () => {
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
+              aria-label="Guess the scrambled word"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
@@ -73,45 +80,44 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Word Puzzle Games Printable</h1>
-            <p className="instructions-description">
-              Explore the fun of <strong>word puzzle games printable</strong>! These printable word games are perfect for classrooms, home activities, or on-the-go learning. Each game includes multiple levels with different challenges that help improve vocabulary, spelling, and problem-solving skills.
-            </p>
-            <h3 className="instruction-step">2. How the Printable Games Work</h3>
-            <ul className="instructions-list">
-              <li>Each page has a word hunt, crossword, or scrambled letter game to solve.</li>
-              <li>Circle or write in the correct answers using the clues provided.</li>
-              <li>Finish each section to move to the next sheet or difficulty level.</li>
-            </ul>
-            <h4 className="instruction-step">3. Tips for Fun & Learning</h4>
-            <ul className="instructions-list">
-              <li>Time yourself or compete with friends to make it more exciting.</li>
-              <li>Start with easy sheets and work your way up to more complex puzzles.</li>
-              <li>Combine the printables with themed vocabulary words for a richer experience.</li>
-            </ul>
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">Referred or Refered – Find the Right Spelling</h1>
 
-            <h5 className="instruction-step">Conclusion</h5>
-            <p className="instructions-description">
-              <strong>Word puzzle games printable</strong> are a simple and fun way to encourage learning anytime, anywhere. Whether you're in a classroom, at home, or traveling, these games make word practice engaging and stress-free. Just print, play, and enjoy the brain-boosting fun!
+            <p className="word-description">
+              Two spellings look almost the same, but only one is correct.
+              “Referred” holds the double r in the middle, while “refered” drops it out.
+              The letters play a little trick on your eyes, and that’s where the puzzle begins.
+              Your job is to catch the slip before it sneaks past.
             </p>
+
+            <h2 className="word-step">How to Play</h2>
+            <p className="word-description">
+              A scrambled version of the word shows up.
+              Rearrange the letters and type the spelling you believe is right.
+              If you get it correct, the next round unlocks.
+              If not, shuffle again and look closer until it clicks.
+            </p>
+
+            <h2 className="word-step">Why It’s Fun</h2>
+            <p className="word-description">
+              Double letters are sneaky, and that makes each puzzle feel fresh.
+              Sometimes your brain catches the extra r right away.
+              Other times, it takes a few tries before the right spelling shines through.
+              That tiny “aha” moment keeps you coming back.
+            </p>
+
+            <h2 className="word-step">Extra Challenge</h2>
+            <p className="word-description">
+              Try puzzles with bigger words where the double letters hide deeper.
+              Put yourself on the clock and race to finish before time runs out.
+              Swap words with a friend and see who solves faster.
+              Sometimes the misspelling sneaks by, sometimes you catch it at once — either way, the round stays lively.
+            </p>
+
           </div>
-          <div className='game-image-container'>
-            <Link href="/word-difficult">
-              <img className='game-image' src='./images/Freezenova1.webp' alt='Printable word puzzle game - winter-themed word hunt challenge for kids' />
-            </Link>
-            <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Freezenova2.webp' alt='Seasonal printable word puzzle game - fun word hunt activity' />
-            </Link>
-            <Link href="/summer-word">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Colorful summer-themed printable word puzzle game for children' />
-            </Link>
-            <Link href="/word-find">
-              <img className='game-image' src='./images/Freezenova3.webp' alt='Interactive printable word puzzle game - winter word search fun' />
-            </Link>
-          </div>
+
         </div>
       </div>
     </div>

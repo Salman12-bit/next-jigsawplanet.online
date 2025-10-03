@@ -21,20 +21,20 @@ const Board1 = styled.div`
 `;
 
 const initialCards = [
-  { id: 1, value: "A" },
-  { id: 2, value: "A" },
-  { id: 3, value: "A" },
-  { id: 4, value: "B" },
-  { id: 5, value: "B" },
-  { id: 6, value: "B" },
-  { id: 7, value: "C" },
-  { id: 8, value: "C" },
-  { id: 9, value: "C" },
+  { id: 1, value: "J" },
+  { id: 2, value: "J" },
+  { id: 3, value: "1" },
+  { id: 4, value: "K" },
+  { id: 5, value: "K" },
+  { id: 6, value: "2" },
+  { id: 7, value: "L" },
+  { id: 8, value: "L" },
+  { id: 9, value: "3" },
 ];
 
 const ABCPuzzle = () => {
   const [cards, setCards] = useState([]);
-  const [message, setMessage] = useState("Arrange letters into ABC order!");
+  const [message, setMessage] = useState("Arrange letters into Order!");
   const [level, setLevel] = useState(1);
 
   const shuffle = (array) => {
@@ -47,7 +47,7 @@ const ABCPuzzle = () => {
 
   const initializeGame = useCallback(() => {
     setCards(shuffle([...initialCards]));
-    setMessage("Arrange letters into ABC order!");
+    setMessage("Arrange letters into Order!");
   }, []);
 
   useEffect(() => {
@@ -70,18 +70,18 @@ const ABCPuzzle = () => {
 
 
     const isSolved =
-      newCards[0].value === "A" &&
-      newCards[1].value === "B" &&
-      newCards[2].value === "C" &&
-      newCards[3].value === "A" &&
-      newCards[4].value === "B" &&
-      newCards[5].value === "C" &&
-      newCards[6].value === "A" &&
-      newCards[7].value === "B" &&
-      newCards[8].value === "C";
+      newCards[0].value === "J" &&
+      newCards[1].value === "K" &&
+      newCards[2].value === "L" &&
+      newCards[3].value === "J" &&
+      newCards[4].value === "K" &&
+      newCards[5].value === "L" &&
+      newCards[6].value === "1" &&
+      newCards[7].value === "2" &&
+      newCards[8].value === "3";
 
     if (isSolved) {
-      setMessage("🎉 You solved the ABC Puzzle!");
+      setMessage("🎉 You solved the ABC math Puzzle!");
     }
   };
 
@@ -91,7 +91,7 @@ const ABCPuzzle = () => {
         <div className="row">
           <div className="upper-container" style={containerStyle1}>
             <div className="game-container">
-              <h3 className="level-color">ABC Puzzle – Level {level}</h3>
+              <p className="level-color">ABC Math Puzzle – Level {level}</p>
               <Board1 className="game-board">
                 {cards.map((card, index) => (
                   <div
@@ -108,7 +108,7 @@ const ABCPuzzle = () => {
               </Board1>
               <div className="message">{message}</div>
               <button className="button" onClick={initializeGame}>
-                Restart ABC Puzzle
+                Restart ABC math Puzzle
               </button>
               {message.includes("🎉") && (
                 <Link href="/slider-game">
@@ -121,47 +121,42 @@ const ABCPuzzle = () => {
       </div>
       <div className="game-instructions-container">
         <div className="game-instructions">
-          <h1 className="instructions-title">ABC Alphabet Puzzle</h1>
+          <h1 className="instructions-title">ABC Math Games – Numbers Meet Letters</h1>
+
           <p className="instructions-description">
-            ABC Alphabet Puzzle is more than just a colorful arrangement of letters — it's a thoughtful, engaging tool that supports early brain development, language recognition, and creative thinking. By merging the structure of a puzzle with the logic of the alphabet, this concept turns learning into a memorable hands-on experience. Whether placed on a table or tapped on a screen, it invites children into a world where curiosity meets confidence, and where letters become living pieces of play.
+            ABC Math Games mix two things kids see every day: letters and numbers. The board is filled with both scrambled and waiting to be solved. Match, sort, or line them up until everything makes sense. It starts with playful, but each round feels like a new little puzzle to figure out.
           </p>
 
-          <h2 className="instruction-step">The Intersection of Learning and Play</h2>
+          <h2 className="instruction-step">How to Play</h2>
           <p className="instructions-description">
-            Children are naturally wired to explore. The ABC Alphabet Puzzle aligns with that instinct by encouraging learners to discover, match, and organize letters in a meaningful way. Each piece becomes an opportunity to explore patterns, sounds, and relationships between letters. Instead of memorizing characters in a row, children experience the alphabet as an interactive structure they can rearrange and understand from different angles. This deeper level of involvement lays the foundation for long-term learning, making abstract language concepts more tangible.
+            Look at the pieces on the screen.
+            Some show letters, others show numbers.
+            Drag one into place, then try the next.
+            Maybe you’re matching pairs, maybe you’re fixing the order.
+            Sometimes it works right away, other times you need a second try.
+            Keep going until the board is clear.
           </p>
 
-          <h3 className="instruction-step">Building Stronger Foundations Through Movement</h3>
+          <h2 className="instruction-step">Why It’s Fun</h2>
           <p className="instructions-description">
-            Physical or visual movement plays a crucial role in memory retention. When children handle puzzle pieces or slide them into place, they activate sensory and motor pathways in the brain that reinforce learning. In an ABC Alphabet Puzzle, the act of physically moving letters contributes to stronger mental connections than passive repetition. Every adjustment becomes a small victory, teaching children not only the order of the alphabet but also how to focus, solve problems, and enjoy the process of discovery.
+            The fun comes from the mix.
+            One moment you’re matching a letter, the next you’re solving a number clue.
+            It keeps your eyes moving and your brain guessing.
+            Each right move feels satisfying, and finishing the whole set always feels like a win.
+            Simple rules, but plenty of little surprises.
           </p>
 
-          <h4 className="instruction-step">Beyond the Basics: Encouraging Language Growth</h4>
+          <h2 className="instruction-step">Next Challenge</h2>
           <p className="instructions-description">
-            While the puzzle begins with basic letter recognition, its impact stretches far beyond. Engaging with letters in a puzzle format helps children develop pre-reading skills such as letter-sound association and phonemic awareness. These are critical for decoding words and understanding language structure later on. The ABC Alphabet Puzzle isn’t just preparing a child to know their ABCs — it’s laying the groundwork for confident reading, writing, and communication in years to come.
+            Try bigger puzzles with more pieces.
+            Add a timer if you want pressure.
+            Compete with a friend and race to finish first.
+            ABC math games can stay calm and simple, or turn into a test of speed and focus.
+            You choose how far to push it.
           </p>
-
-          <h2 className="instruction-step">Why Puzzle-Based Learning Stands Out</h2>
-          <p className="instructions-description">
-            In a world filled with overstimulating content, puzzles offer a refreshing contrast. The ABC Alphabet Puzzle slows the pace, inviting children to think, reflect, and take their time. This kind of focused play nurtures attention span and helps build emotional regulation — skills just as valuable as academic knowledge. More importantly, it reminds children that learning can be rewarding in itself, without external rewards or pressure.
-          </p>
-
-          <h3 className="instruction-step">Confidence Through Independent Problem-Solving</h3>
-          <p className="instructions-description">
-            Few things feel better to a young learner than finishing a challenge on their own. ABC Alphabet Puzzles offer that sense of accomplishment with every solved board. As children learn to trust their judgment and persist through trial and error, their confidence begins to grow. This confidence spills into other areas — from reading aloud to tackling new subjects — shaping children into independent thinkers who embrace learning with curiosity rather than fear.
-          </p>
-
-          <h4 className="instruction-step">A Flexible Tool for Diverse Learning Styles</h4>
-          <p className="instructions-description">
-            No two learners are exactly alike, and that’s where the ABC Alphabet Puzzle truly shines. Whether a child learns visually, kinesthetically, or auditorily, this puzzle format can be adapted to support those preferences. Some may enjoy the color-coded pieces; others may benefit from tracing the shapes or naming each letter aloud. It’s a versatile approach that respects individuality and adapts to a variety of educational environments.
-          </p>
-
-          <h2 className="instruction-step">Conclusion</h2>
-          <p className="instructions-description">
-            The ABC Alphabet Puzzle transforms letter learning into a journey of logic, movement, and discovery. It’s more than a plaything — it’s a powerful tool for developing literacy, cognitive flexibility, and independent thinking. By engaging children’s minds and hands at the same time, it creates lasting impressions that go far beyond letter names. In a quiet, thoughtful, and often joyful way, this puzzle helps turn early learners into lifelong learners.
-          </p>
-
         </div>
+
+
       </div>
     </div>
   );

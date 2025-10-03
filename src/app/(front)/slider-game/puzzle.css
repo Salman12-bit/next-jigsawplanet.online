@@ -83,9 +83,29 @@
 }
 
 .letters-instructions {
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px;
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.instructions-description {
+    font-size: 1.09rem;
+    margin-bottom: 16px;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.instruction-step {
+    margin-top: 16px;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border-left: 4px solid #2980b9;
+    padding-left: 12px;
+}
+
+.instructions-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
 }
 
 .letters-board {

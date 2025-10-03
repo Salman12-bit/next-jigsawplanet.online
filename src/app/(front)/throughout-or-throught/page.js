@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import "./word-game.css"
 import Link from 'next/link';
 
@@ -16,7 +16,12 @@ const Game = () => {
 
 
   function scrambleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    const arr = word.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
   }
 
   function checkAnswer() {
@@ -56,6 +61,7 @@ const Game = () => {
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
+              aria-label="Guess the scrambled word"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
@@ -77,46 +83,43 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to Play spelling word Game</h1>
-            <p className="instructions-description">Spelling word are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time.Spelling word come in various forms, with unique content from traditional spelling word to sophisticated digital games. The cross word puzzle guide will walk you through the basic principles of playing different types of word puzzles games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of spelling word:</h2>
-            <p className="instructions-description">Word puzzles games come in many varieties, each with unique mechanics and objectives.</p>
-            <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each words has specific rules and objectives. Read the instructions carefully before starting.</p>
-            <ul className="instructions-list">
-              <li>In this game players have 3 sub-levels</li>
-              <li>If all sub-levels are completed.</li>
-              <li>Player wins this game.</li>
-              <li>Otherwise, play again and thinking how to complete this</li>
-            </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical spelling word, ensure you have a comfortable and well-lit workspace. For digital words game, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h5 className="tips-title">Tips for Success</h5>
-            <ul className="instructions-list">
-              <li>Stay Calm: Spelling word game should be enjoyable; take breaks if you feel frustrated.</li>
-              <li>Practice Regularly: The more you play, the benefit you get.</li>
-              <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
-              <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
-            </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description">Spelling word offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest spelling word. So, choose your game, set up your space, and dive into the fascinating world of spelling word!</p>
-          </div>
-          <div className='game-image-container'>
-            <Link href="/printable-word-puzzles">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='spelling word adventure' />
-            </Link>
-            <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='Play puzzles on spelling word' />
-            </Link>
-            <Link href="/word-game">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore spelling word puzzles' />
-            </Link>
-            <Link href="/jigsawplanet1">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='Online spelling word game' />
-            </Link>
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">Throughout or Throught – Spot the Right Word</h1>
+
+            <p className="word-description">
+              In this puzzle you’ll meet a pair of look-alike words — <b>throughout</b> and <b>throught</b>.
+              The letters come scrambled on the screen, waiting to be put in order.
+              Your job is to rebuild the word and check if the spelling is right.
+              One spelling fits in real writing, the other is just a tricky mistake that sneaks in.
+              That’s where the fun begins.
+            </p>
+
+
+            <h2 className="word-step">How to Play</h2>
+            <p className="word-description">
+              Look at the jumble on the screen.
+              Rearrange the letters in your head, then type the word you believe is correct.
+              If it matches, you clear the round.
+              If not, shuffle your thoughts and try again until the right spelling shines.
+            </p>
+
+            <h2 className="word-step">Who Can Play</h2>
+            <p className="word-description">
+            Students are trying to sharpen their spelling.
+              Parents helping kids spot tricky words.
+              Or anyone who loves untangling letters for fun.
+              The simple setup means you don’t need rules explained twice.
+            </p>
+
+            <h2 className="word-step">Extra Challenge</h2>
+            <p className="word-description">
+              Add a timer to race the clock.
+              Mix longer words into the scramble pile.
+              Or line up rounds back-to-back to test memory and speed.
+              Each twist keeps the game fresh while teaching correct spelling.
+            </p>
           </div>
 
         </div>

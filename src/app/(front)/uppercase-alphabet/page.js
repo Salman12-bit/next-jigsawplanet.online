@@ -159,27 +159,51 @@ const Alphabetpuzzle = () => {
       </div>
       <article className="game-instructions-container">
         <div className="game-instructions">
-          <h1 className="instructions-title">Alphabet Puzzle – Fun Learning Through Play</h1>
+          <h1 className="instructions-title">Uppercase Alphabet Puzzle – Learn and Play</h1>
+
           <p className="instructions-description">
-            The Alphabet Puzzle isn’t one of those complicated games you need to learn for hours. It’s super simple, but at the same time, it keeps your brain working. Kids use it to explore letters and sounds, and older players sometimes just use it as a quick memory boost. With two modes—Kid Mode and Young Learner Mode—it works for just about anyone, whether you’re playing for fun, learning, or just passing the time.
+            The Uppercase Alphabet Puzzle is simple, colorful, and fun.
+            Kids spot big letters like A, B, and C while moving them into place.
+            Grown-ups sometimes play it too, as a quick little brain break.
+            It’s easy to start and doesn’t need long rules or lessons.
           </p>
-          <h2 className="instruction-step">How to Play the Alphabet Puzzle</h2>
+
+          <h2 className="instruction-step">How to Play</h2>
           <p className="instructions-description">
-            Here’s how it goes: pick your mode and dive in. In Kid Mode, every time you find a match, the game shows the letter with a word, a sound, or even a little emoji (like A for Apple 🍎). It makes it fun without feeling like schoolwork. Young Learner Mode is a bit tougher—it’s more about testing your memory and planning. The cards all start face down, you flip two, and if they match, great—they stay open. If not, you just have to remember where they were for later. It’s easy to pick up, but you’ll quickly notice your brain working harder than you expect.
+            The puzzle starts with letters scattered.
+            Flip or pick a piece, then match it to its spot.
+            In Kid Mode, hints like pictures or words help guide the way.
+            In Young Mode, there are no clues—it’s all about memory and focus.
+            Bit by bit, the line of uppercase A to Z comes together.
           </p>
-          <h2 className="instruction-step">Benefits of Playing</h2>
+
+          <h2 className="instruction-step">Why It’s Fun</h2>
           <p className="instructions-description">
-            The best part is, it’s not just about fun. Kids learn their letters faster, start recognizing sounds, and build memory skills without even realizing it. Young learners get better at problem-solving and staying focused. Even adults end up using it as a quick brain exercise—something to sharpen focus while giving themselves a short break from work or stress.
+            Every move feels like progress.
+            Sometimes the right letter shows up fast, other times it takes a few tries.
+            Seeing rows of bold uppercase letters click into place feels rewarding.
+            The small wins keep you going until the whole alphabet is complete.
           </p>
-          <h2 className="instruction-step">Who Can Enjoy It?</h2>
+
+          <h2 className="instruction-step">Who Can Play</h2>
           <p className="instructions-description">
-            Pretty much anyone. Kids get excited about flipping the cards and yelling out the matches. Parents like it because it sneaks in learning while still feeling like playtime. Families can play together for a bit of friendly competition, and adults often just enjoy it as a little mental warm-up. Since it mixes phonics, memory, and strategy, the puzzle doesn’t really have an age limit.
+            Kids enjoy spotting letters and shouting them out.
+            Parents like that it mixes play with learning.
+            Families can take turns and cheer when matches are found.
+            Adults often use it as a light memory workout.
+            The simple rules make it open for everyone.
           </p>
-          <h2 className="instruction-step">Next Challenges Await</h2>
+
+          <h2 className="instruction-step">Extra Challenges</h2>
           <p className="instructions-description">
-            Once you get through the first levels, it doesn’t stop there. The game throws in more cards, trickier combinations, and layouts that make you stop and think before flipping. Every round feels a little different, so you don’t just play once and forget about it. Whether you’re just learning your letters or you’re looking for a casual brain workout, there’s always another challenge waiting.
+            Want more of a test?
+            Add a timer and see how fast you can finish.
+            Play with a friend and race to complete A to Z first.
+            Shuffle often to make it tricky.
+            The Uppercase Alphabet Puzzle can be calm and easy, or fast and competitive—it’s up to you.
           </p>
         </div>
+
 
       </article>
     </div>

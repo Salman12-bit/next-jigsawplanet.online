@@ -16,7 +16,12 @@ const Game = () => {
 
 
   function scrambleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    const arr = word.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
   }
 
   function checkAnswer() {
@@ -56,6 +61,7 @@ const Game = () => {
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
+              aria-label="Guess the scrambled word"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
@@ -77,57 +83,42 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Large Print Word Search Puzzles</h1>
-            <p className="instructions-description">
-              Large print word search puzzles are a relaxing and stimulating way to exercise your brain, expand your vocabulary, and enjoy some screen-free entertainment. Designed with bigger letters for easier reading, these puzzles are ideal for seniors, kids, or anyone who prefers a more comfortable puzzle experience. Whether you’re solving on paper or enjoying a digital version, this guide will show you how to play large print word search puzzles, including types, rules, strategies, and expert tips.
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">Omit or Ommit – Spot the Right Word</h1>
+
+            <p className="word-description">
+              The puzzle here is simple but clever.
+              You see the word written two ways: Omit or Ommit.
+              One is correct, the other is not.
+              Your job is to rearrange, check letters, and type the proper word into the box.
+              It feels like a spelling check wrapped inside a small word game.
             </p>
-            <h2 className="instruction-step">1. Different Types of Large Print Word Search Puzzles</h2>
-            <p className="instructions-description">
-              Large print word search puzzles come in a variety of formats—classic themed puzzles, timed challenges, and even interactive online versions. You can play alone or challenge friends to see who finds all the words first. The large font makes it accessible and fun for all ages!
+
+            <h2 className="word-step">How to Play</h2>
+            <p className="word-description">
+              Look at the scrambled or doubled letters.
+              Think about which version looks right.
+              Place the letters back in order and enter your answer.
+              If it matches, you pass the round.
+              If it doesn’t, try again until the correct form shows up.
             </p>
-            <h3 className="instruction-step">2. Understand the Rules</h3>
-            <p className="instructions-description">
-              The goal of a large print word search puzzle is simple: find and circle all the listed words hidden in a grid of letters. Words may appear horizontally, vertically, diagonally, and even backward. Follow the instructions provided in each puzzle to know the word list and direction patterns allowed.
+
+            <h2 className="word-step">Why It’s Fun</h2>
+            <p className="word-description">
+              Some words trick your eyes with repeated letters.
+              You pause, check carefully, and then feel the small win when you fix it.
+              It’s short, quick, and has that nice “aha” moment each time you get it right.
             </p>
-            <ul className="instructions-list">
-              <li>Each puzzle contains a word list you need to locate in the grid.</li>
-              <li>Words may be hidden in any direction: up, down, across, or diagonal.</li>
-              <li>Complete all the words in the list to win the puzzle.</li>
-              <li>If stuck, scan the grid slowly and look for familiar letter combinations.</li>
-            </ul>
-            <h4 className="instruction-step">3. Set Up Your Space</h4>
-            <p className="instructions-description">
-              For printed word search puzzles, choose a quiet and well-lit space. Use a pencil or highlighter to mark the words. If you're playing online, adjust your device’s brightness and zoom to ensure clear visibility for extended puzzle-solving sessions.
+            
+            <h2 className="word-step">Extra Challenge</h2>
+            <p className="word-description">
+              Add more tricky pairs like “occur or occurr” or “recommend or reccommend.”
+              Use a timer to make it a race.
+              Play with friends and keep score for each right guess.
+              The Omit or Ommit puzzle can stay easy or turn into a spelling showdown.
             </p>
-            <h5 className="tips-title">Tips for Success</h5>
-            <ul className="instructions-list">
-              <li><strong>Stay Focused:</strong> Take your time and scan the puzzle line by line.</li>
-              <li><strong>Highlight as You Go:</strong> Mark off each found word to avoid confusion.</li>
-              <li><strong>Practice Regularly:</strong> The more puzzles you solve, the quicker your word-spotting skills become.</li>
-              <li><strong>Use Word Patterns:</strong> Look for unique letters or common word beginnings to find matches faster.</li>
-              <li><strong>Challenge Yourself:</strong> Try puzzles with larger grids or longer word lists as you improve.</li>
-            </ul>
-            <h6 className="instruction-step">Conclusion</h6>
-            <p className="instructions-description">
-              Large print word search puzzles are a wonderful way to relax, have fun, and give your brain a healthy workout. They’re especially great for older adults or anyone seeking a visually comfortable puzzle format. With a bit of patience and regular practice, you’ll improve your observation and language skills while enjoying each satisfying word you find. So grab your favorite puzzle and get ready to search and discover—one word at a time!
-            </p>
-          </div>
-          <div className='game-image-container'>
-            <Link href="/hard-spelling">
-              <img className='game-image' src='./images/Freezenova1.webp' alt='word ladder solver adventure' />
-            </Link>
-            <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Freezenova2.webp' alt='Play puzzles on word ladder solver' />
-            </Link>
-            <Link href="/word-game">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore word ladder solver puzzles' />
-            </Link>
-            <Link href="/word-find">
-              <img className='game-image' src='./images/Freezenova3.webp' alt='Online word ladder solver game' />
-            </Link>
           </div>
 
         </div>

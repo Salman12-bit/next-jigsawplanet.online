@@ -142,32 +142,35 @@ const Lettermissing = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">Play Alphabet Slider Online – Free ABC Alphabet Game</h1>
-            <h2 className="instruction-step">What is Alphabet Slider?</h2>
+            <h1 className="instructions-title">Letter Missing Puzzles – Spot What’s Gone</h1>
+
             <p className="instructions-description">
-              Alphabet Slider is a classic letter puzzle where scrambled alphabet tiles must be rearranged into the correct order from A to Z. At first, the concept feels simple, but solving it requires focus, patience, and logical moves. This mix of easy rules and challenging gameplay makes it perfect for kids, parents, and adults who enjoy fun brain-training games.
+              Letter Missing Puzzles sounds simple enough, but it doesn’t stay that way for long.
+              The cards are face down, each tied to a letter, and your job is to flip, peek, and figure out which one isn’t showing up where it should.
+              It feels a little like detective work mixed with memory play.
             </p>
 
-            <h2 className="instruction-step">Educational Benefits of Alphabet Slider</h2>
+            <h2 className="instruction-step">How to Play</h2>
             <p className="instructions-description">
-              For children, Alphabet Slider is more than just a game — it’s a playful learning tool. By sliding tiles into the right sequence, kids naturally strengthen letter recognition, sequencing, and memory skills. Teachers and parents value it as a safe online activity that blends education with fun, while adults use it as a light brain workout that sharpens problem-solving skills and concentration.
+              Shuffle the cards and spread them out. On your turn, flip a set over to see what’s there.
+              If you manage to uncover the missing-letter card and pair it with the right matches, you score the round.
+              If not, everything flips back, and you’ve got to remember what you just saw.
+              Every turn gives you another clue, so the game keeps building as you go.
             </p>
 
-            <h2 className="instruction-step">Why Everyone Loves This Puzzle</h2>
+            <h2 className="instruction-step">Why It’s Fun</h2>
             <p className="instructions-description">
-              Alphabet Slider is a universal puzzle with wide appeal. Young learners use it to master their ABCs, parents trust it as an educational tool, and seniors enjoy it as a relaxing way to stay mentally active. It’s engaging, accessible on all devices, and gives players a sense of satisfaction when the final letter clicks into place. That’s why this puzzle has remained popular across generations.
+              The fun comes from the suspense of every flip. One card might be exactly what you need,
+              and the next one might trick you and slip away for later.
+              Kids love the surprise of spotting the right letter, while adults enjoy the quick memory challenge.
+              Each round feels a bit like a gamble, which makes winning all the more satisfying.
             </p>
-            <h2 className="instruction-step">How to Play Alphabet Slider</h2>
-            <ul className="instructions-list">
-              <li>Begin with a scrambled grid of alphabet tiles and one empty space.</li>
-              <li>Slide tiles into the empty space to rearrange them step by step.</li>
-              <li>Continue moving the tiles until the letters are in order from A to Z.</li>
-              <li>Try to complete the puzzle in as few moves as possible for an extra challenge.</li>
-            </ul>
 
-            <h2 className="instruction-step">Start Playing Alphabet Slider Today</h2>
+            <h2 className="instruction-step">Next Challenge</h2>
             <p className="instructions-description">
-              Alphabet Slider is the perfect mix of fun, challenge, and learning. It’s a free online alphabet puzzle that trains your brain while keeping the experience enjoyable. Play now, test your skills, and see how quickly you can arrange all the letters in order. Ready to start? Dive into the Alphabet Slider and enjoy the satisfying feeling of cracking the ABC puzzle!
+              Once you’re comfortable with the basics, you can raise the bar.
+              Add more cards, use bigger layouts, or put a timer on the round.
+              Larger setups make the game trickier and keep your memory sharp while still feeling playful.
             </p>
           </div>
         </div>

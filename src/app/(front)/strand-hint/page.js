@@ -16,7 +16,12 @@ const Game = () => {
 
 
   function scrambleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    const arr = word.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
   }
 
   function checkAnswer() {
@@ -56,6 +61,7 @@ const Game = () => {
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
+              aria-label="Guess the scrambled word"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
@@ -77,46 +83,43 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to play immaculate puzzle game</h1>
-            <p className="instructions-description">Immaculate puzzle are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time.Immaculate puzzle come in various forms, with unique content from traditional immaculate puzzle to sophisticated digital games. The cross immaculate puzzle guide will walk you through the basic principles of playing different types of immaculate puzzles games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of immaculate puzzle:</h2>
-            <p className="instructions-description">Immaculate puzzles games come in many varieties, each with unique mechanics and objectives.</p>
-            <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each words has specific rules and objectives. Read the instructions carefully before starting.</p>
-            <ul className="instructions-list">
-              <li>In this game players have 3 sub-levels</li>
-              <li>If all sub-levels are completed.</li>
-              <li>Player wins this game.</li>
-              <li>Otherwise, play again and thinking how to complete this</li>
-            </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical immaculate puzzle, ensure you have a comfortable and well-lit workspace. For digital words game, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h5 className="tips-title">Tips for Success</h5>
-            <ul className="instructions-list">
-              <li>Stay Calm: Immaculate puzzle game should be enjoyable; take breaks if you feel frustrated.</li>
-              <li>Practice Regularly: The more you play, the benefit you get.</li>
-              <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
-              <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
-            </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description">Immaculate puzzle offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest immaculate puzzle. So, choose your game, set up your space, and dive into the fascinating world of immaculate puzzle!</p>
-          </div>
-          <div className='game-image-container'>
-            <Link href="/hard-spelling">
-              <img className='game-image' src='./images/Freezenova1.webp' alt='immaculate puzzle adventure' />
-            </Link>
-            <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Freezenova2.webp' alt='Play puzzles on immaculate puzzle' />
-            </Link>
-            <Link href="/word-game">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore immaculate puzzle puzzles' />
-            </Link>
-            <Link href="/jigsawplanet1">
-              <img className='game-image' src='./images/Freezenova3.webp' alt='Online immaculate puzzle game' />
-            </Link>
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">Strands Hint – Small Clues, Big Wins</h1>
+
+            <p className="word-description">
+              Strands Hint is all about keeping the puzzle fun.
+              Instead of giving you the answer, it drops little clues.
+              Maybe the first letter, maybe the last, or sometimes a word that nudges you closer.
+              You still get to solve it yourself, and that’s the best part.
+              The hint just makes sure you don’t stay stuck forever.
+            </p>
+
+            <h2 className="word-step">How It Works</h2>
+            <p className="word-description">
+              Letters pop up on the screen in a mix.
+              Your job is to spot the right word.
+              If it feels too hard, tap for a hint.
+              The clue might say “Starts with B” or “Think food.”
+              That’s just enough to guide you without spoiling the whole round.
+            </p>
+
+            <h2 className="word-step">Why It’s Fun</h2>
+            <p className="word-description">
+              Some puzzles you solve right away.
+              Others make you pause and think.
+              That little “aha” moment feels even better when a hint helps you see the answer.
+              It’s like the game is cheering you on without doing the work for you.
+            </p>
+
+            <h2 className="word-step">Extra Fun</h2>
+            <p className="word-description">
+              Want to push it? Try fewer hints or none at all.
+              Use bigger words or set a timer.
+              Play with friends and see who cracks the puzzle first.
+              Every round feels different, and with strands hint, there’s always a new twist waiting.
+            </p>
           </div>
 
         </div>

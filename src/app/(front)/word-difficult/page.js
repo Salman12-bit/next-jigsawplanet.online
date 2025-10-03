@@ -77,68 +77,42 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Adult Word Search Puzzles</h1>
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">Word De-Scrambler – Mix, Guess, Solve</h1>
 
-            <p className="instructions-description">
-              <strong>Adult word search puzzles</strong> are a relaxing, brain-boosting activity that blends entertainment with mental exercise. Designed with themes and vocabulary that appeal to grown-up interests, these puzzles help improve focus, vocabulary, and pattern recognition. Whether you’re unwinding with a printable puzzle or playing online, this guide will teach you how to play adult word search puzzles, the rules, variations, and smart strategies to enhance your experience.
+            <p className="word-description">
+              Word De-Scrambler is a simple game where letters get all mixed up.
+              Your job is to figure out the real word hiding in the mess.
+              Sometimes you see it straight away, other times you stare for a bit before it clicks.
+              That little moment of “aha!” is what makes it worth playing.
             </p>
 
-            <h2 className="instruction-step">1. Explore Different Types of Adult Word Search Puzzles</h2>
-            <p className="instructions-description">
-              There are many formats available—from themed puzzles (like travel, wine, literature, or careers) to brain-challenging mega grids or timed games. You can choose from printable books, apps, or interactive websites. Whether you're solving solo or with friends, adult word searches come in a variety of styles to keep things fun and mentally stimulating.
+            <h2 className="word-step">How to Play</h2>
+            <p className="word-description">
+              Start with a word that’s been scrambled.
+              Type your guess for the right order.
+              If you get it correct, you move to the next puzzle.
+              If not, try again until the letters fall into place.
+              Every turn feels like unlocking a little code.
             </p>
 
-            <h3 className="instruction-step">2. Learn the Rules</h3>
-            <p className="instructions-description">
-              The goal is simple: find and mark all the hidden words from a given list. Words may be placed horizontally, vertically, diagonally, and even backwards. Each puzzle may have its own specific rules, so it’s helpful to check the directions before you start.
-            </p>
-            <ul className="instructions-list">
-              <li>Review the word list provided with the puzzle.</li>
-              <li>Words can be hidden in any direction—even in reverse!</li>
-              <li>Circle or highlight each word as you find it.</li>
-              <li>Complete the list to finish the puzzle.</li>
-            </ul>
-
-            <h4 className="instruction-step">3. Set Up Your Puzzle Space</h4>
-            <p className="instructions-description">
-              Create a comfortable space for puzzle-solving:
-              <ul>
-                <li>If you're using a printed puzzle, sit at a clean, well-lit table with a pencil or highlighter.</li>
-                <li>For digital puzzles, adjust your screen brightness and font size for optimal visibility.</li>
-              </ul>
+            <h2 className="word-step">Who Can Play</h2>
+            <p className="word-description">
+              Kids can play to learn new words.
+              Families can solve rounds together, cheering each other on.
+              Adults enjoy it as a light brain exercise between work and study.
+              With simple rules, anyone can join the fun.
             </p>
 
-            <h5 className="tips-title">Expert Tips for Solving Adult Word Search Puzzles</h5>
-            <ul className="instructions-list">
-              <li><strong>Start with Unique Words:</strong> Look for uncommon or longer words first—they’re often easier to spot.</li>
-              <li><strong>Scan Strategically:</strong> Move line by line or column by column to stay organized.</li>
-              <li><strong>Mark as You Go:</strong> Highlight words as you find them to avoid rechecking the same areas.</li>
-              <li><strong>Use Letter Clues:</strong> Find rare letter patterns like “Q” or “Z” to locate harder words quickly.</li>
-              <li><strong>Challenge Yourself:</strong> Try larger puzzles or set a timer for a fun mental workout.</li>
-            </ul>
-
-            <h6 className="instruction-step">Conclusion</h6>
-            <p className="instructions-description">
-              <strong>Adult word search puzzles</strong> are more than just a fun pastime—they’re a proven way to stimulate your brain and reduce stress. With regular practice, you’ll get faster and more efficient at spotting words while enjoying themes that speak to your interests. Whether you're relaxing at home or traveling, these puzzles are a portable and engaging way to stay sharp. Grab your puzzle and start searching—one word at a time!
+            <h2 className="word-step">Extra Challenge</h2>
+            <p className="word-description">
+              Use longer words for a harder test.
+              Add a timer to see who solves fastest.
+              Play with friends and keep score for each round.
+              Word De-Scrambler can stay casual or become a fast-paced word race.
             </p>
-          </div>
-
-          <div className='game-image-container'>
-            <Link href="/hard-spelling">
-              <img className='game-image' src='./images/Freezenova1.webp' alt='word ladder solver adventure' />
-            </Link>
-            <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Freezenova2.webp' alt='Play puzzles on word ladder solver' />
-            </Link>
-            <Link href="/word-game">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore word ladder solver puzzles' />
-            </Link>
-            <Link href="/word-find">
-              <img className='game-image' src='./images/Freezenova3.webp' alt='Online word ladder solver game' />
-            </Link>
           </div>
 
         </div>

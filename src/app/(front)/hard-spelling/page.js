@@ -16,7 +16,12 @@ const Game = () => {
 
 
   function scrambleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    const arr = word.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
   }
 
   function checkAnswer() {
@@ -56,6 +61,7 @@ const Game = () => {
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
+              aria-label="Guess the scrambled word"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
@@ -77,46 +83,42 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to Play word puzzle solver Game</h1>
-            <p className="instructions-description">Word puzzle solver are a delightful way to challenge your mind, improve cognitive skills, improve your picking power, and enjoy some leisure time.Word puzzle solver come in various forms, with unique content from traditional word puzzle solver to sophisticated digital games. The cross word puzzle guide will walk you through the basic principles of playing different types of word puzzles games, offering tips and strategies to enhance your experience.</p>
-            <h2 className="instruction-step">1. Different Types of word puzzle solver:</h2>
-            <p className="instructions-description">Word puzzles games come in many varieties, each with unique mechanics and objectives.</p>
-            <h3 className="instruction-step">2. Understand the Rules:</h3>
-            <p className="instructions-description">Each words has specific rules and objectives. Read the instructions carefully before starting.</p>
-            <ul className="instructions-list">
-              <li>In this game players have 3 sub-levels</li>
-              <li>If all sub-levels are completed.</li>
-              <li>Player wins this game.</li>
-              <li>Otherwise, play again and thinking how to complete this</li>
-            </ul>
-            <h4 className="instruction-step">3. Set up Your Space:</h4>
-            <p className="instructions-description">For physical word puzzle solver, ensure you have a comfortable and well-lit workspace. For digital words game, adjust your device's brightness and volume settings to suit your environment and mind.</p>
-            <h5 className="tips-title">Tips for Success</h5>
-            <ul className="instructions-list">
-              <li>Stay Calm: Word puzzle solver game should be enjoyable; take breaks if you feel frustrated.</li>
-              <li>Practice Regularly: The more you play, the benefit you get.</li>
-              <li>Learn from Mistakes: Analyze what went wrong and try different approaches.</li>
-              <li>Challenge Yourself: Gradually increase the difficulty level to keep improving your skills and thinking process.</li>
-            </ul>
-            <h6 className="instruction-step">Conclusion:</h6>
-            <p className="instructions-description"> Word puzzle solver offer endless opportunities to test your mental acuity, relax, and have fun. By understanding the rules, using effective strategies, and practicing regularly, you can enhance your physical words-solving skills and enjoy the satisfying feeling of cracking even the toughest word puzzle solver. So, choose your game, set up your space, and dive into the fascinating world of word puzzle solver!</p>
-          </div>
-          <div className='game-image-container'>
-            <Link href="/printable-word-puzzles">
-              <img className='game-image' src='./images/Puzzle1.webp' alt='word puzzle solver adventure' />
-            </Link>
-            <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Puzzle2.webp' alt='Play puzzles on word puzzle solver' />
-            </Link>
-            <Link href="/word-game">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore word puzzle solver puzzles' />
-            </Link>
-            <Link href="/jigsawplanet1">
-              <img className='game-image' src='./images/Puzzle5.webp' alt='Online word puzzle solver game' />
-            </Link>
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">Hard Spelling Words – Play and Practice</h1>
+
+            <p className="word-description">
+              Hard Spelling Words turns learning into a fun little game.
+              Instead of long lessons, you just try spelling tough words step by step.
+              Some are tricky, some are funny, but each round helps you remember more.
+              It feels like practice, but it plays like a challenge.
+            </p>
+
+            <h2 className="word-step">How to Play</h2>
+            <p className="word-description">
+              Look at the mixed-up word or listen to the sound.
+              Type the spelling you think is right.
+              If it’s correct, you move forward.
+              If it’s not, try again and watch how the letters fit together.
+              Every mistake is just another chance to learn.
+            </p>
+
+            <h2 className="word-step">Why It’s Fun</h2>
+            <p className="word-description">
+              Some words make you stop and think.
+              Others click right away.
+              The fun comes from solving each one like a mini puzzle.
+              When a long, tricky word finally lands, it feels like a win worth cheering.
+            </p>
+
+            <h2 className="word-step">Extra Challenge</h2>
+            <p className="word-description">
+              Add a timer to see how fast you can spell.
+              Mix in longer words for a brain stretch.
+              Compete with a friend for the top score.
+              Hard Spelling Words can stay easy or grow into a real spelling showdown.
+            </p>
           </div>
 
         </div>

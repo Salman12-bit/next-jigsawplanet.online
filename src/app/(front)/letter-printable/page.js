@@ -26,7 +26,7 @@ const Board1 = styled.div`
 const initialCards = [
   { id: 1, value: 'D' }, { id: 2, value: 'E' },
   { id: 3, value: 'F' }, { id: 4, value: 'F' },
-  { id: 5, value: 'E' }, { id: 6, value: 'E' },
+  { id: 5, value: 'E' }, { id: 6, value: 'G' },
   { id: 7, value: 'E' }, { id: 8, value: 'A' },
   { id: 9, value: 'B' },
 ];
@@ -142,34 +142,35 @@ const letterprintable = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">Play ABC Puzzle Online – Free Alphabet Game</h1>
+            <h1 className="instructions-title">Printable Letter Puzzles – Match, Learn, and Play</h1>
 
-            <h2 className="instruction-step">What is ABC Puzzle Online</h2>
             <p className="instructions-description">
-              ABC Puzzle Online is an interactive letter game where players arrange alphabet pieces into the correct sequence. The challenge begins with jumbled tiles, and the goal is to reorganize them from A to Z. It looks easy at first, but the puzzle quickly becomes a test of focus, planning, and logical thinking. Because of its simple rules and rewarding gameplay, it has become a favorite choice for learners, families, and casual gamers.
+              Printable Letter Puzzles look simple at first, but they’re full of little surprises.
+              The letters sit hidden on digital cards, waiting to be flipped.
+              Each turn is a chance to spot what belongs where, and before long, the alphabet starts falling into place.
             </p>
 
-            <h2 className="instruction-step">Why ABC Puzzle is Great for Learning</h2>
+            <h2 className="instruction-step">How to Play</h2>
             <p className="instructions-description">
-              This game is more than just entertainment — it doubles as an educational tool. Children use it to practice alphabet order, strengthen recognition skills, and improve memory through repeated play. Parents and teachers recommend it as a fun way to combine study with playtime, while adults enjoy it as a light mental workout that supports problem-solving, concentration, and patience.
+              Hit start and watch the cards shuffle on your screen.
+              Tap to flip a card and see the letter hiding underneath.
+              Match them in the right order and you’re on your way to finishing the puzzle.
+              Miss the right spot? No problem—cards flip back, and it’s up to your memory to keep track.
             </p>
 
-            <h2 className="instruction-step">Who Can Enjoy ABC Puzzle?</h2>
+            <h2 className="instruction-step">Who Can Play</h2>
             <p className="instructions-description">
-              ABC Puzzle Online is designed for everyone. Kids can use it to learn their ABCs in an interactive way, parents find it useful as a safe online learning activity, and seniors appreciate it as a calming game that keeps the mind active. With colorful visuals, simple controls, and cross-device accessibility, it delivers both fun and learning for players of all ages.
+              Anyone can jump in.
+              Younger kids learn their letters while playing, families enjoy it together as a group,
+              and adults treat it as a light brain break during the day.
+              The rules are easy, so no one gets left behind.
             </p>
 
-            <h2 className="instruction-step">How to Play ABC Puzzle Online</h2>
-            <ul className="instructions-list">
-              <li>Start with scrambled alphabet tiles displayed on the game board.</li>
-              <li>Move the tiles one by one into the correct position.</li>
-              <li>Arrange the letters step by step until the sequence runs from A to Z.</li>
-              <li>Try to complete the puzzle using the fewest moves possible for an extra challenge.</li>
-            </ul>
-
-            <h2 className="instruction-step">Play ABC Puzzle Online Now</h2>
+            <h2 className="instruction-step">Next Challenge</h2>
             <p className="instructions-description">
-              ABC Puzzle Online is the perfect mix of fun and education. It helps kids practice the alphabet, gives adults a refreshing brain exercise, and offers a relaxing activity for anyone who enjoys puzzles. Ready to test your skills? Start playing today and enjoy the challenge of arranging every letter from A to Z!
+              Once the simple rounds feel easy, the game turns things up.
+              You’ll see bigger grids, more hidden cards, and even timed flips that push you to think faster.
+              Each twist adds just enough tension to keep the puzzle fun and your memory sharp.
             </p>
           </div>
         </div>

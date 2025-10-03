@@ -80,7 +80,7 @@ const AbcPuzzle = () => {
       updatedTiles[8].label === "C";
 
     if (solved) {
-      setStatusText("🎉 You solved the Letter Puzzle!");
+      setStatusText("🎉 You solved the ABC Puzzle!");
     }
   };
 
@@ -90,7 +90,7 @@ const AbcPuzzle = () => {
         <div className="lp-row">
           <div className="lp-upper" style={wrapperStyle}>
             <div className="lp-game-area">
-              <h3 className="lp-level-title">Letter Puzzle – Stage {stage}</h3>
+              <p className="lp-level-title">ABC Puzzle – Stage {stage}</p>
               <GameBoard className="lp-board">
                 {tiles.map((tile, index) => (
                   <div
@@ -107,7 +107,7 @@ const AbcPuzzle = () => {
               </GameBoard>
               <div className="lp-status">{statusText}</div>
               <button className="lp-btn" onClick={startGame}>
-                Restart Letter Puzzle
+                Restart ABC Puzzle
               </button>
               {statusText.includes("🎉") && (
                 <Link href="/abc-random">
@@ -121,31 +121,33 @@ const AbcPuzzle = () => {
 
       <div className="lp-instructions-section">
         <div className="lp-instructions">
-          <h1 className="lp-title">Letter Puzzle Game</h1>
+          <h1 className="lp-title">ABC Puzzle – Simple, Tricky, and Weirdly Addictive</h1>
+
           <p className="lp-text">
-            The Letter Puzzle is more than just arranging letters — it’s an engaging tool that supports early learning, language recognition, and creative thinking.
+            The ABC puzzle looks super easy, but it pulls you in fast. You get nine little tiles, all mixed up with A, B, and C on them. The idea is simple—line up every row so it reads A, B, C. Sounds like nothing, right? Then you move one piece and suddenly the whole board feels different. That’s when it gets fun.
           </p>
-          <h2 className="lp-step">Learning + Play</h2>
+
+          <h2 className="lp-step">How to Play</h2>
           <p className="lp-text">
-            Children discover, match, and organize letters while having fun. It turns abstract alphabet concepts into hands-on exploration.
+            First, the tiles get scrambled. Pick one up, drag it to a new spot, drop it, and see what happens. Then do the same with another. Sometimes it fixes things, sometimes it makes a mess, and you just keep shuffling around until each row spells A, B, C. If it feels like you’re stuck, just hit restart and get a fresh scramble. No rush, no timer, just you sliding pieces until it clicks.
           </p>
-          <h3 className="lp-step">Movement Builds Memory</h3>
+
+          <h2 className="lp-step">Why It’s Fun</h2>
           <p className="lp-text">
-            Dragging and rearranging tiles helps build stronger brain connections, focus, and problem-solving skills.
+            The fun part is you never know what’s coming. One swap looks perfect, the next one throws everything off. It’s a bit of a tease—you think you’ve got it, then nope, back to moving pieces. But that’s what makes it weirdly addictive. Getting a row to fall into place feels great, and when the whole board finally lines up, you can’t help but smile.
           </p>
-          <h4 className="lp-step">Language Growth</h4>
+
+          <h2 className="lp-step">Who Can Play</h2>
           <p className="lp-text">
-            Beyond recognition, this puzzle builds pre-reading skills such as sound association and phonemic awareness.
+            Honestly, anyone. Kids mess around with it and learn the letters. Parents can play along without needing to explain much. And if you’re an adult who just wants something quick between things, it’s a nice little break. No heavy rules, just drag, drop, and enjoy.
           </p>
-          <h2 className="lp-step">Confidence Through Play</h2>
+
+          <h2 className="lp-step">Next Challenge</h2>
           <p className="lp-text">
-            Each solved puzzle boosts confidence, helping children trust their judgment and approach learning with curiosity.
-          </p>
-          <h2 className="lp-step">Conclusion</h2>
-          <p className="lp-text">
-            The Letter Puzzle blends fun and education, preparing children for lifelong learning through discovery and play.
+            Want more? Try timing yourself and see how fast you can clean the board. Play against a friend in a race. Or shuffle extra hard and give yourself a tougher start. The ABC puzzle can stay simple, or it can stretch into a bigger challenge whenever you want.
           </p>
         </div>
+
       </div>
     </div>
   );

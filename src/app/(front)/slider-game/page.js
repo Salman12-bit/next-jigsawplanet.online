@@ -21,66 +21,76 @@ const GridWrapper = styled.div`
 `;
 
 const puzzleTiles = [
-  { id: 1, symbol: "A" },
-  { id: 2, symbol: "A" },
-  { id: 3, symbol: "A" },
-  { id: 4, symbol: "B" },
-  { id: 5, symbol: "B" },
-  { id: 6, symbol: "B" },
-  { id: 7, symbol: "C" },
-  { id: 8, symbol: "C" },
-  { id: 9, symbol: "C" },
+  { id: 1, symbol: "M" },
+  { id: 2, symbol: "N" },
+  { id: 3, symbol: "O" },
+  { id: 4, symbol: "M" },
+  { id: 5, symbol: "N" },
+  { id: 6, symbol: "O" },
+  { id: 7, symbol: "M" },
+  { id: 8, symbol: "N" },
+  { id: 9, symbol: "" }, // empty space
 ];
 
 const LetterPuzzle = () => {
   const [pieces, setPieces] = useState([]);
-  const [notice, setNotice] = useState("Arrange letters into ABC order!");
+  const [notice, setNotice] = useState("Arrange letters into Order!");
   const [stageNum, setStageNum] = useState(1);
 
   const shufflePieces = (arr) => {
-    for (let i = arr.length - 1; i > 0; i--) {
+    const copy = [...arr];
+    for (let i = copy.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
+      [copy[i], copy[j]] = [copy[j], copy[i]];
     }
-    return arr;
+    return copy;
   };
 
   const resetGame = useCallback(() => {
     setPieces(shufflePieces([...puzzleTiles]));
-    setNotice("Arrange letters into ABC order!");
+    setNotice("Arrange letters into ABC Order!");
   }, []);
 
   useEffect(() => {
     resetGame();
   }, [stageNum, resetGame]);
 
-  const startDrag = (e, idx) => {
-    e.dataTransfer.setData("pieceIdx", idx);
+  const isAdjacent = (i, j) => {
+    const rowI = Math.floor(i / 3);
+    const colI = i % 3;
+    const rowJ = Math.floor(j / 3);
+    const colJ = j % 3;
+
+    return (
+      (rowI === rowJ && Math.abs(colI - colJ) === 1) ||
+      (colI === colJ && Math.abs(rowI - rowJ) === 1)
+    );
   };
 
-  const dropPiece = (e, dropIdx) => {
-    const dragIdx = e.dataTransfer.getData("pieceIdx");
-    if (dragIdx === "") return;
+  const moveTile = (idx) => {
+    const emptyIdx = pieces.findIndex((tile) => tile.symbol === "");
+    if (isAdjacent(idx, emptyIdx)) {
+      const newArrangement = [...pieces];
+      [newArrangement[idx], newArrangement[emptyIdx]] = [
+        newArrangement[emptyIdx],
+        newArrangement[idx],
+      ];
+      setPieces(newArrangement);
 
-    const newArrangement = [...pieces];
-    const [picked] = newArrangement.splice(dragIdx, 1);
-    newArrangement.splice(dropIdx, 0, picked);
+      const solved =
+        newArrangement[0].symbol === "M" &&
+        newArrangement[1].symbol === "N" &&
+        newArrangement[2].symbol === "O" &&
+        newArrangement[3].symbol === "M" &&
+        newArrangement[4].symbol === "N" &&
+        newArrangement[5].symbol === "O" &&
+        newArrangement[6].symbol === "M" &&
+        newArrangement[7].symbol === "N" &&
+        newArrangement[8].symbol === "";
 
-    setPieces(newArrangement);
-
-    const solved =
-      newArrangement[0].symbol === "A" &&
-      newArrangement[1].symbol === "B" &&
-      newArrangement[2].symbol === "C" &&
-      newArrangement[3].symbol === "A" &&
-      newArrangement[4].symbol === "B" &&
-      newArrangement[5].symbol === "C" &&
-      newArrangement[6].symbol === "A" &&
-      newArrangement[7].symbol === "B" &&
-      newArrangement[8].symbol === "C";
-
-    if (solved) {
-      setNotice("🎉 You solved the ABC Puzzle!");
+      if (solved) {
+        setNotice("🎉 You solved the ABC Sliding Puzzle!");
+      }
     }
   };
 
@@ -90,16 +100,15 @@ const LetterPuzzle = () => {
         <div className="row">
           <div className="letters-upper" style={layoutBox}>
             <div className="letters-game">
-              <h3 className="stage-heading">ABC Puzzle – Level {stageNum}</h3>
+              <p className="stage-heading">
+                ABC Sliding Puzzle – Level {stageNum}
+              </p>
               <GridWrapper className="letters-board">
                 {pieces.map((tile, idx) => (
                   <div
                     key={tile.id}
-                    className="tile-box"
-                    draggable
-                    onDragStart={(e) => startDrag(e, idx)}
-                    onDragOver={(e) => e.preventDefault()}
-                    onDrop={(e) => dropPiece(e, idx)}
+                    className={`tile-box ${tile.symbol === "" ? "empty" : ""}`}
+                    onClick={() => moveTile(idx)}
                   >
                     {tile.symbol}
                   </div>
@@ -107,7 +116,7 @@ const LetterPuzzle = () => {
               </GridWrapper>
               <div className="notice-text">{notice}</div>
               <button className="letters-btn" onClick={resetGame}>
-                Restart ABC Puzzle
+                Restart ABC Sliding Puzzle
               </button>
               {notice.includes("🎉") && (
                 <Link href="/slider-puzzles">
@@ -121,16 +130,39 @@ const LetterPuzzle = () => {
 
       <div className="letters-instructions-container">
         <div className="letters-instructions">
-          <h1 className="instructions-title">ABC Alphabet Puzzle</h1>
+          <h1 className="instructions-title">ABC Slider Puzzle</h1>
+
           <p className="instructions-description">
-            ABC Alphabet Puzzle is more than just a colorful arrangement of
-            letters — it's a thoughtful, engaging tool that supports early brain
-            development, language recognition, and creative thinking. By merging
-            the structure of a puzzle with the logic of the alphabet, this
-            concept turns learning into a memorable hands-on experience. Whether
-            placed on a table or tapped on a screen, it invites children into a
-            world where curiosity meets confidence, and where letters become
-            living pieces of play.
+            The ABC Slider Puzzle is all about getting the alphabet back in order.
+            The board looks like a mess at first, with letters jumbled everywhere.
+            You slide them around, one at a time, trying to make A through Z or some alphabet line up.
+            Sounds simple, but a few moves in, you realize it’s trickier than it looks.
+          </p>
+
+          <h2 className="instruction-step">How to Play</h2>
+          <p className="instructions-description">
+            The board starts scrambled.
+            Pick a letter next to the order and slide it over.
+            Now another spot opens up, and you keep going.
+            Bit by bit, the alphabet starts to form.
+            If you get stuck, no problem—just reshuffle and try again.
+          </p>
+
+          <h2 className="instruction-step">Who Can Play</h2>
+          <p className="instructions-description">
+            Pretty much anyone.
+            Kids will drag pieces just to see letters move.
+            Families can shout out where they think things should slide, like backseat drivers.
+            Adults might open it up for “just a minute” and then realize it’s twenty moves later.
+            There’s no tricky setup; you just start pushing tiles around.
+          </p>
+
+          <h2 className="instruction-step">Next Challenge</h2>
+          <p className="instructions-description">
+            Want it tougher? Add a timer and see how fast you can sort it.
+            Play head-to-head with a friend.
+            Or scramble it until nothing makes sense and fight your way back to A through Z.
+            The slider puzzle can stay chill or turn into a real brain bender—it’s up to you.
           </p>
         </div>
       </div>
@@ -139,3 +171,6 @@ const LetterPuzzle = () => {
 };
 
 export default LetterPuzzle;
+
+
+

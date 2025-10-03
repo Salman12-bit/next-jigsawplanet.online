@@ -15,8 +15,14 @@ const Game = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   function scrambleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    const arr = word.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
   }
+
   function checkAnswer() {
     const currentWord = words[currentLevel];
     if (guess === currentWord) {
@@ -37,12 +43,9 @@ const Game = () => {
     }
   }
   return (
-    <div className='text-conainer' style={{
-      padding: "20px"
-    }}>
+    <div className='text-conainer'>
       <div className="Puzzle">
-        <h1 className="color">Printable Word Search Puzzles for Adults</h1>
-        <h2 className="current-color">Current Level 14</h2>
+        <p className="color">Current Level 2</p>
         {!gameOver ? (
           <>
             <div className="level">Level {currentLevel + 1}</div>
@@ -52,7 +55,9 @@ const Game = () => {
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
+              aria-label="Guess the scrambled word"
             />
+
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
               <button className="button2" onClick={checkAnswer}>Submit</button>
@@ -73,50 +78,43 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Word Hunt Puzzle Game</h1>
-            <p className="instructions-description">
-              Dive into the challenge of a <strong>Word Hunt Puzzle Game</strong>! In this exciting word game, each level contains 3 sublevels. Solve one word puzzle per sublevel to progress. Complete all sublevels to unlock the next level and keep the hunt going!
-            </p>
-            <h2 className="instruction-step">1. Game Setup</h2>
-            <ul className="instructions-list">
-              <li>Choose a quiet space with good lighting and a pencil or device.</li>
-              <li>Get ready to test your vocabulary, spelling, and word pattern skills!</li>
-            </ul>
-            <h3 className="instruction-step">2. How It Works</h3>
-            <ul className="instructions-list">
-              <li>Each sublevel presents a word puzzle to solve—find the hidden word using clues or scrambled letters.</li>
-              <li>Guess the correct word to move to the next sublevel.</li>
-              <li>Clear all 3 sublevels to complete a full level.</li>
-            </ul>
-            <h4 className="instruction-step">3. Tips for Success</h4>
-            <ul className="instructions-list">
-              <li>Look for familiar patterns, prefixes, or suffixes in the letters.</li>
-              <li>Use hints when you're stuck to keep the game moving.</li>
-              <li>Challenge your friends or try to beat your own best time for extra fun!</li>
-            </ul>
-            <h5 className="instruction-step">Conclusion</h5>
-            <p className="instructions-description">
-              A <strong>Word Hunt Puzzle Game</strong> is a fun and brain-boosting way to improve your vocabulary and focus. Whether you're playing alone or with others, the challenge of discovering hidden words keeps every level exciting. Start your word hunt today!
-            </p>
-          </div>
-          <div className='game-image-container'>
-            <Link href="/word-difficult">
-              <img className='game-image' src='./images/Freezenova1.webp' alt='challenging word hunt puzzle game with a winter theme' />
-            </Link>
-            <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Freezenova2.webp' alt='play a word hunt puzzle game online with seasonal clues' />
-            </Link>
-            <Link href="/summer-word">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='fun and festive word hunt puzzle game with colorful design' />
-            </Link>
-            <Link href="/word-find">
-              <img className='game-image' src='./images/Freezenova3.webp' alt='interactive word hunt puzzle game with winter-themed words' />
-            </Link>
-          </div>
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">Word Hunt Puzzle Game – Spot, Guess, Win</h1>
 
+            <p className="word-description">
+              The Word Hunt Puzzle Game is a friendly mix of letters, clues, and guesses.
+              Words hide inside scrambled letters, waiting to be solved.
+              It feels simple at first glance, yet every round gives your brain a small workout.
+              The game is light, playful, and easy to pick up whenever you have a few minutes.
+            </p>
+
+            <h2 className="word-step">How to Play</h2>
+            <p className="word-description">
+              Look at the shuffled letters on the screen.
+              Rearrange them in your mind to find the hidden word.
+              Type in your guess and submit it.
+              If it matches, you move ahead.
+              If it doesn’t, try again — no stress, just another chance to figure it out.
+            </p>
+
+            <h2 className="word-step">Why It’s Fun</h2>
+            <p className="word-description">
+              The fun is in the little “aha!” moment when the answer suddenly clicks.
+              Sometimes you’ll guess right away, other times it takes a few tries,
+              and that small win feels satisfying.
+              Each puzzle feels like a new surprise,
+              and the mix of challenge and play keeps you coming back.
+            </p>
+
+            <h2 className="word-step">Next Challenge Awaits</h2>
+            <p className="word-description">
+              Want more? Use harder word sets or turn on a timer.
+              Try another version for new puzzles, or race a friend for fun.
+              Each mix feels different, so the hunt never gets boring.
+            </p>
+          </div>
         </div>
       </div>
     </div>

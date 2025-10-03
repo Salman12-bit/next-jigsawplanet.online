@@ -141,29 +141,32 @@ const puzzleslider = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">Slide Puzzle Solver</h1>
+            <h1 className="instructions-title">Letter Puzzle for Kids – Flip, Match, and Learn</h1>
             <p className="instructions-description">
-              A slide puzzle solver represents the intersection of logic and automation — a digital or algorithmic system created to find solutions for tile-based rearrangement challenges. Rather than manually shifting pieces one by one, these solvers calculate optimized sequences, revealing the most efficient route from jumbled confusion to a perfectly ordered grid. Often powered by advanced computation, heuristics, and pattern recognition, they are used for both educational insights and complex problem-solving research.
+              Letter Puzzle for Kids is all about flipping cards and finding letters.
+              The letters are hidden, so you never know what you’ll get when you turn one over.
+              Sometimes it’s the exact one you were looking for. Other times… nope, not yet.
+              Bit by bit, though, the pieces come together, and the puzzle starts to make sense.
             </p>
 
-            <h2 className="instruction-step">How Algorithms Redefine Puzzle Complexity</h2>
+            <h2 className="instruction-step">How to Play</h2>
             <p className="instructions-description">
-              Slide puzzles, while simple in concept, carry immense depth when analyzed through the lens of computation. Solvers often rely on algorithms like A*, Dijkstra’s, or iterative deepening to parse possible moves and predict outcomes. These systems measure distances, count misplaced tiles, and assess configuration efficiency — all in milliseconds. By doing so, they remove the trial-and-error aspect of solving and instead deliver streamlined, provably optimal paths. The result is a clearer understanding of complexity and structure hidden beneath the surface.
+              Spread the cards out on the screen and mix them up.
+              Pick one and flip it over to see the letter hiding there.
+              If it matches the spot you need, leave it open.
+              If it doesn’t, turn it back and try to remember where it was.
+              Keep flipping, keep checking.
+              Little by little, the letters line up, and the puzzle takes shape.
             </p>
 
-            <h3 className="instruction-step">Applications in Cognitive Research and Learning</h3>
+            <h2 className="instruction-step">Why It’s Fun</h2>
             <p className="instructions-description">
-              Slide puzzle solvers go beyond casual interest; they are used in research settings to study decision-making, memory modeling, and strategic behavior. Educational platforms use solvers to break down the logic behind puzzle design, giving learners a way to visualize paths and patterns. This clarity transforms problem-solving into a teachable skill. Rather than presenting just the end result, many solvers include step-by-step breakdowns — making them valuable tools in exploring sequential thinking and understanding logical constraints.
+              The game is fun because you never know what’s under the next card. Some matches are easy, some make you think for a moment. Kids enjoy spotting letters and figuring out where they go. Adults can enjoy the memory part too. Watching the puzzle fill up slowly makes finishing it feel satisfying without it being rushed.
             </p>
 
-            <h4 className="instruction-step">Technological Innovation in Classic Formats</h4>
+            <h2 className="instruction-step">Next Challenge</h2>
             <p className="instructions-description">
-              The rise of artificial intelligence and machine learning has reshaped the way we approach puzzle-solving. A modern slide puzzle solver is no longer just a calculator of moves — it may use predictive modeling, adaptive feedback, and even image recognition. These solvers are integrated into mobile apps, educational tools, and AI labs, reflecting a broader trend of enhancing classic challenges with smart, evolving systems. They showcase how technology can enrich our interaction with even the most analog of formats.
-            </p>
-
-            <h5 className="instruction-step">Efficiency Meets Elegance in Problem Resolution</h5>
-            <p className="instructions-description">
-              One of the most remarkable traits of a well-designed slide puzzle solver is its ability to find beauty in order. Each move calculated is not just about function but about elegance — reducing clutter, minimizing waste, and presenting a clean, clear path forward. This harmony between logic and structure has inspired designers, engineers, and educators alike. It demonstrates how a systematic approach to problem-solving can be not only effective but also aesthetically satisfying in its simplicity and precision.
+              When the first puzzles feel easy, try bigger ones with more cards. You can make it a little faster or use trickier layouts. Miss a card? That’s fine, keep going. Each new puzzle feels different, and finishing it is always rewarding.
             </p>
           </div>
         </div>

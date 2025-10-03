@@ -159,28 +159,40 @@ const Alphabetpuzzle = () => {
       </div>
       <article className="game-instructions-container">
         <div className="game-instructions">
-          <h1 className="instructions-title">Alphabet Puzzle – Fun Learning Through Play</h1>
+          <h1 className="instructions-title">Alphabet Letter Matching Game</h1>
+
           <p className="instructions-description">
-            The Alphabet Puzzle isn’t one of those complicated games you need to learn for hours. It’s super simple, but at the same time, it keeps your brain working. Kids use it to explore letters and sounds, and older players sometimes just use it as a quick memory boost. With two modes—Kid Mode and Young Learner Mode—it works for just about anyone, whether you’re playing for fun, learning, or just passing the time.
+            The Alphabet Letter Matching Game is quick to learn and fun to play.
+            No long rules here—you just flip cards and look for the right pair.
+            Kids enjoy finding their favorite letters, while older players like using it as a quick memory challenge.
+            It works for both play and learning at the same time.
           </p>
-          <h2 className="instruction-step">How to Play the Alphabet Puzzle</h2>
+
+          <h2 className="instruction-step">How to Play</h2>
           <p className="instructions-description">
-            Here’s how it goes: pick your mode and dive in. In Kid Mode, every time you find a match, the game shows the letter with a word, a sound, or even a little emoji (like A for Apple 🍎). It makes it fun without feeling like schoolwork. Young Learner Mode is a bit tougher—it’s more about testing your memory and planning. The cards all start face down, you flip two, and if they match, great—they stay open. If not, you just have to remember where they were for later. It’s easy to pick up, but you’ll quickly notice your brain working harder than you expect.
+            All cards start face down.
+            Flip two at a time—if they match, keep them open.
+            If not, turn them back and try again.
+            Kid Mode shows little hints, like a picture or sound for each letter.
+            Young Mode is harder with no clues, so it’s all about remembering spots.
           </p>
-          <h2 className="instruction-step">Benefits of Playing</h2>
+
+          <h2 className="instruction-step">Why It’s Fun</h2>
           <p className="instructions-description">
-            The best part is, it’s not just about fun. Kids learn their letters faster, start recognizing sounds, and build memory skills without even realizing it. Young learners get better at problem-solving and staying focused. Even adults end up using it as a quick brain exercise—something to sharpen focus while giving themselves a short break from work or stress.
+            Every flip feels like a surprise.
+            Some matches are easy, some make you think, but each one feels like progress.
+            The best part is when the last pair is found—it feels like a small win every time.
           </p>
-          <h2 className="instruction-step">Who Can Enjoy It?</h2>
+          
+          <h2 className="instruction-step">Extra Challenges</h2>
           <p className="instructions-description">
-            Pretty much anyone. Kids get excited about flipping the cards and yelling out the matches. Parents like it because it sneaks in learning while still feeling like playtime. Families can play together for a bit of friendly competition, and adults often just enjoy it as a little mental warm-up. Since it mixes phonics, memory, and strategy, the puzzle doesn’t really have an age limit.
-          </p>
-          <h2 className="instruction-step">Next Challenges Await</h2>
-          <p className="instructions-description">
-            Once you get through the first levels, it doesn’t stop there. The game throws in more cards, trickier combinations, and layouts that make you stop and think before flipping. Every round feels a little different, so you don’t just play once and forget about it. Whether you’re just learning your letters or you’re looking for a casual brain workout, there’s always another challenge waiting.
+            Want it harder?
+            Add a timer and race the clock.
+            Mix in more cards for a bigger puzzle.
+            Or challenge a friend to see who finishes first.
+            The Alphabet Letter Matching Game can be light and easy or a real test—it’s your choice.
           </p>
         </div>
-
       </article>
     </div>
   );

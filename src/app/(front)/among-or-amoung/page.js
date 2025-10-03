@@ -16,7 +16,12 @@ const Game = () => {
 
 
   function scrambleWord(word) {
-    return word.split('').sort(() => Math.random() - 0.5).join('');
+    const arr = word.split('');
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
   }
 
   function checkAnswer() {
@@ -56,6 +61,7 @@ const Game = () => {
               value={guess}
               onChange={(e) => setGuess(e.target.value)}
               placeholder="Your Guess"
+              aria-label="Guess the scrambled word"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div>
@@ -77,56 +83,41 @@ const Game = () => {
           </div>
         )}
       </div>
-      <div className="game-instructions-container">
-        <div className="game-instructions-content">
-          <div className="game-instructions">
-            <h1 className="instructions-title">How to Play Word Ladder Solver Game</h1>
-            <p className="instructions-description">
-              Word ladder solver games are a fun and challenging way to boost your brainpower, improve vocabulary, and enjoy your leisure time. Whether you're solving a traditional paper puzzle or using a digital word ladder solver tool, these games help enhance logical thinking and word association skills. This guide will walk you through how to play word ladder solver games, including types, rules, strategies, and tips to maximize your experience.
+      <div className="word-instructions-container">
+        <div className="word-instructions-content">
+          <div className="word-instructions">
+            <h1 className="word-title">Among or Amoung – Fix the Scramble</h1>
+
+            <p className="word-description">
+              This puzzle takes the word and shakes up its letters, leaving you with a jumble like <strong>amngo</strong>.
+              Your task is simple: type the correct spelling back into place.
+              It might look close to “amoung” at first, but only one form is right.
+              Each round is quick, playful, and makes spelling practice feel like a game.
             </p>
-            <h2 className="instruction-step">1. Different Types of Word Ladder Solver Games</h2>
-            <p className="instructions-description">
-              Word ladder solver games come in a variety of styles. Some are simple text-based puzzles, while others are interactive games with hints, timers, and challenges. You can play solo or compete with friends to climb the ladder of words!
+
+            <h2 className="word-step">How to Play</h2>
+            <p className="word-description">
+              Look at the scrambled letters on the screen.
+              Rearrange them in your head to guess the right word.
+              Type your answer into the box and hit submit.
+              If correct, you move on; if not, reshuffle your thinking and try again.
             </p>
-            <h3 className="instruction-step">2. Understand the Rules</h3>
-            <p className="instructions-description">
-              Each word ladder solver puzzle has a clear goal: transform a start word into an end word by changing one letter at a time, with each intermediate word being valid. Read the instructions carefully to understand how many steps or levels you need to solve.
+
+            <h2 className="word-step">Who Can Play</h2>
+            <p className="word-description">
+              Young learners can use it to sharpen spelling.
+              Students can practice tricky words without it feeling boring.
+              Adults can enjoy it as a brain refresher between tasks.
+              Since the rules are short and clear, anyone can play.
             </p>
-            <ul className="instructions-list">
-              <li>The game includes 3 sub-levels to complete.</li>
-              <li>If all sub-levels are solved correctly, you win the game.</li>
-              <li>If not, analyze your path and try again with a better strategy.</li>
-              <li>Think critically about how one letter change can move you closer to the final word.</li>
-            </ul>
-            <h4 className="instruction-step">3. Set Up Your Space</h4>
-            <p className="instructions-description">
-              For offline word ladder solver puzzles, choose a quiet and well-lit area to work. If you're using a digital version, make sure your device settings—like brightness and sound—are comfortable for extended play sessions.
+
+            <h2 className="word-step">Extra Challenge</h2>
+            <p className="word-description">
+              Add a timer if you want speed pressure.
+              Use longer scrambles for advanced practice.
+              Try rounds with near-miss spellings to test sharp eyes.
+              Play solo for focus or with a friend for a fast spelling race.
             </p>
-            <h5 className="tips-title">Tips for Success</h5>
-            <ul className="instructions-list">
-              <li><strong>Stay Calm:</strong> Keep it fun. If you're stuck, take a short break and return with a fresh mind.</li>
-              <li><strong>Practice Often:</strong> The more you play word ladder solver games, the faster and sharper your thinking becomes.</li>
-              <li><strong>Learn from Mistakes:</strong> Review where you went off track and try a new path next time.</li>
-              <li><strong>Challenge Yourself:</strong> Gradually attempt harder puzzles to improve your problem-solving and word skills.</li>
-            </ul>
-            <h6 className="instruction-step">Conclusion</h6>
-            <p className="instructions-description">
-              Word ladder solver games are a powerful tool to train your brain, improve vocabulary, and enjoy a satisfying puzzle-solving experience. With consistent practice and a bit of creativity, you’ll find yourself mastering even the toughest word ladders. So, pick your puzzle, focus your mind, and get ready to climb the word ladder one letter at a time!
-            </p>
-          </div>
-          <div className='game-image-container'>
-            <Link href="/hard-spelling">
-              <img className='game-image' src='./images/Freezenova1.webp' alt='word ladder solver adventure' />
-            </Link>
-            <Link href="/puzzle-words">
-              <img className='game-image' src='./images/Freezenova2.webp' alt='Play puzzles on word ladder solver' />
-            </Link>
-            <Link href="/word-game">
-              <img className='game-image' src='./images/Puzzle3.webp' alt='Explore word ladder solver puzzles' />
-            </Link>
-            <Link href="/word-find">
-              <img className='game-image' src='./images/Freezenova3.webp' alt='Online word ladder solver game' />
-            </Link>
           </div>
 
         </div>

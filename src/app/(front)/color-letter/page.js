@@ -141,29 +141,40 @@ const lettercolor = () => {
       <div className="game-instructions-container">
         <div className="game-instructions-content">
           <div className="game-instructions">
-            <h1 className="instructions-title">Color by Letter</h1>
+            <h1 className="instructions-title">Colored Letter – Flip, Match, and Color</h1>
+
             <p className="instructions-description">
-              Color by letter is a creative and educational method of engaging with both art and literacy. By assigning specific colors to different letters, participants bring a hidden image to life one section at a time. Each completed area represents both a visual and cognitive achievement — blending recognition, coordination, and patience. This form of activity has gained popularity not only in early learning environments but also in therapeutic and recreational contexts due to its calming and purposeful structure.
+              Colored Letter is a fun little game where letters hide under colorful cards on your screen.
+              Flip one and see which letter is underneath.
+              Match it with the right color and watch the picture slowly start to appear.
+              Sometimes it’s easy, sometimes a bit tricky, but each little match feels satisfying.
+              It’s simple, playful, and keeps you guessing until the image is complete.
             </p>
 
-            <h2 className="instruction-step">Where Art Meets Alphabet Awareness</h2>
+            <h2 className="instruction-step">How to Play</h2>
             <p className="instructions-description">
-              At its core, color by letter promotes early alphabet familiarity in an enjoyable way. Unlike memorization drills or rote recitation, this approach introduces letters through a sensory experience. When a learner associates a color with a letter and fills in spaces accordingly, they form connections that are both visual and tactile. The result isn’t just a completed picture — it’s a deeper, more natural understanding of letter forms and patterns, built through focused interaction with a task that feels more like play than study.
+              Start the game and tap or click a card to flip it.
+              See the letter? Great, now find its color and fill it in.
+              Got it wrong? No worries — it flips back, so remember it for next time.
+              Keep flipping, keep coloring, and slowly the hidden image comes together.
+              Each turn gives a tiny clue and a little surprise!
             </p>
 
-            <h3 className="instruction-step">A Rhythm of Relaxation and Learning</h3>
+            <h2 className="instruction-step">Who Can Play</h2>
             <p className="instructions-description">
-              The repetitive yet purposeful motion of coloring provides a sense of calm and control, which makes color by letter ideal for stress relief and emotional regulation. As each section is completed, the image slowly reveals itself, offering a satisfying sense of progress and achievement. For many participants — children and adults alike — this balance of quiet concentration and visual reward becomes a grounding activity, especially beneficial in educational and therapeutic settings where structure and focus are needed.
+              Anyone can join in.
+              Young kids practice letters and colors while having fun.
+              Families can play together, flipping cards and guessing.
+              Adults can take a quick, playful break too.
+              Rules are simple, so no one feels left out.
             </p>
 
-            <h4 className="instruction-step">Visual Development Through Structured Coloring</h4>
+            <h2 className="instruction-step">Next Challenge</h2>
             <p className="instructions-description">
-              Precision and attention to detail are central to the color by letter format. Participants must scan the page carefully, recognize matching symbols, and stay within boundaries. This deliberate process helps develop fine motor control, spatial reasoning, and visual scanning — all of which are foundational skills in both academics and everyday life. While the act of coloring may seem simple, the layered benefits in perception and control offer real developmental value.
-            </p>
-
-            <h5 className="instruction-step">Custom Expression Within Guided Frameworks</h5>
-            <p className="instructions-description">
-              One of the most appealing aspects of color by letter is the blend of direction and creativity. While the structure of the activity provides clear rules through letter-to-color assignments, there’s still room for artistic interpretation. Some users might layer shades, use patterns, or apply textures to their coloring style. This freedom within a framework encourages personal expression while maintaining the educational or therapeutic goals of the activity — making it a unique crossover of structure and creativity.
+              Once the easy pictures are done, try bigger images with more cards to flip.
+              You can race against the clock or tackle trickier layouts.
+              Oops, missed one? Keep going!
+              Each new round keeps things fresh, and finishing the image always feels like a small victory.
             </p>
           </div>
         </div>
