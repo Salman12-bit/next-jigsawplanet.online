@@ -5,8 +5,8 @@ import "./word-game.css"
 import Link from 'next/link';
 
 
-const Game = () => {
-  const words = ["sandcastles", "Popsicles", "SCRAMBLEDWORD"];
+const Summerword = () => {
+  const words = ["sun", "Vacation", "WATERPARK",];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
@@ -51,7 +51,7 @@ const Game = () => {
         <p className="current-color">Current Level 4</p>
         {!gameOver ? (
           <>
-            <div className="level">Level {currentLevel + 1}</div>
+            <div className="level">Word {currentLevel + 1}</div>
             <div className="word">{scrambledWord}</div>
             <input
               type="text"
@@ -122,6 +122,6 @@ const Game = () => {
   );
 };
 
-export default Game;
+export default Summerword;
 
 

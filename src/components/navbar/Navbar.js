@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navContainer}>
         <Link href="/" className={styles.navLogo}>
-          jigsawplanet
+          Jigsawplanet
         </Link>
         <button className={styles.hamburger} onClick={toggleMenu}>
           <span className={styles.bar}></span>

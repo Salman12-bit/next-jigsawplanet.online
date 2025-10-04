@@ -5,8 +5,8 @@ import "./word-game.css"
 import Link from 'next/link';
 
 
-const Game = () => {
-  const words = ["bee", "Spelling", "PUZZLE"];
+const Wordthroughout = () => {
+  const words = ["throughout", "Theater", "THUNDERSTORM",];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
@@ -50,11 +50,10 @@ const Game = () => {
       padding: "20px"
     }}>
       <div className="Puzzle">
-        <h4 className="current-color">Current Level 4</h4>
-        <h1 className="color">Word Game Puzzles</h1>
+        <p className="current-color">Current Level 12</p>
         {!gameOver ? (
           <>
-            <div className="level">Level {currentLevel + 1}</div>
+            <div className="level">Word {currentLevel + 1}</div>
             <div className="word">{scrambledWord}</div>
             <input
               type="text"
@@ -93,7 +92,7 @@ const Game = () => {
               The letters come scrambled on the screen, waiting to be put in order.
               Your job is to rebuild the word and check if the spelling is right.
               One spelling fits in real writing, the other is just a tricky mistake that sneaks in.
-              That’s where the fun begins.
+              That’s where the fun begins. It turns a simple spelling check into a quick, clever word game.
             </p>
 
 
@@ -128,6 +127,6 @@ const Game = () => {
   );
 };
 
-export default Game;
+export default Wordthroughout;
 
 

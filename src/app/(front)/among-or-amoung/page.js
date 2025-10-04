@@ -5,8 +5,8 @@ import "./word-game.css"
 import Link from 'next/link';
 
 
-const Game = () => {
-  const words = ["Ladder", "scramble", "INCORRECT"];
+const Wordamong = () => {
+  const words = ["among", "Apple", "ASTRONAUT",];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
@@ -50,11 +50,10 @@ const Game = () => {
       padding: "20px"
     }}>
       <div className="Puzzle">
-        <h4 className="current-color">Current Level 8</h4>
-        <h1 className="color">Word ladder solver</h1>
+        <p className="current-color">Current Level 10</p>
         {!gameOver ? (
           <>
-            <div className="level">Level {currentLevel + 1}</div>
+            <div className="level">Word {currentLevel + 1}</div>
             <div className="word">{scrambledWord}</div>
             <input
               type="text"
@@ -93,7 +92,9 @@ const Game = () => {
               Your task is simple: type the correct spelling back into place.
               It might look close to “amoung” at first, but only one form is right.
               Each round is quick, playful, and makes spelling practice feel like a game.
+              It’s like a mini word challenge wrapped inside a fun spelling check.
             </p>
+
 
             <h2 className="word-step">How to Play</h2>
             <p className="word-description">
@@ -126,6 +127,6 @@ const Game = () => {
   );
 };
 
-export default Game;
+export default Wordamong;
 
 

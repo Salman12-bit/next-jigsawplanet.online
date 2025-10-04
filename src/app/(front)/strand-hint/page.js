@@ -1,19 +1,18 @@
-"use client"
+"use client";
 
 import React, { useState } from 'react';
-import "./word-game.css"
+import "./word-game.css";
 import Link from 'next/link';
 
-
-const Game = () => {
-  const words = ["maker", "Immaculate", "SPACES"];
+const Wordstrand = () => {
+  const words = ["lead", "Clue", "GUIDELINES",];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
   const [gameOver, setGameOver] = useState(false);
   const [correctGuess, setCorrectGuess] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-
+  const [hint, setHint] = useState('');
 
   function scrambleWord(word) {
     const arr = word.split('');
@@ -26,9 +25,10 @@ const Game = () => {
 
   function checkAnswer() {
     const currentWord = words[currentLevel];
-    if (guess === currentWord) {
+    if (guess.trim().toLowerCase() === currentWord.toLowerCase()) {
       setCorrectGuess(true);
       setErrorMessage('');
+      setHint('');
     } else {
       setErrorMessage("Try again! Incorrect guess.");
     }
@@ -40,18 +40,23 @@ const Game = () => {
       setScrambledWord(scrambleWord(words[currentLevel + 1]));
       setGuess('');
       setCorrectGuess(false);
+      setErrorMessage('');
+      setHint('');
     } else {
       setGameOver(true);
     }
   }
 
+  function showHint() {
+    const currentWord = words[currentLevel];
+    const firstLetter = currentWord.charAt(0).toUpperCase();
+    setHint(`Starts with ${firstLetter}`);
+  }
+
   return (
-    <div className='text-conainer' style={{
-      padding: "20px"
-    }}>
+    <div className='text-container' style={{ padding: "20px" }}>
       <div className="Puzzle">
-        <h4 className="current-color">Current Level 7</h4>
-        <h1 className="color">Immaculate Puzzle</h1>
+        <p className="current-color">Current Level 9</p>
         {!gameOver ? (
           <>
             <div className="level">Level {currentLevel + 1}</div>
@@ -64,8 +69,11 @@ const Game = () => {
               aria-label="Guess the scrambled word"
             />
             {errorMessage && <p className="error-message">{errorMessage}</p>}
-            <div>
+            {hint && <p className="hint-text">{hint}</p>}
+
+            <div className="button-group">
               <button className="button2" onClick={checkAnswer}>Submit</button>
+              <button className="button2" onClick={showHint}>Hint</button>
               {correctGuess && (
                 <button className="button2" onClick={nextLevel}>Next Level</button>
               )}
@@ -83,6 +91,7 @@ const Game = () => {
           </div>
         )}
       </div>
+
       <div className="word-instructions-container">
         <div className="word-instructions-content">
           <div className="word-instructions">
@@ -121,13 +130,13 @@ const Game = () => {
               Every round feels different, and with strands hint, there’s always a new twist waiting.
             </p>
           </div>
-
         </div>
       </div>
     </div>
   );
 };
 
-export default Game;
+export default Wordstrand;
+
 
 

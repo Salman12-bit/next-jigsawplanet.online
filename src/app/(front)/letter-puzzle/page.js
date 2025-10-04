@@ -151,11 +151,6 @@ const Letterpuzzle = () => {
               The rules couldn’t be simpler: cards face down, pick two, and see if they line up. When they match, they stay open; when they don’t, back they go. Some rounds shake things up by asking you to match three cards instead of two, or by arranging them in sequence. What starts out easy can quickly turn into a challenge.
             </p>
 
-            <h2 className="instruction-step">What Makes It Fun</h2>
-            <p className="instructions-description">
-              The fun lies in the reveal. Every flip feels like a little risk—you never quite know what’s waiting. Kids laugh at the surprises, adults like the mental workout, and families often turn it into a friendly contest. It feels casual, but it sneaks in a lot of brain exercise along the way.
-            </p>
-
             <h2 className="instruction-step">Who Jumps In</h2>
             <p className="instructions-description">
               Just about anyone. Kids learn it in minutes, parents use it as a quick group activity, and adults might fit in a round on a break. It doesn’t take hours, but it gives you just enough challenge to keep it satisfying.

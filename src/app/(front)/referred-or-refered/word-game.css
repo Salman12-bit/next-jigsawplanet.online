@@ -50,6 +50,7 @@ input[type="text"] {
 
 .current-color {
     color: rgb(0, 0, 0);
+    font-size: larger;
 }
 
 .text-conainer {

@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 
 const ChildrenWord = () => {
-  const words = ["Friend", "pearl", "UNCANNY"];
+  const words = ["play", "Learning", "EDUCATIONAL"];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
@@ -52,7 +52,7 @@ const ChildrenWord = () => {
         <p className="current-color">Current Level 1</p>
         {!gameOver ? (
           <>
-            <div className="level">Level {currentLevel + 1}</div>
+            <div className="level">Word {currentLevel + 1}</div>
             <div className="word">{scrambledWord}</div>
             <input
               type="text"
@@ -113,11 +113,13 @@ const ChildrenWord = () => {
 
             <h2 className="word-step">Next Challenge</h2>
             <p className="word-description">
-              Want it harder? Try a different word set or add a timer.
-              Use one of your other versions for new words and tougher mixes — you said you have 18 versions, so swap them and keep it fresh.
-              Race a friend or aim for a faster time.
-              Each round feels new, and that’s the fun.
+              Ready for a twist? Pick a new word mix and see how fast your brain catches on.
+              You can shuffle the puzzles, add a quick timer, or play side by side with a friend.
+              Some rounds will click right away, others take a few tries — that’s part of the fun.
+              Each challenge feels fresh, never the same twice, and always worth one more go.
             </p>
+
+
           </div>
 
           <div className='game-image-container'>

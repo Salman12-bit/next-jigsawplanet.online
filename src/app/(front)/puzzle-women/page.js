@@ -5,8 +5,8 @@ import "./word-game.css"
 import Link from 'next/link';
 
 
-const Game = () => {
-  const words = ["women", "Forums", "HEADER"];
+const PuzzleWomen = () => {
+  const words = ["women", "Riddle", "TREASUREHUNT"];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
@@ -50,7 +50,7 @@ const Game = () => {
       padding: "20px"
     }}>
       <div className="Puzzle">
-        <h4 className="current-color">Current Level 3</h4>
+        <p className="current-color">Current Level 3</p>
         {!gameOver ? (
           <>
             <div className="level">Level {currentLevel + 1}</div>
@@ -102,7 +102,7 @@ const Game = () => {
               If not, no problem—try again until it clicks.
               Every round feels short and quick.
             </p>
-            
+
             <h2 className="word-step">Who Can Play</h2>
             <p className="word-description">
               Kids use Word Puzzle Solver to learn new words and practice spelling.
@@ -125,6 +125,6 @@ const Game = () => {
   );
 };
 
-export default Game;
+export default PuzzleWomen;
 
 
