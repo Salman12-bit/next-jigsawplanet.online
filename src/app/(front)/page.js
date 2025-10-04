@@ -94,11 +94,11 @@ export default function Home() {
   const wordgame = [
     {
       "image": "/images/word.webp",
-      link: '/printable-word-puzzles'
+      link: '/children-word-puzzle'
     },
     {
       "image": "/images/friend.webp",
-      link: '/puzzle-words'
+      link: '/word-hunt'
     },
     {
       "image": "/images/wordchildren.webp",
@@ -106,7 +106,7 @@ export default function Home() {
     },
     {
       "image": "/images/bee.webp",
-      link: '/word-puzzle'
+      link: '/puzzle-words'
     },
 
 

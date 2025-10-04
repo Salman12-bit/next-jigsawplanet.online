@@ -1,12 +1,12 @@
 import React from 'react';
 
 export const metadata = {
-  title: "Jigsawplanet – Play Jigsaw Puzzles & Create Your Own",
+  title: "Jigsaw Planet | Discover the Best Free Game Platform",
   keywords: "jigsaw puzzle,jigsaw",
   description:
     "Play jigsaw puzzles online at jigsawplanet! Solve, create, and share thousands of free jigsaw puzzles for kids, teens, and adults. Start your puzzle now!",
   openGraph: {
-    title: "Jigsawplanet – Play Jigsaw Puzzles & Create Your Own",
+    title: "Jigsaw Planet | Discover the Best Free Game Platform",
     description:
       "Play jigsaw puzzles online at jigsawplanet! Solve, create, and share thousands of free jigsaw puzzles for kids, teens, and adults. Start your puzzle now!",
     url: "https://jigsawplanet.online/",
@@ -28,7 +28,7 @@ export default function Layout({ children }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Jigsawplanet – Play Jigsaw Puzzles & Create Your Own",
+    "name": "Jigsaw Planet | Discover the Best Free Game Platform",
     "url": "https://jigsawplanet.online",
     "description":
       "Play jigsaw puzzles online at jigsawplanet! Solve, create, and share thousands of free jigsaw puzzles for kids, teens, and adults. Start your puzzle now!",
