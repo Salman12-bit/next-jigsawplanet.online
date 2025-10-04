@@ -166,13 +166,13 @@ const Letterpuzzle = () => {
             <Link href="/letter-pictures">
               <img className='game-image' src='./images/Puzzle1.webp' alt='free online letter puzzles puzzle game' />
             </Link>
-            <Link href="/letter-printable">
+            <Link href="/letter-wooden">
               <img className='game-image' src='./images/Puzzle2.webp' alt='letter puzzles interactive puzzle' />
             </Link>
             <Link href="/letter-printable">
               <img className='game-image' src='./images/Puzzle3.webp' alt='free letter puzzles game' />
             </Link>
-            <Link href="/color-number">
+            <Link href="/color-letter">
               <img className='game-image' src='./images/Puzzle5.webp' alt='play letter puzzles puzzle online' />
             </Link>
           </div>
