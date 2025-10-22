@@ -1,0 +1,198 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #d1c0a8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modalContent {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modalContent2 {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modalContent h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modalContent2 h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.NotFinish h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modalContent p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.NotFinish p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.modalContent button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modalContent2 button {
+    background-color: #e1212b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modalContent button:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.sidebar {
+    width: 300px;
+    min-width: 300px;
+    background: #c6d8d3;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+.puzzleBoard {
+    flex: 1;
+    position: relative;
+    background-color: #eee;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    flex-direction: column;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.imageContainer {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.previewImage {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #666;
+}
+
+.centerText {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.leaderboard {
+    padding: 10px;
+    background: #c6d8d3;
+    border-radius: 10px;
+    max-width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+
+.leaderboard ol {
+    padding-left: 20px;
+}
+
+.leaderboard li {
+    margin: 5px 0;
+}

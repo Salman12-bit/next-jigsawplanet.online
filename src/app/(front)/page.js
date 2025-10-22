@@ -88,6 +88,10 @@ export default function Home() {
       "image": "/images/large-puzzle.webp",
       link: '/puzzle-pieces'
     },
+    {
+      "image": "/images/jigsawbox.webp",
+      link: '/jigsaw-board'
+    },
   ];
 
 
@@ -217,7 +221,7 @@ export default function Home() {
       <article className="article-content">
         <h1>Online Jigsawplanet A Digital Pause for Curious Minds</h1>
 
-        <p>Each day, our focus is pulled in dozens of directions. Between work, messages, and constant updates, the mind barely gets a moment to reset. That’s where our platform offers something different — not just a puzzle activity, but a deliberate moment to disconnect from pressure and reconnect with thought.</p>
+        <p>Every day, our focus is pulled in dozens of directions. Between work, messages, and constant updates, the mind barely gets a moment to reset. That’s where our platform offers something different — not just a puzzle activity, but a deliberate moment to disconnect from pressure and reconnect with thought.</p>
 
         <h2>Puzzle Time as a Thoughtful Escape</h2>
 
