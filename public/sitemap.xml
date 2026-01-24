@@ -379,9 +379,15 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-   <url>
+  <url>
     <loc>https://jigsawplanet.online/jigsaw-board</loc>
     <lastmod>2025-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jigsawplanet.online/committee-or-commitee</loc>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

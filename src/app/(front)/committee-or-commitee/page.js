@@ -5,8 +5,8 @@ import "./word-game.css"
 import Link from 'next/link';
 
 
-const Wordreferred = () => {
-  const words = ["referred", "Rainbow", "RESOLUTION"];
+const Wordcommittee = () => {
+  const words = ["committee", "Cancel", "CONSOLE"];
   const [currentLevel, setCurrentLevel] = useState(0);
   const [guess, setGuess] = useState('');
   const [scrambledWord, setScrambledWord] = useState(scrambleWord(words[0]));
@@ -47,7 +47,7 @@ const Wordreferred = () => {
       padding: "20px"
     }}>
       <div className="Puzzle">
-        <p className="current-color">Current Level 15</p>
+        <p className="current-color">Current Level 16</p>
         {!gameOver ? (
           <>
             <div className="level">Word {currentLevel + 1}</div>
@@ -73,7 +73,7 @@ const Wordreferred = () => {
             <button className="button2" onClick={() => window.location.reload()}>
               Restart
             </button>
-            <Link href="/committee-or-commitee" className="button2 mx-2">
+            <Link href="/" className="button2 mx-2">
               Next Level
             </Link>
           </div>
@@ -82,47 +82,49 @@ const Wordreferred = () => {
       <div className="word-instructions-container">
         <div className="word-instructions-content">
           <div className="word-instructions">
-            <h1 className="word-title">Referred or Refered – Find the Right Spelling</h1>
+            <h1 className="word-title">Committee or Commitee – Can You Spell It Right?</h1>
 
             <p className="word-description">
-              Two spellings look almost the same, but only one is correct.
-              “Referred” holds the double r in the middle, while “refered” drops it out.
-              The letters play a little trick on your eyes, and that’s where the puzzle begins.
-              Your job is to catch the slip before it sneaks past.
+              Ever mix up <strong>Committee or Commitee</strong>? Don’t worry, it happens to a lot of people.
+              They look almost the same, but one’s right and the other’s just a letter short.
+              The tricky part is, your eyes don’t always catch it right away.
+              “Committee” hangs onto both m’s and t’s — that’s what makes it correct.
+              It’s a small detail, but that’s where this game gets fun.
             </p>
 
             <h2 className="word-step">How to Play</h2>
             <p className="word-description">
-              A scrambled version of the word shows up.
-              Rearrange the letters and type the spelling you believe is right.
-              If you get it correct, the next round unlocks.
-              If not, shuffle again and look closer until it clicks.
+              When the word appears, the letters are all jumbled up.
+              Your job is simple — drag or type them into the right order.
+              Think you’ve got it? Hit submit and see if you guessed the right spelling.
+              If it’s wrong, shuffle again and give it another try.
+              No pressure here; it’s more about spotting patterns and training your eyes than being perfect.
             </p>
 
             <h2 className="word-step">Why It’s Fun</h2>
             <p className="word-description">
-              Double letters are sneaky, and that makes each puzzle feel fresh.
-              Sometimes your brain catches the extra r right away.
-              Other times, it takes a few tries before the right spelling shines through.
-              That tiny “aha” moment keeps you coming back.
+              You know that little spark you get when you spot the right word? That’s what makes it fun.
+              Sometimes you nail it on the first go, other times you’re sure it’s right and then—nope, one letter off.
+              Those double letters really mess with your head, in the best way.
+              It’s not too serious, just something that keeps you thinking without feeling like you’re studying.
+              A nice break for your brain, but still kinda sneaky learning at the same time.
             </p>
 
             <h2 className="word-step">Extra Challenge</h2>
             <p className="word-description">
-              Try puzzles with bigger words where the double letters hide deeper.
-              Put yourself on the clock and race to finish before time runs out.
-              Swap words with a friend and see who solves faster.
-              Sometimes the misspelling sneaks by, sometimes you catch it at once — either way, the round stays lively.
+              If you’re up for a bit more fun, try timing yourself and see how fast you can get it right.
+              Or play against a friend — it gets funny when both of you trip on the same tricky word.
+              Throw in some longer ones too, where those double letters hide right in the middle.
+              Sometimes you’ll spot it right away, other times it takes a few tries before it clicks.
+              Either way, it keeps you guessing and makes you want to go for just one more round.
             </p>
-
           </div>
-
         </div>
       </div>
     </div>
   );
 };
 
-export default Wordreferred;
+export default Wordcommittee;
 
 
